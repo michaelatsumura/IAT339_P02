@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Swirl Polishes Co. - Style Guide Template</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,700,900" rel="stylesheet"> 
+    <!-- Overpass Font retrieved from https://fonts.googleapis.com/css?family=Overpass -->
+  </head>
+
+  <body>
+
+    <!-- Style Guide Header and Subhead -->
+      <h1>Style Guide Template</h1>
+      <h2>Swirl Polishes Co.</h2>
+
+      <!-- Style Guide Navigation -->
+      <h3>Style Guide Sections:</h3>
+      <div class = "grid-row"> 
+        <nav class="nav-main">
+          <div class="grid-col-1of6">
+            <a href="#interactive_elements" class="intext-links">Interactive Elements</a>
+          </div>
+          <div class="grid-col-1of6">
+            <a href="#text_elements" class="intext-links">Text Elements</a>
+          </div>
+          <div class="grid-col-1of6">
+            <a href="#combined_elements" class="intext-links">Combined Elements</a>
+          </div>
+        </nav>
+      </div>
+
+    <h3>Other Sections:</h3>
+      <div class = "grid-row"> 
+        <nav class="nav-main">
+          <div class="grid-col-1of6">
+            <a href="wireframes.html" class="intext-links">Wireframes</a>
+          </div>
+          <div class="grid-col-1of6">
+            <a href="citations.html" class="intext-links">Citations</a>
+          </div>
+        </nav>
+      </div>
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <!-- In-text Link Section -->
+      <section>
+        <h2>In-text link</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.intext-links</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="#" class="intext-links"&gt;Edit Polish Mix&lt;/a&gt;</code>
+        <h3>Example</h3>
+        <a href="#" class="intext-links">Edit Polish Mix</a>
+      </section>
+
+
+      <!-- Navigation Items-->
+      <section>
+        <h2>Navigation Items</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.button-nav-example</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="#" class="button-nav-example"&gt;Mix&lt;/a&gt;</code>
+
+        <h3>Example:</h3>
+        <a href="#" class="button-nav-example">Mix</a>
+      </section>
+
+
+      <!-- Button Types - (Submit) Primary and (Reset) Secondary -->
+      <section>
+        <h2>Action Buttons</h2>
+        <div class="grid-row">
+          <div class="grid-col-1of2">
+            <h3>CSS selector:</h3>
+            <p>.button-primary</p>
+
+            <h3>Sample code:</h3>
+            <code>&lt;a href="#" class="button-primary"&gt;+ Add to Cart&lt;/a&gt;</code>
+
+            <h3>Rendered element:</h3>
+            <a class="button-primary" href="#">+ Add to Cart</a>
+          </div>
+
+          <div class="grid-col-1of2">
+            <h3>CSS selector:</h3>
+            <p>.button-secondary</p>
+
+            <h3>Sample code:</h3>
+            <code>&lt;a href="#" class="button-secondary"&gt;Default Button&lt;/a&gt;</code>
+
+            <h3>Rendered element:</h3>
+            <a class="button-secondary" href="#">Sell My Mix</a>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Text Field and a Label - Search -->
+      <section>
+        <h2>Text Input Field</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.searchfield</p>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;form&gt; <br>
+          &lt;label&gt;Search&lt;/label&gt;<br>
+          &lt;input class="searchfield" type="text name="search" placeholder="What are you looking for today?"&gt;<br>
+          &lt;/form&gt;
+        </code>
+        <!-- A. Hawryshkewich - [Linebreaks permitted in code formatting] -->
+
+        <h3>Example:</h3>
+        <form>
+          <label>Search</label>
+          <input class="searchfield" type="text" name="search" placeholder="What are you looking for today?">
+        </form>
+      </section>
+      <!-- HTML Tags required for a field. Retrieved from http://www.w3schools.com/howto/howto_css_animated_search.asp -->
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+
+      <!-- Headings h1, h2, h3 -->
+      <section>
+        <div class="grid-row">
+          <div class="grid-col-2of6">
+            <h2>Headings h1</h2>
+
+            <h3>CSS selector:</h3>
+            <p>.mainheading</p>
+
+            <h3>Sample code:</h3>
+            <code>&lt;h1 class="main-heading"&gt;BROWSE&lt;/h1&gt;</code>
+
+            <h3>Example:</h3>
+            <h1 class="main-heading">BROWSE</h1>
+          </div>
+
+
+          <div class="grid-col-2of6">
+            <h2>Headings h2</h2>
+
+            <h3>CSS selector:</h3>
+            <p>.productname</p>
+
+            <h3>Sample code:</h3>
+            <code>&lt;h2 class="productname"&gt;Coral Sunrise&lt;/h2&gt;</code>
+
+            <h3>Example:</h3>
+            <h2 class="productname">Coral Sunrise</h2>
+          </div>
+
+
+          <div class="grid-col-2of6">          
+            <h2>Headings h3</h2>
+
+            <h3>CSS selector:</h3>
+            <p>.productsubhead</p>
+
+            <h3>Sample code:</h3>
+            <code>&lt;h3 class="productsubhead"&gt;Cream Base&lt;/h3&gt;</code>
+
+            <h3>Example:</h3>
+            <h3 class="productsubhead">Cream Base</h3>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Paragraph Section -->
+      <section>
+        <h2>Paragraphs</h2>
+
+        <h3>CSS selector</h3>
+        <p>.contentdescription</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;p class="contentdescription"&gt; Cupcake ipsum dolor sit amet marshmallow. Chocolate cake oat cake cheesecake cheesecake bonbon chocolate cake tiramisu. Soufflé cake fruitcake donut. Icing sesame snaps topping jelly. &lt;/p&gt;</code>
+        
+        <h3>Example</h3>
+        <p class="contentdescription">Cupcake ipsum dolor sit amet marshmallow. Chocolate cake oat cake cheesecake cheesecake bonbon chocolate cake tiramisu. Soufflé cake fruitcake donut. Icing sesame snaps topping jelly.</p>
+      </section>
+
+
+      <!-- Bulleted Lists -->
+      <section>
+        <div class="grid-row">
+          <div class="grid-col-2of6">
+            <h2>Bulleted Lists</h2>
+
+            <h3>CSS selector:</h3>
+            <p>.lists</p>
+
+            <h3>Sample code:</h3>
+            <code>
+              &lt;ul class="lists"&gt;<br> 
+                &lt;li&gt;Petal Pink&lt;/li&gt;<br>
+                &lt;li&gt;Lilac Living&lt;/li&gt;<br>
+                &lt;li&gt;Magenta Muse&lt;/li&gt;<br>
+                &lt;li&gt;Coral Sunset&lt;/li&gt;<br>
+              &lt;/ul&gt;
+            </code>
+
+            <h3>Example:</h3>
+            <ul class="lists">
+              <li>Petal Pink</li>
+              <li>Lilac Living</li>
+              <li>Magenta Muse</li>
+              <li>Coral Sunset</li>
+            </ul>
+          </div>
+
+            <!-- Numbered Lists  -->
+          <div class="grid-col-2of6">
+            <h2>Numbered Lists</h2>
+
+            <h3>CSS selector:</h3>
+            <p>.lists</p>
+
+            <h3>Sample code:</h3>
+            <code>
+              &lt;ol class="lists"&gt;<br>
+                &lt;li&gt;Petal Pink&lt;/li&gt;<br>
+                &lt;li&gt;Lilac Living&lt;/li&gt;<br>
+                &lt;li&gt;Magenta Muse&lt;/li&gt;<br>
+                &lt;li&gt;Coral Sunset&lt;/li&gt;<br>
+              &lt;/ol&gt;
+            </code>
+
+            <h3>Example:</h3>
+            <ol class="lists">
+              <li>Petal Pink</li>
+              <li>Lilac Living</li>
+              <li>Magenta Muse</li>
+              <li>Coral Sunset</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+
+      <!-- Main Navigation Section -->
+      <section>
+        <h2>Main Navigation</h2>
+
+        <h3>CSS selector:</h3>
+        <ul>
+          <li>.grid-row</li>
+          <li>.grid-col-1of6</li>
+          <li>.button-nav</li>
+        </ul>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;div class = "grid-row"&gt;<br>
+            &lt;nav&gt;<br>
+              &lt;div class="grid-col-1of6"&gt;<br>
+                &lt;a class="button-nav" href="#"&gt;Mix&lt;/a&gt;<br>
+              &lt;/div&gt;<br>
+              &lt;div class="grid-col-1of6"&gt;<br>
+                &lt;a class="button-nav" href="#"&gt;Browse&lt;/a&gt;<br>
+              &lt;/div&gt;<br>
+              &lt;div class="grid-col-1of6"&gt;<br>
+                &lt;a class="button-nav" href="#"&gt;Shop&lt;/a&gt;<br>
+              &lt;/div&gt;<br>
+              &lt;div class="grid-col-1of6"&gt;<br>
+                &lt;a class="button-nav" href="#"&gt;Profile&lt;/a&gt;<br>
+              &lt;/div&gt;<br>
+            &lt;/nav&gt;<br>
+          &lt;/div&gt;
+        </code>
+
+        <h3>Example:</h3>
+        <div class = "grid-row">
+          <nav>
+            <div class="grid-col-1of6">
+              <a class="button-nav" href="#">Mix</a>
+            </div>
+            <div class="grid-col-1of6">
+              <a class="button-nav" href="#">Browse</a>
+            </div>
+            <div class="grid-col-1of6">
+              <a class="button-nav" href="#">Shop</a>
+            </div>
+            <div class="grid-col-1of6">
+              <a class="button-nav" href="#">Profile</a>
+            </div>
+          </nav>
+        </div>
+      </section>
+
+
+      <!-- Product Listing Section -->
+      <section>
+        <h2>Product Listing</h2>
+
+        <h3>CSS selector:</h3>
+        <ul>
+          <li>.button1</li>
+          <li>.button2</li>
+          <li>.button-nav</li>
+          <li>.button-primary</li>
+          <li>.button-secondary</li>
+          <li>.grid-row</li>
+          <li>.grid-col-1of6</li>
+          <li>.grid-col-2of6</li>
+          <li>.main-heading</li>
+          <li>.productdescription</li>
+          <li>.productname</li>
+        </ul>
+
+        <h3>Sample code:</h3>
+        <code>
+        &lt;div class = "grid-row"&gt; <br>
+          &lt;div class="grid-col-1of6"&gt;<br>
+            &lt;a class="button-nav" href="#"&gt;&lt;/a&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;div class="grid-col-1of6"&gt;<br>
+            &lt;h1 class="main-heading"&gt;BROWSE&lt;/h1&gt;<br>
+          &lt;/div&gt;<br>
+        &lt;/div&gt;<br>
+
+        &lt;div class = "grid-row"&gt;<br>
+          &lt;div class="grid-col-1of6"&gt;<br>
+            &lt;a class="button-nav" href="#"&gt;&lt;/a&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;div class="grid-col-2of6"&gt;<br>
+            &lt;img src="img/product.png" class="fit-product" alt="Coral Sunrise nailpolish swatch and alternate product views"&gt;<br>        
+          &lt;/div&gt;<br>
+          &lt;div class="grid-col-2of6"&gt;<br>
+            &lt;h2 class="productname"&gt;Coral Sunrise&lt;/h2&gt;<br>
+            &lt;p class="productdescription"&gt;Cupcake ipsum dolor sit amet marshmallow. Chocolate cake oat cake cheesecake cheesecake bonbon chocolate cake tiramisu. Soufflé cake fruitcake donut. Icing sesame snaps topping jelly.&lt;/p&gt;  <br>
+            &lt;a href="#"&gt; &lt; Edit Polish Mix&lt;/a&gt;<br>
+              &lt;div class="button1">&lt;a class="button-primary" href="#"&gt;+ Add to Cart&lt;/a&gt;&lt;/div&gt;<br>
+              &lt;div class="button2">&lt;a class="button-secondary" href="#"&gt;Sell My Mix&lt;/a&gt;&lt;/div&gt;<br>
+          &lt;/div&gt;<br>
+        &lt;/div&gt;
+        </code>
+
+        <h3>Example:</h3>
+        <div class = "grid-row">
+          <div class="grid-col-1of6">
+            <a class="button-nav" href="#"></a>
+          </div>
+          <div class="grid-col-1of6">
+            <h1 class="main-heading">BROWSE</h1>  
+          </div>
+        </div>
+        <div class = "grid-row">
+          <div class="grid-col-1of6">
+            <a class="button-nav" href="#"></a>
+          </div>
+          <div class="grid-col-2of6">
+            <img src="img/product.png" class="fit-product" alt="Coral Sunrise nailpolish swatch and alternate product views">        
+          </div>
+          <div class="grid-col-2of6">
+            <h2 class="productname">Coral Sunrise</h2>
+            <p>$8.95</p>
+            <p class="productdescription">Cupcake ipsum dolor sit amet marshmallow. Chocolate cake oat cake cheesecake cheesecake bonbon chocolate cake tiramisu. Soufflé cake fruitcake donut. Icing sesame snaps topping jelly.</p>  
+            <a href="#" class="intext-links"> &lt; Edit Polish Mix</a>
+              <div class="button1"><a class="button-primary" href="#">+ Add to Cart</a></div>
+              <div class="button2"><a class="button-secondary" href="#">Sell My Mix</a></div>
+          </div>
+          <!-- Grid code example referenced from Week 3 Lab -->
+        </div>
+      </section>
+
+
+      <!-- Website Grid Section -->
+      <section>
+        <h2>Website Grid</h2>
+
+        <h3>CSS selector:</h3>
+        <ul>
+          <li>.grid-col-1of6</li>
+          <li>.block </li>
+        </ul>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;div class="container"&gt;<br>
+            &lt;div class="grid-row"&gt;<br>
+              &lt;div class="grid-col-1of6 block"&gt;&lt;/div&gt;<br>
+              &lt;div class="grid-col-1of6 block"&gt;&lt;/div&gt;<br>
+              &lt;div class="grid-col-1of6 block"&gt;&lt;/div&gt;<br>
+              &lt;div class="grid-col-1of6 block"&gt;&lt;/div&gt;<br>
+              &lt;div class="grid-col-1of6 block"&gt;&lt;/div&gt;<br>
+              &lt;div class="grid-col-1of6 block"&gt;&lt;/div&gt;<br>
+            &lt;/div><br>
+           &lt;/div>
+          </code>
+
+        <h3>Example:</h3>
+        <div class="container">
+          <div class="grid-row">
+            <div class="grid-col-1of6 block"></div>
+            <div class="grid-col-1of6 block"></div>
+            <div class="grid-col-1of6 block"></div>
+            <div class="grid-col-1of6 block"></div>
+            <div class="grid-col-1of6 block"></div>
+            <div class="grid-col-1of6 block"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Grid code example referenced from Week 3 Lab -->
+
+
+      <!-- Colour Swatch Examples Section -->
+      <section>
+        <h2>Colour Swatches</h2>
+
+        <h3>CSS selectors:</h3>
+        <ul>
+          <li>.grid-col-1of4</li>
+          <li>.swatch1</li>
+          <li>.swatch2</li>
+          <li>.swatch3</li>
+          <li>.swatch4</li>
+        </ul>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;div class="grid-row"><br>
+            &lt;div class="grid-col-1of4 swatch1"&gt;#C19A97&lt;/div&gt;<br>
+            &lt;div class="grid-col-1of4 swatch2"&gt;#C19A97 40%&lt;/div&gt;<br>
+            &lt;div class="grid-col-1of4 swatch3"&gt;#282C38&lt;/div&gt;<br>
+            &lt;div class="grid-col-1of4 swatch4"&gt;#000000&lt;/div&gt;<br>
+          &lt;/div&gt;
+        </code>
+
+        <h3>Example:</h3>
+        <div class="container">
+          <div class="grid-row">
+            <div class="grid-col-1of4 swatch1">#C19A97</div>
+            <div class="grid-col-1of4 swatch2">#C19A97 40%</div>
+            <div class="grid-col-1of4 swatch3">#282C38</div>
+            <div class="grid-col-1of4 swatch4">#000000</div>
+          </div>
+        </div>
+        <!-- Grid code example referenced from Week 3 Lab -->
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+  </body>
+</html>

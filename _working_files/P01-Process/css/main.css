@@ -1,0 +1,343 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
+  padding: 1rem 3rem;
+}
+
+section:not([id]) {
+  margin: 1em 0;
+  padding: 2em 0;
+  border-top: 1px solid #e8e8e8;
+}
+
+section code {
+  display: inline-block;
+  background-color: #EEE;
+  padding: 1em;
+  margin-top: 0.5em;
+  margin-right: 3em;
+  border-radius: 0.5em;
+  font-size: 0.9em;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1{
+  padding-bottom: 1rem;
+}
+
+.nav-main-item {
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 0.25rem 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.5s ease-out;
+}
+
+/* 
+  INTERACTIVE ELEMENTS ----------------------------------------------------------------------------
+*/
+
+/* Styling for the navigation items */
+.button-nav {
+  display: block;
+  color: #282C38;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.4em;
+  padding: 0.5rem 0.5rem 1.8rem 0rem;
+}
+
+.button-nav:hover, .button-nav:focus {
+  text-decoration: underline;
+}
+
+.button-nav-example {
+  display: block;
+  color: #282C38;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.4em;
+  padding: 0.5rem 0.5rem  1.8rem 0rem;
+}
+
+.button-nav-example:hover, .button-nav-example:focus {
+  text-decoration: underline;
+}
+
+/*ACTION BUTTONS*/
+/* Styling for the add to cart button */
+.button-primary {
+  display: inline-block;
+  min-width: 220px;
+  font-size: 1em;
+  margin-top: 0.5em;
+  padding: 0.5em 3em;
+  color: #282C38;
+  background-color: rgba(193, 154, 151, 0.4);
+  border: solid #282C38 0.1em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.button-primary:hover, .button-primary:focus {
+  background-color: #C19A97;
+  text-decoration: none;
+}
+
+.button1 {
+  padding-top: 3rem;
+}
+
+/* Styling for the sell button */
+.button-secondary {
+  display: inline-block;
+  min-width: 200px;
+  padding: 0.5rem 3rem;
+  color: #282C38;
+  border: solid #282C38 0.1rem;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.button-secondary:hover, .button-secondary:focus {
+  background-color: #C19A97;
+  text-decoration: none;
+}
+
+.button2 {
+  padding-top: 0.5rem;
+}
+
+/*Links styling*/
+.intext-links {
+  color: #C19A97;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+/*search field styling*/
+.searchfield {
+  display: block;
+  width: 30rem;
+  border: solid 1px rgba(40,44,56, 0.4);
+  font-family: 'Overpass', Helvetica, sans-serif;
+  font-size: 0.8rem;
+  padding: 0.8rem;
+  margin-top: 0rem;
+}
+
+label {
+  display: block;
+}
+
+/* 
+  TEXT ELEMENTS STYLING ----------------------------------------------------------------------------
+*/
+
+/*header styling (x3)*/
+.main-heading {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: #282C38;
+  letter-spacing: 0.02rem;
+  text-decoration: underline;
+}
+
+h2 {
+  text-transform: uppercase;
+  padding-bottom: 0.25rem;
+}
+
+.productsubhead {
+  text-transform: capitalize;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+section h3 {
+  margin-bottom: 0;
+  padding-bottom: 0.35rem;
+}
+
+.productname {
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-transform: uppercase;
+}
+
+/*paragraph styling*/
+section p {
+  margin-top: 0;
+}
+
+.contentdescription {
+  max-width: 800px;
+}
+
+.productdescription {
+  max-width: 100%;
+}
+
+.lists {
+  line-height: 2rem;
+}
+
+
+/* 
+  COMBINED ELEMENTS ----------------------------------------------------------------------------
+*/
+
+
+/*
+  GRID STYLING - from Week 3 Lab Tutorial - IAT 339
+*/
+.container .block {
+  height: 15rem;
+}
+.container .block:nth-of-type(even) {
+  background-color: rgba(40,44,56, 0.2);
+}
+.container .block:nth-of-type(odd) {
+  background-color: rgba(70,74,86, 0.2);
+}
+
+/* Lecture Tutorial Week 3 - IAT 339 */
+[class^='grid-col-'] {
+  float: left;  
+}
+
+.grid-col-1of2 {
+  width: 100%;
+}
+
+.grid-col-1of6 {
+  width: 100%;
+}
+
+.grid-col-2of6 {
+  width: 100%;
+}
+
+.grid-col-1of4 {
+  width: 100%;
+}
+
+.grid-row::after {
+  content: "";
+  display: block;
+  clear: both;
+/* inline elements will not clear floats, only block level elements */
+}
+
+/*MEDIA QUERIES*/
+@media (min-width: 40em) {
+
+  .grid-col-1of2 {
+    width: 50%;
+  }
+
+  .grid-col-1of6 {
+    width: 16.66666667%;
+  }
+
+  .grid-col-1of4 {
+    width: 25%;
+  }
+}
+
+@media (min-width: 50em) {
+
+  .grid-col-2of6 {
+    width: 33.33333333%;
+  }
+}
+
+/*product listing styles*/
+.fit-product {
+  padding-right: 2rem;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*SWATCHES*/
+/*colour swatch block styling */
+.swatch1 {
+  background-color: #C19A97;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.swatch2 {
+  background-color: rgba(193, 154, 151, 0.4);
+  color: #282C38;
+  text-align: center;
+  padding: 1rem;
+}
+
+.swatch3 {
+  background-color: #282C38;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.swatch4 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+/* 
+  ADDITIONAL STYLING - Wireframes + Citations ----------------------------------------------------------------------------
+*/
+
+figcaption {
+  padding-bottom: 4rem;
+  font-style: italic;
+}
+
+.citations {
+  list-style: none;
+  line-height: 2rem;
+}
+
+
+
+
+
+
