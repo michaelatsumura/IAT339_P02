@@ -1,6 +1,6 @@
 /*
-  STYLE GUIDE STYLING 
-  Default styling for the style guide 
+  STYLE GUIDE STYLING
+  Default styling for the style guide
 */
 
 * {
@@ -29,7 +29,12 @@ section code {
   font-size: 0.8em;
 }
 
-/* 
+/*
+  INTERACTIVE ELEMENTS STYLING  ----------------------------------------------------------------------------
+*/
+
+
+/*
   TEXT ELEMENTS STYLING ----------------------------------------------------------------------------
 */
 
@@ -45,7 +50,7 @@ section code {
 
 h2 {
   color:#000000;
-  padding-top: 0.5rem; 
+  padding-top: 0.5rem;
   padding-bottom: 0.25rem;
 }
 
@@ -96,7 +101,7 @@ section p {
 
 
 
-/* 
+/*
   COMBINED ELEMENTS ----------------------------------------------------------------------------
 */
 
@@ -136,10 +141,3 @@ section p {
   text-align: center;
   padding: 1rem;
 }
-
-
-
-
-
-
-
