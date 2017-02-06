@@ -7,21 +7,18 @@
   float: left;
 }
 
-.grid-col-1of4, .grid-col-1of6, .grid-col-3of6 {
+.grid-col-1of4, .grid-col-1of6, .grid-col-2of6, .grid-col-3of6 {
   width: 100%;
 }
 
-.even {
-  background-color: #666;
+.container .block {
+  height: 15rem;
 }
-
-.odd {
-  background-color: #AAA;
+.container .block:nth-of-type(even) {
+  background-color: rgba(40,44,56, 0.2);
 }
-
-
-.block {
-  height: 200px;
+.container .block:nth-of-type(odd) {
+  background-color: rgba(70,74,86, 0.2);
 }
 
 .grid-row::after {
@@ -30,6 +27,7 @@
   clear: both;
 }
 
+/*MEDIA QUERIES*/
 @media (min-width: 43.75em) {
   /* 4 Column Grid */
   .grid-col-1of4 {
@@ -45,3 +43,11 @@
     width: 50%;
   }
 }
+
+@media (min-width: 50em) {
+
+  .grid-col-2of6 {
+    width: 33.33333333%;
+  }
+}
+
