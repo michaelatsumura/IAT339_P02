@@ -49,5 +49,10 @@
   .grid-col-2of6 {
     width: 33.33333333%;
   }
+
+  .grid-col-2of6-r {
+    width: 33.33333333%;
+    margin-left: 2em;
+  }
 }
 
