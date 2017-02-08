@@ -85,6 +85,7 @@ a:hover, a:focus {
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
   border: solid #3D4656 0.1em;
+  margin-top: 1em;
 }
 
 .button-primary:hover, .button-primary:focus {
@@ -107,6 +108,7 @@ a:hover, a:focus {
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
   border: solid #3D4656 0.1em;
+  margin-top: 0.5em;
 }
 
 .button-secondary:hover, .button-secondary:focus {
@@ -124,6 +126,9 @@ a:hover, a:focus {
   font-size: 0.9rem;
 }
 
+label {
+    padding-right: 0.5em;
+}
 /*
   TEXT ELEMENTS STYLING ----------------------------------------------------------------------------
 */
@@ -169,7 +174,7 @@ section p {
 }
 
 .content-description {
-  max-width: 800px;
+  max-width: 60%;
 }
 
 .product-description {
@@ -184,6 +189,7 @@ section p {
 	font-family: 'Arvo', Times, serif;
 	font-weight: 400;
 	color: #AD7C83;
+	margin-top: 0.5em;
 }
 /* end of styling the TEXT ELEMENTS*/
 
@@ -197,9 +203,10 @@ section p {
 
 /*product listing styles*/
 .fit-product {
-  padding-right: 2rem;
+  padding: 1em;
   max-width: 100%;
   max-height: 100%;
+  border: solid lightgrey 0.1em;
 }
 
 /*SWATCHES*/
