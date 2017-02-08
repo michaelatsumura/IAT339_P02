@@ -90,6 +90,7 @@ a:hover, a:focus {
 .button-primary:hover, .button-primary:focus {
   background-color: #EEE;
   color: #000;
+  text-decoration: none;
 }
 
 /* Secondary Button */
@@ -111,6 +112,7 @@ a:hover, a:focus {
 .button-secondary:hover, .button-secondary:focus {
   background-color: #C19A97; /*Light Pink*/
   color: #FFF;
+  text-decoration: none;
 }
 
 /* Text FIeld and Label */
