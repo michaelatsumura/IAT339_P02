@@ -39,6 +39,10 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
+.main-nav {
+  text-align: center;
+}
+
 
 /*
   INTERACTIVE ELEMENTS STYLING  ----------------------------------------------------------------------------
@@ -85,7 +89,7 @@ a:hover, a:focus {
   border-radius: 0.25em;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
-  margin-top: 1em;
+  margin: 1em 0 0.4em 0;
   width: 100%;
   text-align: center;
 }
