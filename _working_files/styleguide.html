@@ -54,42 +54,42 @@
 
 		    <!-- Buttons -->
 		    <!-- Primary Button -->
-				<div class="grid-row">
-					<div class="grid-col-3of6">
-				    <section>
-				      <h2>Primary Button</h2>
+			<div class="grid-row">
+				<div class="grid-col-3of6">
+			    <section>
+			      <h2>Primary Button</h2>
 
-				      <h3>CSS Selector:</h3>
-				      <p>.button-primary</p>
+			      <h3>CSS Selector:</h3>
+			      <p>.button-primary</p>
 
-				      <h3>Sample Code:</h3>
-				      <code>&lt;a href="#" class="button-primary"&gt;+ Add to Cart&lt;/a&gt;</code>
+			      <h3>Sample Code:</h3>
+			      <code>&lt;a href="#" class="button-primary"&gt;+ Add to Cart&lt;/a&gt;</code>
 
-				      <h3>Example:</h3>
-							<div class="grid-col-2of6">
-				      	<a class="button-primary" href="#">+ Add to Cart</a>
-							</div>
-					</section>
+			      <h3>Example:</h3>
+						<div class="grid-col-2of6">
+			      	<a class="button-primary" href="#">+ Add to Cart</a>
+						</div>
+				</section>
+			</div>
+
+		    <!-- Secondary Button -->
+				<div class="grid-col-3of6">
+			    <section>
+			      <h2>Secondary Button</h2>
+
+			      <h3>CSS Selector:</h3>
+			      <p>.button-secondary</p>
+
+			      <h3>Sample Code:</h3>
+			      <code>&lt;a href="#" class="button-secondary"&gt;Default Button&lt;/a&gt;</code>
+
+			      <h3>Example:</h3>
+						<div class="grid-col-2of6">
+			  	    <a class="button-secondary" href="#">Sell My Mix</a>
+						</div>
+			    </section>
 				</div>
-
-			    <!-- Secondary Button -->
-					<div class="grid-col-3of6">
-				    <section>
-				      <h2>Secondary Button</h2>
-
-				      <h3>CSS Selector:</h3>
-				      <p>.button-secondary</p>
-
-				      <h3>Sample Code:</h3>
-				      <code>&lt;a href="#" class="button-secondary"&gt;Default Button&lt;/a&gt;</code>
-
-				      <h3>Example:</h3>
-							<div class="grid-col-2of6">
-				  	    <a class="button-secondary" href="#">Sell My Mix</a>
-							</div>
-				    </section>
-					</div>
-				</div>
+			</div>
 
 		    <!-- Text Field and Label -->
 		    <section>
@@ -212,9 +212,10 @@
 		      <li>Magenta Muse</li>
 		      <li>Coral Sunset</li>
 		    </ul>
-
+		  </section>
 
 		    <!-- Numbered Lists  -->
+		  <section>
 		    <h2>Numbered Lists</h2>
 
 		    <h3>CSS selector:</h3>
@@ -259,7 +260,7 @@
 
 	        <h3>Sample code:</h3>
 	        <code>
-	          &lt;div class = "grid-row"&gt;<br>
+	          &lt;div class="grid-row"&gt;<br>
 	            &lt;nav&gt;<br>
 	              &lt;div class="grid-col-1of4"&gt;<br>
 	                &lt;a class="button-nav" href="#"&gt;Mix&lt;/a&gt;<br>
@@ -278,7 +279,7 @@
 	        </code>
 
 	        <h3>Example:</h3>
-	        <div class = "grid-row">
+	        <div class="grid-row">
 	          <nav class="main-nav">
 	            <div class="grid-col-1of4">
 	              <a class="button-nav" href="#">Mix</a>
@@ -303,8 +304,6 @@
 
 		    <h3>CSS selector:</h3>
 		    <ul>
-		      <li>.button1</li>
-		      <li>.button2</li>
 		      <li>.button-nav</li>
 		      <li>.button-primary</li>
 		      <li>.button-secondary</li>
@@ -312,110 +311,106 @@
 		      <li>.grid-col-1of6</li>
 		      <li>.grid-col-2of6</li>
 		      <li>.main-heading</li>
+		      <li>.price</li>
 		      <li>.product-description</li>
 		      <li>.product-name</li>
 		    </ul>
 
 	        <h3>Sample code:</h3>
-	        <code>
-	        &lt;div class = "grid-row"&gt; <br>
-	          &lt;div class="grid-col-1of6"&gt;<br>
-	            &lt;a class="button-nav" href="#"&gt;&lt;/a&gt;<br>
-	          &lt;/div&gt;<br>
-	          &lt;div class="grid-col-1of6"&gt;<br>
-	            &lt;h1 class="main-heading"&gt;BROWSE&lt;/h1&gt;<br>
-	          &lt;/div&gt;<br>
-	        &lt;/div&gt;<br>
+			<code>
+			&lt;div class = "grid-row"&gt; <br>
+				&lt;div class="grid-col-1of6"&gt;<br>
+				&lt;a class="button-nav" href="#"&gt;&lt;/a&gt;<br>
+				&lt;/div&gt;<br>
+				&lt;div class="grid-col-1of6"&gt;<br>
+				&lt;h1 class="main-heading"&gt;BROWSE&lt;/h1&gt;<br>
+				&lt;/div&gt;<br>
+			&lt;/div&gt;<br>
 
-	        &lt;div class = "grid-row"&gt;<br>
-	          &lt;div class="grid-col-1of6"&gt;<br>
-	            &lt;a class="button-nav" href="#"&gt;&lt;/a&gt;<br>
-	          &lt;/div&gt;<br>
-	          &lt;div class="grid-col-2of6"&gt;<br>
-	            &lt;img src="img/product.png" class="fit-product" alt="Coral Sunrise nailpolish swatch and alternate product views"&gt;<br>
-	          &lt;/div&gt;<br>
-	          &lt;div class="grid-col-2of6"&gt;<br>
-	            &lt;h2 class="productname"&gt;Coral Sunrise&lt;/h2&gt;<br>
-	            &lt;h3 class="product-subhead">Cream Base&lt;/h3&gt;<br>
-		        &lt;p class="price">$8.95&lt;/p&gt;<br>
-	            &lt;p class="productdescription"&gt;Cupcake ipsum dolor sit amet marshmallow. Chocolate cake oat cake cheesecake cheesecake bonbon chocolate cake tiramisu. Soufflé cake fruitcake donut. Icing sesame snaps topping jelly.&lt;/p&gt;  <br>
-	            &lt;a href="#"&gt; &lt; Edit Polish Mix&lt;/a&gt;<br>
-	              &lt;div class="button1">&lt;a class="button-primary" href="#"&gt;+ Add to Cart&lt;/a&gt;&lt;/div&gt;<br>
-	              &lt;div class="button2">&lt;a class="button-secondary" href="#"&gt;Sell My Mix&lt;/a&gt;&lt;/div&gt;<br>
-	          &lt;/div&gt;<br>
-	        &lt;/div&gt;
-	        </code>
+			&lt;div class = "grid-row"&gt;<br>
+				&lt;div class="grid-col-1of6"&gt;<br>
+				&lt;a class="button-nav" href="#"&gt;&lt;/a&gt;<br>
+				&lt;/div&gt;<br>
+				&lt;div class="grid-col-2of6"&gt;<br>
+				&lt;img src="img/product.png" class="fit-product" alt="Coral Sunrise nailpolish swatch and alternate product views"&gt;<br>
+				&lt;/div&gt;<br>
+				&lt;div class="grid-col-2of6"&gt;<br>
+				&lt;h2 class="productname"&gt;Coral Sunrise&lt;/h2&gt;<br>
+				&lt;h3 class="product-subhead">Cream Base&lt;/h3&gt;<br>
+				&lt;p class="price">$8.95&lt;/p&gt;<br>
+				&lt;p class="productdescription"&gt;Cupcake ipsum dolor sit amet marshmallow. Chocolate cake oat cake cheesecake cheesecake bonbon chocolate cake tiramisu. Soufflé cake fruitcake donut. Icing sesame snaps topping jelly.&lt;/p&gt;  <br>
+				&lt;a href="#"&gt; &lt; Edit Polish Mix&lt;/a&gt;<br>
+					&lt;div class="button1">&lt;a class="button-primary" href="#"&gt;+ Add to Cart&lt;/a&gt;&lt;/div&gt;<br>
+					&lt;div class="button2">&lt;a class="button-secondary" href="#"&gt;Sell My Mix&lt;/a&gt;&lt;/div&gt;<br>
+				&lt;/div&gt;<br>
+			&lt;/div&gt;
+			</code>
 
 		    <h3>Example:</h3>
-		    <div class = "grid-row">
-		      <div class="grid-col-1of6">
-		        <a class="button-nav" href="#"></a>
-		      </div>
-		      <div class="grid-col-1of6">
-		        <h1 class="main-heading">BROWSE</h1>
-		      </div>
-		    </div>
-		    <div class = "grid-row">
-		      <div class="grid-col-1of6">
-		        <a class="button-nav" href="#"></a>
-		      </div>
-		      <div class="grid-col-2of6">
-		        <img src="img/glitter-mix.png" class="fit-product" alt="Coral Sunrise nailpolish swatch and alternate product views">
-		      </div>
-		      <div class="grid-col-2of6-r">
-		        <h2 class="product-name">Galaxy Glitter</h2>
-		        <h3 class="product-subhead">Metallic Base</h3>
-		        <p class="price">$8.95</p>
-		        <p class="product-description">Cupcake ipsum dolor sit amet marshmallow. Chocolate cake oat cake cheesecake cheesecake bonbon chocolate cake tiramisu. Soufflé cake fruitcake donut. Icing sesame snaps topping jelly.</p>
-		        <a href="#" class="intext-links"> &lt; Edit Polish Mix</a>
-							<div class="grid-col-3of6">
-			          <div class="button1"><a class="button-primary" href="#">+ Add to Cart</a></div>
-			          <div class="button2"><a class="button-secondary" href="#">Sell My Mix</a></div>
-							</div>
-		      </div>
-		      <!-- Grid code example referenced from Week 3 Lab -->
-		    </div>
+			<div class = "grid-row">
+				<div class="grid-col-1of6">
+				<h1 class="main-heading">BROWSE</h1>
+				</div>
+			</div>
+			<div class = "grid-row">
+				<div class="grid-col-2of6">
+				<img src="img/glitter-mix.png" class="fit-product" alt="Coral Sunrise nailpolish swatch and alternate product views">
+				</div>
+				<div class="grid-col-2of6-r">
+				<h2 class="product-name">Galaxy Glitter</h2>
+				<h3 class="product-subhead">Metallic Base</h3>
+				<p class="price">$8.95</p>
+				<p class="product-description">Cupcake ipsum dolor sit amet marshmallow. Chocolate cake oat cake cheesecake cheesecake bonbon chocolate cake tiramisu. Soufflé cake fruitcake donut. Icing sesame snaps topping jelly.</p>
+				<a href="#" class="intext-links"> &lt; Edit Polish Mix</a>
+					<div class="grid-col-3of6">
+						<div><a class="button-primary" href="#">+ Add to Cart</a></div>
+						<div><a class="button-secondary" href="#">Sell My Mix</a></div>
+					</div>
+				</div>
+			<!-- Grid code example referenced from Week 3 Lab -->
+			</div>
 		  </section>
 
 
-		  <!-- Website Grid Section -->
-		  <section>
-		    <h2>6 Column Grid</h2>
+			<!-- Website Grid Section -->
+			<section>
+			    <h2>6 Column Grid</h2>
 
-		    <h3>CSS selector:</h3>
-		    <ul>
-		      <li>.grid-col-1of6</li>
-		      <li>.block </li>
-					<li>.container</li>
-					<li>.grid-row</li>
-		    </ul>
+			    <h3>CSS selector:</h3>
+			    <ul>
+			      <li>.grid-col-1of6</li>
+			      <li>.block </li>
+						<li>.container</li>
+						<li>.grid-row</li>
+			    </ul>
 
-	        <h3>Sample code:</h3>
-	        <code>
-	          &lt;div class="container"&gt;<br>
-	            &lt;div class="grid-row"&gt;<br>
-	              &lt;div class="grid-col-1of6 block"&gt;&lt;/div&gt;<br>
-	              &lt;div class="grid-col-1of6 block"&gt;&lt;/div&gt;<br>
-	              &lt;div class="grid-col-1of6 block"&gt;&lt;/div&gt;<br>
-	              &lt;div class="grid-col-1of6 block"&gt;&lt;/div&gt;<br>
-	              &lt;div class="grid-col-1of6 block"&gt;&lt;/div&gt;<br>
-	              &lt;div class="grid-col-1of6 block"&gt;&lt;/div&gt;<br>
-	            &lt;/div><br>
-	          &lt;/div>
-	        </code>
+		        <h3>Sample code:</h3>
+		        <code>
+		          &lt;div class="container"&gt;<br>
+		            &lt;div class="grid-row"&gt;<br>
+						&lt;div class="grid-col-1of6 block"&gt;&lt;/div&gt;<br>
+						&lt;div class="grid-col-1of6 block"&gt;&lt;/div&gt;<br>
+						&lt;div class="grid-col-1of6 block"&gt;&lt;/div&gt;<br>
+						&lt;div class="grid-col-1of6 block"&gt;&lt;/div&gt;<br>
+						&lt;div class="grid-col-1of6 block"&gt;&lt;/div&gt;<br>
+						&lt;div class="grid-col-1of6 block"&gt;&lt;/div&gt;<br>
+		            &lt;/div><br>
+		          &lt;/div>
+		        </code>
 
-		    <h3>Example:</h3>
-		    <div class="container">
-		      <div class="grid-row">
-		        <div class="grid-col-1of6 block"></div>
-		        <div class="grid-col-1of6 block"></div>
-		        <div class="grid-col-1of6 block"></div>
-		        <div class="grid-col-1of6 block"></div>
-		        <div class="grid-col-1of6 block"></div>
-		        <div class="grid-col-1of6 block"></div>
-		      </div>
-		    </div>
-
+			    <h3>Example:</h3>
+			    <div class="container">
+					<div class="grid-row">
+						<div class="grid-col-1of6 block"></div>
+						<div class="grid-col-1of6 block"></div>
+						<div class="grid-col-1of6 block"></div>
+						<div class="grid-col-1of6 block"></div>
+						<div class="grid-col-1of6 block"></div>
+						<div class="grid-col-1of6 block"></div>
+					</div>
+			    </div>
+			</section>
+			<section>
 				<h2>4 Column Grid</h2>
 
 				<h3>CSS selector:</h3>
@@ -426,17 +421,17 @@
 					<li>.grid-row</li>
 				</ul>
 
-					<h3>Sample code:</h3>
-					<code>
-						&lt;div class="container"&gt;<br>
-							&lt;div class="grid-row"&gt;<br>
-								&lt;div class="grid-col-1of4 block"&gt;&lt;/div&gt;<br>
-								&lt;div class="grid-col-1of4 block"&gt;&lt;/div&gt;<br>
-								&lt;div class="grid-col-1of4 block"&gt;&lt;/div&gt;<br>
-								&lt;div class="grid-col-1of4 block"&gt;&lt;/div&gt;<br>
-							&lt;/div><br>
-						&lt;/div>
-					</code>
+				<h3>Sample code:</h3>
+				<code>
+					&lt;div class="container"&gt;<br>
+						&lt;div class="grid-row"&gt;<br>
+							&lt;div class="grid-col-1of4 block"&gt;&lt;/div&gt;<br>
+							&lt;div class="grid-col-1of4 block"&gt;&lt;/div&gt;<br>
+							&lt;div class="grid-col-1of4 block"&gt;&lt;/div&gt;<br>
+							&lt;div class="grid-col-1of4 block"&gt;&lt;/div&gt;<br>
+						&lt;/div><br>
+					&lt;/div>
+				</code>
 
 				<h3>Example:</h3>
 				<div class="container">
@@ -448,11 +443,11 @@
 					</div>
 				</div>
 			</section>
-		  <!-- Grid code example referenced from Week 3 Lab -->
+		 	 <!-- Grid code example referenced from Week 3 Lab -->
 
 
-		  <!-- Colour Swatch Examples Section -->
-		  <section>
+			<!-- Colour Swatch Examples Section -->
+			<section>
 		    <h2>Colour Swatches</h2>
 
 		    <h3>CSS selectors:</h3>
@@ -484,10 +479,91 @@
 		      </div>
 		    </div>
 		    <!-- Grid code example referenced from Week 3 Lab -->
-		  </section>
+		  	</section>
 
 		</section>
 		<!-- // COMBINED ELEMENTS SECTION -->
+
+
+
+
+		<!-- // COMPONENTS SECTION-->
+		<!-- Product Listing -->
+		<section>
+		    <h2>Product Listing</h2>
+			<div class="container">
+				<div class="grid-row">
+					<div class="grid-col-1of4">
+						<img src="img/glitter-mix.png" class="product-list-view" alt="a glitter swatch with mixed colours">
+						<p class="content-description">Glitter Galaxy</p>
+						<p class="price">$8.95</p>
+					</div>
+					<div class="grid-col-1of4">
+						<img src="img/glitter-mix.png" class="product-list-view" alt="a glitter swatch with mixed colours">
+						<p class="content-description">Glitter Galaxy</p>
+						<p class="price">$8.95</p>
+					</div>
+					<div class="grid-col-1of4">
+						<img src="img/glitter-mix.png" class="product-list-view" alt="a glitter swatch with mixed colours">
+						<p class="content-description">Glitter Galaxy</p>
+						<p class="price">$8.95</p>
+					</div>
+					<div class="grid-col-1of4">
+						<img src="img/glitter-mix.png" class="product-list-view" alt="a glitter swatch with mixed colours">
+						<p class="content-description">Glitter Galaxy</p>
+						<p class="price">$8.95</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<section>
+		    <h2>Footer</h2> 
+			<div class="container">
+				<div class="grid-row">
+					<div class="grid-col-6of6">
+						<p class="footer">Swirl Polishes Co. © 2017</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Social Links -->
+		<section>
+		    <h2>Social Icons</h2> 
+			<div class="container">
+				<div class="grid-row">
+					<div class="grid-col-1of6">
+						<a href="https://twitter.com/"><img src="img/glitter-mix.png" class="social-icon"></a>
+						<a href="https://twitter.com/"><img src="img/glitter-mix.png" class="social-icon"></a>
+						<a href="https://twitter.com/"><img src="img/glitter-mix.png" class="social-icon"></a>
+						<a href="https://twitter.com/"><img src="img/glitter-mix.png" class="social-icon"></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Product Overview -->
+		<section>
+			<h2>Product Overview</h2>
+			<div class = "grid-row">
+				<div class="grid-col-2of6">
+				<img src="img/glitter-mix.png" class="fit-product" alt="Coral Sunrise nailpolish swatch and alternate product views">
+				</div>
+				<div class="grid-col-2of6-r">
+				<h2 class="product-name">Galaxy Glitter</h2>
+				<h3 class="product-subhead">Metallic Base</h3>
+				<p class="price">$8.95</p>
+				<p class="product-description">Cupcake ipsum dolor sit amet marshmallow. Chocolate cake oat cake cheesecake cheesecake bonbon chocolate cake tiramisu. Soufflé cake fruitcake donut. Icing sesame snaps topping jelly.</p>
+				<a href="#" class="intext-links"> &lt; Edit Polish Mix</a>
+					<div class="grid-col-3of6">
+						<div><a class="button-primary" href="#">+ Add to Cart</a></div>
+						<div><a class="button-secondary" href="#">Sell My Mix</a></div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 	</body>
 </html>
