@@ -380,12 +380,14 @@
 
 		  <!-- Website Grid Section -->
 		  <section>
-		    <h2>Website Grid</h2>
+		    <h2>6 Column Grid</h2>
 
 		    <h3>CSS selector:</h3>
 		    <ul>
 		      <li>.grid-col-1of6</li>
 		      <li>.block </li>
+					<li>.container</li>
+					<li>.grid-row</li>
 		    </ul>
 
 	        <h3>Sample code:</h3>
@@ -413,7 +415,39 @@
 		        <div class="grid-col-1of6 block"></div>
 		      </div>
 		    </div>
-		  </section>
+
+				<h2>4 Column Grid</h2>
+
+				<h3>CSS selector:</h3>
+				<ul>
+					<li>.grid-col-1of4</li>
+					<li>.block </li>
+					<li>.container</li>
+					<li>.grid-row</li>
+				</ul>
+
+					<h3>Sample code:</h3>
+					<code>
+						&lt;div class="container"&gt;<br>
+							&lt;div class="grid-row"&gt;<br>
+								&lt;div class="grid-col-1of4 block"&gt;&lt;/div&gt;<br>
+								&lt;div class="grid-col-1of4 block"&gt;&lt;/div&gt;<br>
+								&lt;div class="grid-col-1of4 block"&gt;&lt;/div&gt;<br>
+								&lt;div class="grid-col-1of4 block"&gt;&lt;/div&gt;<br>
+							&lt;/div><br>
+						&lt;/div>
+					</code>
+
+				<h3>Example:</h3>
+				<div class="container">
+					<div class="grid-row">
+						<div class="grid-col-1of4 block"></div>
+						<div class="grid-col-1of4 block"></div>
+						<div class="grid-col-1of4 block"></div>
+						<div class="grid-col-1of4 block"></div>
+					</div>
+				</div>
+			</section>
 		  <!-- Grid code example referenced from Week 3 Lab -->
 
 
