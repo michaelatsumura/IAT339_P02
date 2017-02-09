@@ -14,7 +14,7 @@ body {
 }
 
 section:not([id]) {
-  margin: 1em 0;
+  margin: 3em 0;
   padding: 2em 0;
   border-top: 1px solid #e8e8e8;
 }
@@ -43,6 +43,13 @@ a:hover, a:focus {
   text-align: center;
 }
 
+/*Main Navigation Background*/
+.background {
+  background-color: #F3F3F3;
+  border-bottom: 1px solid #CCC;
+  padding:1.5em 0;
+}
+
 
 /*
   INTERACTIVE ELEMENTS STYLING  ----------------------------------------------------------------------------
@@ -51,7 +58,7 @@ a:hover, a:focus {
 /* Navigation button */
 .button-nav {
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: #3D4656; /*Dark Blue*/
   text-decoration: none;
@@ -61,6 +68,16 @@ a:hover, a:focus {
 .button-nav:hover, .button-nav:focus {
   color: #C19A97; /*Light Pink*/
   text-decoration: underline;
+}
+
+/* Padding for button-nav*/
+.nav-padding {
+  padding: 0.6em 0;
+}
+
+/* Secondary Navigation Button */
+.secondary-nav {
+  padding: 0.6em 1.5em;
 }
 
 /* In-text link */
@@ -126,10 +143,10 @@ a:hover, a:focus {
 
 /* Text FIeld and Label */
 .searchfield {
-  padding: 0.8em 1.3em;
+  padding: 0.6em 1.5em;
   border-radius: 0.25em;
   border: solid #D3D3D3 0.1em;
-  width: 30rem;
+  width: 100%;
   font-size: 0.9rem;
 }
 
@@ -260,7 +277,7 @@ section p {
 
 .footer{
 	background-color: rgba(173, 124, 131, 0.4); /*Light Pink 40%*/
-	padding: 1.5em 1em 1.5em 3em; /*T R B L*/ 
+	padding: 1.5em 1em 1.5em 3em; /*T R B L*/
 	color: white;
 }
 
@@ -268,24 +285,3 @@ section p {
 	width: 2rem;
 	height: auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
