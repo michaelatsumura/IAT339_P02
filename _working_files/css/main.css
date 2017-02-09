@@ -64,6 +64,7 @@ a:hover, a:focus {
   text-decoration: none;
   color: #C19A97; /*Light Pink*/
   font-weight: 700;
+  display: inherit;
 }
 
 .intext-links:hover, .intext-links:focus {
@@ -85,10 +86,12 @@ a:hover, a:focus {
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
   margin-top: 1em;
+  width: 100%;
+  text-align: center;
 }
 
 .button-primary:hover, .button-primary:focus {
-  background-color: #EEE;
+  background-color: #DDD;
   color: #000;
   text-decoration: none;
 }
@@ -107,6 +110,8 @@ a:hover, a:focus {
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
   margin-top: 0.5em;
+  width: 100%;
+  text-align: center;
 }
 
 .button-secondary:hover, .button-secondary:focus {
