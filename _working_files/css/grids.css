@@ -42,6 +42,10 @@
   .grid-col-3of6 {
     width: 50%;
   }
+
+  .grid-col-6of6 {
+    width: 100%;
+  }
 }
 
 @media (min-width: 50em) {
