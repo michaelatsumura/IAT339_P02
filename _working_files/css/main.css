@@ -39,9 +39,14 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
-.main-nav {
-  text-align: center;
+img {
+  max-width: 100%;
 }
+
+.main-nav {
+  display: flex;
+}
+
 
 /*Main Navigation Background*/
 .background {
@@ -72,12 +77,16 @@ a:hover, a:focus {
 
 /* Padding for button-nav*/
 .nav-padding {
-  padding: 0.6em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+/* Vertical centering from https://css-tricks.com/centering-css-complete-guide/ */
+
 
 /* Secondary Navigation Button */
 .secondary-nav {
-  padding: 0.6em 1.5em;
+  font-size: 0.85em;
 }
 
 /* In-text link */
@@ -291,6 +300,20 @@ section p {
 	width: 2rem;
 	height: auto;
 }
+
+/*Colour Picker*/
+.colour-picker:hover, .colour-picker:focus {
+  cursor: crosshair;
+}/* source: http://www.w3schools.com/cssref/pr_class_cursor.asp */
+
+/*Drop Down*/
+.dropdown {
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+  width: 100%;
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
+} /*source:http://www.w3schools.com/tags/tag_select.asp*/
 
 
 .cart-image {
