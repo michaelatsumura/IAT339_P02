@@ -22,11 +22,13 @@ section:not([id]) {
 section code {
   display: inline-block;
   background-color: #EEE;
-  padding: 1em;
+  padding: 2em;
   margin-top: 0.5em;
   margin-right: 3em;
-  border-radius: 0.5em;
+  border-radius: 0.25em;
   font-size: 0.8em;
+  line-height: 1.4em;
+  max-width: 60%
 }
 
 a {
