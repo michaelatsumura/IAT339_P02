@@ -8,7 +8,7 @@
 }
 
 /*8 column grid*/
-.grid-col-1of8, .grid-col-2of8, .grid-col-3of8, .grid-col-4of8, 
+.grid-col-1of8, .grid-col-2of8, .grid-col-3of8, .grid-col-4of8,
 .grid-col-5of8, .grid-col-6of8, .grid-col-7of8, .grid-col-8of8,{
   width: 100%;
 }
@@ -23,17 +23,19 @@
   background-color: rgba(70,74,86, 0.2);
 }
 
-.grid-row {
-  /*width: 80%;
-  margin-left:auto;
-  margin-right: auto;*/
-}
-
 .grid-row::after {
   content: "";
   display: block;
   clear: both;
 }
+
+.nav-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 
 /*MEDIA QUERIES*/
 @media (min-width: 43.75em) {
@@ -75,4 +77,3 @@
     width: 100%;
   }
 }
-
