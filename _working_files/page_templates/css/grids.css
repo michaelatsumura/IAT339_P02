@@ -36,6 +36,13 @@
   text-align: center;
 }
 
+.front-page-container {
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /*MEDIA QUERIES*/
 @media (min-width: 43.75em) {
