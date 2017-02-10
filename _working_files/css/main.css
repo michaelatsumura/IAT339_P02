@@ -285,3 +285,24 @@ section p {
 	width: 2rem;
 	height: auto;
 }
+
+
+.cart-image {
+	width: 70%;
+	border: solid lightgrey 1px;
+}
+
+.cart-description {
+	font-size: 0.9em;
+	font-weight: 400;
+}
+
+.divider {
+	padding-bottom: 1em;
+	margin-bottom: 2em;
+	border-bottom: solid lightgrey 1px;
+}
+
+
+
+
