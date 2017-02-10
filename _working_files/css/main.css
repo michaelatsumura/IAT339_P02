@@ -294,3 +294,17 @@ section p {
 	width: 2rem;
 	height: auto;
 }
+
+/*Colour Picker*/
+.colour-picker:hover, .colour-picker:focus {
+  cursor: crosshair;
+}/* source: http://www.w3schools.com/cssref/pr_class_cursor.asp */
+
+/*Drop Down*/
+.dropdown {
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+  width: 100%;
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
+} /*source:http://www.w3schools.com/tags/tag_select.asp*/
