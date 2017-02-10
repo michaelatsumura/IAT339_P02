@@ -81,6 +81,7 @@ img {
   flex-direction: column;
   justify-content: center;
 }
+/* Vertical centering from https://css-tricks.com/centering-css-complete-guide/ */
 
 
 /* Secondary Navigation Button */
