@@ -212,7 +212,7 @@ section p {
 }
 
 .content-description {
-  max-width: 60%;
+  /*max-width: 60%;*/
   margin-bottom: 0;
 }
 
@@ -368,3 +368,16 @@ section p {
 	float: right;
 }
 
+/*Profile*/
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  border-radius:5.5em;
+  margin-bottom:1em;
+}
+
+.profile p {
+  margin-bottom: 4em;
+}
