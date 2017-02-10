@@ -28,7 +28,7 @@ section code {
   border-radius: 0.25em;
   font-size: 0.8em;
   line-height: 1.4em;
-  max-width: 60%
+  /*max-width: 60%*/
 }
 
 a {
