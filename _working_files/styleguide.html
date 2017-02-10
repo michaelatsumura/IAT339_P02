@@ -107,12 +107,12 @@
 		      </code>
 
 		      <h3>Example:</h3>
-				<div class="grid-col-4of8">
+					<div class="grid-col-4of8">
 			      <form>
 			        <label>Search</label>
 			        <input class="searchfield" type="text" name="search" placeholder="What are you looking for today?">
 			      </form>
-				</div>
+					</div>
 		    </section>
 		</section>
 
@@ -254,16 +254,30 @@
 				<h2>Main Navigation</h2>
 
 				<h3>CSS Selector:</h3>
+				<p>.grid-row</p>
+				<p>.background</p>
+				<p>.nav-container</p>
+				<p>.main-nav</p>
+				<p>.grid-col-1of8</p>
+				<p>.nav-padding</p>
+				<p>.button-nav</p>
+				<p>.searchfield</p>
 
 				<h3>Sample Code:</h3>
-				<code></code>
+				<code>
+					&lt;div class="grid-row background"&gt;<br>
+						&lt;div class="nav-container"&gt;<br>
+							&lt;nav class="main-nav"&gt;<br>
+								&lt;div class="grid-col-1of8 nav-padding"&gt;<br>
+									&lt;img src="http://placehold.it/135x60" alt="website logo"&gt;<br>
+				</code>
 
 				<h3>Example:</h3>
 				<div class="grid-row background">
 					<div class="nav-container">
 						<nav class="main-nav">
 							<div class="grid-col-1of8 nav-padding">
-								<img src="http://placehold.it/135x60" alt="">
+								<img src="http://placehold.it/135x60" alt="website logo">
 							</div>
 							<div class="grid-col-1of8 nav-padding">
 								<a href="#" class="button-nav">Mix</a>
@@ -536,22 +550,37 @@
 		<section>
 			<h2>Colour Picker</h2>
 			<h3>CSS selector:</h3>
+			<p>.colour-picker</p>
 
 			<h3>Sample code:</h3>
-			<code></code>
+			<code>
+				&lt;img src="http://placehold.it/250x250" alt="" class="colour-picker"&gt;<br>
+				&lt;img src="http://placehold.it/60x250" alt=""&gt;
+			</code>
 
 			<h3>Example:</h3>
-			<img src="http://placehold.it/150x150" alt="" class="colour-picker">
-			<img src="http://placehold.it/40x150" alt="">
+			<img src="http://placehold.it/250x250" alt="" class="colour-picker">
+			<img src="http://placehold.it/60x250" alt="">
 		</section>
 
 		<!-- Drop down menus -->
 		<section>
 			<h2>Drop-Down Selector</h2>
 			<h3>CSS selector:</h3>
+			<p>.grid-col-4of8</p>
+			<p>.dropdown</p>
 
 			<h3>Sample code:</h3>
-			<code></code>
+			<code>
+				&lt;div class="grid-col-4of8"&gt;<br>
+					&lt;select class="dropdown"&gt;<br>
+						&lt;option value="oval"&gt;Oval&lt;/option&gt;<br>
+						&lt;option value="square"&gt;Square&lt;/option&gt;<br>
+						&lt;option value="diamond"&gt;Diamond&lt;/option&gt;<br>
+						&lt;option value="heart"&gt;Heart&lt;/option&gt;<br>
+					&lt;/select&gt;<br>
+				&lt;/div&gt;
+			</code>
 
 			<h3>Example:</h3>
 			<div class="grid-col-4of8">
@@ -564,106 +593,24 @@
 			</div>
 		</section>
 
-		<!-- Cart -->
+		<!-- Slider Bars -->
+		<!-- source: http://webtutsdepot.com/2010/04/24/html-5-slider-input-tutorial/ -->
 		<section>
-			<h2>Cart</h2>
-			<div class = "grid-row">
-				<div class="grid-col-2of8">
-				<h2>Cart</h2>
-				</div>
-			</div>
-			<div class = "grid-row">
-				<div class="grid-col-4of8 divider">
-					<div class="grid-col-2of8">
-						<img src="img/glitter-mix.png" class="product-list-view cart-image" alt="a glitter swatch with mixed colours">
-					</div>
-					<div class="grid-col-6of8">
-						<p class="content-description">Glitter Galaxy</p>
-						<p class="price">$8.95</p>
-						<p class="cart-description">Cupcake ipsum dolor sit amet marshmallow. Chocolate cake oat cake cheesecake cheesecake bonbon chocolate cake tiramisu. Soufflé cake fruitcake donut.</p>
-					</div>
-				</div>
-			</div>
-			<div class = "grid-row">
-				<div class="grid-col-4of8 divider">
-					<div class="grid-col-2of8">
-						<img src="img/glitter-mix.png" class="product-list-view cart-image" alt="a glitter swatch with mixed colours">
-					</div>
-					<div class="grid-col-6of8">
-						<p class="content-description">Glitter Galaxy</p>
-						<p class="price">$8.95</p>
-						<p class="cart-description">Cupcake ipsum dolor sit amet marshmallow. Chocolate cake oat cake cheesecake cheesecake bonbon chocolate cake tiramisu. Soufflé cake fruitcake donut.</p>
-					</div>
-				</div>
-			</div>
-		</section>
+			<h2>Slider Bars</h2>
+			<h3>CSS selector:</h3>
+			<p>.grid-col-4of8</p>
+			<p>.slider</p>
 
+			<h3>Sample code:</h3>
+			<code>
+				&lt;div class="grid-col-4of8"&gt;<br>
+					&lt;input class="slider type="range" min="0" max="50" value="25" step="5" /&gt;<br>
+				&lt;/div&gt;
+			</code>
 
-		<!-- Payment -->
-		<section>
-			<div class="container">
-				<div class="grid-row">
-					<div class="grid-col-4of8">
-						<h2>Payment</h2>
-					</div>
-				</div>
-				<div class="grid-row">
-					<div class="grid-col-4of8">
-						<h3 class="field-header">Contact Information</h3>
-						<form>
-				        <input class="payment-fields" type="text" name="fullname" placeholder="Full Name">
-				      	</form>
-
-				      	<form>
-				        <input class="payment-fields" type="text" name="address" placeholder="Street Address">
-				      	</form>
-
-						<form>
-				        <input class="payment-fields" type="text" name="fullname" placeholder="Full Name">
-				      	</form>
-
-				      	<div class="grid-col-4of8">
-							<form>
-					        <input class="payment-fields" type="text" name="fullname" placeholder="Full Name">
-					      	</form>
-					    </div>
-
-					    <div class="grid-col-4of8">
-							<form>
-					        <input class="payment-fields half-field" type="text" name="fullname" placeholder="Full Name">
-					      	</form>
-					    </div>
-					</div>
-				</div>
-
-				<div class="grid-row">
-					<div class="grid-col-4of8">
-						<h3 class="field-header">Payment Information</h3>
-						<form>
-				        <input class="payment-fields" type="text" name="fullname" placeholder="Full Name">
-				      	</form>
-
-				      	<form>
-				        <input class="payment-fields" type="text" name="address" placeholder="Street Address">
-				      	</form>
-
-						<form>
-				        <input class="payment-fields" type="text" name="fullname" placeholder="Full Name">
-				      	</form>
-
-				      	<div class="grid-col-4of8">
-							<form>
-					        <input class="payment-fields" type="text" name="fullname" placeholder="Full Name">
-					      	</form>
-					    </div>
-
-					    <div class="grid-col-4of8">
-							<form>
-					        <input class="payment-fields half-field" type="text" name="fullname" placeholder="Full Name">
-					      	</form>
-					    </div>
-					</div>
-				</div>
+			<h3>Example:</h3>
+			<div class="grid-col-4of8">
+				<input class="slider" type="range" min="0" max="50" value="25" step="5" />
 			</div>
 		</section>
 
