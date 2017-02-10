@@ -158,7 +158,7 @@ img {
 .searchfield {
   padding: 0.6em 1em;
   border-radius: 0.25em;
-  border: solid #D3D3D3 0.1em;
+  border: solid #C19A97 0.1em;
   width: 100%;
   font-size: 0.9rem;
 }
@@ -323,20 +323,20 @@ section p {
 }
 
 .cart-description {
-	font-size: 0.9em;
+	font-size: 0.8em;
 	font-weight: 400;
 }
 
 .divider {
 	padding-bottom: 1em;
 	margin-bottom: 2em;
-	border-bottom: solid lightgrey 1px;
+	border-bottom: solid #C19A97 1px;
 }
 
 .payment-fields {
   padding: 0.6em 1em;
   border-radius: 0.25em;
-  border: solid #D3D3D3 0.1em;
+  border: solid #C19A97 0.1em;
   width: 100%;
   font-size: 0.9rem;
   margin-bottom: 1.5em;
@@ -352,5 +352,13 @@ section p {
 	font-weight: 400;
 }
 
+.order-summary {
+	margin-bottom: 1.3em;
+	font-weight: 300;
 
+}
+
+.float-right {
+	float: right;
+}
 
