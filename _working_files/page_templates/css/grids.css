@@ -43,6 +43,12 @@
   margin-right: auto;
 }
 
+.content-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
 
 /*MEDIA QUERIES*/
 @media (min-width: 43.75em) {
