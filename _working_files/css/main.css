@@ -316,6 +316,12 @@ section p {
 } /*source:http://www.w3schools.com/tags/tag_select.asp*/
 
 
+/*Slider Bar*/
+.slider {
+  width: 100%;
+}
+
+
 .cart-image {
 	width: 70%;
 	border: solid lightgrey 1px;
@@ -351,6 +357,3 @@ section p {
 	margin-bottom: 0.75em;
 	font-weight: 400;
 }
-
-
-
