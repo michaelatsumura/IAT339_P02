@@ -1,0 +1,385 @@
+/*
+  STYLE GUIDE STYLING
+  Default styling for the style guide
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', Helvetica, sans-serif;
+  padding: 1rem 3rem;
+  color: #000000;
+}
+
+section:not([id]) {
+  margin: 3em 0;
+  padding: 2em 0;
+  border-top: 1px solid #e8e8e8;
+}
+
+section code {
+  display: inline-block;
+  background-color: #EEE;
+  padding: 2em;
+  margin-top: 0.5em;
+  margin-right: 3em;
+  border-radius: 0.25em;
+  font-size: 0.8em;
+  line-height: 1.4em;
+  /*max-width: 60%*/
+}
+
+a {
+  text-decoration: none;
+  color: #3D4656; /*Dark Blue*/
+}
+
+a:hover, a:focus {
+  color: #C19A97; /*Light Pink*/
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+}
+
+.main-nav {
+  display: flex;
+}
+
+
+/*Main Navigation Background*/
+.background {
+  background-color: #F3F3F3;
+  border-bottom: 1px solid #CCC;
+  padding:1.5em 0;
+}
+
+
+/*
+  INTERACTIVE ELEMENTS STYLING  ----------------------------------------------------------------------------
+*/
+
+/* Navigation button */
+.button-nav {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #3D4656; /*Dark Blue*/
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+}
+
+.button-nav:hover, .button-nav:focus {
+  color: #C19A97; /*Light Pink*/
+  text-decoration: underline;
+}
+
+/* Padding for button-nav*/
+.nav-padding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* Vertical centering from https://css-tricks.com/centering-css-complete-guide/ */
+
+
+/* Secondary Navigation Button */
+.secondary-nav {
+  font-size: 0.85em;
+}
+
+/* In-text link */
+.intext-links {
+  text-decoration: none;
+  color: #C19A97; /*Light Pink*/
+  font-weight: 700;
+  display: inherit;
+}
+
+.intext-links:hover, .intext-links:focus {
+  color: #3D4656; /*Dark Blue*/
+}
+
+/* Buttons */
+/* Primary Button */
+.button-primary {
+  padding: 0.8em 1.3em;
+  background-color: #C19A97; /*Light Pink*/
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  border-radius: 0.25em;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  margin: 1em 0 0.4em 0;
+  width: 100%;
+  text-align: center;
+  min-width: 190px;
+}
+
+.button-primary:hover, .button-primary:focus {
+  background-color: #DDD;
+  color: #000;
+  text-decoration: none;
+   min-width: 190px;
+}
+
+/* Secondary Button */
+.button-secondary {
+  padding: 0.8em 1.3em;
+  display: inline-block;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #DDD;
+  color: #3D4656; /*Dark Blue*/
+  font-weight: 700;
+  border-radius: 0.25em;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  margin-top: 0.5em;
+  width: 100%;
+  text-align: center;
+  min-width: 190px;
+}
+
+.button-secondary:hover, .button-secondary:focus {
+  background-color: #C19A97; /*Light Pink*/
+  color: #FFF;
+  text-decoration: none;
+   min-width: 190px;
+}
+
+/* Text FIeld and Label */
+.searchfield {
+  padding: 0.6em 1em;
+  border-radius: 0.25em;
+  border: solid #C19A97 0.1em;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+label {
+    padding-right: 0.5em;
+}
+/*
+  TEXT ELEMENTS STYLING ----------------------------------------------------------------------------
+*/
+
+/*header styling (x3)*/
+.main-heading {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3rem;
+  color: 000000;
+  letter-spacing: 0.02rem;
+  padding-bottom: 0.3em;
+}
+
+h2 {
+  color:#000000;
+  padding-top: 0.5rem;
+  padding-bottom: 0.25rem;
+}
+
+.product-subhead {
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+
+section h3 {
+  color: #3D4656;
+  margin-bottom: 0;
+  padding-bottom: 0.35rem;
+}
+
+.product-name {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+/*paragraph styling*/
+section p {
+  margin-top: 0;
+}
+
+.content-description {
+  /*max-width: 60%;*/
+  margin-bottom: 0;
+}
+
+.product-description {
+  max-width: 100%;
+}
+
+.lists {
+  line-height: 1.5rem;
+}
+
+.price {
+	font-family: 'Arvo', Times, serif;
+	font-weight: 400;
+	color: #AD7C83;
+	margin-top: 0.3em;
+}
+/* end of styling the TEXT ELEMENTS*/
+
+
+
+
+/*
+  COMBINED ELEMENTS ----------------------------------------------------------------------------
+*/
+
+/*product listing styles*/
+.fit-product {
+  padding: 1em;
+  max-width: 100%;
+  max-height: auto;
+  border: solid lightgrey 0.1em;
+}
+
+/*SWATCHES*/
+/*colour swatch block styling */
+.swatch1 {
+  background-color: #AD7C83;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.swatch2 {
+  background-color: rgba(173, 124, 131, 0.4);
+  color: #3D4656;
+  text-align: center;
+  padding: 1rem;
+}
+
+.swatch3 {
+  background-color: #3D4656;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.swatch4 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+
+/*
+  COMPONENT STYLING ----------------------------------------------------------------------------
+*/
+
+/*Product Listing*/
+.product-list-view {
+	width: 100%;
+	padding: 1em;
+	max-width: 250px;
+}
+
+.footer{
+	background-color: rgba(173, 124, 131, 0.4); /*Light Pink 40%*/
+	padding: 1.5em 1em 1.5em 3em; /*T R B L*/
+	color: white;
+}
+
+.social-icon{
+	width: 2rem;
+	height: auto;
+}
+
+/*Colour Picker*/
+.colour-picker:hover, .colour-picker:focus {
+  cursor: crosshair;
+}/* source: http://www.w3schools.com/cssref/pr_class_cursor.asp */
+
+/*Drop Down*/
+.dropdown {
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+  width: 100%;
+  font-size: 1.1em;
+  letter-spacing: 0.05em;
+} /*source:http://www.w3schools.com/tags/tag_select.asp*/
+
+
+/*Slider Bar*/
+.slider {
+  width: 100%;
+}
+
+
+.cart-image {
+	width: 70%;
+	border: solid lightgrey 1px;
+	max-width: 100px;
+}
+
+.cart-description {
+	font-size: 0.8em;
+	font-weight: 400;
+}
+
+.divider {
+	padding-bottom: 1em;
+	margin-bottom: 2em;
+	border-bottom: solid #C19A97 1px;
+}
+
+.payment-fields {
+  padding: 0.6em 1em;
+  border-radius: 0.25em;
+  border: solid #C19A97 0.1em;
+  width: 100%;
+  font-size: 0.9rem;
+  margin-bottom: 1.5em;
+}
+
+.half-field {
+	float: right;
+	max-width: 90%;
+}
+
+.field-header{
+	margin-bottom: 0.75em;
+	font-weight: 400;
+}
+
+.order-summary {
+	margin-bottom: 1.3em;
+	font-weight: 300;
+
+}
+
+.float-right {
+	float: right;
+}
+
+/*Profile*/
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  border-radius:5.5em;
+  margin-bottom:1em;
+}
+
+.profile p {
+  margin-bottom: 4em;
+}

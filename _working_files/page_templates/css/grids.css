@@ -1,0 +1,88 @@
+/* Grids File */
+
+* {
+  box-sizing: border-box;
+}
+[class ^= 'grid-col-'] {
+  float: left;
+}
+
+/*8 column grid*/
+.grid-col-1of8, .grid-col-2of8, .grid-col-3of8, .grid-col-4of8,
+.grid-col-5of8, .grid-col-6of8, .grid-col-7of8, .grid-col-8of8,{
+  width: 100%;
+}
+
+.container .block {
+  height: 15rem;
+}
+.container .block:nth-of-type(even) {
+  background-color: rgba(40,44,56, 0.2);
+}
+.container .block:nth-of-type(odd) {
+  background-color: rgba(70,74,86, 0.2);
+}
+
+.grid-row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.nav-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+/*MEDIA QUERIES*/
+@media (min-width: 43.75em) {
+  /* 8 Column Grid */
+  .grid-col-1of8 {
+    width: 12.5%;
+  }
+
+  .grid-col-2of8 {
+    width: 25%;
+  }
+
+  .grid-col-3of8 {
+    width: 37.5%;
+  }
+
+  .grid-col-3of8-last{
+    width: 37.5%;
+    margin-left: 2em;
+  }
+
+  .grid-col-4of8 {
+    width: 50%;
+  }
+
+  .grid-col-5of8 {
+    width: 62.5%;
+  }
+
+  .grid-col-6of8 {
+    width: 75%;
+  }
+
+  .grid-col-7of8 {
+    width: 87.5%;
+  }
+
+  .grid-col-8of8 {
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width:43.75em){
+  .fit-product{
+    max-width: 60%;
+    margin-bottom: 1em;
+  }
+}
