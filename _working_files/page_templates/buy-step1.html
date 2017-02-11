@@ -41,8 +41,10 @@
   </div>
 
   <div class="content-container">
-    <h1 class="main-heading">Checkout</h1>
-    <section id="contact">
+    <div class="grid-row">
+      <h1 class="main-heading">Checkout</h1>
+
+      <!-- Contact Information -->
       <h3 class="field=header">Contact Information</h3>
       <form>
         <input class="payment-fields" type="text" name="name" placeholder="Name">
@@ -53,8 +55,8 @@
       <form>
         <input class="payment-fields" type="text" name="phone" placeholder="Phone Number">
       </form>
-    </section>
-    <section id="shipping">
+
+      <!-- Shipping Information -->
       <h3 class="field=header">Shipping Information</h3>
       <form>
         <input class="payment-fields" type="text" name="address" placeholder="Address">
@@ -68,8 +70,8 @@
       <form>
         <input class="payment-fields" type="text" name="postal" placeholder="Postal Code">
       </form>
-    </section>
-    <section id="billing">
+
+      <!-- Billing Information -->
       <h3 class="field=header">Billing Information</h3>
       <form>
         <div class="grid-col-8of8">
@@ -87,8 +89,6 @@
       <form>
         <input class="payment-fields" type="text" name="postal" placeholder="Postal Code">
       </form>
-    </section>
-    <section id="payment">
       <h3 class="field=header">Payment Information</h3>
       <form>
         <input class="payment-fields" type="text" name="number" placeholder="Credit Card Number">
@@ -107,19 +107,11 @@
           <input class="payment-fields" type="text" name="Month" placeholder="Year">
         </div>
       </form>
-    </section>
+    </div>
 
     <!-- Next and Back Buttons -->
-    <section id="cart-buttons">
-      <div class="grid-col-8of8">
-        <div class="grid-col-2of8">
-          <div class="button1"><a class="button-secondary" href="cart.html">Back</a></div>
-        </div>
-        <div class="grid-col-2of8">
-          <div class="button2"><a class="button-primary" href="receipt.html">Next</a></div>
-        </div>
-      </div>
-    </section>
+      <div class="button1"><a class="button-secondary" href="cart.html">Back</a></div>
+      <div class="button2"><a class="button-primary" href="receipt.html">Next</a></div>
   </div>
 
   <!-- Footer -->

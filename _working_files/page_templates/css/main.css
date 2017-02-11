@@ -227,6 +227,11 @@ section h3 {
   color: black;
 }
 
+.secondary-heading {
+  font-size: 2rem;
+  margin: 0 0 0.5rem 0;
+}
+
 /*paragraph styling*/
 section p {
   margin-top: 0;
@@ -420,15 +425,6 @@ section p {
 /*
   FRONT PAGE STYLING ----------------------------------------------------------------------------
 */
-.background-img {
-  position: absolute;
-  height: vh;
-}
-
-.front-page-container {
-  position: relative;
-  margin-top: 15%;
-}
 
 header {
   background: url("http://placehold.it/2000x1800") no-repeat;
