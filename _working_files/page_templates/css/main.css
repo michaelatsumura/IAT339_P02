@@ -424,11 +424,6 @@ section p {
   height: vh;
 }
 
-.front-page-container {
-  position: relative;
-  margin-top: 15%;
-}
-
 header {
   background: url("http://placehold.it/2000x1800") no-repeat;
   background-size: cover;
