@@ -64,6 +64,8 @@ img {
 
 footer {
   margin-top: 3rem;
+  background-color: rgba(173, 124, 131, 0.4); /*Light Pink 40%*/
+  width: 100%;
 }
 
 
