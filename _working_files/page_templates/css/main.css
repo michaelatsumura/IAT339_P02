@@ -381,6 +381,12 @@ section p {
 	font-weight: 400;
 }
 
+.field-header-center{
+  margin-bottom: 0.75em;
+  font-weight: 400;
+  text-align: center;
+}
+
 .order-summary {
 	margin-bottom: 1.3em;
 	font-weight: 300;
@@ -389,6 +395,10 @@ section p {
 
 .float-right {
 	float: right;
+}
+
+.center-align{
+  text-align: center;
 }
 
 /*Profile*/
@@ -404,7 +414,6 @@ section p {
 .profile p {
   margin-bottom: 4em;
 }
-
 
 /*
   FRONT PAGE STYLING ----------------------------------------------------------------------------
