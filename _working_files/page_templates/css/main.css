@@ -163,14 +163,14 @@ footer {
   margin: 1em 0 0.4em 0;
   width: 100%;
   text-align: center;
-  min-width: 190px;
+  /*min-width: 190px;*/
 }
 
 .button-secondary:hover, .button-secondary:focus {
   background-color: #C19A97; /*Light Pink*/
   color: #FFF;
   text-decoration: none;
-   min-width: 190px;
+   /*min-width: 190px;*/
 }
 
 /* Text FIeld and Label */
@@ -463,4 +463,8 @@ section p {
 
 #bio {
   margin-right: 3em;
+}
+
+#last {
+  padding-right: 1em important!;
 }
