@@ -180,7 +180,7 @@ footer {
 .searchfield {
   padding: 0.6em 1em;
   border-radius: 0.25em;
-  border: solid #C19A97 0.1em;
+  border: solid lightgrey 1px;
   width: 100%;
   font-size: 0.9rem;
 }
@@ -368,7 +368,7 @@ section p {
 .payment-fields {
   padding: 0.6em 1em;
   border-radius: 0.25em;
-  border: solid #C19A97 0.1em;
+  border: solid lightgrey 0.1em;
   width: 100%;
   font-size: 0.9rem;
   margin-bottom: 1.5em;
