@@ -57,6 +57,10 @@
 
 }
 
+.content-container-center {
+  margin: 3rem auto;
+  padding-left: 37.5%;
+}
 
 /*MEDIA QUERIES*/
 @media (min-width: 43.75em) {
