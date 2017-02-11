@@ -48,7 +48,7 @@
 }
 
 .content-container-center {
-  margin-left: 
+  margin-left:
 }
 
 /*MEDIA QUERIES*/
@@ -109,13 +109,13 @@
 
 
 
-@media (min-width:53.12em){ /*850 px * ---- large tablet nav neeeds to be fixed */ 
+@media (min-width:53.12em){ /*850 px * ---- large tablet nav neeeds to be fixed */
 
 }
 
 
 
-@media (min-width:65.5em){ /*1048 px - ipad landscape - laptop-ish */ 
+@media (min-width:65.5em){ /*1048 px - ipad landscape - laptop-ish */
 
 }
 
@@ -130,4 +130,3 @@
 @media (min-width:20em){ /*400 px -- iphone5 */
 
 }
-

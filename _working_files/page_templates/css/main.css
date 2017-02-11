@@ -472,6 +472,6 @@ header {
   margin-right: 3em;
 }
 
-#last {
-  padding-right: 1em important!;
+.social-share {
+  display: block;
 }
