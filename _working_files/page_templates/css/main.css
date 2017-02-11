@@ -137,7 +137,7 @@ footer {
   margin: 1em 0 0.4em 0;
   width: 100%;
   text-align: center;
-  min-width: 190px;
+  /*min-width: 190px;*/
 }
 
 .button-primary:hover, .button-primary:focus {
@@ -305,7 +305,7 @@ section p {
 /*Product Listing*/
 .product-list-view {
 	width: 100%;
-	padding: 1em;
+	/*padding: 1em;*/
 	max-width: 250px;
 }
 
@@ -441,4 +441,13 @@ section p {
 
 #cart-buttons {
   float: right:
+}
+
+
+/*
+  PROFILE PAGE STYLING ----------------------------------------------------------------------------
+*/
+
+#bio {
+  margin-right: 3em;
 }
