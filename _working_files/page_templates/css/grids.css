@@ -7,6 +7,14 @@
   float: left;
 }
 
+/*Grid Gutter*/
+[class*='col-'] {
+  padding-right: 1em;
+}
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+
 /*8 column grid*/
 .grid-col-1of8, .grid-col-2of8, .grid-col-3of8, .grid-col-4of8,
 .grid-col-5of8, .grid-col-6of8, .grid-col-7of8, .grid-col-8of8,{
