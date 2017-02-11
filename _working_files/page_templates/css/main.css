@@ -75,6 +75,12 @@ footer {
 }
 
 
+/*Footer*/
+.footer {
+  width: 100%;
+  padding: 0;
+}
+
 /*
   INTERACTIVE ELEMENTS STYLING  ----------------------------------------------------------------------------
 */
