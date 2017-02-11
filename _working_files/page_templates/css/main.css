@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+p {
+  margin: 0;
+}
+
 body {
   font-family: 'Muli', Helvetica, sans-serif;
   /*padding: 1rem 3rem;*/
@@ -16,6 +20,10 @@ body {
 /* padding for styleguide template only*/
 .styleguide {
   padding: 1rem 3rem;
+}
+
+section {
+  margin: 1em 0;
 }
 
 section:not([id]) {
@@ -52,6 +60,10 @@ img {
 
 .main-nav {
   display: flex;
+}
+
+footer {
+  margin-top: 3rem;
 }
 
 
@@ -399,9 +411,38 @@ section p {
 */
 .background-img {
   position: absolute;
+  height: vh;
 }
 
 .front-page-container {
   position: relative;
   margin-top: 15%;
+}
+
+
+/*
+  MIX PAGE STYLING ----------------------------------------------------------------------------
+*/
+
+#info form {
+  margin-bottom: 1em;
+}
+
+#addins select {
+  margin-bottom: 1em;
+}
+
+
+/*
+  CART PAGE STYLING ----------------------------------------------------------------------------
+*/
+
+#cart .grid-col-8of8 {
+  margin-bottom: 2em;
+  border-top: 1px solid #e8e8e8;
+  padding: 2em 0;
+}
+
+#cart-buttons {
+  float: right:
 }
