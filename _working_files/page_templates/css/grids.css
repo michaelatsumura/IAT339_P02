@@ -17,7 +17,7 @@
 
 /*8 column grid*/
 .grid-col-1of8, .grid-col-2of8, .grid-col-3of8, .grid-col-4of8,
-.grid-col-5of8, .grid-col-6of8, .grid-col-7of8, .grid-col-8of8,{
+.grid-col-5of8, .grid-col-6of8, .grid-col-7of8 {
   width: 100%;
 }
 
@@ -99,6 +99,7 @@
   .content-container {
     margin: 3rem auto;
     width: 70%;
+    flex: 1;
   }
 
 }
