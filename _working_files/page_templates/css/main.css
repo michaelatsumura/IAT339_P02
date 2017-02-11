@@ -212,7 +212,7 @@ h2 {
   font-weight: 300;
   margin: 0;
   padding: 0;
-  font-size: 1em;
+  font-size: 1.3em;
 }
 
 section h3 {
@@ -225,10 +225,11 @@ section h3 {
   margin: 0;
   padding: 0;
   color: black;
+  font-size:1.5em;
 }
 
 .secondary-heading {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin: 0 0 0.5rem 0;
 }
 
@@ -244,6 +245,7 @@ section p {
 
 .product-description {
   max-width: 100%;
+  font-size: 1.2em;
 }
 
 .lists {
@@ -255,6 +257,7 @@ section p {
 	font-weight: 400;
 	color: #AD7C83;
 	margin-top: 0.3em;
+  font-size:1.3em;
 }
 /* end of styling the TEXT ELEMENTS*/
 
@@ -313,7 +316,7 @@ section p {
 .product-list-view {
 	width: 100%;
 	/*padding: 1em;*/
-	max-width: 250px;
+	/*max-width: 250px;*/
 }
 
 .product-row-list {
@@ -327,8 +330,9 @@ section p {
 }
 
 .social-icon{
-	width: 2rem;
+	width: 3rem;
 	height: auto;
+  border-radius: 5em;
 }
 
 /*Colour Picker*/
@@ -353,9 +357,7 @@ section p {
 
 
 .cart-image {
-	width: 70%;
 	border: solid lightgrey 1px;
-	max-width: 100px;
 }
 
 .cart-description {
@@ -384,8 +386,8 @@ section p {
 }
 
 .field-header{
-	margin-bottom: 0.75em;
-	font-weight: 400;
+	margin-bottom: 0.5em;
+	font-weight: 700;
 }
 
 .field-header-center{

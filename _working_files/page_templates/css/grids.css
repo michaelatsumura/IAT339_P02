@@ -81,7 +81,7 @@
   /*containers*/
   .content-container {
     width: 100%;
-    padding: 5% 10%;
+    padding: 5% 15%;
   }
 
   .nav-container {
@@ -99,6 +99,11 @@
   .content-container-center {
     width: 100%;
     padding: 5% 38%;
+  }
+
+  .checkout-container {
+    width: 100%;
+    padding: 5% 25%;
   }
 
   /*Gutters*/
