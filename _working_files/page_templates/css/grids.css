@@ -51,12 +51,6 @@
   margin-right: auto;
 }
 
-.content-container {
-  margin: 3rem auto;
-  width: 70%;
-
-}
-
 .content-container-center {
   margin: 3rem auto;
   padding-left: 37.5%;
@@ -100,6 +94,11 @@
 
   .grid-col-8of8 {
     width: 100%;
+  }
+
+  .content-container {
+    margin: 3rem auto;
+    width: 70%;
   }
 
 }
