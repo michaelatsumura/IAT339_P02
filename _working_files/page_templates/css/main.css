@@ -69,14 +69,6 @@ img {
   display: flex;
 }
 
-footer {
-  margin-top: 3rem;
-  background-color: rgba(173, 124, 131, 0.4); /*Light Pink 40%*/
-  width: 100%;
-  position: relative;
-  bottom: 0;
-}
-
 
 /*Main Navigation Background*/
 .background {
@@ -431,6 +423,11 @@ section p {
 .background-img {
   position: absolute;
   height: vh;
+}
+
+.front-page-container {
+  position: relative;
+  margin-top: 15%;
 }
 
 header {
