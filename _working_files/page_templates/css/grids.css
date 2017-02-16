@@ -108,38 +108,45 @@
 
   /*Gutters*/
   [class*='col-'] {
-    padding-right: 1em;
+    padding-right: 1.5em;
   }
 
 }
 
-
 @media (max-width:43.75em){
+
   .fit-product{
     margin-bottom: 1em;
   }
 }
 
-
-
-@media (min-width:53.12em){ /*850 px * ---- large tablet nav neeeds to be fixed */
-
-}
-
-
+/*--------------------------------------------------------------------------------------------------------*/
 
 @media (min-width:65.5em){ /*1048 px - ipad landscape - laptop-ish */
 
 }
 
 
+@media (min-width:56.875em){ /*910 px * ---- large tablet*/
 
-@media (min-width:25em){ /*400 px -- large mobile */
+}
+
+
+@media (max-width:50em){ /*800 px * ---- large tablet nav neeeds to be fixed */
+/*  * {
+  background-color:red;
+}   TO TEST MEDIA QUERIES */
 
 }
 
 
 
-@media (min-width:20em){ /*400 px -- iphone5 */
+@media (max-width:25em){ /*400 px -- large mobile */
+
+}
+
+
+
+@media (min-width:20em){ /*320 px -- iphone5 */
 
 }
