@@ -81,7 +81,7 @@ img {
 
 /*Main Navigation Background*/
 .background {
-  padding:1em 0;
+  padding:2em 0;
 }
 
 /*
@@ -445,19 +445,6 @@ footer, .push {
   text-align: left;
 }
 
-/*Profile*/
-.profile {
-  text-align: center;
-}
-
-.profile img {
-  border-radius:5.5em;
-  margin-bottom:1em;
-}
-
-.profile p {
-  margin-bottom: 4em;
-}
 
 /*
   FRONT PAGE STYLING ----------------------------------------------------------------------------
@@ -501,10 +488,29 @@ header {
   PROFILE PAGE STYLING ----------------------------------------------------------------------------
 */
 
+.profile img {
+  border-radius:5.5em;
+  margin-bottom:1em;
+}
+
+.profile p {
+  margin-bottom: 2em;
+}
+
 #bio {
   margin-right: 3em;
 }
 
 .social-share {
   display: block;
+}
+
+.profile-info {
+  text-align: left;
+  width: 90%;
+}
+
+.name{
+  font-weight: 500;
+  font-size: 0.7;
 }
