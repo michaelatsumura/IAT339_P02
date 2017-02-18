@@ -78,7 +78,9 @@
     width: 100%;
   }
 
-  /*containers*/
+/*
+  CONTAINERS ----------------------------------------------------------------------------
+*/
   .content-container {
     width: 100%;
     padding: 5% 15%;
@@ -111,12 +113,22 @@
     padding-right: 1.5em;
   }
 
+  .mobile-hide {
+    visibility: visible;
+  }
+
 }
 
 @media (max-width:43.75em){
 
   .fit-product{
     margin-bottom: 1em;
+  }
+
+  .front-page-container {
+  text-align: center;
+  width: 100%;
+  padding: 5% 10%;
   }
 }
 
@@ -137,16 +149,113 @@
   background-color:red;
 }   TO TEST MEDIA QUERIES */
 
+/* Navigation button */
+.button-nav {
+  font-size: 0.9rem;
+}
+
+/* CONTAINERS */
+  .content-container {
+    width: 100%;
+    padding: 5% 15%;
+  }
+
+  .nav-container {
+    width: 100%;
+    text-align: center;
+    padding: 0 5%;
+  }
+
+  .front-page-container {
+    text-align: center;
+    width: 100%;
+    padding: 10% 15%;
+  }
+
+  .content-container-center {
+    width: 100%;
+    padding: 5% 38%;
+  }
+
+  .checkout-container {
+    width: 100%;
+    padding: 5% 25%;
+  }
+
 }
 
 
+@media (max-width:37.5em){ /*600 px -- to fix nav items */
+  /* Navigation button */
+  .button-nav {
+    font-size: 0.8rem;
+    margin-right: 0.5em;
+  }
+}
 
 @media (max-width:25em){ /*400 px -- large mobile */
+  .mobile-hide {
+    display: none;
+  }
 
+ .grid-col-1of8{
+  width: 100%;
+ }
+
+  .logo {
+    display:block;
+    max-width: 5em;
+    margin-left: 0.5em;
+    width: 100%;
+  }
+
+/*  .hamburger {
+    list-style: none;
+    background: #111;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+  }*/
 }
 
 
 
-@media (min-width:20em){ /*320 px -- iphone5 */
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). 
+Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:25em) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
+This class makes the topnav look good on small screens */
+@media screen and (max-width:25em) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+
+
+@media (max-width:20em){ /*320 px -- iphone5 */
 
 }

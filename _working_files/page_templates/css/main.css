@@ -78,6 +78,7 @@ img {
   background-color: white;
   box-shadow: 0 1px 8px #f7f7f7;
   padding: 0.5em 1em;
+  list-style: none;
 }
 
 
@@ -578,5 +579,6 @@ header {
   border-radius: 0.25em;
   border: solid lightgrey 1px;
 }
+
 
 
