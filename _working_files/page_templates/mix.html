@@ -55,8 +55,6 @@
         <form>
           <input class="searchfield" type="text" name="search" placeholder="Name your polish mix">
         </form>
-        <h3 class="field-header">Custom Message</h3>
-        <textarea class="text-description-area" name="textarea" style="width:100%;height:7em;" placeholder="What do you want to say about your polish mix?"></textarea>
 
         <!-- Colour Picker -->
         <h3 class="field-header colour-picker-description">Select your polish color:</h3>
@@ -65,9 +63,20 @@
           </form>
           <!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_color -->
 
+        <!-- Drop Down Selector -->
+        <h3 class="field-header">Finish</h3>
+        <!-- <input class="slider" type="range" min="0" max="50" value="25" step="5" /> -->
+        <select class="dropdown">
+          <option value="cream">Cream</option>
+          <option value="glitter">Glitter</option>
+          <option value="lustre">Lustre</option>
+          <option value="metallic">Metallic</option>
+          <option value="matte">Matte</option>
+          <option value="translucent">Translucent</option>
+        </select>
 
         <!-- Drop Down Selector -->
-        <h3 class="field-header">Add-Ins</h3>
+        <h3 class="field-header">Add-In 1</h3>
         <!-- <input class="slider" type="range" min="0" max="50" value="25" step="5" /> -->
         <select class="dropdown">
           <option value="none">None</option>
@@ -79,9 +88,29 @@
           <option value="s-glitter-2">Square Glitter - Small</option>
           <option value="stars">Star Glitter</option>
         </select>
+
         <form>
           Select your add-in color:
-          <input type="color" name="favcolor" value="#FFD6E8">
+          <input type="color" name="favcolor" value="#ffffff">
+        </form>
+
+                <!-- Drop Down Selector -->
+        <h3 class="field-header">Add-In 2</h3>
+        <!-- <input class="slider" type="range" min="0" max="50" value="25" step="5" /> -->
+        <select class="dropdown">
+          <option value="none">None</option>
+          <option value="heart">Heart Glitter</option>
+          <option value="holographic">Holographic Glitter</option>
+          <option value="r-glitter-1">Round Glitter - Large</option>
+          <option value="r-glitter-2">Round Glitter - Small</option>
+          <option value="s-glitter-1">Square Glitter - Large</option>
+          <option value="s-glitter-2">Square Glitter - Small</option>
+          <option value="stars">Star Glitter</option>
+        </select>
+
+        <form>
+          Select your add-in color:
+          <input type="color" name="favcolor" value="#ffffff">
         </form>
 
         <h3 class="field-header">Bottle Shape</h3>
@@ -102,10 +131,10 @@
 
         <!-- Add to cart and sell buttons -->
         <div class="grid-col-4of8-button">
-          <div><a class="button-primary" href="created-mix.html">Create My Mix</a></div>
+          <div><a class="button-primary" href="save-mix.html">Save Mix</a></div>
         </div>
         <div class="grid-col-4of8-button">
-          <div><a class="button-secondary" href="save-mix.html">Save My Mix</a></div>
+          <div><a class="button-secondary" href="created-mix.html">Create Mix</a></div>
         </div>
       </div>
     </div>
