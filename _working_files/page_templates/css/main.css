@@ -20,6 +20,7 @@ body {
   /*padding: 1rem 3rem;*/
   color: #000000;
   min-height: 100%;
+  width: 100%;
 /*  display: flex;
   flex-direction: column;*/ /* disabled these styles, if it is necessary uncomment it */ 
 }
@@ -151,14 +152,35 @@ img {
   margin: 0.2em 0 0.4em 0;
   width: 100%;
   text-align: center;
-  /*min-width: 190px;*/
 }
+
+/* Primary Button */
+.button-primary-half {
+  padding: 0.8em 2em;
+  background-color: #C19A97; /*Light Pink*/
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  border-radius: 0.25em;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  margin: 0.2em 0 0.4em 1em; /*T R B L*/
+  text-align: center;
+}
+
 
 .button-primary:hover, .button-primary:focus {
   background-color: #DDD;
   color: #000;
   text-decoration: none;
-   /*min-width: 190px;*/
+}
+
+.button-primary-half:hover, .button-primary-half:focus {
+  background-color: #DDD;
+  color: #000;
+  text-decoration: none;
 }
 
 /* Secondary Button */
@@ -177,14 +199,34 @@ img {
   margin: 0.2em 0 0.4em 0;
   width: 100%;
   text-align: center;
-  /*min-width: 190px;*/
+}
+
+/* Secondary Button */
+.button-secondary-half {
+  padding: 0.8em 2em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #DDD;
+  color: #3D4656; /*Dark Blue*/
+  font-weight: 700;
+  border-radius: 0.25em;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  margin: 0.2em 0 0.4em 0; /*T R B L*/
+  text-align: center;
 }
 
 .button-secondary:hover, .button-secondary:focus {
   background-color: #C19A97; /*Light Pink*/
   color: #FFF;
   text-decoration: none;
-   /*min-width: 190px;*/
+}
+
+.button-secondary-half:hover, .button-secondary-half:focus {
+  background-color: #C19A97; /*Light Pink*/
+  color: #FFF;
+  text-decoration: none;
 }
 
 /* Secondary Button */
@@ -202,15 +244,15 @@ img {
   margin: 0.2em 0 0.4em 0;
   width: 100%;
   text-align: center;
-  /*min-width: 190px;*/
 }
 
 /* Text FIeld and Label */
 .searchfield {
-  padding: 0.6em 1em;
+  padding: 0.6em 0.8em;
   border-radius: 0.25em;
   border: solid lightgrey 1px;
   width: 100%;
+  font-family: "Muli", Arial, sans-serif;
   font-size: 0.9rem;
 }
 
@@ -221,15 +263,16 @@ label {
   TEXT ELEMENTS STYLING ----------------------------------------------------------------------------
 */
 
-/*header styling (x3)*/
+/*header styling*/
 .main-heading {
+  max-width: 100%;
   margin: 0;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 3rem;
-  color: 000000;
+  color: #000000;
   letter-spacing: 0.02rem;
   padding-bottom: 0.3em;
+  font-size: 2.5em;
 }
 
 h2 {
@@ -273,14 +316,23 @@ section p {
   margin-bottom: 1em;
 }
 
-.polish-name {
+.page-description {
   /*max-width: 60%;*/
+  margin-top: 0.3em;
+  padding-bottom: 2em;
+}
+
+.polish-name {
   margin-bottom: 0;
+}
+
+.polish-name-noprice {
+  margin-bottom: 1em;
 }
 
 .product-description {
   max-width: 100%;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .lists {
@@ -352,8 +404,13 @@ section p {
 /*Product Listing*/
 .product-list-view {
 	width: 100%;
-	/*padding: 1em;*/
-	/*max-width: 250px;*/
+  padding: 1em;
+}
+
+.product-list-view-margin-top {
+  width: 100%;
+  padding: 1em;
+  margin-top: 3em;
 }
 
 .product-row-list {
@@ -366,6 +423,7 @@ section p {
 	padding: 1.5em 1em 1.5em 3em; /*T R B L*/
 	color: white;
   height: 4rem;
+/*  margin-top: 3em;*/
 }
 
 .short-page { /*Making the footer fixed at the bottom of pages with less content*/
@@ -399,10 +457,10 @@ footer, .push {
 
 /*Drop Down*/
 .dropdown {
-  padding: 0.5em 1em;
+  padding: 2em;
   border-radius: 0.25em;
-  width: 100%;
-  font-size: 1.1em;
+  width: 60%;
+  font-size: 1em;
   letter-spacing: 0.05em;
   margin-bottom: 1em;
 } /*source:http://www.w3schools.com/tags/tag_select.asp*/
@@ -426,21 +484,84 @@ footer, .push {
 .divider {
 	padding-bottom: 1em;
 	margin-bottom: 2em;
-	border-bottom: solid #C19A97 1px;
+	border-bottom: solid lightgrey 1px;
 }
 
 .payment-fields {
-  padding: 0.6em 1em;
+  display:block;
+  max-width: 25em;
+  margin: 0 auto;
+  padding: 0.6em 0.8em;
   border-radius: 0.25em;
   border: solid lightgrey 0.1em;
   width: 100%;
+  font-family: "Muli", Arial, sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 1.5em;
+}
+
+.payment-fields-2 {
+  display:block;
+  max-width: 17.5em;
+  margin: 0 auto;
+  padding: 0.6em 0.8em;
+  border-radius: 0.25em;
+  border: solid lightgrey 0.1em;
+  width: 50%;
+  font-family: "Muli", Arial, sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 1.5em;
+}
+
+.payment-fields-3 {
+  padding: 0.6em 0.8em;
+  border-radius: 0.25em;
+  border: solid lightgrey 0.1em;
+  font-family: "Muli", Arial, sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 1.5em;
+}
+
+/* Primary Button */
+/*.button-primary-half {
+  padding: 0.8em 2em;
+  background-color: #C19A97; 
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  border-radius: 0.25em;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  margin: 0.2em 0 0.4em 1em; 
+  text-align: center;
+}*/
+
+
+.payment-headers {
+  display:block;
+  max-width: 25em;
+  margin: 0 auto;
+  padding: 0.6em 1.2em; 
+  width: 100%;
+  text-align: left;
+  font-family: "Muli", Arial, sans-serif;
   font-size: 0.9rem;
   margin-bottom: 1.5em;
 }
 
 .half-field {
-	float: right;
-	max-width: 90%;
+  display:inline-block;
+  max-width: 5em;
+  margin: 0 auto;
+  padding: 0.6em 0.8em;
+  border-radius: 0.25em;
+  border: solid lightgrey 0.1em;
+  width: 100%;
+  font-family: "Muli", Arial, sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 1.5em;
 }
 
 .field-header{
@@ -483,7 +604,14 @@ footer, .push {
 */
 
 header {
-  background: url("http://placehold.it/2000x1800") no-repeat;
+/*  background: url("http://placehold.it/2000x1800") no-repeat;
+  background-size: cover;
+  height: 100vh;*/
+
+  background: url("http://media.istockphoto.com/photos/spilled-nail-polish-background-picture-id611985214") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   height: 100vh;
 }
@@ -491,7 +619,6 @@ header {
 /*
   MIX PAGE STYLING ----------------------------------------------------------------------------
 */
-
 #info form {
   margin-bottom: 1em;
 }
@@ -501,10 +628,10 @@ header {
 }
 
 
+
 /*
   CART PAGE STYLING ----------------------------------------------------------------------------
 */
-
 #cart .grid-col-8of8 {
   margin-bottom: 2em;
   border-top: 1px solid #e8e8e8;
@@ -519,10 +646,8 @@ header {
 /*
   PROFILE PAGE STYLING ----------------------------------------------------------------------------
 */
-
 .profile img {
   border-radius:5.5em;
-  margin-bottom:1em;
 }
 
 .profile p {
@@ -564,21 +689,81 @@ header {
 /*
   SELL STYLING ----------------------------------------------------------------------------
 */
-
 .price-field {
   width: 30%;
   margin-bottom: 0.5em;
-  padding: 0.6em 1em;
+  padding: 0.6em 0.8em;
   border-radius: 0.25em;
   border: solid lightgrey 1px;
+  font-size: 0.9rem;
+  font-family: "Muli", Arial, sans-serif;
 }
 
 .text-description-area {
   margin-bottom: 0.5em;
-  padding: 0.6em 1em;
+  padding: 0.6em 0.8em;
   border-radius: 0.25em;
   border: solid lightgrey 1px;
+  width: 100%;
+  font-size: 0.9rem;
+  font-family: "Muli", Arial, sans-serif;
+  line-height: 1.3em;
 }
 
+
+
+/*Sign in / up fields */
+.signin-fields {
+  display:block;
+  max-width: 25em;
+  margin: 0 auto;
+  padding: 0.6em 0.8em;
+  border-radius: 0.25em;
+  border: solid lightgrey 0.1em;
+  width: 100%;
+  font-family: "Muli", Arial, sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 1.5em;
+}
+
+.center-buttons {
+  display:block;
+  max-width: 25em;
+  margin: 0 auto;
+  padding-top: 1em;
+  width: 100%;
+}
+
+
+/*
+GENERAL STYLING
+*/
+.button-margin-top {
+  margin-top: 2em;
+}
+
+.link-margin-top {
+  margin-top: 1em;
+}
+
+.checkbox {
+  margin-right: 0.5em;
+  margin-bottom: 1em;
+}
+
+.checkbox-description {
+  margin: 0 auto;
+}
+
+.colour-picker-description {
+  margin-top: 0.8em;
+  margin-bottom: 0.5em;
+}
+
+.swatch {
+  width: 20em;
+  height: 5em;
+  margin-bottom: 1em;
+}
 
 

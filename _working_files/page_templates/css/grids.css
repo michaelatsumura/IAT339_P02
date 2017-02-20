@@ -13,9 +13,11 @@
   width: 100%;
 }
 
-.content-container, .nav-container, .front-page-container, .content-container-center {
+.content-container, .nav-container, .front-page-container, .content-container-center, .form-container {
   padding: 1rem;
+  max-width: 100%;
 }
+
 
 /*Gutter*/
 [class*='col-'] {
@@ -25,6 +27,14 @@
 .container .block {
   height: 15rem;
 }
+
+.grid-row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*Style Guide Grid Styling*/
 .container .block:nth-of-type(even) {
   background-color: rgba(40,44,56, 0.2);
 }
@@ -32,11 +42,6 @@
   background-color: rgba(70,74,86, 0.2);
 }
 
-.grid-row::after {
-  content: "";
-  display: block;
-  clear: both;
-}
 
 /*MEDIA QUERIES*/
 @media (min-width: 43.75em) {
@@ -98,13 +103,20 @@
     padding: 15% 25%;
   }
 
-  .content-container-center {
+/*  .content-container-center {
     width: 100%;
     padding: 5% 38%;
   }
+*/
+
+  .form-container {
+    text-align: center;
+    width: 100%;
+    padding: 5% 15%;
+  }
 
   .checkout-container {
-    width: 100%;
+    width: 100%;               
     padding: 5% 25%;
   }
 
@@ -117,42 +129,64 @@
     visibility: visible;
   }
 
+ .grid-col-4of8-button {
+  width: 50%;
+ }
+
 }
 
 @media (max-width:43.75em){
 
   .fit-product{
     margin-bottom: 1em;
+    width: 50%;
   }
 
-  .front-page-container {
+/*  .front-page-container {
   text-align: center;
   width: 100%;
   padding: 5% 10%;
+  }*/
+
+  .grid-col-4of8-button {
+  width: 50% !important;
+  padding-right: 1em;
   }
 }
 
 /*--------------------------------------------------------------------------------------------------------*/
 
-@media (min-width:65.5em){ /*1048 px - ipad landscape - laptop-ish */
+@media (max-width:65.5em){ /*1048 px - ipad landscape - laptop-ish */
+/*  .content-container-center {
+    width: 100%;
+    padding: 5% 30%;
+  }*/
+}
+
+
+@media (max-width:56.875em){ /*910 px * ---- large tablet*/
+ .grid-col-4of8-button {
+  width: 100%;
+ }
 
 }
 
 
-@media (min-width:56.875em){ /*910 px * ---- large tablet*/
+@media (max-width:50em){ /*800 px * ---- large tablet nav neeeds to be fixed  */
 
-}
+  /* Navigation button */
+  .button-nav {
+    font-size: 0.9rem;
+  }
 
+  .grid-col-2of8 {
+    width: 50%;
+  }
 
-@media (max-width:50em){ /*800 px * ---- large tablet nav neeeds to be fixed */
-/*  * {
-  background-color:red;
-}   TO TEST MEDIA QUERIES */
-
-/* Navigation button */
-.button-nav {
-  font-size: 0.9rem;
-}
+  /*Product Listing*/
+  .product-list-view {
+    width: 80%;
+  }
 
 /* CONTAINERS */
   .content-container {
@@ -172,10 +206,11 @@
     padding: 10% 15%;
   }
 
-  .content-container-center {
+
+/*  .content-container-center {
     width: 100%;
     padding: 5% 38%;
-  }
+  }*/
 
   .checkout-container {
     width: 100%;
@@ -190,6 +225,28 @@
   .button-nav {
     font-size: 0.8rem;
     margin-right: 0.5em;
+  }
+
+    /* Secondary Navigation Button */
+  .secondary-nav {
+    font-size: 0.735em;
+  }
+
+  .grid-col-4of8-button {
+  width: 100% !important;
+  }
+
+}
+
+
+@media (max-width:30em){ /*480 px -- to fix nav items */
+    /* Secondary Navigation Button */
+  .secondary-nav {
+    font-size: 0.7em;
+  }
+
+  .grid-col-2of8 {
+    width: 100%;
   }
 }
 
@@ -208,51 +265,9 @@
     margin-left: 0.5em;
     width: 100%;
   }
-
-/*  .hamburger {
-    list-style: none;
-    background: #111;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
-  }*/
 }
 
 
-
-/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). 
-Show the list item that contains the link to open and close the topnav (li.icon) */
-@media screen and (max-width:25em) {
-  ul.topnav li:not(:first-child) {display: none;}
-  ul.topnav li.icon {
-    float: right;
-    display: inline-block;
-  }
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
-This class makes the topnav look good on small screens */
-@media screen and (max-width:25em) {
-  ul.topnav.responsive {position: relative;}
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  ul.topnav.responsive li {
-    float: none;
-    display: inline;
-  }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
-  }
-}
 
 
 

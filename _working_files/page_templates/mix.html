@@ -48,6 +48,8 @@
       </div>
       <div class="grid-col-4of8">
         <h1 class="main-heading">Mix</h1>
+
+        <p class="page-description"><strong>Your search for the perfect polish is over!</strong> <br>Customize and purchase your own personalized polish blend. If you want others to use your creation, post your polish blend in your profile store!</p>
         <!-- Fill in Information -->
         <h3 class="field-header">Name</h3>
         <form>
@@ -57,41 +59,40 @@
         <textarea class="text-description-area" name="textarea" style="width:100%;height:7em;" placeholder="What do you want to say about your polish mix?"></textarea>
 
         <!-- Colour Picker -->
-        <h3 class="field-header">Colour Picker</h3>
-          <img src="http://placehold.it/340x240" alt="" class="colour-picker">
-          <form action="/action_page.php">
-            Select your polish color:
-            <input type="color" name="favcolor" value="#ff0000">
+        <h3 class="field-header colour-picker-description">Select your polish color:</h3>
+          <form>
+            <input type="color" class="swatch" name="favcolor" value="#FFD6E8">
           </form>
           <!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_color -->
 
 
         <!-- Drop Down Selector -->
-        <h3 class="field-header">Add-Ins</h2>
+        <h3 class="field-header">Add-Ins</h3>
         <!-- <input class="slider" type="range" min="0" max="50" value="25" step="5" /> -->
         <select class="dropdown">
+          <option value="none">None</option>
+          <option value="heart">Heart Glitter</option>
           <option value="holographic">Holographic Glitter</option>
-          <option value="s-glitter-1">Square Glitter - Large</option>
-          <option value="s-glitter-2">Square Glitter - Small</option>
           <option value="r-glitter-1">Round Glitter - Large</option>
           <option value="r-glitter-2">Round Glitter - Small</option>
+          <option value="s-glitter-1">Square Glitter - Large</option>
+          <option value="s-glitter-2">Square Glitter - Small</option>
           <option value="stars">Star Glitter</option>
-          <option value="heart">Heart Glitter</option>
         </select>
         <form>
           Select your add-in color:
-          <input type="color" name="favcolor" value="#ff0000">
+          <input type="color" name="favcolor" value="#FFD6E8">
         </form>
 
-        <h3 class="field-header">Bottle Shape</h2>
+        <h3 class="field-header">Bottle Shape</h3>
         <select class="dropdown">
-          <option value="oval">Oval</option>
-          <option value="square">Square</option>
           <option value="diamond">Diamond</option>
           <option value="heart">Heart</option>
+          <option value="oval">Oval</option>
+          <option value="square">Square</option>
         </select>
 
-        <h3 class="field-header">Brush Type</h2>
+        <h3 class="field-header">Brush Type</h3>
         <select class="dropdown">
           <option value="rounded-brush">Rounded Brush</option>
           <option value="square-brush">Square Brush</option>
