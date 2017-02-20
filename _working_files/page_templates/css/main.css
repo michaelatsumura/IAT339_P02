@@ -423,7 +423,7 @@ section p {
 	padding: 1.5em 1em 1.5em 3em; /*T R B L*/
 	color: white;
   height: 4rem;
-/*  margin-top: 3em;*/
+  text-align: left;
 }
 
 .short-page { /*Making the footer fixed at the bottom of pages with less content*/
@@ -486,6 +486,7 @@ footer, .push {
 	margin-bottom: 2em;
 	border-bottom: solid lightgrey 1px;
 }
+
 
 .payment-fields {
   display:block;
@@ -761,9 +762,23 @@ GENERAL STYLING
 }
 
 .swatch {
-  width: 20em;
+  width: 50%;
   height: 5em;
   margin-bottom: 1em;
 }
 
+.selected-header {
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 0.3em;
+}
+
+.contact-us {
+  text-align: right;
+  float: right;
+}
+
+.new-section{
+  margin-top: 2em;
+}
 
