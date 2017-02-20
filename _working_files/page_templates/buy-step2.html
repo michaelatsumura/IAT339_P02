@@ -40,41 +40,37 @@
     </div>
   </div>
 
-  <div class="checkout-container">
-    <div class="grid-row">
+  <div class="form-container">
+
       <h1 class="main-heading">Checkout</h1>
-      <h3 class="field=header">Payment Information</h3>
+      <h3 class="field-header payment-headers">Payment Information</h3>
+      <form>
+        <input class="payment-fields" type="text" name="name" placeholder="Cardholder Full Name">
+      </form>
       <form>
         <input class="payment-fields" type="text" name="number" placeholder="Credit Card Number">
       </form>
+      <h3 class="field-header payment-headers">Expiry Date</h3>
       <form>
-        <input class="payment-fields" type="text" name="securitycode" placeholder="Security Code">
+        <input class="payment-fields" type="text" name="Month" placeholder="Month">
       </form>
-      <div class="grid-row">
-        <h4 class="content-description">Expiry Date</h4>
-        <div class="grid-col-4of8">
-          <form>
-            <input class="payment-fields" type="text" name="Month" placeholder="Month">
-          </form>
-        </div>
-        <div class="grid-col-4of8">
-          <form>
-            <input class="payment-fields" type="text" name="Month" placeholder="Year">
-          </form>
-        </div>
-      </div>
-    </div>
+      <form>
+        <input class="payment-fields" type="text" name="Month" placeholder="Year">
+      </form>
+      <h3 class="field-header payment-headers">Security Code</h3>
+      <form>
+        <input class="payment-fields" type="text" name="securitycode" placeholder="CVV">
+      </form>
 
-    <!-- Next and Back Buttons -->
-    <div class="grid-row">
-      <div class="grid-col-4of8">
-        <div class="button1"><a class="button-secondary" href="buy-step1.html">Back</a></div>
-      </div>
-      <div class="grid-col-4of8">
-        <div class="button2"><a class="button-primary" href="receipt.html">Confirm Payment</a></div>
-      </div>
-    </div>
-  </div>
+
+        <!-- Back and Order Buttons -->
+        <div class="center-buttons">
+            <a class="button-secondary-half" href="cart.html">Back</a>
+            <a class="button-primary-half" href="buy-step2.html">Place Order</a>
+        </div>
+    </div> <!-- end of form container -->
+
+
 
   <!-- Footer -->
   <div class="grid-row">

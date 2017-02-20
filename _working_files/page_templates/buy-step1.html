@@ -40,12 +40,12 @@
     </div>
   </div>
 
-  <div class="checkout-container">
+  <div class="form-container">
     <div class="grid-row">
       <h1 class="main-heading">Checkout</h1>
 
       <!-- Contact Information -->
-      <h3 class="field=header">Contact Information</h3>
+      <h3 class="field-header payment-headers">Contact Information</h3>
       <form>
         <input class="payment-fields" type="text" name="name" placeholder="Name">
       </form>
@@ -57,48 +57,50 @@
       </form>
 
       <!-- Shipping Information -->
-      <h3 class="field=header">Shipping Information</h3>
+      <h3 class="field-header payment-headers">Shipping Address</h3>
       <form>
         <input class="payment-fields" type="text" name="address" placeholder="Address Line 1">
-        <input class="payment-fields" type="text" name="address" placeholder="Address Line 2">
+        <input class="payment-fields" type="text" name="address" placeholder="Address Line 2 - optional">
       </form>
       <form>
-        <input class="payment-fields" type="text" name="province" placeholder="Province">
+        <input class="payment-fields" type="text" name="province" placeholder="Province / State">
       </form>
       <form>
         <input class="payment-fields" type="text" name="city" placeholder="City">
       </form>
       <form>
-        <input class="payment-fields" type="text" name="postal" placeholder="Postal Code">
+        <input class="payment-fields" type="text" name="postal" placeholder="Postal / Zip Code">
       </form>
 
       <!-- Billing Information -->
-      <h3 class="field=header">Billing Information</h3>
+      <h3 class="field-header payment-headers">Billing Address</h3>
+      <h3 class="field-header payment-headers"><input type="checkbox" class="checkbox" name="Same as Shipping Address" value="Same as Shipping Address">Same as Shipping Address</h3>
+      
       <form>
         <input class="payment-fields" type="text" name="address" placeholder="Address Line 1">
-        <input class="payment-fields" type="text" name="address" placeholder="Address Line 2">
+        <input class="payment-fields" type="text" name="address" placeholder="Address Line 2 - optional">
       </form>
       <form>
-        <input class="payment-fields" type="text" name="province" placeholder="Province">
+        <input class="payment-fields" type="text" name="province" placeholder="Province / State">
       </form>
-      <form>
-        <input class="payment-fields" type="text" name="city" placeholder="City">
-      </form>
-      <form>
-        <input class="payment-fields" type="text" name="postal" placeholder="Postal Code">
-      </form>
-    </div>
+
+      
+        <form>
+          <input class="payment-fields" type="text" name="city" placeholder="City">
+        </form>
+      
+        <form>
+          <input class="payment-fields" type="text" name="postal" placeholder="Postal / Zip Code">
+        </form>
 
     <!-- Next and Back Buttons -->
-    <div class="grid-row">
-      <div class="grid-col-4of8">
-        <div class="button1"><a class="button-secondary" href="cart.html">Back</a></div>
-      </div>
-      <div class="grid-col-4of8">
-        <div class="button2"><a class="button-primary" href="buy-step2.html">Next</a></div>
-      </div>
-    </div>
-  </div>
+        <div class="center-buttons">
+            <a class="button-secondary-half" href="cart.html">Back</a>
+            <a class="button-primary-half" href="buy-step2.html">Next</a>
+        </div>
+      </div> <!-- end of grid row -->
+  </div> <!-- end of form container-->
+
 
   <!-- Footer -->
   <div class="grid-row">
