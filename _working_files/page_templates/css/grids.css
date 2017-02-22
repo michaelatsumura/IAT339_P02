@@ -179,6 +179,20 @@
 
 }
 
+
+
+@media (max-width:64em){ /*1024 px - ipad landscape - laptop-ish */
+  header {
+    background: url("http://www.sfu.ca/~mtsumura/landing-pg-1024.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+  }
+}
+
+
 @media (max-width:65.5em){ /*1048 px - ipad landscape - laptop-ish */
 /*  .content-container-center {
     width: 100%;
@@ -242,6 +256,15 @@
   .checkout-container {
     width: 100%;
     padding: 5% 25%;
+  }
+
+  header {
+    background: url("http://www.sfu.ca/~mtsumura/landing-pg-800.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
   }
 
 }
