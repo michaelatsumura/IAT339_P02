@@ -88,6 +88,10 @@ img {
   padding:2em 0;
 }
 
+.landing-header {
+  font-size: 3rem;
+}
+
 /*
   INTERACTIVE ELEMENTS STYLING  ----------------------------------------------------------------------------
 */
@@ -104,7 +108,7 @@ img {
 
 .button-nav:hover, .button-nav:focus {
   color: #C19A97; /*Light Pink*/
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* Padding for button-nav*/

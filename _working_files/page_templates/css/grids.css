@@ -104,7 +104,7 @@
   .front-page-container {
     text-align: center;
     width: 100%;
-    padding: 15% 25%;
+    padding: 10% 30%;
   }
 
 /*  .content-container-center {
@@ -168,6 +168,10 @@
     text-align: center;
     padding-bottom: 2em;
   }
+
+  .landing-header {
+  font-size: 2rem;
+}
 }
 
 /*--------------------------------------------------------------------------------------------------------*/
@@ -205,6 +209,7 @@
  .grid-col-4of8-button {
   width: 100%;
  }
+
 
 }
 
