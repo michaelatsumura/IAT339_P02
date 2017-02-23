@@ -22,7 +22,7 @@ body {
   min-height: 100%;
   width: 100%;
 /*  display: flex;
-  flex-direction: column;*/ /* disabled these styles, if it is necessary uncomment it */ 
+  flex-direction: column;*/ /* disabled these styles, if it is necessary uncomment it */
 }
 
 /* padding for styleguide template only*/
@@ -83,13 +83,18 @@ img {
 }
 
 
-/*Main Navigation Background*/
+/*Main Navigation */
 .background {
   padding:2em 0;
 }
 
 .landing-header {
   font-size: 3rem;
+}
+
+/* Profile */
+.profile {
+  width: 35px;
 }
 
 /*
@@ -530,7 +535,7 @@ footer, .push {
 /* Primary Button */
 /*.button-primary-half {
   padding: 0.8em 2em;
-  background-color: #C19A97; 
+  background-color: #C19A97;
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
@@ -539,7 +544,7 @@ footer, .push {
   border-radius: 0.25em;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
-  margin: 0.2em 0 0.4em 1em; 
+  margin: 0.2em 0 0.4em 1em;
   text-align: center;
 }*/
 
@@ -548,7 +553,7 @@ footer, .push {
   display:block;
   max-width: 25em;
   margin: 0 auto;
-  padding: 0.6em 1.2em; 
+  padding: 0.6em 1.2em;
   width: 100%;
   text-align: left;
   font-family: "Muli", Arial, sans-serif;
@@ -613,7 +618,7 @@ header {
   background-size: cover;
   height: 100vh;*/
 
-  background: url("http://www.sfu.ca/~mtsumura/landingpg-bg.jpg") no-repeat center center fixed; 
+  background: url("http://www.sfu.ca/~mtsumura/landingpg-bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -652,7 +657,7 @@ header {
   PROFILE PAGE STYLING ----------------------------------------------------------------------------
 */
 .profile img {
-  border-radius:5.5em;
+  border-radius: 2.5em;
 }
 
 .profile p {
@@ -785,4 +790,3 @@ GENERAL STYLING
 .new-section{
   margin-top: 2em;
 }
-
