@@ -97,6 +97,11 @@ img {
   width: 35px;
 }
 
+/* Search */
+.search {
+  max-width: 25px;
+}
+
 /*
   INTERACTIVE ELEMENTS STYLING  ----------------------------------------------------------------------------
 */
@@ -602,7 +607,7 @@ footer, .push {
 }
 
 .right-align{
-  text-align: right;
+  margin-left: auto;
 }
 
 .left-align{

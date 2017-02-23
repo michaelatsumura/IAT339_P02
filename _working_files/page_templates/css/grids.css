@@ -46,6 +46,11 @@
 /*MEDIA QUERIES*/
 @media (min-width: 43.75em) {
   /* 8 Column Grid */
+
+  .grid-col-1hof8 {
+    width: 6.25%;
+  }
+
   .grid-col-1of8 {
     width: 12.5%;
   }
@@ -120,13 +125,15 @@
   }
 
   .checkout-container {
-    width: 100%;               
+    width: 100%;
     padding: 5% 25%;
   }
 
   /*Gutters*/
   [class*='col-'] {
-    padding-right: 1.5em;
+    /*padding-right: 1.5em;*/
+    padding-right: 0.5em;
+    padding-left: 0.5em;
   }
 
   .mobile-hide {
@@ -187,7 +194,7 @@
 
 @media (max-width:64em){ /*1024 px - ipad landscape - laptop-ish */
   header {
-    background: url("http://www.sfu.ca/~mtsumura/landing-pg-1024.jpg") no-repeat center center fixed; 
+    background: url("http://www.sfu.ca/~mtsumura/landing-pg-1024.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -264,7 +271,7 @@
   }
 
   header {
-    background: url("http://www.sfu.ca/~mtsumura/landing-pg-800.jpg") no-repeat center center fixed; 
+    background: url("http://www.sfu.ca/~mtsumura/landing-pg-800.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
