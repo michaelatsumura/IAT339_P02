@@ -351,7 +351,8 @@ section p {
 
 .price {
 	font-family: 'Arvo', Times, serif;
-	font-weight: 400;
+	font-weight: 700;
+  text-transform: uppercase;
 	color: #465166;
 	margin-top: 0.3em;
   margin-bottom: 1em;
@@ -466,7 +467,7 @@ footer, .push {
 
 /*Drop Down*/
 .dropdown {
-  padding: 2em;
+  padding: 1.2em;
   border-radius: 0.25em;
   width: 60%;
   font-size: 1em;
@@ -492,7 +493,7 @@ footer, .push {
 
 .divider {
 	padding-bottom: 1em;
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 	border-bottom: solid lightgrey 1px;
 }
 
