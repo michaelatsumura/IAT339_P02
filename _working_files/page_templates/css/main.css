@@ -131,11 +131,6 @@ section p {
   list-style: none;
 }
 
-/* Call to Action Text */
-.landing-header {
-  font-size: 3rem;
-}
-
 /* Profile Icon */
 .profile {
   max-width: 30px;
@@ -655,6 +650,10 @@ header {
   height: 100vh; /* viewport height */
 }
 
+/* Call to Action Text */
+.landing-header {
+  font-size: 3rem;
+}
 
 
 /*

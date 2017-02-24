@@ -97,7 +97,7 @@
 */
   .content-container {
     width: 100%;
-    padding: 5% 15%;
+    padding: 8% 15%;
   }
 
   .nav-container {
@@ -112,26 +112,19 @@
     padding: 10% 30%;
   }
 
-/*  .content-container-center {
-    width: 100%;
-    padding: 5% 38%;
-  }
-*/
-
   .form-container {
     text-align: center;
     width: 100%;
-    padding: 5% 15%;
+    padding: 8% 15%;
   }
 
   .checkout-container {
     width: 100%;
-    padding: 5% 25%;
+    padding: 8% 25%;
   }
 
   /*Gutters*/
   [class*='col-'] {
-    /*padding-right: 1.5em;*/
     padding-right: 0.5em;
     padding-left: 0.5em;
   }
