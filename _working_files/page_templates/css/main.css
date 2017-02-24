@@ -451,6 +451,7 @@ label {
 .product-list-view {
 	width: 100%;
   padding: 1em;
+  border: solid 1px #D3D3D3;
 }
 
 /* Additional spacing at the top */
@@ -833,4 +834,10 @@ GENERAL STYLING
 
 .new-section{
   margin-top: 2em;
+}
+
+
+/* Spacing after grid-row (product listing page) */
+.grid-row-spacing {
+  margin: 2rem 0;
 }
