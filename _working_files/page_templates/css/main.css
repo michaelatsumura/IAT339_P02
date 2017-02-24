@@ -1,57 +1,73 @@
+/* ------------------------------------------------
+  Stylesheet for swirlpolishesco.com
+  Authors: Joanna Lin and Michaela Tsumura
+------------------------------------------------- */
+
 /*
-  STYLE GUIDE STYLING
-  Default styling for the style guide
+======================================================
+    TABLE OF CONTENTS
+======================================================
+	#. DEFAULT STYLING
+  #. MAIN NAVIGATION
+  #. INTERACTIVE ELEMENTS
+  #. TEXT ELEMENTS
+  #. COMBINED ELEMENTS + COMPONENTS
+  #. FRONT PAGE STYLING
+  #. MIX PAGE STYLING
+  #. CART PAGE STYLING
+  #. PROFILE PAGE STYLING
+  #. SELL MIX PAGE STYLING
 */
 
+/*
+======================================================
+  #. DEFAULT STYLING
+    Default styling for styleguide and website
+======================================================
+*/
+
+/* Sets everything to border-box sizing */
 * {
   box-sizing: border-box;
 }
 
+/* Takes away any built-in browser spacing */
 html {
   height: 100%;
 }
 
-p {
-  margin: 0;
-}
-
+/* Default font-family is Muli */
 body {
   font-family: 'Muli', Helvetica, sans-serif;
-  /*padding: 1rem 3rem;*/
   color: #000000;
   min-height: 100%;
   width: 100%;
-/*  display: flex;
-  flex-direction: column;*/ /* disabled these styles, if it is necessary uncomment it */
 }
 
-/* padding for styleguide template only*/
-.styleguide {
-  padding: 1rem 3rem;
-}
-
+/* Sets margins top and bottom for sections */
 section {
   margin: 1em 0;
 }
 
+/* Adds a border for any sections without id's */
 section:not([id]) {
   margin: 3em 0;
   padding: 2em 0;
   border-top: 1px solid #e8e8e8;
 }
 
+/* Adds spacing to styleguide code*/
 section code {
   display: inline-block;
   background-color: #EEE;
   padding: 2em;
-  margin-top: 0.5em;
-  margin-right: 3em;
+  margin: 0.5em 3em 0 0;
   border-radius: 0.25em;
   font-size: 0.8em;
   line-height: 1.4em;
-  /*max-width: 60%*/
 }
 
+/*Default link styling */
 a {
   text-decoration: none;
   color: #3D4656; /*Dark Blue*/
@@ -66,6 +82,40 @@ img {
   max-width: 100%;
 }
 
+/* padding for styleguide template only*/
+.styleguide {
+  padding: 1rem 3rem;
+}
+
+/* Default Headings */
+h2 {
+  color:#000000;
+  padding: 0.5rem 0 0.25rem 0;
+}
+
+section h3 {
+  color: #3D4656;
+  margin-bottom: 0;
+  padding-bottom: 0.35rem;
+}
+
+/* Paragraph Styling*/
+p {
+  margin: 0;
+}
+
+section p {
+  margin-top: 0;
+}
+
+/*
+======================================================
+  #. MAIN NAVIGATION
+    Styling for main navigation
+======================================================
+*/
+
+/* Main Navigation */
 .main-nav {
   display: -webkit-flex; /* For support in a series of Webkit browsers */
   display: -ms-flex; /* For support in IE 10 */
@@ -74,7 +124,6 @@ img {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
   width: 100%;
   background-color: white;
   box-shadow: 0 1px 8px #f7f7f7;
@@ -82,31 +131,29 @@ img {
   list-style: none;
 }
 
-
-/*Main Navigation */
-.background {
-  padding:2em 0;
-}
-
+/* Call to Action Text */
 .landing-header {
   font-size: 3rem;
 }
 
-/* Profile */
+/* Profile Icon */
 .profile {
-  width: 35px;
+  max-width: 30px;
 }
 
-/* Search */
+/* Search Bar*/
 .search {
   max-width: 25px;
 }
 
 /*
-  INTERACTIVE ELEMENTS STYLING  ----------------------------------------------------------------------------
+======================================================
+  #. INTERACTIVE ELEMENTS
+    Styleguide interactive elements
+======================================================
 */
 
-/* Navigation button */
+/* Main Navigation Button */
 .button-nav {
   text-transform: uppercase;
   font-size: 1rem;
@@ -134,7 +181,7 @@ img {
 
 /* Secondary Navigation Button */
 .secondary-nav {
-  font-size: 0.85em;
+  font-size: 0.9em;
 }
 
 /* In-text link */
@@ -260,7 +307,7 @@ img {
   text-align: center;
 }
 
-/* Text FIeld and Label */
+/* Text Field and Label */
 .searchfield {
   padding: 0.6em 0.8em;
   border-radius: 0.25em;
@@ -273,11 +320,15 @@ img {
 label {
     padding-right: 0.5em;
 }
+
 /*
-  TEXT ELEMENTS STYLING ----------------------------------------------------------------------------
+======================================================
+  #. TEXT ELEMENTS
+    Styleguide text elements
+======================================================
 */
 
-/*header styling*/
+/* Main Heading Styling h1 elements */
 .main-heading {
   max-width: 100%;
   margin: 0;
@@ -289,12 +340,15 @@ label {
   font-size: 2.5em;
 }
 
-h2 {
-  color:#000000;
-  padding-top: 0.5rem;
-  padding-bottom: 0.25rem;
+/* Product Name h2 elements */
+.product-name {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 1.5em;
 }
 
+/* Product Subheading h3 elements */
 .product-subhead {
   font-weight: 300;
   margin: 0;
@@ -302,36 +356,27 @@ h2 {
   font-size: 1.3em;
 }
 
-section h3 {
-  color: #3D4656;
-  margin-bottom: 0;
-  padding-bottom: 0.35rem;
-}
-
-.product-name {
-  margin: 0;
-  padding: 0;
-  color: black;
-  font-size:1.5em;
-}
-
+/* Secondary heading for confirmation pages */
 .secondary-heading {
   font-size: 2.2rem;
   margin: 0 0 0.5rem 0;
 }
 
-/*paragraph styling*/
-section p {
-  margin-top: 0;
-}
-
+/* Paragraph styling for production description */
 .content-description {
-  /*max-width: 60%;*/
   margin-bottom: 1em;
 }
 
+/*
+  Rest, not sure and also needs to be added to the styleguide
+  We should also see if we can reduce down any redundant code
+*/
+.product-description {
+  max-width: 100%;
+  font-size: 1em;
+}
+
 .page-description {
-  /*max-width: 60%;*/
   margin-top: 0.3em;
   padding-bottom: 2em;
 }
@@ -342,11 +387,6 @@ section p {
 
 .polish-name-noprice {
   margin-bottom: 1em;
-}
-
-.product-description {
-  max-width: 100%;
-  font-size: 1em;
 }
 
 .lists {
@@ -366,13 +406,14 @@ section p {
 /* end of styling the TEXT ELEMENTS*/
 
 
-
-
 /*
-  COMBINED ELEMENTS ----------------------------------------------------------------------------
+======================================================
+  #. COMBINED ELEMENTS + COMPONENTS
+    Styleguide Combined Elements
+======================================================
 */
 
-/*product listing styles*/
+/* Product listing styles */
 .fit-product {
   padding: 1em;
   max-width: 100%;
@@ -380,60 +421,57 @@ section p {
   border: solid lightgrey 0.1em;
 }
 
-/*SWATCHES*/
-/*colour swatch block styling */
+/*COLOUR SCHEME*/
+/*Intended colour scheme for the website */
 .swatch1 {
-  background-color: #AD7C83;
+  background-color: #AD7C83; /*Dark pink*/
   color: white;
   text-align: center;
   padding: 1rem;
 }
 
 .swatch2 {
-  background-color: rgba(173, 124, 131, 0.4);
+  background-color: rgba(173, 124, 131, 0.4); /* Light Pink */
   color: #3D4656;
   text-align: center;
   padding: 1rem;
 }
 
 .swatch3 {
-  background-color: #3D4656;
+  background-color: #3D4656; /* Navy BLue */
   color: white;
   text-align: center;
   padding: 1rem;
 }
 
 .swatch4 {
-  background-color: black;
+  background-color: black; /* Black */
   color: white;
   text-align: center;
   padding: 1rem;
 }
 
-
-
-/*
-  COMPONENT STYLING ----------------------------------------------------------------------------
-*/
-
-/*Product Listing*/
+/*PRODUCT LISTING*/
+/* Default product view for browse and shop pages */
 .product-list-view {
 	width: 100%;
   padding: 1em;
 }
 
+/* Additional spacing at the top */
 .product-list-view-margin-top {
   width: 100%;
   padding: 1em;
   margin-top: 3em;
 }
 
+/* Spacing after each row? */
 .product-row-list {
   padding-top: 5rem;
 }
 
+/*FOOTER*/
 .footer{
-/*  position: relative;*/
 	background-color: rgba(173, 124, 131, 0.4); /*Light Pink 40%*/
 	padding: 1.5em 1em 1.5em 3em; /*T R B L*/
 	color: white;
@@ -441,6 +479,7 @@ section p {
   text-align: left;
 }
 
+/* Attempting to fix footer to the bottom of the page */
 .short-page { /*Making the footer fixed at the bottom of pages with less content*/
   position: fixed;
   bottom: 0;
@@ -459,18 +498,19 @@ footer, .push {
     height: 4rem; /* .push must be the same height as .footer */
 }
 
-.social-icon{
+/* SOCIAL MEDIA ICONS */
+.social-icon {
 	width: 3rem;
 	height: auto;
   border-radius: 5em;
 }
 
-/*Colour Picker*/
+/* Colour Picker */
 .colour-picker:hover, .colour-picker:focus {
   cursor: crosshair;
 }/* source: http://www.w3schools.com/cssref/pr_class_cursor.asp */
 
-/*Drop Down*/
+/* Drop Down */
 .dropdown {
   padding: 1.2em;
   border-radius: 0.25em;
@@ -481,12 +521,13 @@ footer, .push {
 } /*source:http://www.w3schools.com/tags/tag_select.asp*/
 
 
-/*Slider Bar*/
+/* Slider Bar */
 .slider {
   width: 100%;
 }
 
 
+/* Have to re-organize the rest of this and add it to the styleguide */
 .cart-image {
 	border: solid lightgrey 1px;
 }
@@ -501,7 +542,6 @@ footer, .push {
 	margin-bottom: 1em;
 	border-bottom: solid lightgrey 1px;
 }
-
 
 .payment-fields {
   display:block;
@@ -537,23 +577,6 @@ footer, .push {
   font-size: 0.9rem;
   margin-bottom: 1.5em;
 }
-
-/* Primary Button */
-/*.button-primary-half {
-  padding: 0.8em 2em;
-  background-color: #C19A97;
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.1em;
-  font-weight: 700;
-  border-radius: 0.25em;
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
-  margin: 0.2em 0 0.4em 1em;
-  text-align: center;
-}*/
-
 
 .payment-headers {
   display:block;
@@ -616,24 +639,29 @@ footer, .push {
 
 
 /*
-  FRONT PAGE STYLING ----------------------------------------------------------------------------
+======================================================
+  #. FRONT PAGE STYLING
+    Styling for index.html
+======================================================
 */
 
+/* Background image for header */
 header {
-/*  background: url("http://placehold.it/2000x1800") no-repeat;
-  background-size: cover;
-  height: 100vh;*/
-
   background: url("http://www.sfu.ca/~mtsumura/landingpg-bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100vh;
+  height: 100vh; /* viewport height */
 }
 
+
+
 /*
-  MIX PAGE STYLING ----------------------------------------------------------------------------
+======================================================
+  #. MIX PAGE STYLING
+    Additional styling for mix page
+======================================================
 */
 #info form {
   margin-bottom: 1em;
@@ -646,8 +674,12 @@ header {
 
 
 /*
-  CART PAGE STYLING ----------------------------------------------------------------------------
+======================================================
+  #. CART PAGE STYLING
+======================================================
 */
+
+/*Honestly not sure what these are for*/
 #cart .grid-col-8of8 {
   margin-bottom: 2em;
   border-top: 1px solid #e8e8e8;
@@ -660,16 +692,35 @@ header {
 
 
 /*
-  PROFILE PAGE STYLING ----------------------------------------------------------------------------
+======================================================
+  #. PROFILE PAGE STYLING
+======================================================
 */
-.profile img {
+
+/* Rounded corners for profile image */
+.profile-image {
   border-radius: 2.5em;
 }
 
-.profile p {
+/* Profile Name */
+.name {
+  margin-top: 2em;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+/* Profile text information */
+.profile-info {
+  text-align: left;
+  width: 90%;
+  line-height: 1.3em;
   margin-bottom: 1em;
 }
 
+/*
+  Don't see this attached to anything?
+  I assume it's to add more spacing to the right of the bio?
+*/
 #bio {
   margin-right: 3em;
 }
@@ -684,18 +735,6 @@ header {
   padding-bottom: 1em;
 }
 
-.profile-info {
-  text-align: left;
-  width: 90%;
-  line-height: 1.3em;
-}
-
-.name {
-  margin-top: 2em;
-  font-weight: 500;
-  font-size: 1.2rem;
-}
-
 .edit {
   color: #C19A97;
   text-align: right;
@@ -703,7 +742,9 @@ header {
 
 
 /*
-  SELL STYLING ----------------------------------------------------------------------------
+======================================================
+  #. SELL MIX PAGE STYLING
+======================================================
 */
 .price-field {
   width: 30%;
@@ -725,8 +766,6 @@ header {
   font-family: "Muli", Arial, sans-serif;
   line-height: 1.3em;
 }
-
-
 
 /*Sign in / up fields */
 .signin-fields {
