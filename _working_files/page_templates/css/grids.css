@@ -134,12 +134,18 @@
   }
 
  .grid-col-4of8-button {
+    padding-left: 0 !important;
   width: 50%;
  }
 
 }
 
 @media (max-width:43.75em){
+
+  .content-container {
+    width: 100%;
+    padding: 18% 10% !important;
+  }
 
   .fit-product{
     margin-bottom: 1em;
@@ -172,14 +178,27 @@
   .landing-header {
   font-size: 2rem;
 }
+
 }
 
 /*--------------------------------------------------------------------------------------------------------*/
 
 @media (max-width:70em){ /*1121 px - ipad landscape - laptop-ish */
-.grid-col-2of8-list-view{
-  width: 33.3333%;
-}
+  .grid-col-2of8-list-view{
+    width: 33.3333%;
+  }
+
+  /* Main Heading Styling h1 elements */
+  .main-heading {
+    max-width: 100%;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: 0.02rem;
+    padding-bottom: 0.3em;
+    font-size: 2em;
+  }
 
 }
 
@@ -206,10 +225,14 @@
 
 
 @media (max-width:56.875em){ /*910 px * ---- large tablet*/
- .grid-col-4of8-button {
-  width: 100%;
- }
+   .grid-col-4of8-button {
+    width: 100%;
+   }
 
+  .content-container {
+    width: 100%;
+    padding: 12% 10% !important;
+  }
 
 }
 
@@ -291,6 +314,14 @@
   width: 100% !important;
   }
 
+  .content-container {
+    width: 100%;
+    padding: 18% 10% !important;
+  }
+
+
+
+}
 
 
 @media (max-width:30em){ /*480 px -- to fix nav items */
@@ -326,9 +357,9 @@
 }
 
 
-
-
-
-@media (max-width:20em){ /*320 px -- iphone5 */
-
+@media (max-width:21em){ /*320 px -- iphone5 */
+  .content-container {
+    width: 100%;
+    padding: 25% 10% !important;
+  }
 }

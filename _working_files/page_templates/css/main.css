@@ -1,5 +1,5 @@
 /* ------------------------------------------------
-  Stylesheet for swirlpolishesco.com
+  Stylesheet for swirlpolishes.co
   Authors: Joanna Lin and Michaela Tsumura
 ------------------------------------------------- */
 
@@ -357,7 +357,7 @@ label {
   margin: 0 0 0.5rem 0;
 }
 
-/* Paragraph styling for production description */
+/* Paragraph styling for product description */
 .content-description {
   margin-bottom: 1em;
 }
@@ -384,11 +384,7 @@ label {
   margin-bottom: 1em;
 }
 
-.lists {
-  margin-top: 0.5em;
-  line-height: 1.5rem;
-}
-
+/*Styles the product prices*/
 .price {
 	font-family: 'Arvo', Times, serif;
 	font-weight: 700;
@@ -398,6 +394,14 @@ label {
   margin-bottom: 1em;
   font-size:1em;
 }
+
+
+/* lists were only used in our styleguide, maybe we can remove this*/
+.lists {
+  margin-top: 0.5em;
+  line-height: 1.5rem;
+}
+
 /* end of styling the TEXT ELEMENTS*/
 
 
@@ -699,7 +703,8 @@ header {
 
 /* Rounded corners for profile image */
 .profile-image {
-  border-radius: 2.5em;
+  border-radius: 1em;
+  max-width: 12rem;
 }
 
 /* Profile Name */
@@ -715,6 +720,7 @@ header {
   width: 90%;
   line-height: 1.3em;
   margin-bottom: 1em;
+
 }
 
 /*
