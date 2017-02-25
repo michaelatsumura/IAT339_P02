@@ -129,18 +129,22 @@
     padding-left: 0.5em;
   }
 
-  .mobile-hide {
-    visibility: visible;
-  }
 
  .grid-col-4of8-button {
     padding-left: 0 !important;
   width: 50%;
  }
 
+  .mobile-show {
+    display: none;
+  }
+
 }
 
 @media (max-width:43.75em){
+  .grid-col-1hof8 {
+    width: 15%;
+  }
 
   .content-container {
     width: 100%;
@@ -152,15 +156,9 @@
     width: 50%;
   }
 
-/*  .front-page-container {
-  text-align: center;
-  width: 100%;
-  padding: 5% 10%;
-  }*/
-
   .grid-col-4of8-button {
-  width: 50% !important;
-  padding-right: 1em;
+    width: 50% !important;
+    padding-right: 1em;
   }
 
 
@@ -178,6 +176,10 @@
   .landing-header {
   font-size: 2rem;
 }
+
+  .mobile-show {
+    display: none;
+  }
 
 }
 
@@ -249,7 +251,7 @@
   }
 
   .grid-col-2of8-list-view{
-  width: 50% !important;
+    width: 50% !important;
   }
 
   /*Product Listing*/
@@ -299,19 +301,35 @@
 
 
 @media (max-width:37.5em){ /*600 px -- to fix nav items */
-  /* Navigation button */
-  .button-nav {
-    font-size: 0.8rem;
-    margin-right: 0.5em;
+
+/* navigation styling */
+
+  .nav-container {
+    width: 100%;
+    text-align: left !important;
+    padding: 0 5%;
   }
 
-    /* Secondary Navigation Button */
-  .secondary-nav {
-    font-size: 0.735em;
+  .hamburgler-icon {
+    top: 1.6em;
   }
+
+  .mobile-hide {
+    display: none;
+  }
+
+  .mobile-show {
+    display: block;
+  }
+
+
+  /* Secondary Navigation Button */
+/*  .secondary-nav {
+    font-size: 0.735em;
+  }*/
 
   .grid-col-4of8-button {
-  width: 100% !important;
+    width: 100% !important;
   }
 
   .content-container {
@@ -340,13 +358,10 @@
 }
 
 @media (max-width:25em){ /*400 px -- large mobile */
-  .mobile-hide {
-    display: none;
-  }
 
- .grid-col-1of8{
-  width: 100%;
- }
+   .grid-col-1of8{
+      width: 100%;
+   }
 
   .logo {
     display:block;
@@ -354,7 +369,22 @@
     margin-left: 0.5em;
     width: 100%;
   }
+
+  /* navigation styling */
+    .hamburgler-icon-wrapper {
+      position: absolute;
+      top: 0.6em !important;
+      right: 2em;
+      height: 26px;
+      width: 26px;
+      cursor: pointer
+    }
+
+  .hamburger-icon {
+    top: 0.6em;
+  }
 }
+
 
 
 @media (max-width:21em){ /*320 px -- iphone5 */
