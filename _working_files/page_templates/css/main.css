@@ -124,6 +124,7 @@ section p {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 100;
   width: 100%;
   background-color: white;
   box-shadow: 0 1px 8px #f7f7f7;
@@ -131,9 +132,16 @@ section p {
   list-style: none;
 }
 
+/*Main Navigation */ 
+.background { 
+  padding:2em 0; 
+} 
+
 /* Profile Icon */
 .profile {
   max-width: 30px;
+  padding-right:0.3em;
+  margin-right: 0.75em;
 }
 
 /* Search Bar*/
@@ -362,29 +370,28 @@ label {
   margin-bottom: 1em;
 }
 
-/*
-  Rest, not sure and also needs to be added to the styleguide
-  We should also see if we can reduce down any redundant code
-*/
+/* Text that describes the polish colours or product information */
 .product-description {
   max-width: 100%;
   font-size: 1em;
 }
 
+/* Paragraph describing the content of the page (MIX/BROWSE/SHOP) */
 .page-description {
   margin-top: 0.3em;
-  padding-bottom: 2em;
 }
 
+/* Styles the polish name in list view */
 .polish-name {
   margin-bottom: 0;
 }
 
+/* Adds bottom margin if polish doesn't have a price */
 .polish-name-noprice {
   margin-bottom: 1em;
 }
 
-/*Styles the product prices*/
+/* Styles the product prices */
 .price {
 	font-family: 'Arvo', Times, serif;
 	font-weight: 700;
@@ -396,7 +403,7 @@ label {
 }
 
 
-/* lists were only used in our styleguide, maybe we can remove this*/
+/* Lists were only used in our styleguide, maybe we can remove this*/
 .lists {
   margin-top: 0.5em;
   line-height: 1.5rem;
@@ -475,6 +482,15 @@ label {
 	background-color: rgba(173, 124, 131, 0.4); /*Light Pink 40%*/
 	padding: 1.5em 1em 1.5em 3em; /*T R B L*/
 	color: white;
+  height: 4rem;
+  text-align: left;
+  margin-top: 2em;
+}
+
+.footer-landing{
+  background-color: rgba(173, 124, 131, 0.4); /*Light Pink 40%*/
+  padding: 1.5em 1em 1.5em 3em; /*T R B L*/
+  color: white;
   height: 4rem;
   text-align: left;
 }
@@ -556,28 +572,6 @@ footer, .push {
   margin-bottom: 1.5em;
 }
 
-.payment-fields-2 {
-  display:block;
-  max-width: 17.5em;
-  margin: 0 auto;
-  padding: 0.6em 0.8em;
-  border-radius: 0.25em;
-  border: solid lightgrey 0.1em;
-  width: 50%;
-  font-family: "Muli", Arial, sans-serif;
-  font-size: 0.9rem;
-  margin-bottom: 1.5em;
-}
-
-.payment-fields-3 {
-  padding: 0.6em 0.8em;
-  border-radius: 0.25em;
-  border: solid lightgrey 0.1em;
-  font-family: "Muli", Arial, sans-serif;
-  font-size: 0.9rem;
-  margin-bottom: 1.5em;
-}
-
 .payment-headers {
   display:block;
   max-width: 25em;
@@ -621,6 +615,7 @@ footer, .push {
 
 }
 
+/*General Alignment styling*/
 .float-right {
 	float: right;
 }
@@ -721,14 +716,6 @@ header {
   line-height: 1.3em;
   margin-bottom: 1em;
 
-}
-
-/*
-  Don't see this attached to anything?
-  I assume it's to add more spacing to the right of the bio?
-*/
-#bio {
-  margin-right: 3em;
 }
 
 .profile-rows {
@@ -846,4 +833,105 @@ GENERAL STYLING
 /* Spacing after grid-row (product listing page) */
 .grid-row-spacing {
   margin: 2rem 0;
+}
+
+
+/*
+======================================================
+  #. HAMBURGER NAVIGATION HEADER STYLING
+======================================================
+*/
+.hamburger-icon-wrapper {
+  position: absolute;
+  top: 1em;
+  right: 2em;
+  height: 26px;
+  width: 26px;
+  cursor: pointer
+}
+
+.hamburger-icon,
+.hamburger-icon:before,
+.hamburger-icon:after {
+  content: '';
+  position: absolute;
+  border-radius: 1em;
+  height: 2px;
+  width: 26px;
+  background: #3D4656;
+  transition: all 0.2s ease
+}
+
+.hamburger-icon {
+  top: 1em;
+}
+
+.hamburger-icon:before {
+  top: -0.55em
+}
+
+.hamburger-icon:after {
+  top: 0.55em
+}
+
+.hamburger-active .hamburger-icon {
+  background: transparent;
+  transform: rotate(-135deg)
+}
+
+.hamburger-active .hamburger-icon:before,
+.hamburger-active .hamburger-icon:after {
+  top: 0
+}
+
+.hamburger-active .hamburger-icon:before {
+  transform: rotate(90deg)
+}
+
+.hamburger-active .hamburger-icon,
+.hamburger-active .hamburger-icon:before,
+.hamburger-active .hamburger-icon:after {
+  background: black;
+}
+
+.hamburger-menu {
+  transition: all 0.4s ease;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255,255,255, 0.95);
+  color: #3D4656;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 2.5em;
+  text-align: center
+}
+
+.hamburger-item:hover, .hamburger-item:focus {
+  color: #C19A97;
+}
+
+.hamburger-active .hamburger-menu {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.hamburger-menu-list {
+  display: block;
+  transition: all 0.4s ease;
+  padding: 0;
+  list-style-type: none;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2)
+}
+
+.hamburger-active .hamburger-menu-list {
+  transform: translate(-50%, -50%) scale(1)
 }
