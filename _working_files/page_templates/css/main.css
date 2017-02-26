@@ -315,7 +315,6 @@ label {
 
 
 /* --------- FORM FIELDS -----------*/
-
 /* Searchfield */
 .searchfield {
   padding: 0.6em 0.8em;
@@ -339,6 +338,29 @@ label {
   margin-bottom: 1.5em;
 }
 
+/* --------- FORM FIELDS -----------*/
+
+/* Multiple add-in's and custom options */
+.dropdown {
+  padding: 1.2em;
+  border-radius: 0.25em;
+  width: 60%;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  margin-bottom: 1em;
+} /*source:http://www.w3schools.com/tags/tag_select.asp*/
+
+/* Drop down filter */
+.dropdown-filter {
+  border-radius: 0.25em;
+  padding: 0.5em;
+  font-size: 0.9em;
+}
+
+/* Slider Bar */
+.slider {
+  width: 100%;
+}
 
 /*
 ======================================================
@@ -346,7 +368,7 @@ label {
     Styleguide text elements
 ======================================================
 */
-
+/* --------- HEADINGS -----------*/
 /* Main Heading Styling h1 elements */
 .main-heading {
   max-width: 100%;
@@ -381,21 +403,20 @@ label {
   margin: 0 0 0.5rem 0;
 }
 
-/* Paragraph styling for product description */
-.content-description {
-  margin-bottom: 1em;
-}
-
-/* Text that describes the polish colours or product information */
-.product-description {
-  max-width: 100%;
+/* --------- PARAGRAPHS -----------*/
+/* Primary paragraph style */
+.paragraph-primary {
   font-size: 1em;
+  max-width: 100%;
+  margin: 0.3em 0 0.8em 0;
 }
 
-/* Paragraph describing the content of the page (MIX/BROWSE/SHOP) */
-.page-description {
-  margin-top: 0.3em;
+/* Paragraph for cart page */
+.cart-description {
+	font-size: 0.8em;
+	font-weight: 400;
 }
+
 
 /* Styles the polish name in list view */
 .polish-name {
@@ -417,7 +438,6 @@ label {
   margin-bottom: 1em;
   font-size:1em;
 }
-
 
 /* Lists were only used in our styleguide, maybe we can remove this*/
 .lists {
@@ -443,7 +463,7 @@ label {
   border: solid lightgrey 0.1em;
 }
 
-/*COLOUR SCHEME*/
+/* --------- COLOUR SCHEME -----------*/
 /*Intended colour scheme for the website */
 .swatch1 {
   background-color: #AD7C83; /*Dark pink*/
@@ -473,7 +493,7 @@ label {
   padding: 1rem;
 }
 
-/*PRODUCT LISTING*/
+/* --------- PRODUCT LISTING -----------*/
 /* Default product view for browse and shop pages */
 .product-list-view {
 	width: 100%;
@@ -493,20 +513,11 @@ label {
   padding-top: 5rem;
 }
 
-/*FOOTER*/
+/* --------- FOOTER -----------*/
 .footer{
 	background-color: rgba(173, 124, 131, 0.4); /*Light Pink 40%*/
 	padding: 1.5em 1em 1.5em 3em; /*T R B L*/
 	color: white;
-  height: 4rem;
-  text-align: left;
-  margin-top: 2em;
-}
-
-.footer-landing{
-  background-color: rgba(173, 124, 131, 0.4); /*Light Pink 40%*/
-  padding: 1.5em 1em 1.5em 3em; /*T R B L*/
-  color: white;
   height: 4rem;
   text-align: left;
 }
@@ -526,6 +537,7 @@ label {
     height: 100%;
     margin: 0 auto 4rem; /* the bottom margin is the negative value of the footer's height */
 }
+
 footer, .push {
     height: 4rem; /* .push must be the same height as .footer */
 }
@@ -542,31 +554,11 @@ footer, .push {
   cursor: crosshair;
 }/* source: http://www.w3schools.com/cssref/pr_class_cursor.asp */
 
-/* Drop Down */
-.dropdown {
-  padding: 1.2em;
-  border-radius: 0.25em;
-  width: 60%;
-  font-size: 1em;
-  letter-spacing: 0.05em;
-  margin-bottom: 1em;
-} /*source:http://www.w3schools.com/tags/tag_select.asp*/
-
-
-/* Slider Bar */
-.slider {
-  width: 100%;
-}
 
 
 /* Have to re-organize the rest of this and add it to the styleguide */
 .cart-image {
 	border: solid lightgrey 1px;
-}
-
-.cart-description {
-	font-size: 0.8em;
-	font-weight: 400;
 }
 
 .divider {
