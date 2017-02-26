@@ -51,7 +51,6 @@ section {
 
 /* Adds a border for any sections without id's */
 section:not([id]) {
-  margin: 3em 0;
   padding: 2em 0;
   border-top: 1px solid #e8e8e8;
 }
@@ -84,7 +83,7 @@ img {
 
 /* padding for styleguide template only*/
 .styleguide {
-  padding: 1rem 3rem;
+  padding: 5rem 3rem 1rem 3rem;
 }
 
 /* Default Headings */
@@ -240,7 +239,7 @@ label {
   border-radius: 0.25em;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
-  margin: 0.2em 0 0.4em 1em; /*T R B L*/
+  /*margin: 0.2em 0 0.4em 1em; /*T R B L*/*/
   text-align: center;
 }
 
@@ -609,10 +608,12 @@ footer, .push {
 
 
 /* Have to re-organize the rest of this and add it to the styleguide */
+/* Places a border around the cart image */
 .cart-image {
 	border: solid lightgrey 1px;
 }
 
+/* grey divider at the bottom of each order */
 .divider {
 	padding-bottom: 1em;
 	margin-bottom: 1em;
@@ -683,16 +684,6 @@ header {
 
 }
 
-.profile-rows {
-  border-bottom: solid 1px lightgrey;
-  margin-bottom: 1em;
-}
-
-.social-share {
-  display: block;
-  padding-bottom: 1em;
-}
-
 .edit {
   color: #C19A97;
   text-align: right;
@@ -742,8 +733,8 @@ GENERAL STYLING
   margin-top: 2em;
 }
 
-.link-margin-top {
-  margin-top: 1em;
+.link-margin {
+  margin: 1em 0;
 }
 
 .checkbox {
