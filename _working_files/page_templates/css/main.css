@@ -397,10 +397,15 @@ label {
   font-size: 1.3em;
 }
 
-/* Secondary heading for confirmation pages */
+/* Secondary heading for confirmation pages h2 */
 .secondary-heading {
   font-size: 2.2rem;
   margin: 0 0 0.5rem 0;
+}
+
+/* Call to Action Text on Front Page */
+.landing-header {
+  font-size: 3rem;
 }
 
 /* --------- PARAGRAPHS -----------*/
@@ -644,11 +649,6 @@ header {
   -o-background-size: cover;
   background-size: cover;
   height: 100vh; /* viewport height */
-}
-
-/* Call to Action Text */
-.landing-header {
-  font-size: 3rem;
 }
 
 
