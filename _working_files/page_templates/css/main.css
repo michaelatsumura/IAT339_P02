@@ -51,7 +51,6 @@ section {
 
 /* Adds a border for any sections without id's */
 section:not([id]) {
-  margin: 3em 0;
   padding: 2em 0;
   border-top: 1px solid #e8e8e8;
 }
@@ -84,7 +83,7 @@ img {
 
 /* padding for styleguide template only*/
 .styleguide {
-  padding: 1rem 3rem;
+  padding: 5rem 3rem 1rem 3rem;
 }
 
 /* Default Headings */
@@ -106,6 +105,10 @@ p {
 
 section p {
   margin-top: 0;
+}
+
+label {
+  padding-right: 0.5em;
 }
 
 /*
@@ -132,10 +135,10 @@ section p {
   list-style: none;
 }
 
-/*Main Navigation */ 
-.background { 
-  padding:2em 0; 
-} 
+/*Main Navigation */
+.background {
+  padding:2em 0;
+}
 
 /* Profile Icon */
 .profile {
@@ -199,7 +202,7 @@ section p {
   color: #3D4656; /*Dark Blue*/
 }
 
-/* Buttons */
+/* --------- BUTTONS -----------*/
 /* Primary Button */
 .button-primary {
   padding: 0.8em 1.3em;
@@ -218,7 +221,13 @@ section p {
   text-align: center;
 }
 
-/* Primary Button */
+.button-primary:hover, .button-primary:focus {
+  background-color: #DDD;
+  color: #000;
+  text-decoration: none;
+}
+
+/* Primary Button Half Width? */
 .button-primary-half {
   padding: 0.8em 2em;
   background-color: #C19A97; /*Light Pink*/
@@ -230,15 +239,8 @@ section p {
   border-radius: 0.25em;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
-  margin: 0.2em 0 0.4em 1em; /*T R B L*/
+  /*margin: 0.2em 0 0.4em 1em; /*T R B L*/*/
   text-align: center;
-}
-
-
-.button-primary:hover, .button-primary:focus {
-  background-color: #DDD;
-  color: #000;
-  text-decoration: none;
 }
 
 .button-primary-half:hover, .button-primary-half:focus {
@@ -265,7 +267,13 @@ section p {
   text-align: center;
 }
 
-/* Secondary Button */
+.button-secondary:hover, .button-secondary:focus {
+  background-color: #C19A97; /*Light Pink*/
+  color: #FFF;
+  text-decoration: none;
+}
+
+/* Secondary Button Half Width?*/
 .button-secondary-half {
   padding: 0.8em 2em;
   letter-spacing: 0.1em;
@@ -279,12 +287,6 @@ section p {
   transition: background-color 0.5s ease-out;
   margin: 0.2em 0 0.4em 0; /*T R B L*/
   text-align: center;
-}
-
-.button-secondary:hover, .button-secondary:focus {
-  background-color: #C19A97; /*Light Pink*/
-  color: #FFF;
-  text-decoration: none;
 }
 
 .button-secondary-half:hover, .button-secondary-half:focus {
@@ -310,7 +312,9 @@ section p {
   text-align: center;
 }
 
-/* Text Field and Label */
+
+/* --------- FORM FIELDS -----------*/
+/* Searchfield */
 .searchfield {
   padding: 0.6em 0.8em;
   border-radius: 0.25em;
@@ -320,9 +324,55 @@ section p {
   font-size: 0.9rem;
 }
 
-label {
-    padding-right: 0.5em;
+/* Form field for sign in/up and checkout pages */
+.formfield {
+  max-width: 25em;
+  margin: 0 auto;
+  padding: 0.6em 0.8em;
+  border-radius: 0.25em;
+  border: solid lightgrey 0.1em;
+  width: 100%;
+  font-family: "Muli", Arial, sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 1.5em;
 }
+
+/* --------- FORM FIELDS -----------*/
+
+/* Multiple add-in's and custom options */
+.dropdown {
+  padding: 1.2em;
+  border-radius: 0.25em;
+  width: 60%;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  margin-bottom: 1em;
+} /*source:http://www.w3schools.com/tags/tag_select.asp*/
+
+/* Drop down filter */
+.dropdown-filter {
+  border-radius: 0.25em;
+  padding: 0.5em;
+  font-size: 0.9em;
+}
+
+/* Slider Bar */
+.slider {
+  width: 100%;
+}
+
+/* SOCIAL MEDIA ICONS */
+.social-icon {
+	width: 3rem;
+	height: auto;
+  border-radius: 5em;
+}
+
+/* Colour Picker */
+.colour-picker:hover, .colour-picker:focus {
+  cursor: crosshair;
+}/* source: http://www.w3schools.com/cssref/pr_class_cursor.asp */
+
 
 /*
 ======================================================
@@ -330,7 +380,7 @@ label {
     Styleguide text elements
 ======================================================
 */
-
+/* --------- HEADINGS -----------*/
 /* Main Heading Styling h1 elements */
 .main-heading {
   max-width: 100%;
@@ -359,27 +409,56 @@ label {
   font-size: 1.3em;
 }
 
-/* Secondary heading for confirmation pages */
+/* Secondary heading for confirmation pages h2 */
 .secondary-heading {
   font-size: 2.2rem;
   margin: 0 0 0.5rem 0;
 }
 
-/* Paragraph styling for product description */
-.content-description {
-  margin-bottom: 1em;
+/* Call to Action Text on Front Page */
+.landing-header {
+  font-size: 3rem;
 }
 
-/* Text that describes the polish colours or product information */
-.product-description {
-  max-width: 100%;
+
+.payment-headers {
+  display:block;
+  max-width: 25em;
+  margin: 0 auto;
+  padding: 0.6em 1.2em;
+  width: 100%;
+  text-align: left;
+  font-family: "Muli", Arial, sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 1.5em;
+}
+
+.field-header{
+	margin-bottom: 0.5em;
+	font-weight: 400;
   font-size: 1em;
 }
 
-/* Paragraph describing the content of the page (MIX/BROWSE/SHOP) */
-.page-description {
-  margin-top: 0.3em;
+.field-header-center{
+  margin-bottom: 0.75em;
+  font-weight: 400;
+  text-align: center;
 }
+
+/* --------- PARAGRAPHS -----------*/
+/* Primary paragraph style */
+.paragraph-primary {
+  font-size: 1em;
+  max-width: 100%;
+  margin: 0.3em 0 0.8em 0;
+}
+
+/* Paragraph for cart page */
+.cart-description {
+	font-size: 0.8em;
+	font-weight: 400;
+}
+
 
 /* Styles the polish name in list view */
 .polish-name {
@@ -402,11 +481,31 @@ label {
   font-size:1em;
 }
 
-
 /* Lists were only used in our styleguide, maybe we can remove this*/
 .lists {
   margin-top: 0.5em;
   line-height: 1.5rem;
+}
+
+
+.half-field {
+  display:inline-block;
+  max-width: 5em;
+  margin: 0 auto;
+  padding: 0.6em 0.8em;
+  border-radius: 0.25em;
+  border: solid lightgrey 0.1em;
+  width: 100%;
+  font-family: "Muli", Arial, sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 1.5em;
+}
+
+
+.order-summary {
+	margin-bottom: 1.3em;
+	font-weight: 300;
+
 }
 
 /* end of styling the TEXT ELEMENTS*/
@@ -420,6 +519,7 @@ label {
 */
 
 /* Product listing styles */
+/* Couldn't find where this goes? */
 .fit-product {
   padding: 1em;
   max-width: 100%;
@@ -427,7 +527,7 @@ label {
   border: solid lightgrey 0.1em;
 }
 
-/*COLOUR SCHEME*/
+/* --------- COLOUR SCHEME -----------*/
 /*Intended colour scheme for the website */
 .swatch1 {
   background-color: #AD7C83; /*Dark pink*/
@@ -457,7 +557,7 @@ label {
   padding: 1rem;
 }
 
-/*PRODUCT LISTING*/
+/* --------- PRODUCT LISTING -----------*/
 /* Default product view for browse and shop pages */
 .product-list-view {
 	width: 100%;
@@ -477,20 +577,11 @@ label {
   padding-top: 5rem;
 }
 
-/*FOOTER*/
+/* --------- FOOTER -----------*/
 .footer{
 	background-color: rgba(173, 124, 131, 0.4); /*Light Pink 40%*/
 	padding: 1.5em 1em 1.5em 3em; /*T R B L*/
 	color: white;
-  height: 4rem;
-  text-align: left;
-  margin-top: 2em;
-}
-
-.footer-landing{
-  background-color: rgba(173, 124, 131, 0.4); /*Light Pink 40%*/
-  padding: 1.5em 1em 1.5em 3em; /*T R B L*/
-  color: white;
   height: 4rem;
   text-align: left;
 }
@@ -510,109 +601,23 @@ label {
     height: 100%;
     margin: 0 auto 4rem; /* the bottom margin is the negative value of the footer's height */
 }
+
 footer, .push {
     height: 4rem; /* .push must be the same height as .footer */
 }
 
-/* SOCIAL MEDIA ICONS */
-.social-icon {
-	width: 3rem;
-	height: auto;
-  border-radius: 5em;
-}
-
-/* Colour Picker */
-.colour-picker:hover, .colour-picker:focus {
-  cursor: crosshair;
-}/* source: http://www.w3schools.com/cssref/pr_class_cursor.asp */
-
-/* Drop Down */
-.dropdown {
-  padding: 1.2em;
-  border-radius: 0.25em;
-  width: 60%;
-  font-size: 1em;
-  letter-spacing: 0.05em;
-  margin-bottom: 1em;
-} /*source:http://www.w3schools.com/tags/tag_select.asp*/
-
-
-/* Slider Bar */
-.slider {
-  width: 100%;
-}
-
 
 /* Have to re-organize the rest of this and add it to the styleguide */
+/* Places a border around the cart image */
 .cart-image {
 	border: solid lightgrey 1px;
 }
 
-.cart-description {
-	font-size: 0.8em;
-	font-weight: 400;
-}
-
+/* grey divider at the bottom of each order */
 .divider {
 	padding-bottom: 1em;
 	margin-bottom: 1em;
 	border-bottom: solid lightgrey 1px;
-}
-
-.payment-fields {
-  display:block;
-  max-width: 25em;
-  margin: 0 auto;
-  padding: 0.6em 0.8em;
-  border-radius: 0.25em;
-  border: solid lightgrey 0.1em;
-  width: 100%;
-  font-family: "Muli", Arial, sans-serif;
-  font-size: 0.9rem;
-  margin-bottom: 1.5em;
-}
-
-.payment-headers {
-  display:block;
-  max-width: 25em;
-  margin: 0 auto;
-  padding: 0.6em 1.2em;
-  width: 100%;
-  text-align: left;
-  font-family: "Muli", Arial, sans-serif;
-  font-size: 0.9rem;
-  margin-bottom: 1.5em;
-}
-
-.half-field {
-  display:inline-block;
-  max-width: 5em;
-  margin: 0 auto;
-  padding: 0.6em 0.8em;
-  border-radius: 0.25em;
-  border: solid lightgrey 0.1em;
-  width: 100%;
-  font-family: "Muli", Arial, sans-serif;
-  font-size: 0.9rem;
-  margin-bottom: 1.5em;
-}
-
-.field-header{
-	margin-bottom: 0.5em;
-	font-weight: 400;
-  font-size: 1em;
-}
-
-.field-header-center{
-  margin-bottom: 0.75em;
-  font-weight: 400;
-  text-align: center;
-}
-
-.order-summary {
-	margin-bottom: 1.3em;
-	font-weight: 300;
-
 }
 
 /*General Alignment styling*/
@@ -650,45 +655,6 @@ header {
   height: 100vh; /* viewport height */
 }
 
-/* Call to Action Text */
-.landing-header {
-  font-size: 3rem;
-}
-
-
-/*
-======================================================
-  #. MIX PAGE STYLING
-    Additional styling for mix page
-======================================================
-*/
-#info form {
-  margin-bottom: 1em;
-}
-
-#addins select {
-  margin-bottom: 1em;
-}
-
-
-
-/*
-======================================================
-  #. CART PAGE STYLING
-======================================================
-*/
-
-/*Honestly not sure what these are for*/
-#cart .grid-col-8of8 {
-  margin-bottom: 2em;
-  border-top: 1px solid #e8e8e8;
-  padding: 2em 0;
-}
-
-#cart-buttons {
-  float: right:
-}
-
 
 /*
 ======================================================
@@ -716,16 +682,6 @@ header {
   line-height: 1.3em;
   margin-bottom: 1em;
 
-}
-
-.profile-rows {
-  border-bottom: solid 1px lightgrey;
-  margin-bottom: 1em;
-}
-
-.social-share {
-  display: block;
-  padding-bottom: 1em;
 }
 
 .edit {
@@ -760,19 +716,6 @@ header {
   line-height: 1.3em;
 }
 
-/*Sign in / up fields */
-.signin-fields {
-  display:block;
-  max-width: 25em;
-  margin: 0 auto;
-  padding: 0.6em 0.8em;
-  border-radius: 0.25em;
-  border: solid lightgrey 0.1em;
-  width: 100%;
-  font-family: "Muli", Arial, sans-serif;
-  font-size: 0.9rem;
-  margin-bottom: 1.5em;
-}
 
 .center-buttons {
   display:block;
@@ -790,8 +733,8 @@ GENERAL STYLING
   margin-top: 2em;
 }
 
-.link-margin-top {
-  margin-top: 1em;
+.link-margin {
+  margin: 1em 0;
 }
 
 .checkbox {
