@@ -25,6 +25,12 @@
   height: 100vh;
 }
 
+.form-container-short-2 {
+  width: 100%;
+  padding: 8% 15%;
+  height: 100vh;
+}
+
 
 /*Gutter*/
 [class*='col-'] {
@@ -335,7 +341,7 @@
     padding: 0 5%;
   }
 
-  .hamburgler-icon {
+  .hamburger-icon {
     top: 1.6em;
   }
 
@@ -347,19 +353,13 @@
     display: block;
   }
 
-
-  /* Secondary Navigation Button */
-/*  .secondary-nav {
-    font-size: 0.735em;
-  }*/
-
   .grid-col-4of8-button {
     width: 100% !important;
   }
 
   .content-container {
     width: 100%;
-    padding: 18% 10% !important;
+    padding: 5% 10% !important;
   }
 
 
@@ -368,7 +368,8 @@
 
 
 @media (max-width:30em){ /*480 px -- to fix nav items */
-    /* Secondary Navigation Button */
+
+  /* Secondary Navigation Button */
   .secondary-nav {
     font-size: 0.7em;
   }

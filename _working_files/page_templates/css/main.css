@@ -230,6 +230,7 @@ label {
 
 /* Primary Button Half Width? */
 .button-primary-half {
+  margin-top: 2em;
   padding: 0.8em 2em;
   background-color: #C19A97; /*Light Pink*/
   color: #fff;
@@ -447,7 +448,7 @@ label {
 .paragraph-primary {
   font-size: 1em;
   max-width: 100%;
-  margin: 0.3em 0 0.8em 0;
+  margin: 0.3em 0 3em 0;
 }
 
 /* Paragraph for cart page */
@@ -583,21 +584,13 @@ label {
   text-align: left;
 }
 
-/* Attempting to fix footer to the bottom of the page */
-.short-page { /*Making the footer fixed at the bottom of pages with less content*/
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
-
 /*http://stackoverflow.com/questions/12239166/footer-at-bottom-of-page-or-content-whichever-is-lower*/
-.wrapper {
+/*.wrapper {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto 4rem; /* the bottom margin is the negative value of the footer's height */
-}
+    margin: 0 auto 4rem;
+}*/
 
 footer, .push {
     height: 4rem; /* .push must be the same height as .footer */
@@ -649,6 +642,24 @@ footer, .push {
 /* Background image for header */
 header {
   background: url("http://www.sfu.ca/~mtsumura/landingpg-bg.jpg") no-repeat center center fixed;
+  /*Images collaged from:
+  Top Left:
+  Polish Brush: https://thumbs.dreamstime.com/z/pink-nail-polish-brush-white-background-56773613.jpg
+  Pink Polish Splosh: https://s-media-cache-ak0.pinimg.com/236x/9f/b3/f2/9fb3f2fe46e3511c416f268ba7b5ebf7.jpg
+  Pink Polish Splosh 2: http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=101284877
+
+  Top Right:
+  Gold Glitter Pile: http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=3522079
+  Gold Powder Pile: https://paintpearls.com/wp-content/uploads/2015/04/Aztec-Gold-Pile.png
+
+  Bottom Left:
+  Blue Polish Spots: https://thumbs.dreamstime.com/x/blots-blue-nail-polish-isolated-white-background-40947032.jpg
+  Multi-Coloured Glitter Pile: http://www.vampyvarnish.com/wp-content/uploads/2014/03/Urban-Decay-Heavy-Metal-Loose-Glitter-4.jpg
+
+  Bottom Right:
+  Gold Polish: http://images.freeimages.com/images/premium/previews/5119/51193638-splash-of-nail-polish.jpg
+  */
+  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
