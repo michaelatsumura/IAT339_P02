@@ -1,3 +1,5 @@
+// Hamburger menu code retrieved from http://johnm.io/project/hamburgler/
+
 document.getElementById('hamburger').addEventListener('click', checkNav);
   window.addEventListener("keyup", function(e) {
     if (e.keyCode == 27) closeNav();
