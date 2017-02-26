@@ -108,6 +108,10 @@ section p {
   margin-top: 0;
 }
 
+label {
+  padding-right: 0.5em;
+}
+
 /*
 ======================================================
   #. MAIN NAVIGATION
@@ -132,10 +136,10 @@ section p {
   list-style: none;
 }
 
-/*Main Navigation */ 
-.background { 
-  padding:2em 0; 
-} 
+/*Main Navigation */
+.background {
+  padding:2em 0;
+}
 
 /* Profile Icon */
 .profile {
@@ -199,7 +203,7 @@ section p {
   color: #3D4656; /*Dark Blue*/
 }
 
-/* Buttons */
+/* --------- BUTTONS -----------*/
 /* Primary Button */
 .button-primary {
   padding: 0.8em 1.3em;
@@ -218,7 +222,13 @@ section p {
   text-align: center;
 }
 
-/* Primary Button */
+.button-primary:hover, .button-primary:focus {
+  background-color: #DDD;
+  color: #000;
+  text-decoration: none;
+}
+
+/* Primary Button Half Width? */
 .button-primary-half {
   padding: 0.8em 2em;
   background-color: #C19A97; /*Light Pink*/
@@ -232,13 +242,6 @@ section p {
   transition: background-color 0.5s ease-out;
   margin: 0.2em 0 0.4em 1em; /*T R B L*/
   text-align: center;
-}
-
-
-.button-primary:hover, .button-primary:focus {
-  background-color: #DDD;
-  color: #000;
-  text-decoration: none;
 }
 
 .button-primary-half:hover, .button-primary-half:focus {
@@ -265,7 +268,13 @@ section p {
   text-align: center;
 }
 
-/* Secondary Button */
+.button-secondary:hover, .button-secondary:focus {
+  background-color: #C19A97; /*Light Pink*/
+  color: #FFF;
+  text-decoration: none;
+}
+
+/* Secondary Button Half Width?*/
 .button-secondary-half {
   padding: 0.8em 2em;
   letter-spacing: 0.1em;
@@ -279,12 +288,6 @@ section p {
   transition: background-color 0.5s ease-out;
   margin: 0.2em 0 0.4em 0; /*T R B L*/
   text-align: center;
-}
-
-.button-secondary:hover, .button-secondary:focus {
-  background-color: #C19A97; /*Light Pink*/
-  color: #FFF;
-  text-decoration: none;
 }
 
 .button-secondary-half:hover, .button-secondary-half:focus {
@@ -310,7 +313,10 @@ section p {
   text-align: center;
 }
 
-/* Text Field and Label */
+
+/* --------- FORM FIELDS -----------*/
+
+/* Searchfield */
 .searchfield {
   padding: 0.6em 0.8em;
   border-radius: 0.25em;
@@ -320,9 +326,19 @@ section p {
   font-size: 0.9rem;
 }
 
-label {
-    padding-right: 0.5em;
+/* Form field for sign in/up and checkout pages */
+.formfield {
+  max-width: 25em;
+  margin: 0 auto;
+  padding: 0.6em 0.8em;
+  border-radius: 0.25em;
+  border: solid lightgrey 0.1em;
+  width: 100%;
+  font-family: "Muli", Arial, sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 1.5em;
 }
+
 
 /*
 ======================================================
@@ -559,18 +575,6 @@ footer, .push {
 	border-bottom: solid lightgrey 1px;
 }
 
-.payment-fields {
-  display:block;
-  max-width: 25em;
-  margin: 0 auto;
-  padding: 0.6em 0.8em;
-  border-radius: 0.25em;
-  border: solid lightgrey 0.1em;
-  width: 100%;
-  font-family: "Muli", Arial, sans-serif;
-  font-size: 0.9rem;
-  margin-bottom: 1.5em;
-}
 
 .payment-headers {
   display:block;
@@ -760,19 +764,6 @@ header {
   line-height: 1.3em;
 }
 
-/*Sign in / up fields */
-.signin-fields {
-  display:block;
-  max-width: 25em;
-  margin: 0 auto;
-  padding: 0.6em 0.8em;
-  border-radius: 0.25em;
-  border: solid lightgrey 0.1em;
-  width: 100%;
-  font-family: "Muli", Arial, sans-serif;
-  font-size: 0.9rem;
-  margin-bottom: 1.5em;
-}
 
 .center-buttons {
   display:block;
