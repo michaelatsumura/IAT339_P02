@@ -362,6 +362,19 @@ label {
   width: 100%;
 }
 
+/* SOCIAL MEDIA ICONS */
+.social-icon {
+	width: 3rem;
+	height: auto;
+  border-radius: 5em;
+}
+
+/* Colour Picker */
+.colour-picker:hover, .colour-picker:focus {
+  cursor: crosshair;
+}/* source: http://www.w3schools.com/cssref/pr_class_cursor.asp */
+
+
 /*
 ======================================================
   #. TEXT ELEMENTS
@@ -408,6 +421,31 @@ label {
   font-size: 3rem;
 }
 
+
+.payment-headers {
+  display:block;
+  max-width: 25em;
+  margin: 0 auto;
+  padding: 0.6em 1.2em;
+  width: 100%;
+  text-align: left;
+  font-family: "Muli", Arial, sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 1.5em;
+}
+
+.field-header{
+	margin-bottom: 0.5em;
+	font-weight: 400;
+  font-size: 1em;
+}
+
+.field-header-center{
+  margin-bottom: 0.75em;
+  font-weight: 400;
+  text-align: center;
+}
+
 /* --------- PARAGRAPHS -----------*/
 /* Primary paragraph style */
 .paragraph-primary {
@@ -450,6 +488,27 @@ label {
   line-height: 1.5rem;
 }
 
+
+.half-field {
+  display:inline-block;
+  max-width: 5em;
+  margin: 0 auto;
+  padding: 0.6em 0.8em;
+  border-radius: 0.25em;
+  border: solid lightgrey 0.1em;
+  width: 100%;
+  font-family: "Muli", Arial, sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 1.5em;
+}
+
+
+.order-summary {
+	margin-bottom: 1.3em;
+	font-weight: 300;
+
+}
+
 /* end of styling the TEXT ELEMENTS*/
 
 
@@ -461,6 +520,7 @@ label {
 */
 
 /* Product listing styles */
+/* Couldn't find where this goes? */
 .fit-product {
   padding: 1em;
   max-width: 100%;
@@ -547,19 +607,6 @@ footer, .push {
     height: 4rem; /* .push must be the same height as .footer */
 }
 
-/* SOCIAL MEDIA ICONS */
-.social-icon {
-	width: 3rem;
-	height: auto;
-  border-radius: 5em;
-}
-
-/* Colour Picker */
-.colour-picker:hover, .colour-picker:focus {
-  cursor: crosshair;
-}/* source: http://www.w3schools.com/cssref/pr_class_cursor.asp */
-
-
 
 /* Have to re-organize the rest of this and add it to the styleguide */
 .cart-image {
@@ -570,50 +617,6 @@ footer, .push {
 	padding-bottom: 1em;
 	margin-bottom: 1em;
 	border-bottom: solid lightgrey 1px;
-}
-
-
-.payment-headers {
-  display:block;
-  max-width: 25em;
-  margin: 0 auto;
-  padding: 0.6em 1.2em;
-  width: 100%;
-  text-align: left;
-  font-family: "Muli", Arial, sans-serif;
-  font-size: 0.9rem;
-  margin-bottom: 1.5em;
-}
-
-.half-field {
-  display:inline-block;
-  max-width: 5em;
-  margin: 0 auto;
-  padding: 0.6em 0.8em;
-  border-radius: 0.25em;
-  border: solid lightgrey 0.1em;
-  width: 100%;
-  font-family: "Muli", Arial, sans-serif;
-  font-size: 0.9rem;
-  margin-bottom: 1.5em;
-}
-
-.field-header{
-	margin-bottom: 0.5em;
-	font-weight: 400;
-  font-size: 1em;
-}
-
-.field-header-center{
-  margin-bottom: 0.75em;
-  font-weight: 400;
-  text-align: center;
-}
-
-.order-summary {
-	margin-bottom: 1.3em;
-	font-weight: 300;
-
 }
 
 /*General Alignment styling*/
@@ -649,40 +652,6 @@ header {
   -o-background-size: cover;
   background-size: cover;
   height: 100vh; /* viewport height */
-}
-
-
-/*
-======================================================
-  #. MIX PAGE STYLING
-    Additional styling for mix page
-======================================================
-*/
-#info form {
-  margin-bottom: 1em;
-}
-
-#addins select {
-  margin-bottom: 1em;
-}
-
-
-
-/*
-======================================================
-  #. CART PAGE STYLING
-======================================================
-*/
-
-/*Honestly not sure what these are for*/
-#cart .grid-col-8of8 {
-  margin-bottom: 2em;
-  border-top: 1px solid #e8e8e8;
-  padding: 2em 0;
-}
-
-#cart-buttons {
-  float: right:
 }
 
 
