@@ -13,9 +13,16 @@
   width: 100%;
 }
 
-.content-container, .nav-container, .front-page-container, .content-container-center, .form-container {
+.content-container, .nav-container, .front-page-container, .content-container-center, .form-container, .form-container-short {
   padding: 1rem;
   max-width: 100%;
+}
+
+.form-container-short {
+  text-align: center;
+  width: 100%;
+  padding: 8% 15%;
+  height: 100vh;
 }
 
 
@@ -173,6 +180,10 @@
     padding-bottom: 2em;
   }
 
+  .text-right {
+    text-align: center;
+  }
+
   .landing-header {
   font-size: 2rem;
 }
@@ -186,6 +197,13 @@
     width: 100%;
     padding: 8% 15%;
   }
+
+/*  .form-container-short {
+    text-align: center;
+    width: 100%;
+    padding: 8% 15%;
+    height: 100vh;
+  }*/
 
 
 }

@@ -579,7 +579,7 @@ label {
 	background-color: rgba(173, 124, 131, 0.4); /*Light Pink 40%*/
 	padding: 1.5em 1em 1.5em 3em; /*T R B L*/
 	color: white;
-  height: 4rem;
+  height: 4.5rem;
   text-align: left;
 }
 
@@ -620,6 +620,10 @@ footer, .push {
 /*General Alignment styling*/
 .float-right {
 	float: right;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .center-align{
@@ -761,8 +765,11 @@ GENERAL STYLING
 }
 
 .contact-us {
-  text-align: right;
-  float: right;
+  color: white;
+}
+
+.contact-us:hover {
+  color: #465166;
 }
 
 .new-section{
@@ -776,11 +783,15 @@ GENERAL STYLING
 }
 
 
+
 /*
 ======================================================
   #. HAMBURGER NAVIGATION HEADER STYLING
 ======================================================
 */
+
+/*Modified hamburger menu code retrieved from http://johnm.io/project/hamburgler/*/
+
 .hamburger-icon-wrapper {
   position: absolute;
   top: 1em;
@@ -875,3 +886,5 @@ GENERAL STYLING
 .hamburger-active .hamburger-menu-list {
   transform: translate(-50%, -50%) scale(1)
 }
+
+/*End of modified hamburger menu code retrieved from http://johnm.io/project/hamburgler/*/
