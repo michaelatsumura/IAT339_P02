@@ -528,7 +528,6 @@ label {
 
 .fit-product {
   padding: 1em;
-  border: solid lightgrey 0.1em;
 }
 
 /* --------- COLOUR SCHEME -----------*/
@@ -686,7 +685,6 @@ header {
 /* Rounded corners for profile image */
 .profile-image {
   border-radius: 1em;
-  max-width: 12rem;
 }
 
 /* Profile Name */
