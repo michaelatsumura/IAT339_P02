@@ -136,6 +136,18 @@ label {
   list-style: none;
 }
 
+/* Main Navigation */
+.styleguide-main-nav {
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+  display: -ms-flex; /* For support in IE 10 */
+  display: flex;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 1px 8px #f7f7f7;
+  padding: 0.5em 1em;
+  list-style: none;
+}
+
 /*Main Navigation */
 .background {
   padding:2em 0;
@@ -440,7 +452,13 @@ label {
 .field-header-center{
   margin-bottom: 0.75em;
   font-weight: 400;
-  text-align: center;
+  /*text-align: center;*/
+}
+
+.selected-header {
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 0.3em;
 }
 
 /* --------- PARAGRAPHS -----------*/
@@ -448,24 +466,13 @@ label {
 .paragraph-primary {
   font-size: 1em;
   max-width: 100%;
-  margin: 0.3em 0 3em 0;
+  margin: 0.3em 0 1em 0;
 }
 
-/* Paragraph for cart page */
+/* Secondary Paragraph for cart page */
 .cart-description {
 	font-size: 0.8em;
 	font-weight: 400;
-}
-
-
-/* Styles the polish name in list view */
-.polish-name {
-  margin-bottom: 0;
-}
-
-/* Adds bottom margin if polish doesn't have a price */
-.polish-name-noprice {
-  margin-bottom: 1em;
 }
 
 /* Styles the product prices */
@@ -485,7 +492,6 @@ label {
   line-height: 1.5rem;
 }
 
-
 .half-field {
   display:inline-block;
   max-width: 5em;
@@ -498,7 +504,6 @@ label {
   font-size: 0.9rem;
   margin-bottom: 1.5em;
 }
-
 
 .order-summary {
 	margin-bottom: 1.3em;
@@ -516,12 +521,13 @@ label {
 ======================================================
 */
 
-/* Product listing styles */
-/* Couldn't find where this goes? */
+/*
+  Product listing Image Style
+  Adds a border around the image and more spacing
+*/
+
 .fit-product {
   padding: 1em;
-  max-width: 100%;
-  max-height: auto;
   border: solid lightgrey 0.1em;
 }
 
@@ -555,24 +561,16 @@ label {
   padding: 1rem;
 }
 
-/* --------- PRODUCT LISTING -----------*/
+/* --------- PRODUCT LISTING: BROWSE + SHOP PAGES -----------*/
 /* Default product view for browse and shop pages */
 .product-list-view {
-	width: 100%;
   padding: 1em;
   border: solid 1px #D3D3D3;
 }
 
-/* Additional spacing at the top */
-.product-list-view-margin-top {
-  width: 100%;
-  padding: 1em;
-  margin-top: 3em;
-}
-
-/* Spacing after each row? */
-.product-row-list {
-  padding-top: 5rem;
+/* Spacing after grid-row (browse and shop pages) */
+.grid-row-spacing {
+  margin: 2rem 0;
 }
 
 /* --------- FOOTER -----------*/
@@ -659,7 +657,7 @@ header {
   Bottom Right:
   Gold Polish: http://images.freeimages.com/images/premium/previews/5119/51193638-splash-of-nail-polish.jpg
   */
-  
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -769,12 +767,6 @@ GENERAL STYLING
   margin-bottom: 1em;
 }
 
-.selected-header {
-  font-size: 1em;
-  font-weight: 700;
-  margin-bottom: 0.3em;
-}
-
 .contact-us {
   color: white;
 }
@@ -787,11 +779,6 @@ GENERAL STYLING
   margin-top: 2em;
 }
 
-
-/* Spacing after grid-row (product listing page) */
-.grid-row-spacing {
-  margin: 2rem 0;
-}
 
 
 
