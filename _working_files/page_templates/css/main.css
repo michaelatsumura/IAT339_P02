@@ -313,15 +313,31 @@ label {
   font-size: 0.9em;
 }
 
-/* SOCIAL MEDIA ICONS */
+/* ICONS */
+/* Social Media Icons */
 .social-icon {
 	width: 3rem;
 	height: auto;
   border-radius: 5em;
 }
 
-.social-icon:hover, .social-icon:focus {
-  opacity: 0.8;
+/* Profile Icon */
+.profile {
+  max-width: 30px;
+  padding-right:0.3em;
+  margin-right: 0.75em;
+}
+
+/* Search Bar*/
+.search {
+  max-width: 25px;
+}
+
+/* Hover and focus states */
+.social-icon:hover, .social-icon:focus,
+.profile:hover, .profile:focus,
+.search:hover, .search:focus {
+  opacity: 0.7;
 }
 
 /* Colour Picker */
@@ -377,7 +393,6 @@ label {
   font-size: 3rem;
 }
 
-
 .payment-headers {
   display:block;
   max-width: 25em;
@@ -394,12 +409,6 @@ label {
 	margin-bottom: 0.5em;
 	font-weight: 400;
   font-size: 1em;
-}
-
-.field-header-center{
-  margin-bottom: 0.75em;
-  font-weight: 400;
-  /*text-align: center;*/
 }
 
 .selected-header {
@@ -514,7 +523,6 @@ label {
   Product listing Image Style
   Adds a border around the image and more spacing
 */
-
 .fit-product {
   padding: 1em;
 }
@@ -754,11 +762,6 @@ GENERAL STYLING
   margin: 0 auto;
 }
 
-.colour-picker-description {
-  margin-top: 0.8em;
-  margin-bottom: 0.5em;
-}
-
 .contact-us {
   color: white;
 }
@@ -770,7 +773,6 @@ GENERAL STYLING
 .new-section{
   margin-top: 2em;
 }
-
 
 
 
