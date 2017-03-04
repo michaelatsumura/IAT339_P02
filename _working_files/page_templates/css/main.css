@@ -433,6 +433,7 @@ label {
 
 /* Lists were only used in our styleguide, maybe we can remove this*/
 .lists {
+  list-style: none;
   margin-top: 0.5em;
   line-height: 1.5rem;
 }
