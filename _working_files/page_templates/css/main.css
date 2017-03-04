@@ -114,59 +114,6 @@ label {
 
 /*
 ======================================================
-  #. MAIN NAVIGATION
-    Styling for main navigation
-======================================================
-*/
-
-/* Main Navigation */
-.main-nav {
-  display: -webkit-flex; /* For support in a series of Webkit browsers */
-  display: -ms-flex; /* For support in IE 10 */
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  width: 100%;
-  background-color: white;
-  box-shadow: 0 1px 8px #f7f7f7;
-  padding: 0.5em 1em;
-  list-style: none;
-}
-
-/* Main Navigation */
-.styleguide-main-nav {
-  display: -webkit-flex; /* For support in a series of Webkit browsers */
-  display: -ms-flex; /* For support in IE 10 */
-  display: flex;
-  width: 100%;
-  background-color: white;
-  box-shadow: 0 1px 8px #f7f7f7;
-  padding: 0.5em 1em;
-  list-style: none;
-}
-
-/*Main Navigation */
-.background {
-  padding:2em 0;
-}
-
-/* Profile Icon */
-.profile {
-  max-width: 30px;
-  padding-right:0.3em;
-  margin-right: 0.75em;
-}
-
-/* Search Bar*/
-.search {
-  max-width: 25px;
-}
-
-/*
-======================================================
   #. INTERACTIVE ELEMENTS
     Styleguide interactive elements
 ======================================================
@@ -338,7 +285,6 @@ label {
 
 /* Form field for sign in/up and checkout pages */
 .formfield {
-  max-width: 25em;
   margin: 0 auto;
   padding: 0.6em 0.8em;
   border-radius: 0.25em;
@@ -366,23 +312,39 @@ label {
   font-size: 0.9em;
 }
 
-/* Slider Bar */
-.slider {
-  width: 100%;
-}
-
-/* SOCIAL MEDIA ICONS */
+/* ICONS */
+/* Social Media Icons */
 .social-icon {
 	width: 3rem;
 	height: auto;
   border-radius: 5em;
 }
 
-/* Colour Picker */
-.colour-picker:hover, .colour-picker:focus {
-  cursor: crosshair;
-}/* source: http://www.w3schools.com/cssref/pr_class_cursor.asp */
+/* Profile Icon */
+.profile {
+  max-width: 30px;
+  padding-right:0.3em;
+  margin-right: 0.75em;
+}
 
+/* Search Bar*/
+.search {
+  max-width: 25px;
+}
+
+/* Hover and focus states */
+.social-icon:hover, .social-icon:focus,
+.profile:hover, .profile:focus,
+.search:hover, .search:focus {
+  opacity: 0.7;
+}
+
+/* Colour Picker */
+.swatch {
+  width: 50%;
+  height: 5em;
+  margin-bottom: 1em;
+}
 
 /*
 ======================================================
@@ -430,32 +392,15 @@ label {
   font-size: 3rem;
 }
 
-
-.payment-headers {
-  display:block;
-  max-width: 25em;
-  margin: 0 auto;
-  padding: 0.6em 1.2em;
-  width: 100%;
-  text-align: left;
-  font-family: "Muli", Arial, sans-serif;
-  font-size: 0.9rem;
-  margin-bottom: 1.5em;
-}
-
+/* Field Headings h3 */
 .field-header{
 	margin-bottom: 0.5em;
 	font-weight: 400;
   font-size: 1em;
 }
 
-.field-header-center{
-  margin-bottom: 0.75em;
-  font-weight: 400;
-  /*text-align: center;*/
-}
-
-.selected-header {
+/* Bold Header h3 */
+.bold-header {
   font-size: 1em;
   font-weight: 700;
   margin-bottom: 0.3em;
@@ -470,7 +415,7 @@ label {
 }
 
 /* Secondary Paragraph for cart page */
-.cart-description {
+.paragraph-secondary {
 	font-size: 0.8em;
 	font-weight: 400;
 }
@@ -506,12 +451,6 @@ label {
   margin-bottom: 1.5em;
 }
 
-.order-summary {
-	margin-bottom: 1.3em;
-	font-weight: 300;
-
-}
-
 /* end of styling the TEXT ELEMENTS*/
 
 
@@ -522,11 +461,58 @@ label {
 ======================================================
 */
 
+/* --------- MAIN NAVIGATION -----------*/
+
+/* Main Navigation */
+.main-nav {
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+  display: -ms-flex; /* For support in IE 10 */
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 1px 8px #f7f7f7;
+  padding: 0.5em 1em;
+  list-style: none;
+}
+
+/* Main Navigation */
+.styleguide-main-nav {
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+  display: -ms-flex; /* For support in IE 10 */
+  display: flex;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 1px 8px #f7f7f7;
+  padding: 0.5em 1em;
+  list-style: none;
+}
+
+/*Main Navigation */
+.background {
+  padding:2em 0;
+}
+
+/* Profile Icon */
+.profile {
+  max-width: 30px;
+  padding-right:0.3em;
+  margin-right: 0.75em;
+}
+
+/* Search Bar*/
+.search {
+  max-width: 25px;
+}
+
 /*
   Product listing Image Style
   Adds a border around the image and more spacing
 */
-
 .fit-product {
   padding: 1em;
 }
@@ -739,7 +725,7 @@ header {
 
 .center-buttons {
   display:block;
-  max-width: 25em;
+  /*max-width: 25em;*/
   margin: 0 auto;
   padding-top: 1em;
   width: 100%;
@@ -766,17 +752,6 @@ GENERAL STYLING
   margin: 0 auto;
 }
 
-.colour-picker-description {
-  margin-top: 0.8em;
-  margin-bottom: 0.5em;
-}
-
-.swatch {
-  width: 50%;
-  height: 5em;
-  margin-bottom: 1em;
-}
-
 .contact-us {
   color: white;
 }
@@ -788,7 +763,6 @@ GENERAL STYLING
 .new-section{
   margin-top: 2em;
 }
-
 
 
 

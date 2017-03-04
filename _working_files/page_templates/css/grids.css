@@ -21,13 +21,13 @@
 .form-container-short {
   text-align: center;
   width: 100%;
-  padding: 8% 15%;
+  padding: 8% 35%;
   height: 100vh;
 }
 
 .form-container-short-2 {
   width: 100%;
-  padding: 8% 15%;
+  padding: 8% 35%;
   height: 100vh;
 }
 
@@ -129,7 +129,7 @@
   .form-container {
     text-align: center;
     width: 100%;
-    padding: 8% 15%;
+    padding: 8% 35%;
   }
 
   .checkout-container {
@@ -312,7 +312,7 @@
 
   .checkout-container {
     width: 100%;
-    padding: 5% 25%;
+    padding: 5% 30%;
   }
 
   header {
@@ -334,7 +334,7 @@
   .nav-container {
     width: 100%;
     text-align: left !important;
-    padding: 0 5%;
+    padding: 10% 5%;
   }
 
   .hamburger-icon {
