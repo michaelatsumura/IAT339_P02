@@ -392,13 +392,15 @@ label {
   font-size: 3rem;
 }
 
+/* Field Headings h3 */
 .field-header{
 	margin-bottom: 0.5em;
 	font-weight: 400;
   font-size: 1em;
 }
 
-.selected-header {
+/* Bold Header h3 */
+.bold-header {
   font-size: 1em;
   font-weight: 700;
   margin-bottom: 0.3em;
