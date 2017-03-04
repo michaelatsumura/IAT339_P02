@@ -285,7 +285,6 @@ label {
 
 /* Form field for sign in/up and checkout pages */
 .formfield {
-  max-width: 25em;
   margin: 0 auto;
   padding: 0.6em 0.8em;
   border-radius: 0.25em;
@@ -391,18 +390,6 @@ label {
 /* Call to Action Text on Front Page */
 .landing-header {
   font-size: 3rem;
-}
-
-.payment-headers {
-  display:block;
-  max-width: 25em;
-  margin: 0 auto;
-  padding: 0.6em 1.2em;
-  width: 100%;
-  text-align: left;
-  font-family: "Muli", Arial, sans-serif;
-  font-size: 0.9rem;
-  margin-bottom: 1.5em;
 }
 
 .field-header{
@@ -735,7 +722,7 @@ header {
 
 .center-buttons {
   display:block;
-  max-width: 25em;
+  /*max-width: 25em;*/
   margin: 0 auto;
   padding-top: 1em;
   width: 100%;
