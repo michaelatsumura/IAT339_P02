@@ -504,6 +504,11 @@ label {
   margin-right: 0.75em;
 }
 
+/* Logo Icon */
+.logo {
+  max-width: 95px;
+}
+
 /* Search Bar*/
 .search {
   max-width: 25px;
