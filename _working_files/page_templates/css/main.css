@@ -417,7 +417,7 @@ label {
 }
 
 /* Secondary Paragraph for cart page */
-.cart-description {
+.paragraph-secondary {
 	font-size: 0.8em;
 	font-weight: 400;
 }
@@ -450,12 +450,6 @@ label {
   font-family: "Muli", Arial, sans-serif;
   font-size: 0.9rem;
   margin-bottom: 1.5em;
-}
-
-.order-summary {
-	margin-bottom: 1.3em;
-	font-weight: 300;
-
 }
 
 /* end of styling the TEXT ELEMENTS*/
