@@ -114,59 +114,6 @@ label {
 
 /*
 ======================================================
-  #. MAIN NAVIGATION
-    Styling for main navigation
-======================================================
-*/
-
-/* Main Navigation */
-.main-nav {
-  display: -webkit-flex; /* For support in a series of Webkit browsers */
-  display: -ms-flex; /* For support in IE 10 */
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  width: 100%;
-  background-color: white;
-  box-shadow: 0 1px 8px #f7f7f7;
-  padding: 0.5em 1em;
-  list-style: none;
-}
-
-/* Main Navigation */
-.styleguide-main-nav {
-  display: -webkit-flex; /* For support in a series of Webkit browsers */
-  display: -ms-flex; /* For support in IE 10 */
-  display: flex;
-  width: 100%;
-  background-color: white;
-  box-shadow: 0 1px 8px #f7f7f7;
-  padding: 0.5em 1em;
-  list-style: none;
-}
-
-/*Main Navigation */
-.background {
-  padding:2em 0;
-}
-
-/* Profile Icon */
-.profile {
-  max-width: 30px;
-  padding-right:0.3em;
-  margin-right: 0.75em;
-}
-
-/* Search Bar*/
-.search {
-  max-width: 25px;
-}
-
-/*
-======================================================
   #. INTERACTIVE ELEMENTS
     Styleguide interactive elements
 ======================================================
@@ -366,11 +313,6 @@ label {
   font-size: 0.9em;
 }
 
-/* Slider Bar */
-.slider {
-  width: 100%;
-}
-
 /* SOCIAL MEDIA ICONS */
 .social-icon {
 	width: 3rem;
@@ -378,11 +320,16 @@ label {
   border-radius: 5em;
 }
 
-/* Colour Picker */
-.colour-picker:hover, .colour-picker:focus {
-  cursor: crosshair;
-}/* source: http://www.w3schools.com/cssref/pr_class_cursor.asp */
+.social-icon:hover, .social-icon:focus {
+  opacity: 0.8;
+}
 
+/* Colour Picker */
+.swatch {
+  width: 50%;
+  height: 5em;
+  margin-bottom: 1em;
+}
 
 /*
 ======================================================
@@ -520,6 +467,54 @@ label {
     Styleguide Combined Elements
 ======================================================
 */
+
+/* --------- MAIN NAVIGATION -----------*/
+
+/* Main Navigation */
+.main-nav {
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+  display: -ms-flex; /* For support in IE 10 */
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 1px 8px #f7f7f7;
+  padding: 0.5em 1em;
+  list-style: none;
+}
+
+/* Main Navigation */
+.styleguide-main-nav {
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+  display: -ms-flex; /* For support in IE 10 */
+  display: flex;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 1px 8px #f7f7f7;
+  padding: 0.5em 1em;
+  list-style: none;
+}
+
+/*Main Navigation */
+.background {
+  padding:2em 0;
+}
+
+/* Profile Icon */
+.profile {
+  max-width: 30px;
+  padding-right:0.3em;
+  margin-right: 0.75em;
+}
+
+/* Search Bar*/
+.search {
+  max-width: 25px;
+}
 
 /*
   Product listing Image Style
@@ -768,12 +763,6 @@ GENERAL STYLING
 .colour-picker-description {
   margin-top: 0.8em;
   margin-bottom: 0.5em;
-}
-
-.swatch {
-  width: 50%;
-  height: 5em;
-  margin-bottom: 1em;
 }
 
 .contact-us {
