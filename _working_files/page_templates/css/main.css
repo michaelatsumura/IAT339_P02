@@ -293,9 +293,9 @@ label {
 .dropdown {
   padding: 1.2em;
   border-radius: 0.25em;
-  width: 60%;
+  width: 75%;
   font-size: 1em;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.02em;
   margin-bottom: 1em;
 } /*source:http://www.w3schools.com/tags/tag_select.asp*/
 
@@ -397,7 +397,7 @@ label {
 .bold-header {
   font-size: 1em;
   font-weight: 700;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.1em;
 }
 
 /* --------- PARAGRAPHS -----------*/
@@ -488,6 +488,11 @@ label {
 /* Logo Icon */
 .logo {
   max-width: 95px;
+}
+
+/* Icon sizing - nav bar */
+.icon {
+  max-width: 30px;
 }
 
 /* Search Bar*/
