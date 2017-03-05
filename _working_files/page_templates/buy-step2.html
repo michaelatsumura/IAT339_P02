@@ -72,35 +72,72 @@
     </ul>
   </div>
 
-  <div class="form-container">
+<div class="form-container">
+    <div class="grid-row">
+      <div class="grid-col-8of8">
+        <h1 class="main-heading">Checkout</h1>
+      </div>
+    </div>
 
-      <h1 class="main-heading">Checkout</h1>
-      <h3 class="field-header left-align">Payment Information</h3>
+    <div class="grid-row">
+      <div class="grid-col-8of8"> 
+      <h2 class="bold-header">Payment Information</h2>
+      </div>
+    </div>
+
+    <div class="grid-row">
+      <div class="grid-col-8of8">
       <form>
-        <input class="formfield" type="text" name="name" placeholder="Cardholder Full Name">
+        <label for="name" class="left-align">Cardholder Name</label>
+        <input class="formfield" type="text" name="name" placeholder="Serena Swirl">
       </form>
+      </div>
+    </div>
+
+    <div class="grid-row">
+      <div class="grid-col-8of8">
       <form>
-        <input class="formfield" type="text" name="number" placeholder="Credit Card Number">
+        <label for="number" class="left-align">Credit Card Number</label>
+        <input class="formfield" type="text" name="number" placeholder="3232 3232 3232 3232">
       </form>
-      <h3 class="field-header left-align">Expiry Date</h3>
+      </div>
+    </div>
+
+    <div class="grid-row">
+      <div class="grid-col-3of8">
       <form>
-        <input class="formfield" type="text" name="Month" placeholder="Month">
+        <label for="expiry" class="left-align">Expiry</label>
+        <input class="formfield" type="text" name="expiry" placeholder="April">
       </form>
+      </div>
+      <div class="grid-col-3of8">
       <form>
-        <input class="formfield" type="text" name="Month" placeholder="Year">
+        <label for="expiry" class="left-align"></label>
+        <input class="formfield" type="text" name="expiry" placeholder="2017">
       </form>
-      <h3 class="field-header left-align">Security Code</h3>
-      <form>
-        <input class="formfield" type="text" name="securitycode" placeholder="CVV">
-      </form>
+      </div>
+
+      <div class="grid-col-2of8">  
+        <label for="cvv" class="left-align">Security Code</label>
+        <form>
+          <input class="formfield" type="text" name="securitycode" label="CVV" placeholder="XXX">
+        </form>
+      </div>
+    </div>
 
 
-        <!-- Back and Order Buttons -->
-        <div class="center-buttons">
-            <a class="button-secondary-half" href="buy-step1.html">Back</a>
-            <a class="button-primary-half" href="receipt.html">Place Order</a>
-        </div>
-    </div> <!-- end of form container -->
+    <!-- Back and Order Buttons -->
+    <div class="grid-row">
+      <div class="grid-col-3of8">
+        <a class="button-secondary" href="buy-step1.html">Back</a>
+      </div>
+      <div class="grid-col-3of8">
+        <a class="button-primary" href="receipt.html">Place Order</a>
+      </div>
+    </div>
+
+
+  </div> <!-- end of form container -->
 
 
 

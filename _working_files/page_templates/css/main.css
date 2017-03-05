@@ -24,12 +24,6 @@
   #. DEFAULT STYLING
     Default styling for styleguide and website
 ======================================================
-*/
-
-/* Sets everything to border-box sizing */
-* {
-  box-sizing: border-box;
-}
 
 /* Takes away any built-in browser spacing */
 html {
@@ -285,14 +279,14 @@ label {
 
 /* Form field for sign in/up and checkout pages */
 .formfield {
-  margin: 0 auto;
-  padding: 0.6em 0.8em;
+  margin: 0.5em auto;
+  padding: 1em 0.8em;
   border-radius: 0.25em;
   border: solid lightgrey 0.1em;
-  width: 100%;
   font-family: "Muli", Arial, sans-serif;
   font-size: 0.9rem;
   margin-bottom: 1.5em;
+  width: 100%;
 }
 
 /* Dropdown for multiple add-in's and custom options */
@@ -438,19 +432,6 @@ label {
   line-height: 1.5rem;
 }
 
-.half-field {
-  display:inline-block;
-  max-width: 5em;
-  margin: 0 auto;
-  padding: 0.6em 0.8em;
-  border-radius: 0.25em;
-  border: solid lightgrey 0.1em;
-  width: 100%;
-  font-family: "Muli", Arial, sans-serif;
-  font-size: 0.9rem;
-  margin-bottom: 1.5em;
-}
-
 /* end of styling the TEXT ELEMENTS*/
 
 
@@ -502,6 +483,11 @@ label {
   max-width: 30px;
   padding-right:0.3em;
   margin-right: 0.75em;
+}
+
+/* Logo Icon */
+.logo {
+  max-width: 95px;
 }
 
 /* Search Bar*/
