@@ -74,66 +74,160 @@
 
   <div class="form-container">
     <div class="grid-row">
-      <h1 class="main-heading">Checkout</h1>
+      <div class="grid-col-8of8">
+        <h1 class="main-heading">Checkout</h1>
+      </div>
+    </div>
 
       <!-- Contact Information -->
-      <h3 class="field-header left-align">Contact Information</h3>
-      <form>
-        <input class="formfield" type="text" name="name" placeholder="Name">
-      </form>
-      <form>
-        <input class="formfield" type="text" name="e-mail" placeholder="Email">
-      </form>
-      <form>
-        <input class="formfield" type="text" name="phone" placeholder="Phone Number">
-      </form>
+    <div class="grid-row">
+      <div class="grid-col-8of8"> 
+        <h2 class="bold-header">Contact Information</h2>
+      </div>
+    </div>
+
+    <div class="grid-row">
+      <div class="grid-col-8of8">     
+        <form>
+          <label for="name" class="left-align">Name</label>
+          <input class="formfield" type="text" name="name" placeholder="Serena Swirl">
+        </form>
+      </div>
+    </div>
+
+    <div class="grid-row">
+      <div class="grid-col-8of8">     
+        <form>
+          <label for="e-mail" class="left-align">Email</label>
+          <input class="formfield" type="text" name="e-mail" placeholder="serenaswirl@gmail.com">
+        </form>
+      </div>
+    </div>
+
+    <div class="grid-row">
+      <div class="grid-col-8of8">     
+        <form>
+          <label for="phone" class="left-align">Phone Number</label>
+          <input class="formfield" type="text" name="phone" placeholder="604-111-2222">
+        </form>
+      </div>
+    </div>
+
 
       <!-- Shipping Information -->
-      <h3 class="field-header left-align">Shipping Address</h3>
-      <form>
-        <input class="formfield" type="text" name="address" placeholder="Address Line 1">
-      </form>
-      <form>
-        <input class="formfield" type="text" name="address" placeholder="Address Line 2 - optional">
-      </form>
-      <form>
-        <input class="formfield" type="text" name="province" placeholder="Province / State">
-      </form>
-      <form>
-        <input class="formfield" type="text" name="city" placeholder="City">
-      </form>
-      <form>
-        <input class="formfield" type="text" name="postal" placeholder="Postal / Zip Code">
-      </form>
+    <div class="grid-row">
+      <div class="grid-col-8of8"> 
+        <h2 class="bold-header">Shipping Address</h2>
+      </div>
+    </div>
+
+    <div class="grid-row">
+      <div class="grid-col-8of8">     
+        <form>
+          <label for="address" class="left-align">Address Line 1</label>
+          <input class="formfield" type="text" name="address" placeholder="3617 123 Street, Vancouver, BC">
+        </form>
+      </div>
+    </div>
+
+    <div class="grid-row">
+      <div class="grid-col-8of8">     
+        <form>
+          <label for="address" class="left-align">Address Line 2 - optional</label>
+          <input class="formfield" type="text" name="address" placeholder="Address Line 2">
+        </form>
+      </div>
+    </div>
+
+    <div class="grid-row">
+      <div class="grid-col-4of8">     
+        <form>
+          <label for="province" class="left-align">Province / State</label>
+          <input class="formfield" type="text" name="province" placeholder="BC">
+        </form>
+      </div>
+      <div class="grid-col-4of8"> 
+        <form>
+          <label for="city" class="left-align">City</label>
+          <input class="formfield" type="text" name="city" placeholder="Vancouver">
+        </form>
+      </div>
+    </div>
+
+    <div class="grid-row">
+      <div class="grid-col-4of8">     
+        <form>
+          <label for="postal" class="left-align">Postal / Zip Code</label>
+          <input class="formfield" type="text" name="postal" placeholder="V3R 2W2">
+        </form>
+      </div>
+    </div>
 
       <!-- Billing Information -->
-      <h3 class="field-header left-align">Billing Address</h3>
-      <h3 class="field-header left-align"><input type="checkbox" class="checkbox" name="Same as Shipping Address" value="Same as Shipping Address">Same as Shipping Address</h3>
+    <div class="grid-row">
+      <div class="grid-col-8of8"> 
+        <h2 class="bold-header">Billing Address</h2>
+      </div>
+    </div>
 
-      <form>
-        <input class="formfield" type="text" name="address" placeholder="Address Line 1">
-      </form>
-      <form>
-        <input class="formfield" type="text" name="address" placeholder="Address Line 2 - optional">
-      </form>
-      <form>
-        <input class="formfield" type="text" name="province" placeholder="Province / State">
-      </form>
+    <div class="grid-row">
+      <div class="grid-col-8of8"> 
+        <h3 class="field-header left-align"><input type="checkbox" class="checkbox" name="Same as Shipping Address" value="Same as Shipping Address">Same as Shipping Address</h3>
+      </div>
+    </div>
 
-
+    <div class="grid-row">
+      <div class="grid-col-8of8">     
         <form>
-          <input class="formfield" type="text" name="city" placeholder="City">
+          <label for="address" class="left-align">Address Line 1</label>
+          <input class="formfield" type="text" name="address" placeholder="3617 123 Street, Vancouver, BC">
         </form>
+      </div>
+    </div>
 
+    <div class="grid-row">
+      <div class="grid-col-8of8">     
         <form>
-          <input class="formfield" type="text" name="postal" placeholder="Postal / Zip Code">
+          <label for="address" class="left-align">Address Line 2 - optional</label>
+          <input class="formfield" type="text" name="address" placeholder="Address Line 2">
         </form>
+      </div>
+    </div>
 
-    <!-- Next and Back Buttons -->
-        <div class="center-buttons">
-            <a class="button-secondary-half" href="cart.html">Back</a>
-            <a class="button-primary-half" href="buy-step2.html">Next</a>
-        </div>
+    <div class="grid-row">
+      <div class="grid-col-4of8">     
+        <form>
+          <label for="province" class="left-align">Province / State</label>
+          <input class="formfield" type="text" name="province" placeholder="BC">
+        </form>
+      </div>
+      <div class="grid-col-4of8"> 
+        <form>
+          <label for="city" class="left-align">City</label>
+          <input class="formfield" type="text" name="city" placeholder="Vancouver">
+        </form>
+      </div>
+    </div>
+
+    <div class="grid-row">
+      <div class="grid-col-4of8">     
+        <form>
+          <label for="postal" class="left-align">Postal / Zip Code</label>
+          <input class="formfield" type="text" name="postal" placeholder="V3R 2W2">
+        </form>
+      </div>
+    </div>
+
+    <!-- Back and Next -->
+    <div class="grid-row">
+      <div class="grid-col-4of8">
+        <a class="button-secondary" href="buy-step1.html">Return to Cart</a>
+      </div>
+      <div class="grid-col-4of8">
+        <a class="button-primary" href="receipt.html">Proceed to Payment</a>
+      </div>
+    </div>
+
       </div> <!-- end of grid row -->
   </div> <!-- end of form container-->
 

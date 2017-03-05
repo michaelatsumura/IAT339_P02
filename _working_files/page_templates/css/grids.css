@@ -1,8 +1,10 @@
 /* Grids File */
 
+/* Sets everything to border-box sizing */
 * {
   box-sizing: border-box;
 }
+
 [class ^= 'grid-col-'] {
   float: left;
 }
@@ -18,7 +20,8 @@
   max-width: 100%;
 }
 
-.form-container-short {
+/* i think i can delete these once the forms and footers are fixed - MT */
+/*.form-container-short {
   text-align: center;
   width: 100%;
   padding: 8% 35%;
@@ -29,7 +32,7 @@
   width: 100%;
   padding: 8% 35%;
   height: 100vh;
-}
+}*/
 
 
 /*Gutter*/
@@ -127,9 +130,8 @@
   }
 
   .form-container {
-    text-align: center;
     width: 100%;
-    padding: 8% 35%;
+    padding: 4% 35%;
   }
 
   .checkout-container {
@@ -199,10 +201,14 @@
     display: none;
   }
 
-   .form-container {
-    text-align: center;
+  .form-container {
+    text-align: left;
     width: 100%;
     padding: 8% 15%;
+  }
+
+  .grid-col-8of8 {
+    width: 100%;
   }
 
 /*  .form-container-short {
@@ -233,7 +239,6 @@
     padding-bottom: 0.3em;
     font-size: 2em;
   }
-
 }
 
 
@@ -247,14 +252,21 @@
     background-size: cover;
     height: 100vh;
   }
+
+  .nav-container {
+    width: 100%;
+    text-align: center !important;
+    padding-bottom: 1em;
+  }
 }
 
 
 @media (max-width:65.5em){ /*1048 px - ipad landscape - laptop-ish */
-/*  .content-container-center {
+  .form-container {
+    text-align: left;
     width: 100%;
-    padding: 5% 30%;
-  }*/
+    padding: 4% 25%;
+  }
 }
 
 
@@ -301,7 +313,7 @@
   .front-page-container {
     text-align: center;
     width: 100%;
-    padding: 10% 15%;
+    padding: 1% 10%;
   }
 
 
@@ -334,7 +346,7 @@
   .nav-container {
     width: 100%;
     text-align: left !important;
-    padding: 10% 5%;
+    padding-bottom: 3em;
   }
 
   .hamburger-icon {
@@ -358,7 +370,20 @@
     padding: 5% 10% !important;
   }
 
+  .hamburger-icon-wrapper {
+    position: absolute;
+    top: 0.3em;
+    right: 2em;
+    height: 26px;
+    width: 26px;
+    cursor: pointer;
+  }
 
+  .form-container {
+    text-align: left;
+    width: 100%;
+    padding: 1% 20%;
+  }
 
 }
 
@@ -377,6 +402,13 @@
   .grid-col-2of8-list-view{
   width: 100% !important;
   }
+
+  .form-container {
+    text-align: left;
+    width: 100%;
+    padding: 1% 15%;
+  }
+
 }
 
 @media (max-width:25em){ /*400 px -- large mobile */
@@ -403,8 +435,20 @@
     }
 
   .hamburger-icon {
-    top: 0.6em;
+    top: 1em;
   }
+
+  .checkout-container {
+    width: 100%;
+    padding: 5% 15%;
+  }
+
+  .form-container {
+    text-align: left;
+    width: 100%;
+    padding: 1% 10%;
+  }
+
 }
 
 
