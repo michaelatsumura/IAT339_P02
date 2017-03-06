@@ -434,6 +434,10 @@
     padding: 1% 15%;
   }
 
+  .popup-image {
+   width: 15em;
+  }
+
 }
 
 @media (max-width:25em){ /*400 px -- large mobile */

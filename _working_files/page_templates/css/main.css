@@ -888,11 +888,11 @@ GENERAL STYLING
 
 .popup {
   margin: 6em auto;
-  padding: 2em;
+  padding: 3.5em 3em 3em 3em;
   background: #fff;
   border-radius: 5px;
   border: solid 1px lightgrey;
-  width: 60%;
+  width: 40%;
   position: relative;
   transition: all 5s ease-in-out;
 }
@@ -915,6 +915,11 @@ GENERAL STYLING
 .popup .content {
   max-height: 30%;
   overflow: auto;
+}
+
+.popup-image {
+  width: 20em;
+  padding-right: 1em;
 }
 /* End of how to make a pop-up. Retrieved from https://codepen.io/imprakash/pen/GgNMXO*/
 
