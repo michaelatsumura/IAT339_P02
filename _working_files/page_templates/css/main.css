@@ -161,6 +161,7 @@ label {
 .button-primary {
   padding: 0.8em 1.3em;
   background-color: #C19A97; /*Light Pink*/
+  border: solid 2px #C19A97;
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
@@ -176,16 +177,16 @@ label {
 }
 
 .button-primary:hover, .button-primary:focus {
-  background-color: #DDD;
-  color: #000;
+  background-color: white;
+  color: #C19A97;
   text-decoration: none;
 }
 
 /* Primary Button Half Width? */
-.button-primary-half {
+/*.button-primary-half {
   margin-top: 2em;
   padding: 0.8em 2em;
-  background-color: #C19A97; /*Light Pink*/
+  background-color: #C19A97; 
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
@@ -201,7 +202,7 @@ label {
   background-color: #DDD;
   color: #000;
   text-decoration: none;
-}
+}*/
 
 /* Secondary Button */
 .button-secondary {
@@ -210,8 +211,9 @@ label {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: #DDD;
-  color: #3D4656; /*Dark Blue*/
+  /*background-color: lightgrey;*/
+  border: 2px solid #C19A97;
+  color: #C19A97; /*Dark Blue*/
   font-weight: 700;
   border-radius: 0.25em;
   -webkit-transition: background-color 0.5s ease-out;
@@ -228,42 +230,26 @@ label {
 }
 
 /* Secondary Button Half Width?*/
-.button-secondary-half {
+/*.button-secondary-half {
   padding: 0.8em 2em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
   background-color: #DDD;
-  color: #3D4656; /*Dark Blue*/
+  color: #3D4656;
   font-weight: 700;
   border-radius: 0.25em;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
-  margin: 0.2em 0 0.4em 0; /*T R B L*/
+  margin: 0.2em 0 0.4em 0;
   text-align: center;
 }
 
 .button-secondary-half:hover, .button-secondary-half:focus {
-  background-color: #C19A97; /*Light Pink*/
+  background-color: #C19A97;
   color: #FFF;
   text-decoration: none;
-}
-
-.button-disabled {
-  padding: 0.8em 1.3em;
-  display: inline-block;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  text-decoration: none;
-  background-color: #FFFFFF;
-  color: #3D4656; /*Dark Blue*/
-  font-weight: 700;
-  border-radius: 0.25em;
-  border: solid 1px #ddd;
-  margin: 0.2em 0 0.4em 0;
-  width: 100%;
-  text-align: center;
-}
+}*/
 
 
 /* --------- FORM FIELDS -----------*/
@@ -293,7 +279,7 @@ label {
 .dropdown {
   padding: 1.2em;
   border-radius: 0.25em;
-  width: 75%;
+  width: 100%;
   font-size: 1em;
   letter-spacing: 0.02em;
   margin-bottom: 1em;
@@ -309,9 +295,10 @@ label {
 /* ICONS */
 /* Social Media Icons */
 .social-icon {
-	width: 3rem;
+	width: 2rem;
 	height: auto;
-  border-radius: 5em;
+  border-radius: 5px;
+  margin-right: 0.3em;
 }
 
 /* Profile Icon */
@@ -886,6 +873,17 @@ GENERAL STYLING
   opacity: 1;
 }
 
+.popup-small {
+  margin: 6em auto;
+  padding: 3.5em 3em 3em 3em;
+  background: #fff;
+  border-radius: 5px;
+  border: solid 1px lightgrey;
+  width: 25%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
 .popup {
   margin: 6em auto;
   padding: 3.5em 3em 3em 3em;
@@ -908,7 +906,8 @@ GENERAL STYLING
   transition: all 5s ease-in-out;
 }
 
-.popup .close, .popup-large .close {
+
+.popup .close, .popup-large .close, .popup-small .close  {
   position: absolute;
   top: 20px;
   right: 30px;
@@ -919,11 +918,11 @@ GENERAL STYLING
   color: #333;
 }
 
-.popup .close:hover, .popup-large .close:hover{
+.popup .close:hover, .popup-large .close:hover, .popup-small .close:hover{
   color: #C19A97;
 } 
 
-.popup .content, .popup-large .content{
+.popup .content, .popup-large .content, .popup-small .content{
   max-height: 30%;
   overflow: auto;
 }
