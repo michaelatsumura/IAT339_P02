@@ -145,6 +145,9 @@
     padding-left: 0.5em;
   }
 
+  .remove-gutter {
+    padding-left: 0 !important;
+  }
 
 /* .grid-col-4of8-button {
   padding-left: 0 !important;
@@ -244,8 +247,12 @@
 
 
 
-@media (max-width:64em){ /*1024 px - ipad landscape - laptop-ish */
-  header {
+/*@media (max-width:64em){*/ /*1024 px - ipad landscape - laptop-ish */
+
+/*}*/
+
+@media screen and (max-width: 64em){
+    header {
     background: url("http://www.sfu.ca/~mtsumura/landing-pg-1024.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -258,6 +265,10 @@
     width: 100%;
     text-align: center !important;
     padding-bottom: 1em;
+  }
+
+  .popup{
+    width: 70%;
   }
 }
 
@@ -386,6 +397,19 @@
     padding: 1% 20%;
   }
 
+  .popup {
+    margin: 6em auto;
+    padding: 2em;
+    background: #fff;
+    border-radius: 5px;
+    border: solid 1px lightgrey;
+    width: 90%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    max-height: 80%;
+    overflow: auto;
+  }
+
 }
 
 
@@ -408,6 +432,10 @@
     text-align: left;
     width: 100%;
     padding: 1% 15%;
+  }
+
+  .popup-image {
+   width: 15em;
   }
 
 }
