@@ -897,7 +897,18 @@ GENERAL STYLING
   transition: all 5s ease-in-out;
 }
 
-.popup .close {
+.popup-large {
+  margin: 6em auto;
+  padding: 3.5em 3em 3em 3em;
+  background: #fff;
+  border-radius: 5px;
+  border: solid 1px lightgrey;
+  width: 70%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup .close, .popup-large .close {
   position: absolute;
   top: 20px;
   right: 30px;
@@ -908,14 +919,15 @@ GENERAL STYLING
   color: #333;
 }
 
-.popup .close:hover {
+.popup .close:hover, .popup-large .close:hover{
   color: #C19A97;
-}
+} 
 
-.popup .content {
+.popup .content, .popup-large .content{
   max-height: 30%;
   overflow: auto;
 }
+
 
 .popup-image {
   width: 20em;

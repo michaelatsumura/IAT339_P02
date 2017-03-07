@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Swirl Polishes Co.</title>
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/grids.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Muli:300,400,700,900" rel="stylesheet">
+</head>
+<body>
+  <!-- Main Navigation -->
+  <div class="grid-row">
+    <div class="nav-container">
+      <nav class="main-nav">
+        <div class="grid-col-1of8 nav-padding">
+        <a href="index.html" class="logo left-align"><img src="img/logo.png" alt="swirl polishes co. logo"></a>
+        </div>
+
+        <div class="grid-col-1of8 nav-padding mobile-hide">
+          <a href="mix.html" class="button-nav">Mix</a>
+        </div>
+
+        <div class="grid-col-1of8 nav-padding mobile-hide">
+          <a href="product-listing.html" class="button-nav">Browse</a>
+        </div>
+
+        <div class="grid-col-1of8 nav-padding mobile-hide">
+          <a href="product-view.html" class="button-nav">Shop</a>
+        </div>
+
+        <div class="grid-col-1of8 nav-padding mobile-hide">
+          <p></p>
+        </div>
+
+        <div class="grid-col-1hof8 nav-padding mobile-hide">
+          <a href="profile.html" class="right-align profile nav-padding"><img src="img/profile-30.png" alt="access your profile page icon"></a>
+        </div>
+
+        <div class="grid-col-1of8 nav-padding">
+          <a href="create-account.html" class="secondary-nav left-align mobile-hide">Sign Up</a>
+        </div>
+
+        <div class="grid-col-1hof8 nav-padding">
+          <a href="#" class="right-align search mobile-hide"><img src="img/search-30.png" alt="search magnifying glass icon"></a>
+        </div>
+
+        <div class="grid-col-1of8 nav-padding mobile-hide">
+          <!-- Cart icon retrieved from: https://thenounproject.com/search/?q=shop&i=839566 -->
+          <a href="cart.html"><img src="img/bag-icon-30.png" alt="cart image"></a>
+        </div>
+
+        <div id="hamburger" class="hamburger-icon-wrapper mobile-show">
+          <span class="hamburger-icon"></span>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- end of desktop navigation bar -->
+
+  <!-- hamburger menu options (shown on 600px or smaller) -->
+  <div class="hamburger-menu">
+    <ul class="hamburger-menu-list">
+      <a href="mix.html"><li class="hamburger-item">Mix</li>
+      <a href="product-listing.html"><li class="hamburger-item">Browse</li>
+      <a href="product-view.html"><li class="hamburger-item">Shop</li>
+      <a href="sign-in.html"><li class="hamburger-item">Sign In</li>
+      <a href="cart.html"><li class="hamburger-item">Cart</li>
+      <a href="#"><li class="hamburger-item">Search</li></a>
+    </ul>
+  </div>
+
+
+<!-- POPUPS SAVE MIX -->
+  <div id="popupsave" class="overlay">
+    <div class="popup-large">
+      <div class="grid-row">
+        <div class="grid-col-3of8">
+          <img src="img/swatch-metallic-pink-orange.jpg" class="popup-image" alt="a metallic pink orange nailpolish">
+          <!-- Image retrieved from http://styletips101.com/wp-content/uploads/2010/03/nail-polish-thumb.jpg -->
+          <!-- Social Links -->
+          <!-- Icons sourced from: https://www.vecteezy.com/vector-art/95039-free-social-media-icons -->
+          <h3 class="field-header">Share on Social Media!</h3>
+          <a href="https://facebook.com/"><img src="img/facebook.png" class="social-icon"></a>
+          <a href="https://twitter.com/"><img src="img/twitter.png" class="social-icon"></a>
+          <a href="https://instagram.com/"><img src="img/instagram.png" class="social-icon"></a>
+          <a href="https://plus.google.com/"><img src="img/googleplus.png" class="social-icon"></a>
+        </div>
+        <div class="grid-col-5of8">
+          <h2 class="secondary-heading">Congrats! Your mix has been saved.</h2>
+          <p class="paragraph-primary">All of your mixes will be saved to your account. You can purchase your custom mix or sell your creation to other Swirl Polish users.</p>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <h2 class="header-bold">Mix Details</h2>
+            <div class="grid-row">
+              <div class="grid-col-4of8">
+              <!-- Finish selected -->
+              <h3 class="bold-header">Finish:</h3>
+
+                <p class="content-description">Metallic</p>
+              <!-- Add-in's selected -->
+              <h3 class="bold-header">Add-In's:</h3>
+              <p class="content-description">Holographic Glitter - Pink</p>
+              </div>
+
+              <div class="grid-col-4of8">
+                <!-- Bottle Type Selected -->
+                <h3 class="bold-header">Bottle Type:</h3>
+                <p class="content-description">Square</p>
+                <!-- Bottle Type Selected -->
+                <h3 class="bold-header">Brush Type:</h3>
+                <p class="content-description">Rounded</p>
+              </div>
+            </div>            
+            <div class="grid-col-3of8">
+              <a class="button-primary" href="popupsell">Sell my Mix</a>
+            </div>
+            <div class="grid-col-3of8">
+              <a class="button-primary" href="product-listing-shop-1cart-item.html">+ Add to Cart</a>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- end of POPUP SAVE MIX -->
+
+  <!-- Custom Mix -->
+  <div class="content-container">
+    <div class="grid-row">
+      <div class="grid-col-3of8">
+        <img src="img/swatch-metallic-pink-orange.jpg" alt="Metallic pink and orange swirl nailpolish">
+        <!-- Image retrieved from http://styletips101.com/wp-content/uploads/2010/03/nail-polish-thumb.jpg -->
+      </div>
+      <div class="grid-col-4of8">
+        <h1 class="main-heading">Mix</h1>
+
+        <p class="paragraph-primary"><strong>Your search for the perfect polish is over!</strong> <br>Customize and purchase your own personalized polish blend. If you want others to use your creation, post your polish blend in your profile store!</p>
+        <!-- Fill in Information -->
+        <h3 class="field-header">Name</h3>
+        <form>
+          <input class="formfield" type="text" name="search" placeholder="Name your polish mix">
+        </form>
+
+        <!-- Colour Picker -->
+        <h3 class="field-header">Polish Colour:</h3>
+          <form>
+            <input type="color" class="swatch" name="favcolor" value="#FF3D61">
+          </form>
+          <!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_color -->
+
+        <!-- Drop Down Selector -->
+        <h3 class="field-header">Finish</h3>
+        <!-- <input class="slider" type="range" min="0" max="50" value="25" step="5" /> -->
+        <select class="dropdown">
+          <option value="cream">Cream</option>
+          <option value="glitter">Glitter</option>
+          <option value="lustre">Lustre</option>
+          <option value="metallic">Metallic</option>
+          <option value="matte">Matte</option>
+          <option value="translucent">Translucent</option>
+        </select>
+
+        <!-- Drop Down Selector -->
+        <h3 class="field-header">Add-In 1</h3>
+        <!-- <input class="slider" type="range" min="0" max="50" value="25" step="5" /> -->
+        <select class="dropdown">
+          <option value="none">None</option>
+          <option value="heart">Heart Glitter</option>
+          <option value="holographic">Holographic Glitter</option>
+          <option value="r-glitter-1">Round Glitter - Large</option>
+          <option value="r-glitter-2">Round Glitter - Small</option>
+          <option value="s-glitter-1">Square Glitter - Large</option>
+          <option value="s-glitter-2">Square Glitter - Small</option>
+          <option value="stars">Star Glitter</option>
+        </select>
+
+        <form>
+          Select your add-in color:
+          <input type="color" name="favcolor" value="#ffffff">
+        </form>
+
+        <!-- Drop Down Selector -->
+        <h3 class="field-header">Add-In 2</h3>
+        <select class="dropdown">
+          <option value="none">None</option>
+          <option value="heart">Heart Glitter</option>
+          <option value="holographic">Holographic Glitter</option>
+          <option value="r-glitter-1">Round Glitter - Large</option>
+          <option value="r-glitter-2">Round Glitter - Small</option>
+          <option value="s-glitter-1">Square Glitter - Large</option>
+          <option value="s-glitter-2">Square Glitter - Small</option>
+          <option value="stars">Star Glitter</option>
+        </select>
+
+        <form>
+          Select your add-in color:
+          <input type="color" name="favcolor" value="#ffffff">
+        </form>
+
+        <h3 class="field-header">Bottle Shape</h3>
+        <select class="dropdown">
+          <option value="diamond">Diamond</option>
+          <option value="heart">Heart</option>
+          <option value="oval">Oval</option>
+          <option value="square">Square</option>
+        </select>
+
+        <h3 class="field-header">Brush Type</h3>
+        <select class="dropdown">
+          <option value="rounded-brush">Rounded Brush</option>
+          <option value="square-brush">Square Brush</option>
+          <option value="fine-tip-brush">Fine Tip Brush</option>
+          <option value="liner-brush">Liner Brush</option>
+        </select>
+
+        <!-- Add to cart and sell buttons -->
+          <div class="grid-col-4of8 remove-gutter">
+          <a class="button-primary" href="#popupsave">Save Mix</a>
+        </div>
+      </div>
+    </div>
+  </div> <!-- End of Content Container -->
+
+  <!-- Footer -->
+  <div class="grid-row">
+    <footer class="footer">
+      <div class="grid-col-4of8"><p>Swirl Polishes Co. © 2017</p></div>
+      <div class="grid-col-4of8 float-right text-right"><a href="contact-us.html" class="contact-us">Contact Us</a></div>
+    </footer>
+  </div>
+
+  <!-- link to js for hamburger menu functionality -->
+  <script src="js/hamburger-menu.js"></script>
+</body>
+</html>
