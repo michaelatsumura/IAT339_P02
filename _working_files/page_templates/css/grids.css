@@ -328,12 +328,6 @@
     padding: 1% 10%;
   }
 
-
-/*  .content-container-center {
-    width: 100%;
-    padding: 5% 38%;
-  }*/
-
   .checkout-container {
     width: 100%;
     padding: 5% 30%;
@@ -346,6 +340,10 @@
     -o-background-size: cover;
     background-size: cover;
     height: 100vh;
+  }
+
+  .dropdown-filter {
+    float: left;
   }
 
 }
@@ -489,5 +487,18 @@
   .content-container {
     width: 100%;
     padding: 25% 10% !important;
+  }
+
+  .popup {
+    margin: 6em auto;
+    padding: 2em;
+    background: #fff;
+    border-radius: 5px;
+    border: solid 1px lightgrey;
+    width: 100%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    max-height: 80%;
+    overflow: auto;
   }
 }
