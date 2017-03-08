@@ -95,7 +95,7 @@
           <div class="grid-col-8of8">
             <form>
               <label for="password" class="left-align">Password</label>
-              <input class="formfield" type="text" name="password" placeholder="*******">
+              <input class="formfield" type="password" name="password" placeholder="*******">
             </form>
           </div>
         </div>
@@ -119,6 +119,7 @@
       <div class="popup-small">
         <div class="grid-row">
           <div class="grid-col-8of8"> 
+            <a class="close" href="#">&times;</a>
             <h2 class="bold-header">Sign Up</h2>
           </div>
         </div>
@@ -145,7 +146,7 @@
           <div class="grid-col-8of8">
             <form>
               <label for="password" class="left-align">Password</label>
-              <input class="formfield" type="text" name="password" placeholder="*******">
+              <input class="formfield" type="password" name="password" placeholder="*******">
             </form>
           </div>
         </div>
@@ -154,7 +155,7 @@
           <div class="grid-col-8of8">
             <form>
               <label for="password" class="left-align">Retype Password</label>
-              <input class="formfield" type="text" name="password" placeholder="*******">
+              <input class="formfield" type="password" name="password" placeholder="*******">
             </form>
           </div>
         </div>
@@ -173,6 +174,32 @@
       </div>
     </div> <!-- end of popup SIGN UP -->
 
+  <!-- POPUP -->
+  <div id="popupsocial" class="overlay">
+    <div class="popup">
+      <div class="grid-row">
+        <div class="grid-col-8of8"> 
+          <a class="close" href="#">&times;</a>
+          <h2 class="bold-header">Share</h2>
+        </div>
+      </div>
+
+      <div class="grid-row">
+        <div class="grid-col-8of8">
+          <textarea class="formfield text-description-area" name="textarea" style="width:100%;height:7em;" placeholder="I just created a custom mix on swirlpolish.co! Come check it out!"></textarea>
+        </div>
+      </div>
+
+      <div class="grid-row">
+        <div class="grid-col-4of8">
+          <a class="button-secondary" href="#">Back</a>
+        </div>
+        <div class="grid-col-4of8">
+          <a class="button-primary" href="#">Share</a>
+        </div>
+      </div>
+    </div>
+  </div> <!-- end of div popupfacebook -->
 
   <!-- Custom Mix -->
   <div class="content-container">
@@ -183,10 +210,10 @@
         <!-- Social Links -->
         <!-- Icons sourced from: https://www.vecteezy.com/vector-art/95039-free-social-media-icons -->
         <h3 class="field-header">Share on Social Media!</h3>
-        <a href="https://facebook.com/"><img src="img/facebook1.png" class="social-icon"></a>
-        <a href="https://twitter.com/"><img src="img/twitter1.png" class="social-icon"></a>
-        <a href="https://instagram.com/"><img src="img/pinterest.png" class="social-icon"></a>
-        <a href="https://plus.google.com/"><img src="img/tumblr.png" class="social-icon"></a>
+        <a href="#popupsocial"><img src="img/facebook1.png" class="social-icon"></a>
+        <a href="#popupsocial"><img src="img/twitter1.png" class="social-icon"></a>
+        <a href="#popupsocial"><img src="img/pinterest.png" class="social-icon"></a>
+        <a href="#popupsocial"><img src="img/tumblr.png" class="social-icon"></a>
       </div>
       <div class="grid-col-4of8">
         <h2 class="secondary-heading">Congrats! Your mix has been created!</h2>

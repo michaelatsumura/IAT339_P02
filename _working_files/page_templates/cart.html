@@ -12,7 +12,7 @@
 </head>
 <body>
   <!-- Main Navigation -->
-  <div class="grid-row background">
+  <div class="grid-row">
     <div class="nav-container">
       <nav class="main-nav">
         <div class="grid-col-1of8 nav-padding">
@@ -72,6 +72,52 @@
     </ul>
   </div>
 
+  <div id="popup2" class="overlay">
+    <div class="popup">
+      <div class="grid-row">
+        <div class="grid-col-4of8">
+          <img src="img/swatch-metallic-pink-orange.jpg" class="popup-image" alt="a metallic pink orange nailpolish">
+          <!-- Image retrieved from http://styletips101.com/wp-content/uploads/2010/03/nail-polish-thumb.jpg -->
+        </div>
+        <div class="grid-col-4of8">
+          <h2 class="product-name">Orange Sunset</h2>
+          <h3 class="product-subhead">Satin Finish</h3>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <p class="price">$12.95</p>
+            <p class="paragraph-primary">A beautiful mix of pink and orange satin polishes that swirl together to create magic on your fingertips. Created by <a href="#">@sandys12</a>.</p>
+            <a href="edit-mix.html" class="intext-links link-margin">Edit Polish Mix</a>
+            <div class="grid-col-6of8 remove-gutter">
+              <a class="button-primary" href="#">Back</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- end of div popup2 -->
+
+  <div id="popup4" class="overlay">
+    <div class="popup">
+      <div class="grid-row">
+        <div class="grid-col-4of8">
+          <img src="img/dotters-3.jpg" class="popup-image" alt="a pack of 5 multicoloured, doubled sided nail dotting tools">
+          <!-- Image retrieved from https://images-na.ssl-images-amazon.com/images/I/41IFwjklhVL._SY355_.jpg -->
+        </div>
+        <div class="grid-col-4of8">
+          <h2 class="product-name">Nail Dotters</h2>
+          <h3 class="product-subhead">Pack of 5 Pastel Swirl Handle Dotters</h3>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <p class="price">$10.95</p>
+            <p class="paragraph-primary">5 double-sided nail dotters with different sized dot tips ranging from 1mm - 10mm. Ideal for creating intricate nail art designs with regular or gel polish.</p>
+            <div class="grid-col-6of8 remove-gutter">
+              <a class="button-primary" href="#">Back</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- end of div popup4 -->
 
   <!-- Cart -->
   <div class="checkout-container">
@@ -80,9 +126,10 @@
     </div>
     <div class="grid-row divider">
       <div class="grid-col-2of8">
-        <img src="img/swatch-metallic-pink-orange.jpg" alt="metallic orange pink nail polish swatch" class="product-list-view cart-image">
+        <a href="#popup2"><img src="img/swatch-metallic-pink-orange.jpg" alt="metallic orange pink nail polish swatch" class="product-list-view cart-image"></a>
         <!-- Image retrieved from http://styletips101.com/wp-content/uploads/2010/03/nail-polish-thumb.jpg -->
       </div>
+      <a href="#popup2">
       <div class="grid-col-5of8">
         <h2 class="product-name">Orange Sunset</h2>
         <h3 class="product-subhead">Lustre Finish</h3>
@@ -90,12 +137,13 @@
         <p class="paragraph-secondary">Colour No. 192481 - A bright orange shade with a tinge of yellow.</p>
       </div>
     </div>
+
     <div class="grid-row divider">
       <div class="grid-col-2of8">
-        <img src="img/dotters-3.jpg" alt="pack of 4 nail dotting tools" class="product-list-view cart-image">
+        <a href="#popup4"><img src="img/dotters-3.jpg" alt="pack of 4 nail dotting tools" class="product-list-view cart-image"></a>
         <!-- Image retrieved from https://images-na.ssl-images-amazon.com/images/I/41IFwjklhVL._SY355_.jpg -->
       </div>
-      <a href="product-detail-shop-2.html">
+      <a href="#popup4">
         <div class="grid-col-5of8">
           <h2 class="product-name">Nail Dotters</h2>
           <h3 class="product-subhead">Pack of 5 Pastel Swirl Handle Dotters</h3>
