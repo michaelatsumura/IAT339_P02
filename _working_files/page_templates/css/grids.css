@@ -20,19 +20,10 @@
   max-width: 100%;
 }
 
-/* i think i can delete these once the forms and footers are fixed - MT */
-/*.form-container-short {
-  text-align: center;
-  width: 100%;
-  padding: 8% 35%;
-  height: 100vh;
+.content-container-citations {
+  padding: 0 2rem 2rem 2rem;
+  max-width: 100%;
 }
-
-.form-container-short-2 {
-  width: 100%;
-  padding: 8% 35%;
-  height: 100vh;
-}*/
 
 
 /*Gutter*/
@@ -227,6 +218,31 @@
 
 /*--------------------------------------------------------------------------------------------------------*/
 
+@media (max-width:93.75em){ /*1500 px */
+  .popup-small {
+    width: 30%;
+  }
+}
+
+
+@media (max-width:81.25em){ /*1300 px */
+ 
+  /* replace background image on landing page */
+  header {
+    background: url("http://www.sfu.ca/~mtsumura/bg-1300.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .popup-small {
+    width: 40%;
+  }
+}
+
+
 @media (max-width:70em){ /*1121 px - ipad landscape - laptop-ish */
   .grid-col-2of8-list-view{
     width: 33.3333%;
@@ -245,11 +261,6 @@
   }
 }
 
-
-
-/*@media (max-width:64em){*/ /*1024 px - ipad landscape - laptop-ish */
-
-/*}*/
 
 @media screen and (max-width: 64em){
     header {
@@ -270,10 +281,8 @@
   .popup{
     width: 70%;
   }
-}
 
-
-@media (max-width:65.5em){ /*1048 px - ipad landscape - laptop-ish */
+/*@media (max-width:65.5em){ 1048 px - ipad landscape - laptop-ish */
   .form-container {
     text-align: left;
     width: 100%;
@@ -325,7 +334,7 @@
   .front-page-container {
     text-align: center;
     width: 100%;
-    padding: 1% 10%;
+    padding: 10% 10%;
   }
 
   .checkout-container {
@@ -344,6 +353,11 @@
 
   .dropdown-filter {
     float: left;
+  }
+
+  .popup-small {
+    padding: 1em 2em 2em 2em;
+    width: 60%;
   }
 
 }
@@ -408,6 +422,14 @@
     overflow: auto;
   }
 
+  .popup-small {
+    width: 80%;
+  }
+
+  .background {
+    padding: 0;
+  }
+
 }
 
 
@@ -432,13 +454,25 @@
     padding: 1% 15%;
   }
 
+  .front-page-container {
+    padding: 1% 10%;
+  }
+
   .popup-image {
    width: 15em;
   }
-
 }
 
 @media (max-width:25em){ /*400 px -- large mobile */
+
+  header {
+    background: url("http://www.sfu.ca/~mtsumura/bg-iphone6.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+  }
 
    .grid-col-1of8{
       width: 100%;
@@ -452,14 +486,14 @@
   }
 
   /* navigation styling */
-    .hamburgler-icon-wrapper {
-      position: absolute;
-      top: 0.6em !important;
-      right: 2em;
-      height: 26px;
-      width: 26px;
-      cursor: pointer
-    }
+  .hamburgler-icon-wrapper {
+    position: absolute;
+    top: 0.6em !important;
+    right: 2em;
+    height: 26px;
+    width: 26px;
+    cursor: pointer
+  }
 
   .hamburger-icon {
     top: 1.2em;

@@ -397,7 +397,7 @@ label {
 
 /* Secondary Paragraph for cart page */
 .paragraph-secondary {
-	font-size: 0.8em;
+	font-size: 0.9em;
 	font-weight: 400;
 }
 
@@ -417,6 +417,7 @@ label {
   list-style: none;
   margin-top: 0.5em;
   line-height: 1.5rem;
+  padding-left: 0;
 }
 
 /* end of styling the TEXT ELEMENTS*/
@@ -544,20 +545,13 @@ label {
 /* --------- FOOTER -----------*/
 .footer{
 	background-color: rgba(173, 124, 131, 0.4); /*Light Pink 40%*/
-	padding: 1.5em 1em 1.5em 3em; /*T R B L*/
+	padding: 1.5em 1em 1.5em 1em; /*T R B L*/
 	color: white;
-  height: 4.5rem;
+  height:auto;
   text-align: left;
 }
 
-/*http://stackoverflow.com/questions/12239166/footer-at-bottom-of-page-or-content-whichever-is-lower*/
-/*.wrapper {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto 4rem;
-}*/
-
+/*Joanna delete this after the footer is fixed*/
 footer, .push {
     height: 4rem; /* .push must be the same height as .footer */
 }
@@ -653,7 +647,7 @@ header {
 
 /* Rounded corners for profile image */
 .profile-image {
-  border-radius: 1em;
+  padding-right: 2em;
 }
 
 /* Profile Name */
@@ -668,7 +662,7 @@ header {
   text-align: left;
   width: 90%;
   line-height: 1.3em;
-  margin-bottom: 1em;
+  margin: 1em 0;
 
 }
 
@@ -875,7 +869,7 @@ GENERAL STYLING
 
 .popup-small {
   margin: 6em auto;
-  padding: 3.5em 3em 3em 3em;
+  padding: 2em 3em 3em 3em;
   background: #fff;
   border-radius: 5px;
   border: solid 1px lightgrey;
