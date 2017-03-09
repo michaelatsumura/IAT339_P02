@@ -16,7 +16,7 @@
     <div class="nav-container">
       <nav class="main-nav">
         <div class="grid-col-1of8 nav-padding">
-        <a href="index.html" class="logo left-align"><img src="img/logo.png" alt="swirl polishes co. logo"></a>
+        <a href="index.html" class="logo left-align"><img src="img/logo.svg" alt="swirl polishes co. logo"></a>
         </div>
 
         <div class="grid-col-1of8 nav-padding mobile-hide">
@@ -31,25 +31,25 @@
           <a href="product-view.html" class="button-nav">Shop</a>
         </div>
 
-        <div class="grid-col-1of8 nav-padding mobile-hide">
+        <div class="grid-col-3of8 nav-padding mobile-hide">
           <p></p>
         </div>
 
         <div class="grid-col-1hof8 nav-padding mobile-hide">
-          <a href="profile.html" class="right-align profile nav-padding"><img src="img/profile-30.png" alt="access your profile page icon"></a>
-        </div>
-
-        <div class="grid-col-1of8 nav-padding">
-          <a href="create-account.html" class="secondary-nav left-align mobile-hide">Sign Up</a>
-        </div>
-
-        <div class="grid-col-1hof8 nav-padding">
-          <a href="#" class="right-align search mobile-hide"><img src="img/search-30.png" alt="search magnifying glass icon"></a>
+          <a href="profile.html" class="icon"><img src="img/profile.svg" alt="access your profile page icon"></a>
         </div>
 
         <div class="grid-col-1of8 nav-padding mobile-hide">
+          <a href="#popupsignup" class="secondary-nav left-align">Sign Up</a>
+        </div>
+
+        <div class="grid-col-1hof8 nav-padding mobile-hide">
+          <a href="#popupsearch" class="icon center-align search "><img src="img/search.svg" alt="search magnifying glass icon"></a>
+        </div>
+
+        <div class="grid-col-1hof8 nav-padding mobile-hide">
           <!-- Cart icon retrieved from: https://thenounproject.com/search/?q=shop&i=839566 -->
-          <a href="cart.html"><img src="img/bag-icon-30.png" alt="cart image"></a>
+          <a href="cart.html" class="icon center-align"><img src="img/bag.svg" alt="shopping bag icon with heart"></a>
         </div>
 
         <div id="hamburger" class="hamburger-icon-wrapper mobile-show">
@@ -81,13 +81,13 @@
 
       <!-- Contact Information -->
     <div class="grid-row">
-      <div class="grid-col-8of8"> 
+      <div class="grid-col-8of8">
         <h2 class="bold-header">Contact Information</h2>
       </div>
     </div>
 
     <div class="grid-row">
-      <div class="grid-col-8of8">     
+      <div class="grid-col-8of8">
         <form>
           <label for="name" class="left-align">Name</label>
           <input class="formfield" type="text" name="name" placeholder="Serena Swirl">
@@ -96,7 +96,7 @@
     </div>
 
     <div class="grid-row">
-      <div class="grid-col-8of8">     
+      <div class="grid-col-8of8">
         <form>
           <label for="e-mail" class="left-align">Email</label>
           <input class="formfield" type="text" name="e-mail" placeholder="serenaswirl@gmail.com">
@@ -105,7 +105,7 @@
     </div>
 
     <div class="grid-row">
-      <div class="grid-col-8of8">     
+      <div class="grid-col-8of8">
         <form>
           <label for="phone" class="left-align">Phone Number</label>
           <input class="formfield" type="text" name="phone" placeholder="604-111-2222">
@@ -116,13 +116,13 @@
 
       <!-- Shipping Information -->
     <div class="grid-row">
-      <div class="grid-col-8of8"> 
+      <div class="grid-col-8of8">
         <h2 class="bold-header">Shipping Address</h2>
       </div>
     </div>
 
     <div class="grid-row">
-      <div class="grid-col-8of8">     
+      <div class="grid-col-8of8">
         <form>
           <label for="address" class="left-align">Address Line 1</label>
           <input class="formfield" type="text" name="address" placeholder="3617 123 Street, Vancouver, BC">
@@ -131,7 +131,7 @@
     </div>
 
     <div class="grid-row">
-      <div class="grid-col-8of8">     
+      <div class="grid-col-8of8">
         <form>
           <label for="address" class="left-align">Address Line 2 - optional</label>
           <input class="formfield" type="text" name="address" placeholder="Address Line 2">
@@ -140,13 +140,13 @@
     </div>
 
     <div class="grid-row">
-      <div class="grid-col-4of8">     
+      <div class="grid-col-4of8">
         <form>
           <label for="province" class="left-align">Province / State</label>
           <input class="formfield" type="text" name="province" placeholder="BC">
         </form>
       </div>
-      <div class="grid-col-4of8"> 
+      <div class="grid-col-4of8">
         <form>
           <label for="city" class="left-align">City</label>
           <input class="formfield" type="text" name="city" placeholder="Vancouver">
@@ -155,7 +155,7 @@
     </div>
 
     <div class="grid-row">
-      <div class="grid-col-4of8">     
+      <div class="grid-col-4of8">
         <form>
           <label for="postal" class="left-align">Postal / Zip Code</label>
           <input class="formfield" type="text" name="postal" placeholder="V3R 2W2">
@@ -165,19 +165,19 @@
 
       <!-- Billing Information -->
     <div class="grid-row">
-      <div class="grid-col-8of8"> 
+      <div class="grid-col-8of8">
         <h2 class="bold-header">Billing Address</h2>
       </div>
     </div>
 
     <div class="grid-row">
-      <div class="grid-col-8of8"> 
+      <div class="grid-col-8of8">
         <h3 class="field-header left-align"><input type="checkbox" class="checkbox" name="Same as Shipping Address" value="Same as Shipping Address" checked>Same as Shipping Address</h3>
       </div>
     </div>
 
     <div class="grid-row">
-      <div class="grid-col-8of8">     
+      <div class="grid-col-8of8">
         <form>
           <label for="address" class="left-align">Address Line 1</label>
           <input class="formfield" type="text" name="address" value="3617 123 Street, Vancouver, BC">
@@ -186,7 +186,7 @@
     </div>
 
     <div class="grid-row">
-      <div class="grid-col-8of8">     
+      <div class="grid-col-8of8">
         <form>
           <label for="address" class="left-align">Address Line 2 - optional</label>
           <input class="formfield" type="text" name="address" value="">
@@ -195,13 +195,13 @@
     </div>
 
     <div class="grid-row">
-      <div class="grid-col-4of8">     
+      <div class="grid-col-4of8">
         <form>
           <label for="province" class="left-align">Province / State</label>
           <input class="formfield" type="text" name="province" value="BC">
         </form>
       </div>
-      <div class="grid-col-4of8"> 
+      <div class="grid-col-4of8">
         <form>
           <label for="city" class="left-align">City</label>
           <input class="formfield" type="text" name="city" value="Vancouver">
@@ -210,7 +210,7 @@
     </div>
 
     <div class="grid-row">
-      <div class="grid-col-4of8">     
+      <div class="grid-col-4of8">
         <form>
           <label for="postal" class="left-align">Postal / Zip Code</label>
           <input class="formfield" type="text" name="postal" value="V3R 2W2">
