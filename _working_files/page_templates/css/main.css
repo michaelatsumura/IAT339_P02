@@ -404,7 +404,7 @@ label {
   list-style: none;
 }
 
-/* Main Navigation */
+/* Not fixed positioning navigation for styleguide */
 .styleguide-main-nav {
   display: -webkit-flex; /* For support in a series of Webkit browsers */
   display: -ms-flex; /* For support in IE 10 */
@@ -443,10 +443,7 @@ label {
   max-width: 25px;
 }
 
-/*
-  Product listing Image Style
-  Adds a border around the image and more spacing
-*/
+/* --------- SINGLE PRODUCT LISTING -----------*/
 .fit-product {
   padding: 1em;
 }
@@ -504,13 +501,24 @@ label {
 	color: white;
   height:auto;
   text-align: left;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
-/*Joanna delete this after the footer is fixed*/
-footer, .push {
-    height: 4rem; /* .push must be the same height as .footer */
-}
+/*
+  Get it to anchor to the bottom,
+  should add bg white to element before footer
+  This should still be adjusted for later
+*/
 
+.content-container {
+  background: white;
+  position: relative;
+  margin-bottom: 5rem;
+  z-index: 10;
+}
 
 /* Have to re-organize the rest of this and add it to the styleguide */
 /* Places a border around the cart image */
