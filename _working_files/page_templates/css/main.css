@@ -607,7 +607,7 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 120vh; /* viewport height */
+  height: 100vh; /* 120% viewport height */
 }
 
 
