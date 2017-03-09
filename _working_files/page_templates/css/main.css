@@ -191,7 +191,7 @@ label {
   text-decoration: none;
   background-color: white;
   border: 2px solid #C19A97;
-  color: #C19A97; 
+  color: #C19A97;
   font-weight: 700;
   border-radius: 0.25em;
   -webkit-transition: background-color 0.5s ease-out;
@@ -513,7 +513,7 @@ label {
   This should still be adjusted for later
 */
 
-.content-container {
+.content-container, .form-container, .checkout-container {
   background: white;
   position: relative;
   margin-bottom: 5rem;
@@ -885,7 +885,7 @@ GENERAL STYLING
 
 .popup .close:hover, .popup .close:focus, .popup-large .close:hover,.popup-large .close:focus, .popup-small .close:hover, .popup-small .close:focus{
   color: #C19A97;
-} 
+}
 
 .popup .content, .popup-large .content, .popup-small .content, .popup-search .content{
   max-height: 30%;
@@ -897,6 +897,3 @@ GENERAL STYLING
   padding-right: 1em;
 }
 /* End of how to make a pop-up. Retrieved from https://codepen.io/imprakash/pen/GgNMXO*/
-
-
-
