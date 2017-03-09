@@ -495,9 +495,17 @@ label {
 }
 
 /* --------- FOOTER -----------*/
+
+.footer-frontpage {
+  background-color: rgba(173, 124, 131, 0.4); /*Light Pink 40%*/
+  padding: 1.5em 1em;
+  color: white;
+  height: auto;
+}
+
 .footer{
 	background-color: rgba(173, 124, 131, 0.4); /*Light Pink 40%*/
-	padding: 1.5em 1em 1.5em 1em; /*T R B L*/
+	padding: 1.5em 1em; /*T R B L*/
 	color: white;
   height:auto;
   text-align: left;
@@ -630,7 +638,7 @@ header {
 }
 
 .edit {
-  color: #C19A97;
+  color: #C19A97; /*Light Pink*/
   text-align: right;
 }
 
