@@ -263,9 +263,10 @@ label {
   margin-right: 0.75em;
 }
 
-/* Search Bar*/
+/* Search Icon*/
 .search {
   max-width: 25px;
+  max-height: 25px;
 }
 
 /* Hover and focus states */
