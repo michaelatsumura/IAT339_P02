@@ -117,7 +117,7 @@
   .front-page-container {
     text-align: center;
     width: 100%;
-    padding: 10% 30%;
+    padding: 6% 30%;
   }
 
   .form-container {
@@ -262,7 +262,7 @@
 }
 
 
-@media screen and (max-width: 64em){
+@media screen and (max-width: 64em){ /*1048 px - ipad landscape - laptop-ish*/
     header {
     background: url("http://www.sfu.ca/~mtsumura/landing-pg-1024.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -282,7 +282,6 @@
     width: 70%;
   }
 
-/*@media (max-width:65.5em){ 1048 px - ipad landscape - laptop-ish */
   .form-container {
     text-align: left;
     width: 100%;
@@ -315,9 +314,10 @@
     width: 50%;
   }
 
-  .grid-col-2of8-list-view{
+  .grid-col-2of8-listview{
     width: 50% !important;
   }
+
 
 /* CONTAINERS */
   .content-container {
@@ -334,7 +334,7 @@
   .front-page-container {
     text-align: center;
     width: 100%;
-    padding: 10% 10%;
+    padding: 6% 15%;
   }
 
   .checkout-container {
@@ -507,32 +507,54 @@
   .form-container {
     text-align: left;
     width: 100%;
-    padding: 1% 10%;
+    padding: 5% 10%;
   }
 
   .dropdown {
     width: 100%;
+  }
+
+  .popup-image{
+    width: 80%;
+  }
+
+  .product-name {
+    font-size: 1.2em;
+  }
+
+  .product-subhead {
+    font-size: 1em;
+  }
+
+  .paragraph-primary {
+    font-size: 0.85em;
+  }
+
+  .secondary-heading {
+    font-size: 1.5em;
+    padding-top: 1em;
+  }
+
+  .button-margin-top {
+    margin-top: 1em; 
   }
 }
 
 
 
 @media (max-width:21em){ /*320 px -- iphone5 */
-  .content-container {
-    width: 100%;
-    padding: 25% 10% !important;
-  }
 
   .popup {
-    margin: 6em auto;
-    padding: 2em;
+    margin: 5em auto;
+    padding: 1em;
     background: #fff;
     border-radius: 5px;
     border: solid 1px lightgrey;
-    width: 100%;
+    width: 90%;
     position: relative;
     transition: all 5s ease-in-out;
     max-height: 80%;
     overflow: auto;
   }
+
 }

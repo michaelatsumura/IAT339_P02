@@ -182,28 +182,6 @@ label {
   text-decoration: none;
 }
 
-/* Primary Button Half Width? */
-/*.button-primary-half {
-  margin-top: 2em;
-  padding: 0.8em 2em;
-  background-color: #C19A97; 
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.1em;
-  font-weight: 700;
-  border-radius: 0.25em;
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
-  text-align: center;
-}
-
-.button-primary-half:hover, .button-primary-half:focus {
-  background-color: #DDD;
-  color: #000;
-  text-decoration: none;
-}*/
-
 /* Secondary Button */
 .button-secondary {
   padding: 0.8em 1.3em;
@@ -211,9 +189,9 @@ label {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
-  /*background-color: lightgrey;*/
+  background-color: white;
   border: 2px solid #C19A97;
-  color: #C19A97; /*Dark Blue*/
+  color: #C19A97; 
   font-weight: 700;
   border-radius: 0.25em;
   -webkit-transition: background-color 0.5s ease-out;
@@ -228,29 +206,6 @@ label {
   color: #FFF;
   text-decoration: none;
 }
-
-/* Secondary Button Half Width?*/
-/*.button-secondary-half {
-  padding: 0.8em 2em;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  text-decoration: none;
-  background-color: #DDD;
-  color: #3D4656;
-  font-weight: 700;
-  border-radius: 0.25em;
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
-  margin: 0.2em 0 0.4em 0;
-  text-align: center;
-}
-
-.button-secondary-half:hover, .button-secondary-half:focus {
-  background-color: #C19A97;
-  color: #FFF;
-  text-decoration: none;
-}*/
-
 
 /* --------- FORM FIELDS -----------*/
 /* Searchfield */
@@ -533,7 +488,7 @@ label {
   border: solid 1px #D3D3D3;
 }
 
-.product-list-view:hover, .product-list-view:focus {
+.product-list-view:hover, .product-list-view:focus, .product-list-view:active {
   border: solid 3px #D3D3D3;
 }
 
@@ -836,7 +791,7 @@ GENERAL STYLING
   padding: 0;
   list-style-type: none;
   position: absolute;
-  top: 25%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1.2)
 }
@@ -876,6 +831,10 @@ GENERAL STYLING
   width: 25%;
   position: relative;
   transition: all 5s ease-in-out;
+  z-index: 97;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  /*How to make popups that scroll. Retrieved from http://codepen.io/anon/pen/oXEKNg*/
 }
 
 .popup {
@@ -887,6 +846,9 @@ GENERAL STYLING
   width: 40%;
   position: relative;
   transition: all 5s ease-in-out;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  z-index: 98;
 }
 
 .popup-large {
@@ -898,37 +860,35 @@ GENERAL STYLING
   width: 70%;
   position: relative;
   transition: all 5s ease-in-out;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  z-index: 99;
 }
 
-
-.popup .close, .popup-large .close, .popup-small .close  {
+.popup .close, .popup-large .close, .popup-small .close, .popup-search .close  {
   position: absolute;
-  top: 20px;
+  top: 10px;
   right: 30px;
   transition: all 200ms;
   font-size: 30px;
-  font-weight: bold;
   text-decoration: none;
   color: #333;
 }
 
-.popup .close:hover, .popup-large .close:hover, .popup-small .close:hover{
+.popup .close:hover, .popup .close:focus, .popup-large .close:hover,.popup-large .close:focus, .popup-small .close:hover, .popup-small .close:focus{
   color: #C19A97;
 } 
 
-.popup .content, .popup-large .content, .popup-small .content{
+.popup .content, .popup-large .content, .popup-small .content, .popup-search .content{
   max-height: 30%;
   overflow: auto;
 }
-
 
 .popup-image {
   width: 20em;
   padding-right: 1em;
 }
 /* End of how to make a pop-up. Retrieved from https://codepen.io/imprakash/pen/GgNMXO*/
-
-
 
 
 
