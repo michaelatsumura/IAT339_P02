@@ -66,12 +66,113 @@
       <a href="mix.html"><li class="hamburger-item">Mix</li>
       <a href="product-listing.html"><li class="hamburger-item">Browse</li>
       <a href="product-view.html"><li class="hamburger-item">Shop</li>
-      <a href="sign-in.html"><li class="hamburger-item">Sign In</li>
+      <a href="profile.html"><li class="hamburger-item">Profile</li>
+      <a href="#popupsignin"><li class="hamburger-item">Sign In</li>
       <a href="cart.html"><li class="hamburger-item">Cart</li>
-      <a href="#"><li class="hamburger-item">Search</li></a>
     </ul>
   </div>
-  <!-- End of modified hamburger menu code retrieved from http://johnm.io/project/hamburgler/ -->
+
+<!-- POPUPS SIGNIN/SIGNUP -->
+  <div id="popupsignin" class="overlay">
+    <div class="popup-small">
+      <div class="grid-row">
+        <div class="grid-col-8of8">
+          <a class="close" href="#">&times;</a>
+          <h2 class="bold-header">Sign In</h2>
+        </div>
+      </div>
+
+      <div class="grid-row">
+        <div class="grid-col-8of8">
+          <form>
+            <label for="name" class="left-align">Email</label>
+            <input class="formfield" type="text" name="email" placeholder="serenaswirl@gmail.com">
+          </form>
+        </div>
+      </div>
+
+      <div class="grid-row">
+        <div class="grid-col-8of8">
+          <form>
+            <label for="password" class="left-align">Password</label>
+            <input class="formfield" type="password" name="password" placeholder="*******">
+          </form>
+        </div>
+      </div>
+
+      <div class="grid-row">
+        <div class="grid-col-8of8">
+          <a class="button-primary" href="#">Sign In</a>
+        </div>
+      </div>
+
+      <div class="grid-row">
+        <div class="grid-col-8of8">
+           <p class="center-align">Don't have an account? <a href="#popupsignup">Create account</a></p>
+        </div>
+      </div>
+    </div>
+  </div> <!-- end of popup LOGIN -->
+
+  <!-- popup for sign up for an account -->
+  <div id="popupsignup" class="overlay">
+    <div class="popup-small">
+      <div class="grid-row">
+        <div class="grid-col-8of8">
+          <a class="close" href="#">&times;</a>
+          <h2 class="bold-header">Sign Up</h2>
+        </div>
+      </div>
+
+      <div class="grid-row">
+        <div class="grid-col-8of8">
+          <form>
+            <label for="name" class="left-align">Name</label>
+            <input class="formfield" type="text" name="email" placeholder="Serena Swirl">
+          </form>
+        </div>
+      </div>
+
+      <div class="grid-row">
+        <div class="grid-col-8of8">
+          <form>
+            <label for="email" class="left-align">Email</label>
+            <input class="formfield" type="text" name="email" placeholder="serenaswirl@gmail.com">
+          </form>
+        </div>
+      </div>
+
+      <div class="grid-row">
+        <div class="grid-col-8of8">
+          <form>
+            <label for="password" class="left-align">Password</label>
+            <input class="formfield" type="password" name="password" placeholder="*******">
+          </form>
+        </div>
+      </div>
+
+      <div class="grid-row">
+        <div class="grid-col-8of8">
+          <form>
+            <label for="password" class="left-align">Retype Password</label>
+            <input class="formfield" type="password" name="password" placeholder="*******">
+          </form>
+        </div>
+      </div>
+
+      <div class="grid-row">
+        <div class="grid-col-8of8">
+          <a class="button-primary" href="#">Sign Up</a>
+        </div>
+      </div>
+
+      <div class="grid-row">
+        <div class="grid-col-8of8">
+           <p class="center-align">Already have an account? <a href="#popupsignin">Sign In</a></p>
+        </div>
+      </div>
+    </div>
+  </div> <!-- end of popup SIGN UP -->
 
 
 
