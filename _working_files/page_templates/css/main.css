@@ -157,7 +157,7 @@ label {
   color: #3D4656; /*Dark Blue*/
 }
 
-/* secondary links */
+/* Secondary links */
 .links-secondary {
   color: #C19A97; /*Light Pink*/
   text-align: right;
@@ -191,7 +191,7 @@ label {
   border-radius: 0.25em;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
-  margin: 0.2em 0 0.4em 0;
+  margin: 0.5em 0;
   width: 100%;
   text-align: center;
 }
@@ -216,7 +216,7 @@ label {
   border-radius: 0.25em;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
-  margin: 0.2em 0 0.4em 0;
+  margin: 0.5em 0;
   width: 100%;
   text-align: center;
 }
@@ -409,7 +409,7 @@ label {
 
 /* Field Headings h3 */
 .field-header{
-	margin-bottom: 0.5em;
+	margin: 1.3em 0 0.5em 0;
 	font-weight: 400;
   font-size: 1em;
 }
@@ -426,7 +426,7 @@ label {
 .paragraph-primary {
   font-size: 1em;
   max-width: 100%;
-  margin: 0.3em 0 1em 0;
+  margin: 0.3em 0 2em 0;
 }
 
 /* Secondary Paragraph for cart page */
@@ -621,19 +621,17 @@ label {
 /*
 GENERAL STYLING
 */
-.button-margin-top {
-  margin-top: 2em;
-}
-
 .link-margin {
   margin: 1em 0;
 }
 
+/*Buy Step 1 checkbox*/
 .checkbox {
   margin-right: 0.5em;
   margin-bottom: 1em;
 }
 
+/*Same as shipping address*/
 .checkbox-description {
   margin: 0 auto;
 }
