@@ -450,14 +450,7 @@ label {
 
 /*Main Navigation */
 .background {
-  padding:2em 0;
-}
-
-/* Profile Icon */
-.profile {
-  max-width: 30px;
-  padding-right:0.3em;
-  margin-right: 0.75em;
+  padding: 2em 0;
 }
 
 /* Logo Icon */
@@ -468,16 +461,6 @@ label {
 /* Icon sizing - nav bar */
 .icon {
   max-width: 30px;
-}
-
-/* Search Bar*/
-.search {
-  max-width: 25px;
-}
-
-/* --------- SINGLE PRODUCT LISTING -----------*/
-.fit-product {
-  padding: 1em;
 }
 
 /* --------- COLOUR SCHEME -----------*/
@@ -511,14 +494,14 @@ label {
 }
 
 /* --------- PRODUCT LISTING: BROWSE + SHOP PAGES -----------*/
-/* Default product view for browse and shop pages */
+/* Grey border around product image */
 .product-list-view {
   padding: 1em;
-  border: solid 1px #D3D3D3;
+  border: solid 1px #D3D3D3; /*Light Grey*/
 }
 
 .product-list-view:hover, .product-list-view:focus, .product-list-view:active {
-  border: solid 3px #D3D3D3;
+  border: solid 3px #D3D3D3; /*Light Grey*/
 }
 
 /* Spacing after grid-row (browse and shop pages) */
