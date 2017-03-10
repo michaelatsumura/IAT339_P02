@@ -475,8 +475,8 @@
     font-size: 0.7em;
   }
 
-  .grid-col-2of8-list-view{
-    width: 100% !important;
+  .grid-col-2of8{
+    width: 100%;
   }
 
   /*container styling*/
@@ -493,6 +493,11 @@
   /*resize popup image on large mobile screen*/
   .popup-image {
    width: 15em;
+  }
+
+  /* Color Picker */
+  .swatch {
+    width: 100%;
   }
 }
 
@@ -520,7 +525,7 @@
   }
 
   /* navigation styling */
-  .hamburgler-icon-wrapper {
+  .hamburger-icon-wrapper {
     position: absolute;
     top: 0.6em !important;
     right: 2em;
