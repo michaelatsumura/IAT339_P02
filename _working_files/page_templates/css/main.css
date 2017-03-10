@@ -621,9 +621,6 @@ label {
 /*
 GENERAL STYLING
 */
-.link-margin {
-  margin: 1em 0;
-}
 
 /*Buy Step 1 checkbox*/
 .checkbox {
@@ -634,10 +631,6 @@ GENERAL STYLING
 /*Same as shipping address*/
 .checkbox-description {
   margin: 0 auto;
-}
-
-.new-section{
-  margin-top: 2em;
 }
 
 /*
