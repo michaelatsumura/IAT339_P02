@@ -245,6 +245,7 @@ label {
   border-radius: 0.25em;
   padding: 0.5em;
   font-size: 0.9em;
+  width: 100%;
 }
 
 /* ICONS */
@@ -256,24 +257,27 @@ label {
   margin-right: 0.3em;
 }
 
-/* Profile Icon */
-.profile {
-  max-width: 30px;
-  padding-right:0.3em;
-  margin-right: 0.75em;
-}
-
 /* Search Icon*/
 .search {
   max-width: 25px;
   max-height: 25px;
 }
 
+/* Icon sizing - nav bar */
+.icon {
+  max-width: 30px;
+}
+
 /* Hover and focus states */
 .social-icon:hover, .social-icon:focus,
-.profile:hover, .profile:focus,
+.icon:hover, .icon:focus,
 .search:hover, .search:focus {
-  opacity: 0.7;
+  opacity: 0.6;
+}
+
+/* Logo Icon */
+.logo {
+  max-width: 95px;
 }
 
 /* Colour Picker */
@@ -451,16 +455,6 @@ label {
 /*Main Navigation */
 .background {
   padding: 2em 0;
-}
-
-/* Logo Icon */
-.logo {
-  max-width: 95px;
-}
-
-/* Icon sizing - nav bar */
-.icon {
-  max-width: 30px;
 }
 
 /* --------- COLOUR SCHEME -----------*/
