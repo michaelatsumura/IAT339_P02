@@ -79,7 +79,7 @@
 /* LAPTOP SIZE AND LARGER - If the width is greater than 43.75 em then style the grid like this */
 @media (min-width: 43.75em) {
   /* 8 Column Grid styling */
-  /*  half column used only in navigation for icon elements */  
+  /*  half column used only in navigation for icon elements */
   .grid-col-1hof8 {
     width: 6.25%;
   }
@@ -151,6 +151,11 @@
   .checkout-container {
     width: 100%;
     padding: 8% 25%;
+  }
+
+  .styleguide-container {
+    width: 100%;
+    padding-right: 50%;
   }
 
   /*Gutters styling*/
@@ -286,7 +291,7 @@
 
 /* SMALLER THAN 1048px - If the width is less than 64em then style the grid like this */
 @media screen and (max-width: 64em){ /*1048 px - ipad landscape - laptop-ish*/
-  /*new background image for landing page on 1024px screens */ 
+  /*new background image for landing page on 1024px screens */
   header {
     background: url("http://www.sfu.ca/~mtsumura/landing-pg-1024.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
