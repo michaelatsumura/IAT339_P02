@@ -408,14 +408,13 @@ label {
   font-size:1em;
 }
 
-/* Lists were only used in our styleguide, maybe we can remove this*/
+/* Lists used in the citations*/
 .lists {
   list-style: none;
   margin-top: 0.5em;
   line-height: 1.5rem;
   padding-left: 0;
 }
-
 /* end of styling the TEXT ELEMENTS*/
 
 
@@ -710,16 +709,6 @@ header {
   line-height: 1.3em;
 }
 
-
-/*.center-buttons {
-  display:block;
-  max-width: 25em;
-  margin: 0 auto;
-  padding-top: 1em;
-  width: 100%;
-}*/
-
-
 /*
 GENERAL STYLING
 */
@@ -830,7 +819,8 @@ GENERAL STYLING
   font-weight: 700;
   font-size: 1em;
   line-height: 2.5em;
-  text-align: center
+  text-align: center;
+  z-index: 99;
 }
 
 .hamburger-item:hover, .hamburger-item:focus {
@@ -850,11 +840,12 @@ GENERAL STYLING
   position: absolute;
   top: 30%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1.2)
+  transform: translate(-50%, -50%) scale(1.2);
+  z-index: 99;
 }
 
 .hamburger-active .hamburger-menu-list {
-  transform: translate(-50%, -50%) scale(1)
+  transform: translate(-50%, -50%) scale(1);
 }
 
 /*End of modified hamburger menu code retrieved from http://johnm.io/project/hamburgler/*/

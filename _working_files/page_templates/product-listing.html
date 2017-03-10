@@ -1,201 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Swirl Polishes Co.</title>
-  <link href="css/main.css" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/grids.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Muli:300,400,700,900" rel="stylesheet">
-</head>
-<body>
-  <!-- Main Navigation -->
-  <div class="grid-row background">
-    <div class="nav-container">
-      <nav class="main-nav">
-        <div class="grid-col-1of8 nav-padding">
-        <a href="index.html" class="logo left-align"><img src="img/logo.svg" alt="swirl polishes co. logo"></a>
-        </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Swirl Polishes Co.</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/grids.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Muli:300,400,700" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Main Navigation -->
+    <div class="grid-row background">
+      <div class="nav-container">
+        <nav class="main-nav">
+          <div class="grid-col-1of8 nav-padding">
+            <a href="index.html" class="logo left-align"><img src="img/logo.svg" alt="swirl polishes co. logo"></a>
+          </div>
 
-        <div class="grid-col-1of8 nav-padding mobile-hide">
-          <a href="mix.html" class="button-nav">Mix</a>
-        </div>
+          <div class="grid-col-1of8 nav-padding mobile-hide">
+            <a href="mix.html" class="button-nav">Mix</a>
+          </div>
 
-        <div class="grid-col-1of8 nav-padding mobile-hide">
-          <a href="product-listing.html" class="button-nav">Browse</a>
-        </div>
+          <div class="grid-col-1of8 nav-padding mobile-hide">
+            <a href="product-listing.html" class="button-nav">Browse</a>
+          </div>
 
-        <div class="grid-col-1of8 nav-padding mobile-hide">
-          <a href="product-view.html" class="button-nav">Shop</a>
-        </div>
+          <div class="grid-col-1of8 nav-padding mobile-hide">
+            <a href="product-view.html" class="button-nav">Shop</a>
+          </div>
 
-        <div class="grid-col-3of8 nav-padding mobile-hide">
-          <p></p>
-        </div>
+          <div class="grid-col-3of8 nav-padding mobile-hide">
+            <p></p>
+          </div>
 
-        <div class="grid-col-1hof8 nav-padding mobile-hide">
-          <a href="profile.html" class="icon"><img src="img/profile.svg" alt="access your profile page icon"></a>
-        </div>
+          <div class="grid-col-1hof8 nav-padding mobile-hide">
+            <a href="profile.html" class="icon"><img src="img/profile.svg" alt="access your profile page icon"></a>
+          </div>
 
-        <div class="grid-col-1of8 nav-padding mobile-hide">
-          <a href="#popupsignup" class="secondary-nav left-align">Sign Up</a>
-        </div>
+          <div class="grid-col-1of8 nav-padding mobile-hide">
+            <a href="#popupsignup" class="secondary-nav left-align">Sign Up</a>
+          </div>
 
-        <div class="grid-col-1hof8 nav-padding mobile-hide">
-          <a href="#popupsearch" class="icon center-align search "><img src="img/search.svg" alt="search magnifying glass icon"></a>
-        </div>
+          <div class="grid-col-1hof8 nav-padding mobile-hide">
+            <a href="#popupsearch" class="icon center-align search "><img src="img/search.svg" alt="search magnifying glass icon"></a>
+          </div>
 
-        <div class="grid-col-1hof8 nav-padding mobile-hide">
-          <!-- Cart icon retrieved from: https://thenounproject.com/search/?q=shop&i=839566 -->
-          <a href="cart.html" class="icon center-align"><img src="img/bag.svg" alt="shopping bag icon with heart"></a>
-        </div>
+          <div class="grid-col-1hof8 nav-padding mobile-hide">
+            <a href="cart.html" class="icon center-align"><img src="img/bag.svg" alt="shopping bag icon with heart"></a>
+          </div>
 
-        <div id="hamburger" class="hamburger-icon-wrapper mobile-show">
-          <span class="hamburger-icon"></span>
-        </div>
-      </nav>
-    </div>
-  </div>
-  <!-- end of desktop navigation bar -->
-
-  <!-- hamburger menu options (shown on 600px or smaller) -->
-  <div class="hamburger-menu">
-    <ul class="hamburger-menu-list">
-      <a href="mix.html"><li class="hamburger-item">Mix</li>
-      <a href="product-listing.html"><li class="hamburger-item">Browse</li>
-      <a href="product-view.html"><li class="hamburger-item">Shop</li>
-      <a href="profile.html"><li class="hamburger-item">Profile</li>
-      <a href="#popupsignin"><li class="hamburger-item">Sign In</li>
-      <a href="cart.html"><li class="hamburger-item">Cart</li>
-    </ul>
-  </div>
-
-<!-- POPUPS SIGNIN/SIGNUP -->
-  <div id="popupsignin" class="overlay">
-    <div class="popup-small">
-      <div class="grid-row">
-        <div class="grid-col-8of8">
-          <a class="close" href="#">&times;</a>
-          <h2 class="bold-header">Sign In</h2>
-        </div>
-      </div>
-
-      <div class="grid-row">
-        <div class="grid-col-8of8">
-          <form>
-            <label for="name" class="left-align">Email</label>
-            <input class="formfield" type="text" name="email" placeholder="serenaswirl@gmail.com">
-          </form>
-        </div>
-      </div>
-
-      <div class="grid-row">
-        <div class="grid-col-8of8">
-          <form>
-            <label for="password" class="left-align">Password</label>
-            <input class="formfield" type="password" name="password" placeholder="*******">
-          </form>
-        </div>
-      </div>
-
-      <div class="grid-row">
-        <div class="grid-col-8of8">
-          <a class="button-primary" href="#">Sign In</a>
-        </div>
-      </div>
-
-      <div class="grid-row">
-        <div class="grid-col-8of8">
-           <p class="center-align">Don't have an account? <a href="#popupsignup">Create account</a></p>
-        </div>
+          <div id="hamburger" class="hamburger-icon-wrapper mobile-show">
+            <span class="hamburger-icon"></span>
+          </div>
+        </nav>
       </div>
     </div>
-  </div> <!-- end of popup LOGIN -->
+    <!-- end of desktop navigation bar -->
 
-  <!-- popup for sign up for an account -->
-  <div id="popupsignup" class="overlay">
-    <div class="popup-small">
-      <div class="grid-row">
-        <div class="grid-col-8of8">
-          <a class="close" href="#">&times;</a>
-          <h2 class="bold-header">Sign Up</h2>
-        </div>
-      </div>
-
-      <div class="grid-row">
-        <div class="grid-col-8of8">
-          <form>
-            <label for="name" class="left-align">Name</label>
-            <input class="formfield" type="text" name="email" placeholder="Serena Swirl">
-          </form>
-        </div>
-      </div>
-
-      <div class="grid-row">
-        <div class="grid-col-8of8">
-          <form>
-            <label for="email" class="left-align">Email</label>
-            <input class="formfield" type="text" name="email" placeholder="serenaswirl@gmail.com">
-          </form>
-        </div>
-      </div>
-
-      <div class="grid-row">
-        <div class="grid-col-8of8">
-          <form>
-            <label for="password" class="left-align">Password</label>
-            <input class="formfield" type="password" name="password" placeholder="*******">
-          </form>
-        </div>
-      </div>
-
-      <div class="grid-row">
-        <div class="grid-col-8of8">
-          <form>
-            <label for="password" class="left-align">Retype Password</label>
-            <input class="formfield" type="password" name="password" placeholder="*******">
-          </form>
-        </div>
-      </div>
-
-      <div class="grid-row">
-        <div class="grid-col-8of8">
-          <a class="button-primary" href="#">Sign Up</a>
-        </div>
-      </div>
-
-      <div class="grid-row">
-        <div class="grid-col-8of8">
-           <p class="center-align">Already have an account? <a href="#popupsignin">Sign In</a></p>
-        </div>
-      </div>
-    </div>
-  </div> <!-- end of popup SIGN UP -->
-
-
-
-  <div class="content-container">
-    <!-- Browse title and short description -->
-    <div class = "grid-row">
-      <div class="grid-col-2of8">
-        <h1 class="main-heading">BROWSE</h1>
-      </div>
-      <div class="grid-col-4of8">
-        <p class="paragraph-primary"><strong>Seeking polish inspiration?</strong><br> Browse Mixes created by other Swirl Polish members. You can purchase any polishes as they are, or edit the mix so it's just to your liking!</p>
-      </div>
-      <div class="grid-col-2of8">
-        <select class="dropdown-filter float-right">
-  				<option value="popular">Most Popular</option>
-          <option value="relevant">Most Relevant</option>
-          <option value="pricelh">Price: Low to High</option>
-  				<option value="pricehl">Price: High to Low</option>
-  			</select>
-      </div>
+    <!-- hamburger menu options (shown on 600px or smaller) -->
+    <div class="hamburger-menu">
+      <ul class="hamburger-menu-list">
+        <a href="mix.html"><li class="hamburger-item">Mix</li>
+        <a href="product-listing.html"><li class="hamburger-item">Browse</li>
+        <a href="product-view.html"><li class="hamburger-item">Shop</li>
+        <a href="profile.html"><li class="hamburger-item">Profile</li>
+        <a href="#popupsignin"><li class="hamburger-item">Sign In</li>
+        <a href="cart.html"><li class="hamburger-item">Cart</li>
+      </ul>
     </div>
 
-<!-- POPUPS 1 and 2 -->
+  <!-- POPUPS SIGNIN/SIGNUP -->
+    <div id="popupsignin" class="overlay">
+      <div class="popup-small">
+        <div class="grid-row">
+          <div class="grid-col-8of8">
+            <a class="close" href="#">&times;</a>
+            <h2 class="bold-header">Sign In</h2>
+          </div>
+        </div>
+
+        <div class="grid-row">
+          <div class="grid-col-8of8">
+            <form>
+              <label for="name" class="left-align">Email</label>
+              <input class="formfield" type="text" name="email" placeholder="serenaswirl@gmail.com">
+            </form>
+          </div>
+        </div>
+
+        <div class="grid-row">
+          <div class="grid-col-8of8">
+            <form>
+              <label for="password" class="left-align">Password</label>
+              <input class="formfield" type="password" name="password" placeholder="*******">
+            </form>
+          </div>
+        </div>
+
+        <div class="grid-row">
+          <div class="grid-col-8of8">
+            <a class="button-primary" href="#">Sign In</a>
+          </div>
+        </div>
+
+        <div class="grid-row">
+          <div class="grid-col-8of8">
+             <p class="center-align">Don't have an account? <a href="#popupsignup">Create account</a></p>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end of popup LOGIN -->
+
+    <!-- popup for sign up for an account -->
+    <div id="popupsignup" class="overlay">
+      <div class="popup-small">
+        <div class="grid-row">
+          <div class="grid-col-8of8">
+            <a class="close" href="#">&times;</a>
+            <h2 class="bold-header">Sign Up</h2>
+          </div>
+        </div>
+
+        <div class="grid-row">
+          <div class="grid-col-8of8">
+            <form>
+              <label for="name" class="left-align">Name</label>
+              <input class="formfield" type="text" name="email" placeholder="Serena Swirl">
+            </form>
+          </div>
+        </div>
+
+        <div class="grid-row">
+          <div class="grid-col-8of8">
+            <form>
+              <label for="email" class="left-align">Email</label>
+              <input class="formfield" type="text" name="email" placeholder="serenaswirl@gmail.com">
+            </form>
+          </div>
+        </div>
+
+        <div class="grid-row">
+          <div class="grid-col-8of8">
+            <form>
+              <label for="password" class="left-align">Password</label>
+              <input class="formfield" type="password" name="password" placeholder="*******">
+            </form>
+          </div>
+        </div>
+
+        <div class="grid-row">
+          <div class="grid-col-8of8">
+            <form>
+              <label for="password" class="left-align">Retype Password</label>
+              <input class="formfield" type="password" name="password" placeholder="*******">
+            </form>
+          </div>
+        </div>
+
+        <div class="grid-row">
+          <div class="grid-col-8of8">
+            <a class="button-primary" href="#">Sign Up</a>
+          </div>
+        </div>
+
+        <div class="grid-row">
+          <div class="grid-col-8of8">
+             <p class="center-align">Already have an account? <a href="#popupsignin">Sign In</a></p>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end of popup SIGN UP -->
+
+    <!-- POPUPS 1 and 2 -->
     <div id="popup1" class="overlay">
       <div class="popup">
         <div class="grid-row">
@@ -212,7 +190,7 @@
               <p class="paragraph-primary">A beautiful mix of three glitter polishes that swirl together to perfection. The combination of colour and glitter create a new dimension on your nails. Created by <a href="#">@sandys12</a>.</p>
               <a href="edit-mix.html" class="intext-links link-margin">Edit Polish Mix</a>
               <div class="grid-col-6of8 remove-gutter">
-                <a class="button-primary" href="product-listing-1cart-item.html">+ Add to Cart</a>
+                <a class="button-primary" href="cart.html">+ Add to Cart</a>
               </div>
             </div>
           </div>
@@ -220,11 +198,12 @@
       </div>
     </div> <!-- end of div popup1 -->
 
+    <!-- popup of item 2 -->
     <div id="popup2" class="overlay">
       <div class="popup">
         <div class="grid-row">
           <div class="grid-col-4of8">
-            <img src="img/swatch-metallic-pink-orange.jpg" class="popup-image" alt="a metallic pink orange nailpolish">
+            <img src="img/swatch-metallic-pink-orange.jpg" alt="a metallic pink orange nailpolish">
             <!-- Image retrieved from http://styletips101.com/wp-content/uploads/2010/03/nail-polish-thumb.jpg -->
           </div>
           <div class="grid-col-4of8">
@@ -236,7 +215,7 @@
               <p class="paragraph-primary">A beautiful mix of pink and orange satin polishes that swirl together to create magic on your fingertips. Created by <a href="#">@sandys12</a>.</p>
               <a href="edit-mix.html" class="intext-links link-margin">Edit Polish Mix</a>
               <div class="grid-col-6of8 remove-gutter">
-                <a class="button-primary" href="product-listing-1cart-item.html">+ Add to Cart</a>
+                <a class="button-primary" href="cart.html">+ Add to Cart</a>
               </div>
             </div>
           </div>
@@ -244,135 +223,158 @@
       </div>
     </div> <!-- end of div popup2 -->
 
-    <!-- First product row, 4 products listed -->
-    <div class="grid-row grid-row-spacing">
-      <a href="#popup1">
+    <div class="content-container">
+      <!-- Browse title and short description -->
+      <div class = "grid-row">
         <div class="grid-col-2of8">
-        <img src="img/swatch-glitter-pink-blue.jpg" class="product-list-view" alt="a glitter swatch with mixed colours">
-        <!-- Image retrieved from http://media.gettyimages.com/photos/nail-polish-pour-with-sparkles-picture-id138699385 -->
-        <p>Glitter Galaxy</p>
-        <p class="price">$18.95</p>
+          <h1 class="main-heading">BROWSE</h1>
         </div>
-      </a>
-
-
-      <a href="#popup2">
-        <div class="grid-col-2of8">
-          <img src="img/swatch-metallic-pink-orange.jpg" class="product-list-view" alt="a creamy nailpolish swatch with mixed orange and pink">
-          <!-- Image retrieved from http://styletips101.com/wp-content/uploads/2010/03/nail-polish-thumb.jpg -->
-          <p>Orange Sunset</p>
-          <p class="price">$12.95</p>
+        <div class="grid-col-4of8">
+          <p class="paragraph-primary"><strong>Seeking polish inspiration?</strong><br> Browse Mixes created by other Swirl Polish members. You can purchase any polishes as they are, or edit the mix so it's just to your liking!</p>
         </div>
-      </a>
-
-      <a href="#popup1">
         <div class="grid-col-2of8">
-          <img src="img/swatch-cream-red.jpg" class="product-list-view" alt="a bold red cream based nail polish swatch">
-          <!-- Image retrieved from http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=21331662 -->
-          <p>Siren</p>
-          <p class="price">$8.95</p>
+          <select class="dropdown-filter float-right">
+            <option value="pricelh">Price: Low to High</option>
+            <option value="pricehl">Price: High to Low</option>
+          </select>
         </div>
-      </a>
+      </div>
 
-      <a href="#popup2">
-        <div class="grid-col-2of8">
-          <img src="img/swatch-glitter-pink-purple.jpg" class="product-list-view" alt="a glitter swatch with mixed colours">
+      <!-- First product row, 4 products listed -->
+      <div class="grid-row grid-row-spacing">
+        <a href="#popup1">
+          <div class="grid-col-2of8">
+          <img src="img/swatch-glitter-pink-blue.jpg" class="product-list-view" alt="a glitter swatch with mixed colours">
           <!-- Image retrieved from http://media.gettyimages.com/photos/nail-polish-pour-with-sparkles-picture-id138699385 -->
-          <p>Sparkle Sparkle</p>
-          <p class="price">$14.90</p>
-        </div>
-      </a>
-    </div>
+          <p>Glitter Galaxy</p>
+          <p class="price">$18.95</p>
+          </div>
+        </a>
 
-    <!-- Second product row, 4 products listed -->
-    <div class="grid-row grid-row-spacing">
-      <a href="#popup1">
-        <div class="grid-col-2of8">
-          <img src="img/swatch-cream-purple.jpg" class="product-list-view" alt="a vibrant purple cream based nail polish swatch">
-          <!-- Image retrieved from http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=21331662 -->
-          <p>Neon Lights</p>
-          <p class="price">$8.95</p>
-        </div>
-      </a>
+        <a href="#popup2">
+          <div class="grid-col-2of8">
+            <img src="img/swatch-metallic-pink-orange.jpg" class="product-list-view" alt="a creamy nailpolish swatch with mixed orange and pink">
+            <!-- Image retrieved from http://styletips101.com/wp-content/uploads/2010/03/nail-polish-thumb.jpg -->
+            <p>Orange Sunset</p>
+            <p class="price">$12.95</p>
+          </div>
+        </a>
 
-      <a href="#popup2">
-        <div class="grid-col-2of8">
-          <img src="img/swatch-glitter-blue-purple.jpg" class="product-list-view" alt="a glitter swatch with mixed colours">
-          <!-- Image retrieved from http://media.gettyimages.com/photos/nail-polish-pour-with-sparkles-picture-id138699385 -->
-          <p>Demin Glitter</p>
-          <p class="price">$15.90</p>
-        </div>
-      </a>
+        <a href="#popup1">
+          <div class="grid-col-2of8">
+            <img src="img/swatch-cream-red.jpg" class="product-list-view" alt="a bold red cream based nail polish swatch">
+            <!-- Image retrieved from http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=21331662 -->
+            <p>Siren</p>
+            <p class="price">$8.95</p>
+          </div>
+        </a>
 
-      <a href="#popup1">
-        <div class="grid-col-2of8">
-          <img src="img/swatch-metallic-lilac.jpg" class="product-list-view" alt="a mix of rose and lilac metallic nail polishes">
-          <!-- Image retrieved from http://styletips101.com/wp-content/uploads/2010/03/nail-polish-thumb.jpg -->
-          <p>Rosie Posie</p>
-          <p class="price">$12.95</p>
-        </div>
-      </a>
+        <a href="#popup2">
+          <div class="grid-col-2of8">
+            <img src="img/swatch-glitter-pink-purple.jpg" class="product-list-view" alt="a glitter swatch with mixed colours">
+            <!-- Image retrieved from http://media.gettyimages.com/photos/nail-polish-pour-with-sparkles-picture-id138699385 -->
+            <p>Sparkle Sparkle</p>
+            <p class="price">$14.90</p>
+          </div>
+        </a>
+      </div>
 
-      <a href="#popup2">
-        <div class="grid-col-2of8">
-          <img src="img/swatch-cream-rust.jpg" class="product-list-view" alt="a neutral toned cream nail polish swatch">
-          <!-- Image retrieved from http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=21331662 -->
-          <p>Nude Attitude</p>
-          <p class="price">$9.95</p>
-        </div>
-      </a>
-    </div>
+      <!-- Second product row, 4 products listed -->
+      <div class="grid-row grid-row-spacing">
+        <a href="#popup1">
+          <div class="grid-col-2of8">
+            <img src="img/swatch-cream-purple.jpg" class="product-list-view" alt="a vibrant purple cream based nail polish swatch">
+            <!-- Image retrieved from http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=21331662 -->
+            <p>Neon Lights</p>
+            <p class="price">$8.95</p>
+          </div>
+        </a>
 
-    <!-- Third product row, 4 products listed -->
-    <div class="grid-row grid-row-spacing">
-      <a href="#popup1">
-        <div class="grid-col-2of8">
-          <img src="img/swatch-cream-mauve.jpg" class="product-list-view" alt="a cool grey purple nail polish swatch">
-          <!-- Image retrieved from http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=21331662 -->
-          <p>Groovy Grurple</p>
-          <p class="price">$10.95</p>
-        </div>
-      </a>
+        <a href="#popup2">
+          <div class="grid-col-2of8">
+            <img src="img/swatch-glitter-blue-purple.jpg" class="product-list-view" alt="a glitter swatch with mixed colours">
+            <!-- Image retrieved from http://media.gettyimages.com/photos/nail-polish-pour-with-sparkles-picture-id138699385 -->
+            <p>Demin Glitter</p>
+            <p class="price">$15.90</p>
+          </div>
+        </a>
 
-      <a href="#popup2">
-        <div class="grid-col-2of8">
-          <img src="img/swatch-metallic-blue.jpg" class="product-list-view" alt="a swirl of light blue grey polishes">
-          <!-- Image retrieved from http://styletips101.com/wp-content/uploads/2010/03/nail-polish-thumb.jpg -->
-          <p>Icy Blue Swirl</p>
-          <p class="price">$12.95</p>
-        </div>
-      </a>
+        <a href="#popup1">
+          <div class="grid-col-2of8">
+            <img src="img/swatch-metallic-lilac.jpg" class="product-list-view" alt="a mix of rose and lilac metallic nail polishes">
+            <!-- Image retrieved from http://styletips101.com/wp-content/uploads/2010/03/nail-polish-thumb.jpg -->
+            <p>Rosie Posie</p>
+            <p class="price">$12.95</p>
+          </div>
+        </a>
 
-      <a href="#popup1">
-        <div class="grid-col-2of8">
-          <img src="img/swatch-cream-royal-blue.jpg" class="product-list-view" alt="a bold blue cream nail polish swatch">
-          <!-- Image retrieved from http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=21331662 -->
-          <p>Bam</p>
-          <p class="price">$10.90</p>
-        </div>
-      </a>
+        <a href="#popup2">
+          <div class="grid-col-2of8">
+            <img src="img/swatch-cream-rust.jpg" class="product-list-view" alt="a neutral toned cream nail polish swatch">
+            <!-- Image retrieved from http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=21331662 -->
+            <p>Nude Attitude</p>
+            <p class="price">$9.95</p>
+          </div>
+        </a>
+      </div>
 
-      <a href="#popup2">
-        <div class="grid-col-2of8">
-          <img src="img/swatch-glitter-blue-gold.jpg" class="product-list-view" alt="a glitter swatch with mixed colours">
-          <!-- Image retrieved from http://media.gettyimages.com/photos/nail-polish-pour-with-sparkles-picture-id138699385 -->
-          <p>Golden State Glam</p>
-          <p class="price">$17.95</p>
-        </div>
-      </a>
-    </div> <!-- end of grid row -->
+      <!-- Third product row, 4 products listed -->
+      <div class="grid-row grid-row-spacing">
+        <a href="#popup1">
+          <div class="grid-col-2of8">
+            <img src="img/swatch-cream-mauve.jpg" class="product-list-view" alt="a cool grey purple nail polish swatch">
+            <!-- Image retrieved from http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=21331662 -->
+            <p>Groovy Grurple</p>
+            <p class="price">$10.95</p>
+          </div>
+        </a>
 
-  </div> <!-- end of content container -->
+        <a href="#popup2">
+          <div class="grid-col-2of8">
+            <img src="img/swatch-metallic-blue.jpg" class="product-list-view" alt="a swirl of light blue grey polishes">
+            <!-- Image retrieved from http://styletips101.com/wp-content/uploads/2010/03/nail-polish-thumb.jpg -->
+            <p>Icy Blue Swirl</p>
+            <p class="price">$12.95</p>
+          </div>
+        </a>
 
-  <!-- Footer -->
-  <div class="grid-row">
-    <footer class="footer">
-      <div class="grid-col-4of8"><p>Swirl Polishes Co. © 2017</p></div>
-      <div class="grid-col-4of8 float-right text-right"><a href="contact-us.html" class="contact-us">Contact Us</a></div>
+        <a href="#popup1">
+          <div class="grid-col-2of8">
+            <img src="img/swatch-cream-royal-blue.jpg" class="product-list-view" alt="a bold blue cream nail polish swatch">
+            <!-- Image retrieved from http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=21331662 -->
+            <p>Bam</p>
+            <p class="price">$10.90</p>
+          </div>
+        </a>
+
+        <a href="#popup2">
+          <div class="grid-col-2of8">
+            <img src="img/swatch-glitter-blue-gold.jpg" class="product-list-view" alt="a glitter swatch with mixed colours">
+            <!-- Image retrieved from http://media.gettyimages.com/photos/nail-polish-pour-with-sparkles-picture-id138699385 -->
+            <p>Golden State Glam</p>
+            <p class="price">$17.95</p>
+          </div>
+        </a>
+      </div> <!-- end of grid row -->
+    </div> <!-- end of content container -->
+
+    <!-- Footer -->
+    <footer class="footer-frontpage">
+      <div class="grid-row">
+        <div class="grid-col-4of8 text-left"><a href="contact-us.html" class="contact-us">Contact Us</a></div>
+        <div class="grid-col-4of8 float-right text-right"><p>Swirl Polishes Co. © 2017</p></div>
+      </div>
+      <div class="grid-row">
+        <div class="grid-col-4of8 text-left"><a href="citations.html" class="contact-us">Citations</a></div>
+        <div class="grid-col-4of8 float-right text-right"><p>By Joanna + Michaela</p></div>
+      </div>
+      <div class="grid-row">
+        <div class="grid-col-4of8 text-left"><a href="styleguide.html" class="contact-us">Style Guide</a></div>
+        <div class="grid-col-4of8 float-right text-right"><a href="https://github.com/michaelatsumura/IAT339_P02/graphs/contributors" class="contact-us">View Git Repo</a></div>
+      </div>
     </footer>
-  </div>
 
-  <!-- link to js for hamburger menu functionality -->
-  <script src="js/hamburger-menu.js"></script>
-</body>
+    <!-- link to js for hamburger menu functionality -->
+    <script src="js/hamburger-menu.js"></script>
+  </body>
 </html>

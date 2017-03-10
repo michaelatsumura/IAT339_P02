@@ -1,4 +1,23 @@
-/* Grids File */
+/* ------------------------------------------------
+  Stylesheet GRIDS for swirlpolishes.co
+  Authors: Joanna Lin and Michaela Tsumura
+------------------------------------------------- */
+
+/*
+======================================================
+    TABLE OF CONTENTS
+======================================================
+  #. THE GRIDS STYLING
+  #. MEDIA QUERIES
+======================================================
+
+
+/*
+======================================================
+  #. THE GRIDS STYLING
+    We used an 8 column grid in our website
+======================================================
+*/
 
 /* Sets everything to border-box sizing */
 * {
@@ -15,6 +34,7 @@
   width: 100%;
 }
 
+/*styling the containers*/
 .content-container, .nav-container, .front-page-container, .content-container-center, .form-container, .form-container-short {
   padding: 1rem;
   max-width: 100%;
@@ -25,20 +45,8 @@
   max-width: 100%;
 }
 
-
-/*Gutter*/
-[class*='col-'] {
-  padding-right: 0;
-}
-
 .container .block {
   height: 15rem;
-}
-
-.grid-row::after {
-  content: "";
-  display: block;
-  clear: both;
 }
 
 /*Style Guide Grid Styling*/
@@ -49,12 +57,29 @@
   background-color: rgba(70,74,86, 0.2);
 }
 
+/*Gutter*/
+[class*='col-'] {
+  padding-right: 0;
+}
 
-/*MEDIA QUERIES*/
-/* Mobile View */
+/*clears floats after each grid row*/
+.grid-row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+/*
+======================================================
+  #. MEDIA QUERIES
+======================================================
+*/
+
+/* LAPTOP SIZE AND LARGER - If the width is greater than 43.75 em then style the grid like this */
 @media (min-width: 43.75em) {
-  /* 8 Column Grid */
-
+  /* 8 Column Grid styling */
+  /*  half column used only in navigation for icon elements */  
   .grid-col-1hof8 {
     width: 6.25%;
   }
@@ -100,9 +125,7 @@
     width: 100%;
   }
 
-/*
-  CONTAINERS ----------------------------------------------------------------------------
-*/
+  /*styling containers*/
   .content-container {
     width: 100%;
     padding: 8% 15%;
@@ -130,7 +153,7 @@
     padding: 8% 25%;
   }
 
-  /*Gutters*/
+  /*Gutters styling*/
   [class*='col-'] {
     padding-right: 0.5em;
     padding-left: 0.5em;
@@ -140,60 +163,30 @@
     padding-left: 0 !important;
   }
 
-/* .grid-col-4of8-button {
-  padding-left: 0 !important;
-  width: 50%;
- }*/
-
+  /*toggle nav icon visibility*/
   .mobile-show {
     display: none;
   }
 
 }
 
-@media (max-width:43.8em){
+/*---------------------------------------------------------------------------------------*/
+
+/* SMALLER THAN LAPTOP SIZE - If the width is less than 43.74 em then style the grid like this */
+@media (max-width:43.74em){
   .grid-col-1hof8 {
     width: 30%;
     margin-right: 1em
   }
 
+  .grid-col-8of8 {
+    width: 100%;
+  }
+
+  /*styling containers*/
   .content-container {
     width: 100%;
     padding: 18% 10% !important;
-  }
-
-  .fit-product{
-    margin-bottom: 1em;
-    width: 50%;
-  }
-
-/*  .grid-col-4of8-button {
-    width: 50% !important;
-    padding-right: 1em;
-  }*/
-
-
-  /*footer Styling*/
-  .contact-us {
-    float:none;
-    text-align: center;
-  }
-
-  .footer {
-    text-align: center;
-    padding-bottom: 2em;
-  }
-
-  .text-right {
-    text-align: center;
-  }
-
-  .landing-header {
-  font-size: 2rem;
-}
-
-  .mobile-show {
-    display: none;
   }
 
   .form-container {
@@ -202,31 +195,54 @@
     padding: 8% 15%;
   }
 
-  .grid-col-8of8 {
-    width: 100%;
+  .fit-product{
+    margin-bottom: 1em;
+    width: 50%;
   }
 
-/*  .form-container-short {
+  /*footer Styling*/
+  .contact-us {
+    text-align: center !important;
+  }
+
+  .footer {
     text-align: center;
-    width: 100%;
-    padding: 8% 15%;
-    height: 100vh;
-  }*/
+    padding-bottom: 2em;
+  }
 
+  .text-left {
+    text-align: center;
+  }
 
+  .text-right {
+    text-align: center;
+  }
+
+  .mobile-show {
+    display: none;
+  }
+
+  /*adjusting the font size on the landing page*/
+  .landing-header {
+    font-size: 2rem;
+  }
 }
 
-/*--------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
 
+/* SMALLER THAN 1500px - If the width is less than 93.75em then style the grid like this */
 @media (max-width:93.75em){ /*1500 px */
+  /*Styling small popups*/
   .popup-small {
     width: 30%;
   }
 }
 
 
-@media (max-width:81.25em){ /*1300 px */
+/*---------------------------------------------------------------------------------------*/
 
+/* SMALLER THAN 1300px - If the width is less than 81.25em then style the grid like this */
+@media (max-width:81.25em){ /*1300 px */
   /* replace background image on landing page */
   header {
     background: url("http://www.sfu.ca/~mtsumura/bg-1300.jpg") no-repeat center center fixed;
@@ -237,12 +253,16 @@
     height: 100vh;
   }
 
+  /*Styling small popups*/
   .popup-small {
     width: 40%;
   }
 }
 
 
+/*---------------------------------------------------------------------------------------*/
+
+/* SMALLER THAN 1121px - If the width is less than 70em then style the grid like this */
 @media (max-width:70em){ /*1121 px - ipad landscape - laptop-ish */
   .grid-col-2of8-list-view{
     width: 33.3333%;
@@ -262,8 +282,12 @@
 }
 
 
+/*---------------------------------------------------------------------------------------*/
+
+/* SMALLER THAN 1048px - If the width is less than 64em then style the grid like this */
 @media screen and (max-width: 64em){ /*1048 px - ipad landscape - laptop-ish*/
-    header {
+  /*new background image for landing page on 1024px screens */ 
+  header {
     background: url("http://www.sfu.ca/~mtsumura/landing-pg-1024.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -272,6 +296,7 @@
     height: 120vh;
   }
 
+  /*container styling*/
   .nav-container {
     width: 100%;
     text-align: center !important;
@@ -289,12 +314,11 @@
   }
 }
 
+/*---------------------------------------------------------------------------------------*/
 
+/* SMALLER THAN 910px - If the width is less than 56.875em then style the grid like this */
 @media (max-width:56.875em){ /*910 px * ---- large tablet*/
-   .grid-col-4of8-button {
-    width: 100%;
-   }
-
+  /*container styling*/
   .content-container {
     width: 100%;
     padding: 12% 10% !important;
@@ -302,14 +326,26 @@
 
 }
 
+/*---------------------------------------------------------------------------------------*/
 
-@media (max-width:50em){ /*800 px * ---- large tablet nav neeeds to be fixed  */
+/* SMALLER THAN 800px - If the width is less than 50em then style the grid like this */
+@media (max-width:50em){ /*800 px */
+  /*new background image for 800px screen width*/
+  header {
+    background: url("http://www.sfu.ca/~mtsumura/landing-pg-800.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+  }
 
   /* Navigation button */
   .button-nav {
     font-size: 0.9rem;
   }
 
+  /*Styling product pages - 2 columns*/
   .grid-col-2of8 {
     width: 50%;
   }
@@ -318,8 +354,18 @@
     width: 50% !important;
   }
 
+  .dropdown-filter {
+    float: left;
+  }
 
-/* CONTAINERS */
+  /*styling small popups*/
+  .popup-small {
+    padding: 1em 2em 2em 2em;
+    width: 60%;
+  }
+
+
+  /* CONTAINERS styling*/
   .content-container {
     width: 100%;
     padding: 5% 15%;
@@ -341,29 +387,13 @@
     width: 100%;
     padding: 5% 30%;
   }
-
-  header {
-    background: url("http://www.sfu.ca/~mtsumura/landing-pg-800.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100vh;
-  }
-
-  .dropdown-filter {
-    float: left;
-  }
-
-  .popup-small {
-    padding: 1em 2em 2em 2em;
-    width: 60%;
-  }
-
 }
 
 
-@media (max-width:37.5em){ /*600 px -- to fix nav items */
+/*---------------------------------------------------------------------------------------*/
+
+/* SMALLER THAN 600px - If the width is less than 37.5em then style the grid like this */
+@media (max-width:37.5em){ /*600 px */
 
 /* navigation styling */
 
@@ -377,21 +407,13 @@
     top: 1.6em;
   }
 
+  /*toggle navigation icons on mobile screen size*/
   .mobile-hide {
     display: none;
   }
 
   .mobile-show {
     display: block;
-  }
-
-  .grid-col-4of8-button {
-    width: 100% !important;
-  }
-
-  .content-container {
-    width: 100%;
-    padding: 5% 10% !important;
   }
 
   .hamburger-icon-wrapper {
@@ -401,6 +423,12 @@
     height: 26px;
     width: 26px;
     cursor: pointer;
+  }
+
+  /*container styling*/
+  .content-container {
+    width: 100%;
+    padding: 5% 10% !important;
   }
 
   .form-container {
@@ -432,22 +460,21 @@
 
 }
 
+/*---------------------------------------------------------------------------------------*/
 
-@media (max-width:30em){ /*480 px -- to fix nav items */
+/* SMALLER THAN 480px - If the width is less than 30em then style the grid like this */
+@media (max-width:30em){ /*480 px -- to fix nav items iPhone6/7Plus*/
 
   /* Secondary Navigation Button */
   .secondary-nav {
     font-size: 0.7em;
   }
 
-  .grid-col-2of8 {
-    width: 100%;
-  }
-
   .grid-col-2of8-list-view{
-  width: 100% !important;
+    width: 100% !important;
   }
 
+  /*container styling*/
   .form-container {
     text-align: left;
     width: 100%;
@@ -458,13 +485,18 @@
     padding: 1% 10%;
   }
 
+  /*resize popup image on large mobile screen*/
   .popup-image {
    width: 15em;
   }
 }
 
+/*---------------------------------------------------------------------------------------*/
+
+/* SMALLER THAN 400px - If the width is less than 25em then style the grid like this */
 @media (max-width:25em){ /*400 px -- large mobile */
 
+  /*replacing with a mobile size background image*/
   header {
     background: url("http://www.sfu.ca/~mtsumura/bg-iphone6.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -474,10 +506,7 @@
     height: 100vh;
   }
 
-   .grid-col-1of8{
-      width: 100%;
-   }
-
+  /*resize logo on mobile*/
   .logo {
     display:block;
     max-width: 5em;
@@ -499,6 +528,7 @@
     top: 1.2em;
   }
 
+  /*container styling*/
   .checkout-container {
     width: 100%;
     padding: 5% 15%;
@@ -510,16 +540,18 @@
     padding: 5% 10%;
   }
 
-  .dropdown {
-    width: 100%;
-  }
-
+  /*popup image styling*/
   .popup-image{
     width: 80%;
   }
 
+  /*Styling product information for mobile screens*/
   .product-name {
     font-size: 1.2em;
+  }
+
+  .dropdown {
+    width: 100%;
   }
 
   .product-subhead {
@@ -541,9 +573,11 @@
 }
 
 
+/*---------------------------------------------------------------------------------------*/
 
+/* SMALLER THAN 320px - If the width is less than 21em then style the grid like this */
 @media (max-width:21em){ /*320 px -- iphone5 */
-
+  /*optimize the popup for small mobile screens*/
   .popup {
     margin: 5em auto;
     padding: 1em;
@@ -556,5 +590,4 @@
     max-height: 80%;
     overflow: auto;
   }
-
 }
