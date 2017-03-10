@@ -813,7 +813,7 @@ header {
   background: #fff;
   border-radius: 5px;
   border: solid 1px lightgrey;
-  width: 40%;
+  width: 50%;
   position: relative;
   transition: all 5s ease-in-out;
   max-height: calc(100vh - 100px);

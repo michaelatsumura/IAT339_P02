@@ -309,7 +309,7 @@
   }
 
   .popup{
-    width: 70%;
+    width: 80%;
   }
 
   .form-container {
@@ -317,18 +317,6 @@
     width: 100%;
     padding: 4% 25%;
   }
-}
-
-/*---------------------------------------------------------------------------------------*/
-
-/* SMALLER THAN 910px - If the width is less than 56.875em then style the grid like this */
-@media (max-width:56.875em){ /*910 px * ---- large tablet*/
-  /*container styling*/
-  .content-container {
-    width: 100%;
-    padding: 12% 10% !important;
-  }
-
 }
 
 /*---------------------------------------------------------------------------------------*/
@@ -350,14 +338,24 @@
     font-size: 0.9rem;
   }
 
-  /*Styling product pages - 2 columns*/
   .grid-col-2of8 {
     width: 50%;
+    padding: 0.25em;
   }
 
-  .grid-col-2of8-listview{
-    width: 50% !important;
+  .grid-col-3of8 {
+    width: 35%;
+    padding-right: 0.25em;
   }
+
+  .grid-col-5of8 {
+    width: 65%;
+  }
+
+  .cart-image {
+    width: 90%;
+  }
+
 
   .dropdown-filter {
     float: left;
@@ -371,9 +369,9 @@
 
 
   /* CONTAINERS styling*/
-  .content-container {
+  .content-container, .checkout-container {
     width: 100%;
-    padding: 5% 15%;
+    padding: 5%;
   }
 
   .nav-container {
@@ -388,10 +386,10 @@
     padding: 6% 15%;
   }
 
-  .checkout-container {
-    width: 100%;
-    padding: 5% 30%;
+  .form-container {
+    padding: 6% 15%;
   }
+
 }
 
 
@@ -461,6 +459,14 @@
 
   .background {
     padding: 0;
+  }
+
+  .grid-col-3of8 {
+    width: 100%;
+  }
+
+  .checkout-container {
+    padding: 5% 8%;
   }
 
 }
@@ -536,12 +542,6 @@
 
   .hamburger-icon {
     top: 1.2em;
-  }
-
-  /*container styling*/
-  .checkout-container {
-    width: 100%;
-    padding: 5% 15%;
   }
 
   .form-container {
