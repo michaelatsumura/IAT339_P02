@@ -661,6 +661,33 @@
 			</div>
 		</section>
 
+		<!-- Browse + Shop Page Information -->
+		<section>
+			<h2>Browse + Shop Page Information</h2>
+			<h3>CSS selector:</h3>
+			<p></p>
+
+			<h3>Sample code:</h3>
+			<code>
+			</code>
+
+			<h3>Example:</h3>
+			<div class = "grid-row">
+        <div class="grid-col-2of8">
+          <h1 class="main-heading">BROWSE</h1>
+        </div>
+        <div class="grid-col-4of8">
+          <p class="paragraph-primary"><strong>Seeking polish inspiration?</strong><br> Browse Mixes created by other Swirl Polish members. You can purchase any polishes as they are, or edit the mix so it's just to your liking!</p>
+        </div>
+        <div class="grid-col-2of8">
+          <select class="dropdown-filter float-right">
+            <option value="pricelh">Price: Low to High</option>
+            <option value="pricehl">Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+		</section>
+
 		<!-- Product Listing -->
 		<section>
 		  <h2>Product Listing + Popup</h2>
@@ -781,24 +808,7 @@
 
 		<!-- Colour Picker -->
 		<section>
-			<h2>Colour Picker</h2>
-			<h3>CSS selector:</h3>
-			<p>.swatch</p>
-
-			<h3>Sample code:</h3>
-			<code>
-			</code>
-
-			<h3>Example:</h3>
-			<h3 class="field-header">Polish Colour:</h3>
-			<form>
-				<input type="color" class="swatch" name="favcolor" value="#FF3D61">
-			</form>
-		</section>
-
-		<!-- Title + Dropdown -->
-		<section>
-			<h2>Title + Dropdown</h2>
+			<h2>Mix Details</h2>
 			<h3>CSS selector:</h3>
 			<p></p>
 
@@ -807,6 +817,178 @@
 			</code>
 
 			<h3>Example:</h3>
+			<div class="content-container">
+	      <div class="grid-row">
+	        <div class="grid-col-3of8">
+	          <img src="img/swatch-metallic-pink-orange.jpg" alt="Metallic pink and orange swirl nailpolish">
+	          <!-- Image retrieved from http://styletips101.com/wp-content/uploads/2010/03/nail-polish-thumb.jpg -->
+	        </div>
+
+	        <div class="grid-col-4of8">
+	          <h1 class="main-heading">Mix</h1>
+	          <p class="paragraph-primary"><strong>Your search for the perfect polish is over!</strong> <br>Customize and purchase your own personalized polish blend. If you want others to use your creation, just <a href="#popupsignup">create an account</a> and post your polish blend in your profile store!</p>
+	          <!-- Colour Picker -->
+	          <h3 class="field-header">Polish Colour:</h3>
+	          <form>
+	            <input type="color" class="swatch" name="favcolor" value="#FF3D61">
+	          </form>
+	          <!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_color -->
+	          <div class ="grid-row">
+	            <div class="grid-col-4of8">
+	              <!-- Drop Down Selector -->
+	              <h3 class="field-header">Finish</h3>
+	              <!-- <input class="slider" type="range" min="0" max="50" value="25" step="5" /> -->
+	              <select class="dropdown">
+	                <option value="cream">Cream</option>
+	                <option value="glitter">Glitter</option>
+	                <option value="lustre">Lustre</option>
+	                <option value="metallic">Metallic</option>
+	                <option value="matte">Matte</option>
+	                <option value="translucent">Translucent</option>
+	              </select>
+	            </div>
+	          </div>
+	          <div class="grid-row">
+	            <div class="grid-col-4of8">
+	              <!-- Drop Down Selector -->
+	              <h3 class="field-header">Add-In 1</h3>
+	              <!-- <input class="slider" type="range" min="0" max="50" value="25" step="5" /> -->
+	              <select class="dropdown">
+	                <option value="holographic">Holographic Glitter</option>
+	                <option value="none">None</option>
+	                <option value="heart">Heart Glitter</option>
+	                <option value="holographic">Holographic Glitter</option>
+	                <option value="r-glitter-1">Round Glitter - Large</option>
+	                <option value="r-glitter-2">Round Glitter - Small</option>
+	                <option value="s-glitter-1">Square Glitter - Large</option>
+	                <option value="s-glitter-2">Square Glitter - Small</option>
+	                <option value="stars">Star Glitter</option>
+	              </select>
+	              <form>
+	                Add-In 1 colour:
+	                <input type="color" name="favcolor" value="#ffffff">
+	              </form>
+	            </div>
+
+	            <div class="grid-col-4of8">
+	              <!-- Drop Down Selector -->
+	              <h3 class="field-header">Add-In 2</h3>
+	              <select class="dropdown">
+	                <option value="none">None</option>
+	                <option value="heart">Heart Glitter</option>
+	                <option value="holographic">Holographic Glitter</option>
+	                <option value="r-glitter-1">Round Glitter - Large</option>
+	                <option value="r-glitter-2">Round Glitter - Small</option>
+	                <option value="s-glitter-1">Square Glitter - Large</option>
+	                <option value="s-glitter-2">Square Glitter - Small</option>
+	                <option value="stars">Star Glitter</option>
+	              </select>
+
+	              <form>
+	                Add-In 2 colour:
+	                <input type="color" name="favcolor" value="#ffffff">
+	              </form>
+	            </div>
+
+	            <div class="grid-row">
+	              <div class="grid-col-4of8">
+	                <h3 class="field-header">Bottle Shape</h3>
+	                <select class="dropdown">
+	                  <option value="diamond">Diamond</option>
+	                  <option value="heart">Heart</option>
+	                  <option value="oval">Oval</option>
+	                  <option value="square">Square</option>
+	                </select>
+	              </div>
+
+	              <div class="grid-col-4of8">
+	                <h3 class="field-header">Brush Type</h3>
+	                <select class="dropdown">
+	                  <option value="rounded-brush">Rounded</option>
+	                  <option value="square-brush">Square</option>
+	                  <option value="fine-tip-brush">Fine Tip</option>
+	                  <option value="liner-brush">Liner</option>
+	                </select>
+	              </div>
+	            </div>
+
+	          <!-- Fill in Information -->
+	          <div class="grid-col-8of8">
+	            <h3 class="field-header">Now that you've customized your dream polish mix, give it a name!</h3>
+	            <form>
+	              <input class="formfield" type="text" name="search" placeholder="Name your polish mix">
+	            </form>
+	          </div>
+
+	          <!-- Add to cart and sell buttons -->
+	            <div class="grid-col-4of8">
+	              <a class="button-primary" href="created-mix.html">Create My Mix</a>
+	            </div>
+	          </div> <!-- end of grid row -->
+	        </div> <!-- end of grid-col-4of8 -->
+	      </div> <!-- end of grid row -->
+	    </div> <!-- End of Content Container -->
+		</section>
+
+		<!-- Created Mix  -->
+		<section>
+			<h2>Created Mix Details</h2>
+			<h3>CSS selector:</h3>
+
+			<h3>Sample code:</h3>
+			<code>
+			</code>
+
+			<h3>Example:</h3>
+			<div class="content-container">
+	      <div class="grid-row">
+	        <div class="grid-col-3of8">
+	          <img src="img/swatch-metallic-pink-orange.jpg" class="popup-image" alt="a metallic pink orange nailpolish">
+	          <!-- Image retrieved from http://styletips101.com/wp-content/uploads/2010/03/nail-polish-thumb.jpg -->
+	          <!-- Social Links -->
+	          <!-- Icons sourced from: https://www.vecteezy.com/vector-art/95039-free-social-media-icons -->
+	          <h3 class="field-header">Share on Social Media!</h3>
+	          <a href="#popupsocial"><img src="img/facebook1.png" alt="facebook logo pink" class="social-icon"></a>
+	          <a href="#popupsocial"><img src="img/twitter1.png" alt="twitter logo pink" class="social-icon"></a>
+	          <a href="#popupsocial"><img src="img/pinterest.png" alt="pinterest logo pink" class="social-icon"></a>
+	          <a href="#popupsocial"><img src="img/tumblr.png" alt="tumblr logo pink" class="social-icon"></a>
+	        </div>
+	        <div class="grid-col-4of8">
+	          <h2 class="secondary-heading">Congrats! Your mix has been created!</h2>
+	          <p class="paragraph-primary">Now, you can purchase your custom mix or sell your creation to other Swirl Polish users in your Profile Store. Please create an account if you would like to sell your mix in your <a href="profile.html">Profile Store.</a></p>
+	          <hr>
+	          <!-- Product Name and Description -->
+	          <h2 class="polish-name">Orange Sunset</h2>
+	          <a href="edit-mix.html" class="intext-links"> &lt; Edit Polish Mix</a>
+	          <h3 class="bold-header">You can purchase your mix for:</h3>
+	          <p class="price">$8.95</p>
+	          <h3 class="bold-header">Selected Base Colour:</h3>
+	          <p class="paragraph-primary">Colour No. 192481 - A bright orange shade with a tinge of yellow</p>
+	          <div class="grid-row">
+	            <div class="grid-col-4of8 remove-gutter">
+	              <!-- Finish selected -->
+	              <h3 class="bold-header">Finish:</h3>
+	              <p class="content-description">Metallic</p>
+	              <!-- Add-in's selected -->
+	              <h3 class="bold-header">Add-In's:</h3>
+	              <p class="content-description">Holographic Glitter - Pink</p>
+	            </div>
+	            <div class="grid-col-4of8 remove-gutter">
+	              <!-- Bottle Type Selected -->
+	              <h3 class="bold-header">Bottle Type:</h3>
+	              <p class="content-description">Square</p>
+	              <!-- Bottle Type Selected -->
+	              <h3 class="bold-header">Brush Type:</h3>
+	              <p class="content-description">Rounded</p>
+	            </div>
+	          </div>
+	          <div class="grid-col-4of8 remove-gutter">
+	            <a class="button-primary" href="cart.html">+ Add to Cart</a>
+	            <p class="center-align">Want to sell this mix in your Shop? <a href="#popupsignin">Sign In</a></p>
+	          </div>
+	        </div>
+	      </div>
+	    </div> <!-- End of Content Container -->
 		</section>
 
 		<!-- Cart -->
@@ -862,7 +1044,6 @@
 		    </div>
 		  </div> <!-- End of content-container -->
 		</section>
-
 
 		<!-- Receipt -->
 		<section>
@@ -923,12 +1104,12 @@
 		      </div>
 		    </div>
 		  </div> <!-- End of checkout container -->
-
 		</section>
 
-		<!-- Sign Up -->
+		<!-- Forms -->
 		<section>
-			<h2>Sign Up</h2>
+			<h2>Form Fields</h2>
+			<p>Sign In/Up Pages as well as checkout steps, all follow the same general pattern</p>
 			<h3>CSS selector:</h3>
 			<p></p>
 
@@ -992,55 +1173,6 @@
 		    </div>
 		</section>
 
-
-		<!-- Login -->
-		<section>
-			<h2>Sign In</h2>
-			<h3>CSS selector:</h3>
-			<p></p>
-
-			<h3>Sample code:</h3>
-			<code>
-			</code>
-
-			<h3>Example:</h3>
-		    <div class="grid-row">
-		      <div class="grid-col-3of8">
-		        <h2 class="bold-header">Sign In</h2>
-		      </div>
-		    </div>
-
-		    <div class="grid-row">
-		      <div class="grid-col-3of8">
-		        <form>
-		          <label for="name" class="left-align">Email</label>
-		  		    <input id="name-signin" class="formfield" type="text" name="email" placeholder="serenaswirl@gmail.com">
-		        </form>
-		      </div>
-		    </div>
-
-		    <div class="grid-row">
-		      <div class="grid-col-3of8">
-		        <form>
-		          <label for="password" class="left-align">Password</label>
-			        <input id="password-signin" class="formfield" type="text" name="password" placeholder="*******">
-				    </form>
-		      </div>
-		    </div>
-
-		    <div class="grid-row">
-		      <div class="grid-col-3of8">
-		        <a class="button-primary" href="profile.html">Sign In</a>
-		      </div>
-		    </div>
-
-		    <div class="grid-row">
-		      <div class="grid-col-3of8">
-		  			 <p class="center-align">Don't have an account? <a href="create-account.html">Create account</a></p>
-		  		</div>
-		    </div>
-		</section>
-
 		<!-- Profile Biography -->
 		<section>
 			<h2>Profile Information</h2>
@@ -1052,16 +1184,16 @@
 
 			<h3>Example:</h3>
 			<div class="grid-row">
-        <div class="grid-col-2of8 profile-info">
-          <!-- image source: https://i.mdel.net/i/db/2012/10/124166/124166-500w.jpg -->
-          <img src="img/profile-picture.jpg" alt="profile-picture" class="profile-image">
-          <h3 class="bold-header">Emily Montgomery</h3>
-          <a href="#popupedit">Edit</a>
-          <p class="profile-info">Location: <a>Vancouver, BC</a></p>
-          <p class="profile-info">Bottles sold: 19</p>
-          <p class="profile-info">Credits Earned: 190</p>
-          <p class="profile-info">Connect with me: <strong><a>@emmontgomery</a></strong> <strong><a>@emmont22</a></strong></p>
-        </div>
+				<div class="grid-col-2of8 profile-info">
+					<!-- image source: https://i.mdel.net/i/db/2012/10/124166/124166-500w.jpg -->
+					<img src="img/profile-picture.jpg" alt="profile-picture" class="profile-image">
+					<h3 class="bold-header">Emily Montgomery</h3>
+					<a href="#popupedit" class="links-secondary">Edit Profile</a>
+					<p class="paragraph-primary">Location: <a href="#" class="links-secondary">Vancouver, BC</a></p>
+					<p class="paragraph-primary">Bottles sold: 19</p>
+					<p class="paragraph-primary">Credits Earned: 190</p>
+					<p class="paragraph-primary">Connect with me: <a href="#" class="intext-links">@emmontgomery</a><a href="#" class="intext-links">@emmont22</a></p>
+				</div>
 			</div>
 		</section>
 
