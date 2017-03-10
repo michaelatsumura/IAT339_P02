@@ -1,203 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Swirl Polishes Co.</title>
-  <link href="css/main.css" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/grids.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Muli:300,400,700,900" rel="stylesheet">
-</head>
-<body>
-  <!-- Main Navigation -->
-  <div class="grid-row">
-    <div class="nav-container">
-      <nav class="main-nav">
-        <div class="grid-col-1of8 nav-padding">
-        <a href="index.html" class="logo left-align"><img src="img/logo.png" alt="swirl polishes co. logo"></a>
-        </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Swirl Polishes Co.</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/grids.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Muli:300,400,700" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Main Navigation -->
+    <div class="grid-row background">
+      <div class="nav-container">
+        <nav class="main-nav">
+          <div class="grid-col-1of8 nav-padding">
+          <a href="index.html" class="logo left-align"><img src="img/logo.svg" alt="swirl polishes co. logo"></a>
+          </div>
 
-        <div class="grid-col-1of8 nav-padding mobile-hide">
-          <a href="mix.html" class="button-nav">Mix</a>
-        </div>
+          <div class="grid-col-1of8 nav-padding mobile-hide">
+            <a href="mix.html" class="button-nav">Mix</a>
+          </div>
 
-        <div class="grid-col-1of8 nav-padding mobile-hide">
-          <a href="product-listing.html" class="button-nav">Browse</a>
-        </div>
+          <div class="grid-col-1of8 nav-padding mobile-hide">
+            <a href="product-listing.html" class="button-nav">Browse</a>
+          </div>
 
-        <div class="grid-col-1of8 nav-padding mobile-hide">
-          <a href="product-view.html" class="button-nav">Shop</a>
-        </div>
+          <div class="grid-col-1of8 nav-padding mobile-hide">
+            <a href="product-view.html" class="button-nav">Shop</a>
+          </div>
 
-        <div class="grid-col-1of8 nav-padding mobile-hide">
-          <p></p>
-        </div>
+          <div class="grid-col-3of8 nav-padding mobile-hide">
+            <p></p>
+          </div>
 
-        <div class="grid-col-1hof8 nav-padding mobile-hide">
-          <a href="profile.html" class="right-align profile nav-padding"><img src="img/profile-30.png" alt="access your profile page icon"></a>
-        </div>
+          <div class="grid-col-1hof8 nav-padding mobile-hide">
+            <a href="profile.html" class="icon"><img src="img/profile.svg" alt="access your profile page icon"></a>
+          </div>
 
-        <div class="grid-col-1of8 nav-padding">
-          <a href="create-account.html" class="secondary-nav left-align mobile-hide">Sign Up</a>
-        </div>
+          <div class="grid-col-1of8 nav-padding mobile-hide">
+            <a href="#popupsignup" class="secondary-nav left-align">Sign Up</a>
+          </div>
 
-        <div class="grid-col-1hof8 nav-padding">
-          <a href="#" class="right-align search mobile-hide"><img src="img/search-30.png" alt="search magnifying glass icon"></a>
-        </div>
+          <div class="grid-col-1hof8 nav-padding mobile-hide">
+            <a href="#popupsearch" class="icon center-align search "><img src="img/search.svg" alt="search magnifying glass icon"></a>
+          </div>
 
-        <div class="grid-col-1of8 nav-padding mobile-hide">
-          <!-- Cart icon retrieved from: https://thenounproject.com/search/?q=shop&i=839566 -->
-          <a href="cart.html"><img src="img/bag-icon-30.png" alt="cart image"></a>
-        </div>
+          <div class="grid-col-1hof8 nav-padding mobile-hide">
+            <!-- Cart icon retrieved from: https://thenounproject.com/search/?q=shop&i=839566 -->
+            <a href="cart.html" class="icon center-align"><img src="img/bag.svg" alt="shopping bag icon with heart"></a>
+          </div>
 
-        <div id="hamburger" class="hamburger-icon-wrapper mobile-show">
-          <span class="hamburger-icon"></span>
-        </div>
-      </nav>
-    </div>
-  </div>
-  <!-- end of desktop navigation bar -->
-
-  <!-- hamburger menu options (shown on 600px or smaller) -->
-  <div class="hamburger-menu">
-    <ul class="hamburger-menu-list">
-      <a href="mix.html"><li class="hamburger-item">Mix</li>
-      <a href="product-listing.html"><li class="hamburger-item">Browse</li>
-      <a href="product-view.html"><li class="hamburger-item">Shop</li>
-      <a href="sign-in.html"><li class="hamburger-item">Sign In</li>
-      <a href="cart.html"><li class="hamburger-item">Cart</li>
-      <a href="#"><li class="hamburger-item">Search</li></a>
-    </ul>
-  </div>
-
-  <!-- Custom Mix -->
-  <div class="content-container">
-    <div class="grid-row">
-      <div class="grid-col-3of8">
-        <img src="img/swatch-metallic-pink-orange.jpg" alt="Metallic pink and orange swirl nailpolish">
-        <!-- Image retrieved from http://styletips101.com/wp-content/uploads/2010/03/nail-polish-thumb.jpg -->
+          <div id="hamburger" class="hamburger-icon-wrapper mobile-show">
+            <span class="hamburger-icon"></span>
+          </div>
+        </nav>
       </div>
-      <div class="grid-col-4of8">
-        <h1 class="main-heading">Mix</h1>
+    </div>
+    <!-- end of desktop navigation bar -->
 
-        <p class="paragraph-primary"><strong>Your search for the perfect polish is over!</strong> <br>Customize and purchase your own personalized polish blend. If you want others to use your creation, just <a href="#popupsignup">create an account</a> and post your polish blend in your profile store!</p>
+    <!-- hamburger menu options (shown on 600px or smaller) -->
+    <div class="hamburger-menu">
+      <ul class="hamburger-menu-list">
+        <a href="mix.html"><li class="hamburger-item">Mix</li>
+        <a href="product-listing.html"><li class="hamburger-item">Browse</li>
+        <a href="product-view.html"><li class="hamburger-item">Shop</li>
+        <a href="profile.html"><li class="hamburger-item">Profile</li>
+        <a href="#popupsignin"><li class="hamburger-item">Sign In</li>
+        <a href="cart.html"><li class="hamburger-item">Cart</li>
+      </ul>
+    </div>
 
-        <!-- Colour Picker -->
-       <div class ="grid-row">
-          <div class="grid-col-8of8">
-            <h3 class="field-header">Polish Colour:</h3>
-            <form>
-              <input type="color" class="swatch" name="favcolor" value="#FF3D61">
-            </form>
-            <!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_color -->
-          </div>
-        </div>
-        <div class ="grid-row">
-          <div class="grid-col-8of8">
-            <!-- Drop Down Selector -->
-            <h3 class="field-header">Finish</h3>
-            <!-- <input class="slider" type="range" min="0" max="50" value="25" step="5" /> -->
-            <select class="dropdown">
-              <option value="cream">Cream</option>
-              <option value="glitter">Glitter</option>
-              <option value="lustre">Lustre</option>
-              <option value="metallic">Metallic</option>
-              <option value="matte">Matte</option>
-              <option value="translucent">Translucent</option>
-            </select>
-          </div>
-        </div>
+  <!-- POPUPS SIGNIN/SIGNUP -->
+    <div id="popupsignin" class="overlay">
+      <div class="popup-small">
         <div class="grid-row">
-          <div class="grid-col-4of8">
-            <!-- Drop Down Selector -->
-            <h3 class="field-header button-margin-top">Add-In 1</h3>
-            <!-- <input class="slider" type="range" min="0" max="50" value="25" step="5" /> -->
-            <select class="dropdown">
-              <option value="none">None</option>
-              <option value="heart">Heart Glitter</option>
-              <option value="holographic">Holographic Glitter</option>
-              <option value="r-glitter-1">Round Glitter - Large</option>
-              <option value="r-glitter-2">Round Glitter - Small</option>
-              <option value="s-glitter-1">Square Glitter - Large</option>
-              <option value="s-glitter-2">Square Glitter - Small</option>
-              <option value="stars">Star Glitter</option>
-            </select>
+          <div class="grid-col-8of8">
+            <a class="close" href="#">&times;</a>
+            <h2 class="bold-header">Sign In</h2>
+          </div>
+        </div>
 
+        <div class="grid-row">
+          <div class="grid-col-8of8">
             <form>
-              Add-In 1 colour:
-              <input type="color" name="favcolor" value="#ffffff">
+              <label for="name" class="left-align">Email</label>
+              <input class="formfield" type="text" name="email" placeholder="serenaswirl@gmail.com">
             </form>
           </div>
-          <div class="grid-col-4of8">
-            <!-- Drop Down Selector -->
-            <h3 class="field-header button-margin-top">Add-In 2</h3>
-            <select class="dropdown">
-              <option value="none">None</option>
-              <option value="heart">Heart Glitter</option>
-              <option value="holographic">Holographic Glitter</option>
-              <option value="r-glitter-1">Round Glitter - Large</option>
-              <option value="r-glitter-2">Round Glitter - Small</option>
-              <option value="s-glitter-1">Square Glitter - Large</option>
-              <option value="s-glitter-2">Square Glitter - Small</option>
-              <option value="stars">Star Glitter</option>
-            </select>
+        </div>
 
+        <div class="grid-row">
+          <div class="grid-col-8of8">
             <form>
-              Add-In 2 colour:
-              <input type="color" name="favcolor" value="#ffffff">
+              <label for="password" class="left-align">Password</label>
+              <input class="formfield" type="password" name="password" placeholder="*******">
             </form>
           </div>
+        </div>
 
+        <div class="grid-row">
+          <div class="grid-col-8of8">
+            <a class="button-primary" href="#">Sign In</a>
+          </div>
+        </div>
+
+        <div class="grid-row">
+          <div class="grid-col-8of8">
+             <p class="center-align">Don't have an account? <a href="#popupsignup">Create account</a></p>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end of popup LOGIN -->
+
+    <!-- popup for sign up for an account -->
+    <div id="popupsignup" class="overlay">
+      <div class="popup-small">
+        <div class="grid-row">
+          <div class="grid-col-8of8">
+            <a class="close" href="#">&times;</a>
+            <h2 class="bold-header">Sign Up</h2>
+          </div>
+        </div>
+
+        <div class="grid-row">
+          <div class="grid-col-8of8">
+            <form>
+              <label for="name" class="left-align">Name</label>
+              <input class="formfield" type="text" name="email" placeholder="Serena Swirl">
+            </form>
+          </div>
+        </div>
+
+        <div class="grid-row">
+          <div class="grid-col-8of8">
+            <form>
+              <label for="email" class="left-align">Email</label>
+              <input class="formfield" type="text" name="email" placeholder="serenaswirl@gmail.com">
+            </form>
+          </div>
+        </div>
+
+        <div class="grid-row">
+          <div class="grid-col-8of8">
+            <form>
+              <label for="password" class="left-align">Password</label>
+              <input class="formfield" type="password" name="password" placeholder="*******">
+            </form>
+          </div>
+        </div>
+
+        <div class="grid-row">
+          <div class="grid-col-8of8">
+            <form>
+              <label for="password" class="left-align">Retype Password</label>
+              <input class="formfield" type="password" name="password" placeholder="*******">
+            </form>
+          </div>
+        </div>
+
+        <div class="grid-row">
+          <div class="grid-col-8of8">
+            <a class="button-primary" href="#">Sign Up</a>
+          </div>
+        </div>
+
+        <div class="grid-row">
+          <div class="grid-col-8of8">
+             <p class="center-align">Already have an account? <a href="#popupsignin">Sign In</a></p>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end of popup SIGN UP -->
+
+    <!-- Custom Mix -->
+    <div class="content-container">
+      <div class="grid-row">
+        <div class="grid-col-3of8">
+          <img src="img/swatch-metallic-pink-orange.jpg" alt="Metallic pink and orange swirl nailpolish">
+          <!-- Image retrieved from http://styletips101.com/wp-content/uploads/2010/03/nail-polish-thumb.jpg -->
+        </div>
+        
+        <div class="grid-col-4of8">
+          <h1 class="main-heading">Mix</h1>
+          <p class="paragraph-primary"><strong>Your search for the perfect polish is over!</strong> <br>Customize and purchase your own personalized polish blend. If you want others to use your creation, just <a href="#popupsignup">create an account</a> and post your polish blend in your profile store!</p>
+          <!-- Colour Picker -->
+          <h3 class="field-header">Polish Colour:</h3>
+          <form>
+            <input type="color" class="swatch" name="favcolor" value="#FF3D61">
+          </form>
+          <!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_color -->
+          <div class ="grid-row">
+            <div class="grid-col-4of8">
+              <!-- Drop Down Selector -->
+              <h3 class="field-header">Finish</h3>
+              <!-- <input class="slider" type="range" min="0" max="50" value="25" step="5" /> -->
+              <select class="dropdown">
+                <option value="cream">Cream</option>
+                <option value="glitter">Glitter</option>
+                <option value="lustre">Lustre</option>
+                <option value="metallic">Metallic</option>
+                <option value="matte">Matte</option>
+                <option value="translucent">Translucent</option>
+              </select>
+            </div>
+          </div>
           <div class="grid-row">
             <div class="grid-col-4of8">
-              <h3 class="field-header button-margin-top">Bottle Shape</h3>
+              <!-- Drop Down Selector -->
+              <h3 class="field-header button-margin-top">Add-In 1</h3>
+              <!-- <input class="slider" type="range" min="0" max="50" value="25" step="5" /> -->
               <select class="dropdown">
-                <option value="diamond">Diamond</option>
-                <option value="heart">Heart</option>
-                <option value="oval">Oval</option>
-                <option value="square">Square</option>
+                <option value="holographic">Holographic Glitter</option>
+                <option value="none">None</option>
+                <option value="heart">Heart Glitter</option>
+                <option value="holographic">Holographic Glitter</option>
+                <option value="r-glitter-1">Round Glitter - Large</option>
+                <option value="r-glitter-2">Round Glitter - Small</option>
+                <option value="s-glitter-1">Square Glitter - Large</option>
+                <option value="s-glitter-2">Square Glitter - Small</option>
+                <option value="stars">Star Glitter</option>
               </select>
+              <form>
+                Add-In 1 colour:
+                <input type="color" name="favcolor" value="#ffffff">
+              </form>
             </div>
 
             <div class="grid-col-4of8">
-              <h3 class="field-header button-margin-top">Brush Type</h3>
+              <!-- Drop Down Selector -->
+              <h3 class="field-header button-margin-top">Add-In 2</h3>
               <select class="dropdown">
-                <option value="rounded-brush">Rounded</option>
-                <option value="square-brush">Square</option>
-                <option value="fine-tip-brush">Fine Tip</option>
-                <option value="liner-brush">Liner</option>
+                <option value="none">None</option>
+                <option value="heart">Heart Glitter</option>
+                <option value="holographic">Holographic Glitter</option>
+                <option value="r-glitter-1">Round Glitter - Large</option>
+                <option value="r-glitter-2">Round Glitter - Small</option>
+                <option value="s-glitter-1">Square Glitter - Large</option>
+                <option value="s-glitter-2">Square Glitter - Small</option>
+                <option value="stars">Star Glitter</option>
               </select>
+
+              <form>
+                Add-In 2 colour:
+                <input type="color" name="favcolor" value="#ffffff">
+              </form>
             </div>
+
+            <div class="grid-row">
+              <div class="grid-col-4of8">
+                <h3 class="field-header button-margin-top">Bottle Shape</h3>
+                <select class="dropdown">
+                  <option value="diamond">Diamond</option>
+                  <option value="heart">Heart</option>
+                  <option value="oval">Oval</option>
+                  <option value="square">Square</option>
+                </select>
+              </div>
+
+              <div class="grid-col-4of8">
+                <h3 class="field-header button-margin-top">Brush Type</h3>
+                <select class="dropdown">
+                  <option value="rounded-brush">Rounded</option>
+                  <option value="square-brush">Square</option>
+                  <option value="fine-tip-brush">Fine Tip</option>
+                  <option value="liner-brush">Liner</option>
+                </select>
+              </div>
+            </div>
+
+          <!-- Fill in Information -->
+          <div class="grid-col-8of8">
+            <h3 class="field-header">Now that you've customized your dream polish mix, give it a name!</h3>
+            <form>
+              <input class="formfield" type="text" name="search" placeholder="Name your polish mix">
+            </form>
           </div>
 
-        <!-- Fill in Information -->
-        <div class="grid-col-8of8">
-          <h3 class="field-header">Now that you've customized your dream polish mix, give it a name!</h3>
-          <form>
-            <input class="formfield" type="text" name="search" placeholder="Name your polish mix">
-          </form>
-        </div>
+          <!-- Add to cart and sell buttons -->
+            <div class="grid-col-4of8">
+              <a class="button-primary" href="created-mix.html">Create My Mix</a>
+            </div>
+          </div> <!-- end of grid row -->
+        </div> <!-- end of grid-col-4of8 -->
+      </div> <!-- end of grid row -->
+    </div> <!-- End of Content Container -->
 
-        <!-- Add to cart and sell buttons -->
-          <div class="grid-col-4of8">
-            <a class="button-primary" href="created-mix.html">Create My Mix</a>
-          </div>
-        </div>
-      </div>
+    <!-- Footer -->
+    <div class="grid-row">
+      <footer class="footer">
+        <div class="grid-col-4of8"><p>Swirl Polishes Co. © 2017</p></div>
+        <div class="grid-col-4of8 float-right text-right"><a href="contact-us.html" class="contact-us">Contact Us</a></div>
+      </footer>
     </div>
-  </div> <!-- End of Content Container -->
 
-  <!-- Footer -->
-  <div class="grid-row">
-    <footer class="footer">
-      <div class="grid-col-4of8"><p>Swirl Polishes Co. © 2017</p></div>
-      <div class="grid-col-4of8 float-right text-right"><a href="contact-us.html" class="contact-us">Contact Us</a></div>
-    </footer>
-  </div>
-
-  <!-- link to js for hamburger menu functionality -->
-  <script src="js/hamburger-menu.js"></script>
-</body>
+    <!-- link to js for hamburger menu functionality -->
+    <script src="js/hamburger-menu.js"></script>
+  </body>
 </html>

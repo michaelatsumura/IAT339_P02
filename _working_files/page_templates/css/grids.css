@@ -117,7 +117,7 @@
   .front-page-container {
     text-align: center;
     width: 100%;
-    padding: 6% 30%;
+    padding: 2.5% 30%;
   }
 
   .form-container {
@@ -226,7 +226,7 @@
 
 
 @media (max-width:81.25em){ /*1300 px */
- 
+
   /* replace background image on landing page */
   header {
     background: url("http://www.sfu.ca/~mtsumura/bg-1300.jpg") no-repeat center center fixed;
@@ -269,7 +269,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100vh;
+    height: 120vh;
   }
 
   .nav-container {
@@ -536,7 +536,7 @@
   }
 
   .button-margin-top {
-    margin-top: 1em; 
+    margin-top: 1em;
   }
 }
 

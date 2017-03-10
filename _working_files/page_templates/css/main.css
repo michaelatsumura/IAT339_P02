@@ -191,7 +191,7 @@ label {
   text-decoration: none;
   background-color: white;
   border: 2px solid #C19A97;
-  color: #C19A97; 
+  color: #C19A97;
   font-weight: 700;
   border-radius: 0.25em;
   -webkit-transition: background-color 0.5s ease-out;
@@ -263,9 +263,10 @@ label {
   margin-right: 0.75em;
 }
 
-/* Search Bar*/
+/* Search Icon*/
 .search {
   max-width: 25px;
+  max-height: 25px;
 }
 
 /* Hover and focus states */
@@ -280,6 +281,46 @@ label {
   width: 50%;
   height: 5em;
   margin-bottom: 1em;
+}
+
+/* CCV Tooltip Hover */
+/* Source: https://www.w3schools.com/css/css_tooltip.asp */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  padding: 0.5em;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.tooltip:hover .tooltiptext, .tooltip:focus .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
 }
 
 /*
@@ -404,7 +445,7 @@ label {
   list-style: none;
 }
 
-/* Main Navigation */
+/* Not fixed positioning navigation for styleguide */
 .styleguide-main-nav {
   display: -webkit-flex; /* For support in a series of Webkit browsers */
   display: -ms-flex; /* For support in IE 10 */
@@ -443,10 +484,7 @@ label {
   max-width: 25px;
 }
 
-/*
-  Product listing Image Style
-  Adds a border around the image and more spacing
-*/
+/* --------- SINGLE PRODUCT LISTING -----------*/
 .fit-product {
   padding: 1em;
 }
@@ -498,19 +536,38 @@ label {
 }
 
 /* --------- FOOTER -----------*/
+
+.footer-frontpage {
+  background-color: rgba(173, 124, 131, 0.4); /*Light Pink 40%*/
+  padding: 1.5em 1em;
+  color: white;
+  height: auto;
+}
+
 .footer{
 	background-color: rgba(173, 124, 131, 0.4); /*Light Pink 40%*/
-	padding: 1.5em 1em 1.5em 1em; /*T R B L*/
+	padding: 1.5em 1em; /*T R B L*/
 	color: white;
   height:auto;
   text-align: left;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
-/*Joanna delete this after the footer is fixed*/
-footer, .push {
-    height: 4rem; /* .push must be the same height as .footer */
-}
+/*
+  Get it to anchor to the bottom,
+  should add bg white to element before footer
+  This should still be adjusted for later
+*/
 
+.content-container, .form-container, .checkout-container {
+  background: white;
+  position: relative;
+  margin-bottom: 5rem;
+  z-index: 10;
+}
 
 /* Have to re-organize the rest of this and add it to the styleguide */
 /* Places a border around the cart image */
@@ -590,7 +647,7 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100vh; /* viewport height */
+  height: 100vh; /* 120% viewport height */
 }
 
 
@@ -622,7 +679,7 @@ header {
 }
 
 .edit {
-  color: #C19A97;
+  color: #C19A97; /*Light Pink*/
   text-align: right;
 }
 
@@ -654,13 +711,13 @@ header {
 }
 
 
-.center-buttons {
+/*.center-buttons {
   display:block;
-  /*max-width: 25em;*/
+  max-width: 25em;
   margin: 0 auto;
   padding-top: 1em;
   width: 100%;
-}
+}*/
 
 
 /*
@@ -803,6 +860,12 @@ GENERAL STYLING
 /*End of modified hamburger menu code retrieved from http://johnm.io/project/hamburgler/*/
 
 
+/*
+======================================================
+  #. POPUP STYLING
+======================================================
+*/
+
 /* How to make a pop-up. Retrieved from https://codepen.io/imprakash/pen/GgNMXO*/
 
 .overlay {
@@ -815,6 +878,7 @@ GENERAL STYLING
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
+  z-index: 11;
 }
 
 .overlay:target {
@@ -877,7 +941,7 @@ GENERAL STYLING
 
 .popup .close:hover, .popup .close:focus, .popup-large .close:hover,.popup-large .close:focus, .popup-small .close:hover, .popup-small .close:focus{
   color: #C19A97;
-} 
+}
 
 .popup .content, .popup-large .content, .popup-small .content, .popup-search .content{
   max-height: 30%;
@@ -889,6 +953,3 @@ GENERAL STYLING
   padding-right: 1em;
 }
 /* End of how to make a pop-up. Retrieved from https://codepen.io/imprakash/pen/GgNMXO*/
-
-
-
