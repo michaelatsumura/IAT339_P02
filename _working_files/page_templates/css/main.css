@@ -115,18 +115,27 @@ label {
   text-align: right;
 }
 
-.center-align{
+.center-align {
   text-align: center;
 }
 
-.right-align{
+.right-align {
   margin-left: auto;
 }
 
-.left-align{
+.left-align {
   text-align: left;
 }
 
+.margin-top {
+  margin-top: 2em !important;
+}
+
+/*Buy Step 1 checkbox*/
+.checkbox {
+  margin-right: 0.5em;
+  margin-bottom: 1em;
+}
 
 /*
 ======================================================
@@ -530,7 +539,7 @@ label {
 
 /*Main Navigation */
 .background {
-  padding: 2em 0;
+  padding: 1em 0;
 }
 
 /* --------- COLOUR SCHEME -----------*/
@@ -627,7 +636,21 @@ label {
 	border-bottom: solid lightgrey 1px;
 }
 
-/* End of styling COMBINED ELEMENTS + COMPONENTS */
+/* --------- SIGN UP BANNER -----------*/
+.banner {
+  background-color: #f7f7f7;
+  padding: 0.5em 2em; 
+  color: white;
+  height:auto;
+  margin-top: 30px;
+  margin-bottom: 1em;
+}
+
+.banner-text {
+  font-size: 1em;
+  font-weight: 500;
+  color: #C19A97;
+}
 
 /*
 ======================================================
