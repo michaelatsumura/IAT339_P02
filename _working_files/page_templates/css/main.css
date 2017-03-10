@@ -54,7 +54,7 @@ section code {
   display: inline-block;
   background-color: #EEE;
   padding: 2em;
-  margin: 0.5em 3em 0 0;
+  margin-top: 0.5em;
   border-radius: 0.25em;
   font-size: 0.8em;
   line-height: 1.4em;
@@ -85,6 +85,7 @@ img {
 h2 {
   color:#000000;
   padding: 0.5rem 0 0.25rem 0;
+  margin:0;
 }
 
 section h3 {
@@ -93,7 +94,7 @@ section h3 {
   padding-bottom: 0.35rem;
 }
 
-/* Paragraph Styling*/
+/* Default Paragraph Styling*/
 p {
   margin: 0;
 }
@@ -245,6 +246,7 @@ label {
   border-radius: 0.25em;
   padding: 0.5em;
   font-size: 0.9em;
+  width: 100%;
 }
 
 /* ICONS */
@@ -256,24 +258,27 @@ label {
   margin-right: 0.3em;
 }
 
-/* Profile Icon */
-.profile {
-  max-width: 30px;
-  padding-right:0.3em;
-  margin-right: 0.75em;
-}
-
 /* Search Icon*/
 .search {
   max-width: 25px;
   max-height: 25px;
 }
 
+/* Icon sizing - nav bar */
+.icon {
+  max-width: 30px;
+}
+
 /* Hover and focus states */
 .social-icon:hover, .social-icon:focus,
-.profile:hover, .profile:focus,
+.icon:hover, .icon:focus,
 .search:hover, .search:focus {
-  opacity: 0.7;
+  opacity: 0.6;
+}
+
+/* Logo Icon */
+.logo {
+  max-width: 95px;
 }
 
 /* Colour Picker */
@@ -297,11 +302,10 @@ label {
   background-color: black;
   color: #fff;
   text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
+  border-radius: 0.25em;
   padding: 0.5em;
 
-  /* Position the tooltip text - see examples below! */
+  /* Position where the tooltip appears */
   position: absolute;
   z-index: 1;
   top: -5px;
@@ -458,34 +462,7 @@ label {
 
 /*Main Navigation */
 .background {
-  padding:2em 0;
-}
-
-/* Profile Icon */
-.profile {
-  max-width: 30px;
-  padding-right:0.3em;
-  margin-right: 0.75em;
-}
-
-/* Logo Icon */
-.logo {
-  max-width: 95px;
-}
-
-/* Icon sizing - nav bar */
-.icon {
-  max-width: 30px;
-}
-
-/* Search Bar*/
-.search {
-  max-width: 25px;
-}
-
-/* --------- SINGLE PRODUCT LISTING -----------*/
-.fit-product {
-  padding: 1em;
+  padding: 2em 0;
 }
 
 /* --------- COLOUR SCHEME -----------*/
@@ -519,14 +496,14 @@ label {
 }
 
 /* --------- PRODUCT LISTING: BROWSE + SHOP PAGES -----------*/
-/* Default product view for browse and shop pages */
+/* Grey border around product image */
 .product-list-view {
   padding: 1em;
-  border: solid 1px #D3D3D3;
+  border: solid 1px #D3D3D3; /*Light Grey*/
 }
 
 .product-list-view:hover, .product-list-view:focus, .product-list-view:active {
-  border: solid 3px #D3D3D3;
+  border: solid 3px #D3D3D3; /*Light Grey*/
 }
 
 /* Spacing after grid-row (browse and shop pages) */
@@ -709,6 +686,16 @@ header {
   line-height: 1.3em;
 }
 
+
+.center-buttons {
+  display:block;
+  /*max-width: 25em;*/
+  margin: 0 auto;
+  padding-top: 1em;
+  width: 100%;
+}
+
+
 /*
 GENERAL STYLING
 */
@@ -850,12 +837,6 @@ GENERAL STYLING
 
 /*End of modified hamburger menu code retrieved from http://johnm.io/project/hamburgler/*/
 
-
-/*
-======================================================
-  #. POPUP STYLING
-======================================================
-*/
 
 /* How to make a pop-up. Retrieved from https://codepen.io/imprakash/pen/GgNMXO*/
 
