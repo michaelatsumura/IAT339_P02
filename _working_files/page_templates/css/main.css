@@ -122,6 +122,7 @@ label {
   color: #3D4656; /*Dark Blue*/
   text-decoration: none;
   letter-spacing: 0.1rem;
+  text-align: center;
 }
 
 .button-nav:hover, .button-nav:focus {
@@ -616,9 +617,7 @@ label {
   text-align: left;
 }
 
-/*
-GENERAL STYLING
-*/
+/*Other: Need to add to styleguide*/
 
 /*Buy Step 1 checkbox*/
 .checkbox {
