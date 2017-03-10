@@ -1454,16 +1454,35 @@
 		<section>
 			<h2>Profile Information</h2>
 			<h3>CSS selector:</h3>
+			<ul>
+				<li>.grid-row</li>
+				<li>.grid-col-2of8</li>
+				<li>.bold-header</li>
+				<li>.links-secondary</li>
+				<li>.paragraph-primary</li>
+				<li>.intext-links</li>
+			</ul>
 
 			<h3>Sample code:</h3>
 			<code>
+				&lt;div class="grid-row"&gt;<br>
+					&lt;div class="grid-col-2of8"&gt;<br>
+						&lt;img src="img/profile-picture.jpg" alt="profile picture"&gt;<br>
+						&lt;h3 class="bold-header"&gt;Emily Montgomery&lt;/h3&gt;<br>
+						&lt;a href="#popupedit" class="links-secondary"&lt;Edit Profile&lt;/a&gt;<br>
+						&lt;p class="paragraph-primary"&gt;Location: &lt;a href="#" class="links-secondary"&gt;Vancouver, BC&lt;/a&gt;&lt;/p&gt;<br>
+						&lt;p class="parargraph-primary"&gt;Bottles sold: 19&lt;/p&gt;<br>
+						&lt;p class="parargraph-primary"&gt;Credits Earned: 190&lt;/p&gt;<br>
+						&lt;p class="parargraph-primary"&gt;Connect with me &lt;a href="#" class="intext-links"&gt;@emmotgomery&lt;/a&gt;&lt;a href="#" class="intext-links"&gt;@emmont22&lt;/a&gt;&lt;/p&gt;<br>
+					&lt;/div&gt;<br>
+				&lt;/div&gt;
 			</code>
 
 			<h3>Example:</h3>
 			<div class="grid-row">
-				<div class="grid-col-2of8 profile-info">
+				<div class="grid-col-2of8">
 					<!-- image source: https://i.mdel.net/i/db/2012/10/124166/124166-500w.jpg -->
-					<img src="img/profile-picture.jpg" alt="profile-picture" class="profile-image">
+					<img src="img/profile-picture.jpg" alt="profile picture">
 					<h3 class="bold-header">Emily Montgomery</h3>
 					<a href="#popupedit" class="links-secondary">Edit Profile</a>
 					<p class="paragraph-primary">Location: <a href="#" class="links-secondary">Vancouver, BC</a></p>
