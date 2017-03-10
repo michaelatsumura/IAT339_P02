@@ -157,6 +157,16 @@ label {
   color: #3D4656; /*Dark Blue*/
 }
 
+/* secondary links */
+.links-secondary {
+  color: #C19A97; /*Light Pink*/
+  text-align: right;
+}
+
+.links-secondary:hover, .links-secondary:focus {
+  color: #3D4656 /*Dark Blue*/
+}
+
 /* --------- BUTTONS -----------*/
 /* Primary Button */
 .button-primary {
@@ -533,10 +543,10 @@ label {
 }
 
 /*
-  Get it to anchor to the bottom,
-  should add bg white to element before footer
-  This should still be adjusted for later
-*/
+  White background that hides the fixed footer until you scroll
+  towards the bottom. On pages without enough content fixes footer
+  to bottom.
+ */
 
 .content-container, .form-container, .checkout-container {
   background: white;
@@ -545,20 +555,37 @@ label {
   z-index: 10;
 }
 
-/* Have to re-organize the rest of this and add it to the styleguide */
+/* --------- CART -----------*/
 /* Places a border around the cart image */
 .cart-image {
 	border: solid lightgrey 1px;
 }
 
-/* grey divider at the bottom of each order */
+/* grey divider at the bottom of each order, cart + receipt pages */
 .divider {
 	padding-bottom: 1em;
 	margin-bottom: 1em;
 	border-bottom: solid lightgrey 1px;
 }
 
-/*General Alignment styling*/
+/* ------------- PROFILE PAGE ----------------- */
+/* Styles the polish name in list view */
+.polish-name {
+  margin-bottom: 0;
+}
+
+/* Adds bottom margin if polish doesn't have a price */
+.polish-name-noprice {
+  margin-bottom: 1em;
+}
+
+
+/*
+======================================================
+  #. GENERAL ALIGNMENT STYLING
+    Alignment that can be added anywhere
+======================================================
+*/
 .float-right {
 	float: right;
 }
@@ -578,18 +605,6 @@ label {
 .left-align{
   text-align: left;
 }
-
-/* ------------- PROFILE PAGE ----------------- */
-/* Styles the polish name in list view */
-.polish-name {
-  margin-bottom: 0;
-}
-
-/* Adds bottom margin if polish doesn't have a price */
-.polish-name-noprice {
-  margin-bottom: 1em;
-}
-
 
 /*
 ======================================================
@@ -637,28 +652,6 @@ header {
 .profile-image {
   padding-right: 2em;
 }
-
-/* Profile Name */
-.name {
-  margin-top: 2em;
-  font-weight: 500;
-  font-size: 1.2rem;
-}
-
-/* Profile text information */
-.profile-info {
-  text-align: left;
-  width: 90%;
-  line-height: 1.3em;
-  margin: 1em 0;
-
-}
-
-.edit {
-  color: #C19A97; /*Light Pink*/
-  text-align: right;
-}
-
 
 /*
 ======================================================
