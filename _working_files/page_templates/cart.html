@@ -8,7 +8,8 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/grids.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Muli:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet">
   </head>
   <body>
     <!-- Main Navigation -->
@@ -16,7 +17,7 @@
       <div class="nav-container">
         <nav class="main-nav">
           <div class="grid-col-1of8 nav-padding">
-          <a href="index.html" class="logo left-align"><img src="img/logo.svg" alt="swirl polishes co. logo"></a>
+            <a href="index.html" class="logo left-align"><img src="img/logo.svg" alt="swirl polishes co. logo"></a>
           </div>
 
           <div class="grid-col-1of8 nav-padding mobile-hide">
@@ -56,20 +57,19 @@
           </div>
         </nav>
       </div>
-    </div>
-    <!-- end of desktop navigation bar -->
+    </div><!-- end of desktop navigation bar -->
 
     <!-- hamburger menu options (shown on 600px or smaller) -->
     <div class="hamburger-menu">
       <ul class="hamburger-menu-list">
-        <a href="mix.html"><li class="hamburger-item">Mix</li>
-        <a href="product-listing.html"><li class="hamburger-item">Browse</li>
-        <a href="product-view.html"><li class="hamburger-item">Shop</li>
-        <a href="profile.html"><li class="hamburger-item">Profile</li>
-        <a href="#popupsignin"><li class="hamburger-item">Sign In</li>
-        <a href="cart.html"><li class="hamburger-item">Cart</li>
+        <li class="hamburger-item"><a href="mix.html">Mix</a></li>
+        <li class="hamburger-item"><a href="product-listing.html">Browse</a></li>
+        <li class="hamburger-item"><a href="product-view.html">Shop</a></li>
+        <li class="hamburger-item"><a href="profile.html">Profile</a></li>
+        <li class="hamburger-item"><a href="#popupsignin">Sign In</a></li>
+        <li class="hamburger-item"><a href="cart.html">Cart</a></li>
       </ul>
-    </div>
+    </div> <!-- end of desktop navigation bar -->
 
     <!-- POPUPS SIGNIN/SIGNUP -->
     <div id="popupsignin" class="overlay">
@@ -85,7 +85,7 @@
           <div class="grid-col-8of8">
             <form>
               <label for="name" class="left-align">Email</label>
-              <input class="formfield" type="text" name="email" placeholder="serenaswirl@gmail.com">
+              <input id="name" class="formfield" type="text" name="email" placeholder="serenaswirl@gmail.com">
             </form>
           </div>
         </div>
@@ -94,7 +94,7 @@
           <div class="grid-col-8of8">
             <form>
               <label for="password" class="left-align">Password</label>
-              <input class="formfield" type="password" name="password" placeholder="*******">
+              <input id="password" class="formfield" type="password" name="password" placeholder="*******">
             </form>
           </div>
         </div>
@@ -111,7 +111,7 @@
           </div>
         </div>
       </div>
-    </div> <!-- end of popup SIGN IN -->
+    </div> <!-- end of popup LOGIN -->
 
     <!-- popup for sign up for an account -->
     <div id="popupsignup" class="overlay">
@@ -126,8 +126,8 @@
         <div class="grid-row">
           <div class="grid-col-8of8">
             <form>
-              <label for="name" class="left-align">Name</label>
-              <input class="formfield" type="text" name="email" placeholder="Serena Swirl">
+              <label for="name-signin" class="left-align">Name</label>
+              <input id="name-signin" class="formfield" type="text" name="email" placeholder="Serena Swirl">
             </form>
           </div>
         </div>
@@ -136,7 +136,7 @@
           <div class="grid-col-8of8">
             <form>
               <label for="email" class="left-align">Email</label>
-              <input class="formfield" type="text" name="email" placeholder="serenaswirl@gmail.com">
+              <input id="email" class="formfield" type="text" name="email" placeholder="serenaswirl@gmail.com">
             </form>
           </div>
         </div>
@@ -144,8 +144,8 @@
         <div class="grid-row">
           <div class="grid-col-8of8">
             <form>
-              <label for="password" class="left-align">Password</label>
-              <input class="formfield" type="password" name="password" placeholder="*******">
+              <label for="password-signin" class="left-align">Password</label>
+              <input id="password-signin" class="formfield" type="password" name="password" placeholder="*******">
             </form>
           </div>
         </div>
@@ -153,8 +153,8 @@
         <div class="grid-row">
           <div class="grid-col-8of8">
             <form>
-              <label for="password" class="left-align">Retype Password</label>
-              <input class="formfield" type="password" name="password" placeholder="*******">
+              <label for="password-confirm" class="left-align">Retype Password</label>
+              <input id="password-confirm" class="formfield" type="password" name="password" placeholder="*******">
             </form>
           </div>
         </div>
@@ -270,7 +270,7 @@
     </div> <!-- End of content-container -->
 
     <!-- Footer -->
-    <footer class="footer-frontpage">
+    <footer class="footer">
       <div class="grid-row">
         <div class="grid-col-4of8 text-left"><a href="contact-us.html" class="contact-us">Contact Us</a></div>
         <div class="grid-col-4of8 float-right text-right"><p>Swirl Polishes Co. © 2017</p></div>
