@@ -810,9 +810,106 @@
 			<p>Click on image for view of pop-up</p>
 
 			<h3>CSS selectors:</h3>
+			<ul>
+				<li>#popup1</li>
+				<li>#popup2</li>
+				<li>.overlay</li>
+				<li>.popup</li>
+				<li>.grid-row</li>
+				<li>.grid-col-4of8</li>
+				<li>.grid-col-6of8</li>
+				<li>.popup-image</li>
+				<li>.product-name</li>
+				<li>.product-subhead</li>
+				<li>.close</li>
+				<li>.price</li>
+				<li>.content</li>
+				<li>.paragraph-primary</li>
+				<li>.intext-links</li>
+				<li>.remove-gutter</li>
+				<li>.button-primary</li>
+				<li>.product-list-view</li>
+			</ul>
 
 			<h3>Sample Code:</h3>
 			<code>
+				&lt;div id="popup1" class="overlay"&gt;<br>
+				  &lt;div class="popup"&gt;<br>
+				    &lt;div class="grid-row"&gt;<br>
+				      &lt;div class="grid-col-4of8"&gt;<br>
+				        &lt;img src="img/swatch-glitter-pink-blue.jpg" class="popup-image" alt="a glitter swatch with mixed colours"&gt;<br>
+				      &lt;/div&gt;<br>
+				      &lt;div class="grid-col-4of8"&gt;<br>
+				        &lt;h2 class="product-name"&gt;Galaxy Glitter&lt;/h2&gt;<br>
+				        &lt;h3 class="product-subhead"&gt;Glitter Finish&lt;/h3&gt;<br>
+				        &lt;a class="close" href="#"&gt;&times;&lt;/a&gt;<br>
+				        &lt;div class="content"&gt;<br>
+				          &lt;p class="price"&gt;$18.95&lt;/p&gt;<br>
+				          &lt;p class="paragraph-primary"&gt;A beautiful mix of three glitter polishes that swirl together to perfection. The combination of colour and glitter create a new dimension on your nails. Created by &lt;a href="#"&gt;@sandys12&lt;/a&gt;.&lt;/p&gt;<br>
+				          &lt;a href="edit-mix.html" class="intext-links"&gt;Edit Polish Mix&lt;/a&gt;<br>
+				          &lt;div class="grid-col-6of8 remove-gutter"&gt;<br>
+				            &lt;a class="button-primary" href="product-listing-1cart-item.html"&gt;+ Add to Cart&lt;/a&gt;<br>
+				          &lt;/div&gt;<br>
+				        &lt;/div&gt;<br>
+				      &lt;/div&gt;<br>
+				    &lt;/div&gt;<br>
+				  &lt;/div&gt;<br>
+				&lt;/div&gt; <br>
+
+				&lt;div id="popup2" class="overlay"&gt;<br>
+				  &lt;div class="popup"&gt;<br>
+				    &lt;div class="grid-row"&gt;<br>
+				      &lt;div class="grid-col-4of8"&gt;<br>
+				        &lt;img src="img/swatch-metallic-pink-orange.jpg" class="popup-image" alt="a metallic pink orange nailpolish"&gt;<br>
+				      &lt;div class="grid-col-4of8"&gt;<br>
+				        &lt;h2 class="product-name"&gt;Orange Sunset&lt;/h2&gt;<br>
+				        &lt;h3 class="product-subhead"&gt;Satin Finish&lt;/h3&gt;<br>
+				        &lt;a class="close" href="#"&gt;&times;&lt;/a&gt;<br>
+				        &lt;div class="content"&gt;<br>
+				          &lt;p class="price"&gt;$12.95&lt;/p&gt;<br>
+				          &lt;p class="paragraph-primary"&gt;A beautiful mix of pink and orange satin polishes that swirl together to create magic on your fingertips. Created by &lt;a href="#"&gt;@sandys12&lt;/a&gt;.&lt;/p&gt;<br>
+				          &lt;a href="edit-mix.html" class="intext-links"&gt;Edit Polish Mix&lt;/a&gt;<br>
+				          &lt;div class="grid-col-6of8 remove-gutter"&gt;<br>
+				            &lt;a class="button-primary" href="product-listing-1cart-item.html"&gt;+ Add to Cart&lt;/a&gt;<br>
+				          &lt;/div&gt;<br>
+				        &lt;/div&gt;<br>
+				      &lt;/div&gt;<br>
+				    &lt;/div&gt;<br>
+				  &lt;/div&gt;<br>
+				&lt;/div&gt; <br>
+				&lt;div class="grid-row grid-row-spacing"&gt;<br>
+				  &lt;a href="#popup1"&gt;<br>
+				    &lt;div class="grid-col-2of8"&gt;<br>
+				    &lt;img src="img/swatch-glitter-pink-blue.jpg" class="product-list-view" alt="a glitter swatch with mixed colours"&gt;<br>
+				    &lt;p&gt;Glitter Galaxy&lt;/p&gt;<br>
+				    &lt;p class="price"&gt;$18.95&lt;/p&gt;<br>
+				    &lt;/div&gt;<br>
+				  &lt;/a&gt;<br>
+
+				  &lt;a href="#popup2"&gt;<br>
+				    &lt;div class="grid-col-2of8"&gt;<br>
+				      &lt;img src="img/swatch-glitter-blue-gold.jpg" class="product-list-view" alt="a glittery nailpolish swatch with mixed blue and gold"&gt;<br>
+				      &lt;p&gt;Orange Sunset&lt;/p&gt;<br>
+				      &lt;p class="price"&gt;$12.95&lt;/p&gt;<br>
+				    &lt;/div&gt;<br>
+				  &lt;/a&gt;<br>
+
+				  &lt;a href="#popup1"&gt;<br>
+				    &lt;div class="grid-col-2of8"&gt;<br>
+				      &lt;img src="img/swatch-glitter-blue-purple.jpg" class="product-list-view" alt="a bold bluish purple glitter based nail polish swatch"&gt;<br>
+				      &lt;p&gt;Siren&lt;/p&gt;<br>
+				      &lt;p class="price"&gt;$8.95&lt;/p&gt;<br>
+				    &lt;/div&gt;<br>
+				  &lt;/a&gt;<br>
+
+				  &lt;a href="#popup2"&gt;<br>
+				    &lt;div class="grid-col-2of8"&gt;<br>
+				      &lt;img src="img/swatch-glitter-pink-purple.jpg" class="product-list-view" alt="a glitter swatch with mixed colours"&gt;<br>
+				      &lt;p&gt;Sparkle Sparkle&lt;/p&gt;<br>
+				      &lt;p class="price"&gt;$14.90&lt;/p&gt;<br>
+				    &lt;/div&gt;<br>
+				  &lt;/a&gt;<br>
+				&lt;/div&gt;
 			</code>
 
 			<h3>Example:</h3>
@@ -874,7 +971,6 @@
 	        <p class="price">$18.95</p>
 	        </div>
 	      </a>
-
 
 	      <a href="#popup2">
 	        <div class="grid-col-2of8">
@@ -1176,6 +1272,47 @@
 
 			<h3>Sample code:</h3>
 			<code>
+				&lt;div class="content-container"&gt;<br>
+				  &lt;div class="grid-row"&gt;<br>
+				    &lt;div class="grid-col-3of8"&gt;<br>
+				      &lt;img src="img/swatch-metallic-pink-orange.jpg" class="popup-image" alt="a metallic pink orange nailpolish"&gt;<br>
+				      &lt;h3 class="field-header"&gt;Share on Social Media!&lt;/h3&gt;<br>
+				      &lt;a href="#popupsocial"&gt;&lt;img src="img/facebook1.png" alt="facebook logo pink" class="social-icon"&gt;&lt;/a&gt;<br>
+				      &lt;a href="#popupsocial"&gt;&lt;img src="img/twitter1.png" alt="twitter logo pink" class="social-icon"&gt;&lt;/a&gt;<br>
+				      &lt;a href="#popupsocial"&gt;&lt;img src="img/pinterest.png" alt="pinterest logo pink" class="social-icon"&gt;&lt;/a&gt;<br>
+				      &lt;a href="#popupsocial"&gt;&lt;img src="img/tumblr.png" alt="tumblr logo pink" class="social-icon"&gt;&lt;/a&gt;<br>
+				    &lt;/div&gt;<br>
+				    &lt;div class="grid-col-4of8"&gt;<br>
+				      &lt;h2 class="secondary-heading"&gt;Congrats! Your mix has been created!&lt;/h2&gt;<br>
+				      &lt;p class="paragraph-primary"&gt;Now, you can purchase your custom mix or sell your creation to other Swirl Polish users in your Profile Store. Please create an account if you would like to sell your mix in your &lt;a href="profile.html"&gt;Profile Store.&lt;/a&gt;&lt;/p&gt;<br>
+				      &lt;hr&gt;<br>
+				      &lt;h2 class="polish-name"&gt;Orange Sunset&lt;/h2&gt;<br>
+				      &lt;a href="edit-mix.html" class="intext-links"&gt; &lt; Edit Polish Mix&lt;/a&gt;<br>
+				      &lt;h3 class="bold-header"&gt;You can purchase your mix for:&lt;/h3&gt;<br>
+				      &lt;p class="price"&gt;$8.95&lt;/p&gt;<br>
+				      &lt;h3 class="bold-header"&gt;Selected Base Colour:&lt;/h3&gt;<br>
+				      &lt;p class="paragraph-primary"&gt;Colour No. 192481 - A bright orange shade with a tinge of yellow&lt;/p&gt;<br>
+				      &lt;div class="grid-row"&gt;<br>
+				        &lt;div class="grid-col-4of8 remove-gutter"&gt;<br>
+				          &lt;h3 class="bold-header"&gt;Finish:&lt;/h3&gt;<br>
+				          &lt;p class="content-description"&gt;Metallic&lt;/p&gt;<br>
+				          &lt;h3 class="bold-header"&gt;Add-In's:&lt;/h3&gt;<br>
+				          &lt;p class="content-description"&gt;Holographic Glitter - Pink&lt;/p&gt;<br>
+				        &lt;/div&gt;<br>
+				        &lt;div class="grid-col-4of8 remove-gutter"&gt;<br>
+				          &lt;h3 class="bold-header"&gt;Bottle Type:&lt;/h3&gt;<br>
+				          &lt;p class="content-description"&gt;Square&lt;/p&gt;<br>
+				          &lt;h3 class="bold-header"&gt;Brush Type:&lt;/h3&gt;<br>
+				          &lt;p class="content-description"&gt;Rounded&lt;/p&gt;<br>
+				        &lt;/div&gt;<br>
+				      &lt;/div&gt;<br>
+				      &lt;div class="grid-col-4of8 remove-gutter"&gt;<br>
+				        &lt;a class="button-primary" href="cart.html"&gt;+ Add to Cart&lt;/a&gt;<br>
+				        &lt;p class="center-align"&gt;Want to sell this mix in your Shop? &lt;a href="#popupsignin"&gt;Sign In&lt;/a&gt;&lt;/p&gt;<br>
+				      &lt;/div&gt;<br>
+				    &lt;/div&gt;<br>
+				  &lt;/div&gt;<br>
+				&lt;/div&gt;
 			</code>
 
 			<h3>Example:</h3>
@@ -1238,6 +1375,28 @@
 
 			<h3>Sample code:</h3>
 			<code>
+				&lt;div class="frontpage-container center-align"&gt;<br>
+				  &lt;div class="grid-row"&gt;<br>
+				    &lt;h2 class="secondary-heading"&gt;Your mix has been added to your Store!&lt;/h2&gt;<br>
+				    &lt;p class="paragraph-primary"&gt;Now, other users can purchase your mix and you'll earn credits towards your next purchase. Credits are tracked in your profile. Good luck!&lt;/p&gt;<br>
+				    &lt;h3 class="field-header"&gt;Share the news on social media to start earning credits!&lt;/h3&gt;<br>
+				    &lt;div class="social-share"&gt;<br>
+				      &lt;a href="#popupsocial"&gt;&lt;img src="img/facebook1.png" alt="facebook logo pink" class="social-icon"&gt;&lt;/a&gt;<br>
+				      &lt;a href="#popupsocial"&gt;&lt;img src="img/twitter1.png" alt="twitter logo pink" class="social-icon"&gt;&lt;/a&gt;<br>
+				      &lt;a href="#popupsocial"&gt;&lt;img src="img/pinterest.png" alt="pinterest logo pink" class="social-icon"&gt;&lt;/a&gt;<br>
+				      &lt;a href="#popupsocial"&gt;&lt;img src="img/tumblr.png" alt="tumblr logo pink" class="social-icon"&gt;&lt;/a&gt;<br>
+				    &lt;/div&gt;<br>
+				  &lt;/div&gt;<br>
+
+				  &lt;div class="grid-row"&gt;<br>
+				    &lt;div class="grid-col-4of8"&gt;<br>
+				      &lt;a class="button-primary" href="mix.html"&gt;Mix Again&lt;/a&gt;<br>
+				    &lt;/div&gt;<br>
+				    &lt;div class="grid-col-4of8"&gt;<br>
+				      &lt;a class="button-secondary" href="profile.html"&gt;View My Store&lt;/a&gt;<br>
+				    &lt;/div&gt;<br>
+				  &lt;/div&gt;<br>
+				&lt;/div&gt;
 			</code>
 
 			<h3>Example:</h3>
@@ -1276,6 +1435,44 @@
 
 			<h3>Sample code:</h3>
 			<code>
+				&lt;div class="checkout-container"&gt;<br>
+					&lt;div class="grid-row divider"&gt;<br>
+						&lt;h1 class="main-heading"&gt;Cart&lt;/h1&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;div class="grid-row divider"&gt;<br>
+					  &lt;div class="grid-col-3of8"&gt;<br>
+					    &lt;a href="#popup2"&gt;&lt;img src="img/swatch-metallic-pink-orange.jpg" alt="metallic orange pink nail polish swatch" class="product-list-view cart-image"&gt;&lt;/a&gt;<br>
+					  &lt;/div&gt;<br>
+					  &lt;a href="#popup2"&gt;&lt;/a&gt;<br>
+					  &lt;div class="grid-col-5of8"&gt;<br>
+					    &lt;h2 class="product-name"&gt;Orange Sunset&lt;/h2&gt;<br>
+					    &lt;h3 class="product-subhead"&gt;Lustre Finish&lt;/h3&gt;<br>
+					    &lt;p class="price"&gt;$8.95&lt;/p&gt;<br>
+					    &lt;p class="paragraph-secondary"&gt;Colour No. 192481 - A bright orange shade with a tinge of yellow.&lt;/p&gt;<br>
+					  &lt;/div&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;div class="grid-row divider"&gt;<br>
+					  &lt;div class="grid-col-3of8"&gt;<br>
+					    &lt;a href="#popup4"&gt;&lt;img src="img/dotters-3.jpg" alt="pack of 4 nail dotting tools" class="product-list-view cart-image"&gt;&lt;/a&gt;<br>
+					  &lt;/div&gt;<br>
+					  &lt;a href="#popup4"&gt;<br>
+					    &lt;div class="grid-col-5of8"&gt;<br>
+					      &lt;h2 class="product-name"&gt;Nail Dotters&lt;/h2&gt;<br>
+					      &lt;h3 class="product-subhead"&gt;Pack of 5 Pastel Swirl Handle Dotters&lt;/h3&gt;<br>
+					      &lt;p class="price"&gt;$10.95&lt;/p&gt;<br>
+					      &lt;p class="paragraph-secondary"&gt;5 double-sided nail dotters with different sized dot tips ranging from 1mm - 10mm. Ideal for creating intricate nail art designs with regular or gel polish.&lt;/p&gt;<br>
+					    &lt;/div&gt;<br>
+					  &lt;/a&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;div class="grid-row"&gt;<br>
+					  &lt;div class="grid-col-4of8"&gt;<br>
+					    &lt;a class="button-secondary" href="product-listing.html"&gt;Return&lt;/a&gt;<br>
+					  &lt;/div&gt;<br>
+					  &lt;div class="grid-col-4of8"&gt;<br>
+					    &lt;a class="button-primary" href="buy-step1.html"&gt;Checkout&lt;/a&gt;<br>
+					  &lt;/div&gt;<br>
+					&lt;/div&gt;<br>
+				&lt;/div&gt;
 			</code>
 
 			<h3>Example:</h3>
@@ -1347,7 +1544,7 @@
 
 			<h3>Sample code:</h3>
 			<code>
-				&lt;div class="styleguide-container"&gt;<br>
+				&lt;div class="checkout-container"&gt;<br>
 					&lt;div class="grid-row"&gt;<br>
 						&lt;h2&gt;Receipt&lt;/h2&gt;<br>
 						&lt;h3 class="field-header"&gt;Thank you for ordering from Swirl Polishes Co.&lt;/h3&gt;<br>
