@@ -176,6 +176,13 @@
 }
 
 /*---------------------------------------------------------------------------------------*/
+/*Large Monitors starting around 1600px width*/
+@media (min-width: 100em) {
+  .styleguide-container {
+    width: 100%;
+    padding-right: 50%;
+  }
+}
 
 /* SMALLER THAN LAPTOP SIZE - If the width is less than 43.74 em then style the grid like this */
 @media (max-width:43.74em){
