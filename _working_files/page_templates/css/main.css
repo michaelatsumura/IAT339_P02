@@ -167,6 +167,15 @@ label {
   color: #3D4656 /*Dark Blue*/
 }
 
+/* Footer Links */
+.footerlinks {
+  color: white;
+}
+
+.footerlinks:hover, .footerlinks:focus {
+  color: #3D4656 /*Dark Blue*/
+}
+
 /* --------- BUTTONS -----------*/
 /* Primary Button */
 .button-primary {
@@ -627,14 +636,6 @@ GENERAL STYLING
 
 .checkbox-description {
   margin: 0 auto;
-}
-
-.contact-us {
-  color: white;
-}
-
-.contact-us:hover {
-  color: #465166;
 }
 
 .new-section{
