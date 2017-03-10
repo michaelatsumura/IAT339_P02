@@ -568,18 +568,6 @@ label {
 	border-bottom: solid lightgrey 1px;
 }
 
-/* ------------- PROFILE PAGE ----------------- */
-/* Styles the polish name in list view */
-.polish-name {
-  margin-bottom: 0;
-}
-
-/* Adds bottom margin if polish doesn't have a price */
-.polish-name-noprice {
-  margin-bottom: 1em;
-}
-
-
 /*
 ======================================================
   #. GENERAL ALIGNMENT STYLING
