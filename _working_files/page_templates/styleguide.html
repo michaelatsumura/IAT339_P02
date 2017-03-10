@@ -179,7 +179,7 @@
 			<code></code>
 
 			<h3>Example:</h3>
-			<a href="https://facebook.com/"><img src="img/facebook.png" class="social-icon"></a>
+			<a href="#"><img src="img/facebook1.png" class="social-icon"></a>
 		</section>
 
 		<!-- Profile Icon -->
@@ -422,7 +422,7 @@
 			<div class="grid-row background">
 				<nav class="styleguide-main-nav">
 					<div class="grid-col-1of8 nav-padding">
-						<a href="index.html" class="logo left-align"><img src="img/logo.png" alt="swirl polishes co. logo"></a>
+						<a href="index.html" class="logo left-align"><img src="img/logo.svg" alt="swirl polishes co. logo"></a>
 					</div>
 
 					<div class="grid-col-1of8 nav-padding mobile-hide">
@@ -442,7 +442,7 @@
 					</div>
 
 					<div class="grid-col-1hof8 nav-padding mobile-hide">
-						<a href="profile.html" class="right-align profile nav-padding"><img src="img/profile-30.png" alt="access your profile page icon"></a>
+						<a href="profile.html" class="right-align profile nav-padding"><img src="img/profile.svg" class="icon" alt="access your profile page icon"></a>
 					</div>
 
 					<div class="grid-col-1of8 nav-padding">
@@ -451,12 +451,12 @@
 
 					<div class="grid-col-1hof8 nav-padding">
 						<!-- Search icon retrieved from: https://thenounproject.com/search/?q=search&i=860087 -->
-						<a href="#" class="search mobile-hide"><img src="img/search-30.png" alt="search magnifying glass icon"></a>
+						<a href="#" class="search mobile-hide"><img src="img/search.svg" class="icon" alt="search magnifying glass icon"></a>
 					</div>
 
 					<div class="grid-col-1of8 nav-padding mobile-hide">
 						<!-- Cart icon retrieved from: https://thenounproject.com/search/?q=shop&i=839566 -->
-						<a href="cart.html"><img src="img/bag-icon-30.png" alt="cart image"></a>
+						<a href="cart.html"><img src="img/bag.svg" class="icon" alt="cart image"></a>
 					</div>
 
 					<div id="hamburger" class="hamburger-icon-wrapper mobile-show">
@@ -493,10 +493,10 @@
 		  <h3>Example:</h3>
 			<!-- 1 product listing details -->
 			<div class="grid-row">
-				<div class="grid-col-3of8">
-					<img src="img/moon-glow.jpg" alt="" class="fit-product">
+				<div class="grid-col-2of8">
+					<img src="img/swatch-metallic-blue.jpg" alt="" class="fit-product">
 				</div>
-				<div class="grid-col-5of8">
+				<div class="grid-col-4of8">
 					<h2 class="product-name">Icy Blue Swirl</h2>
 					<h3 class="product-subhead">Satin Finish</h3>
 					<p class="price">$12.95</p>
@@ -507,8 +507,59 @@
 			</div>
 	  </section>
 
-		<!-- Product Listing -->
+
+
+	<!-- Product Listing -->
 		<section>
+
+		<!-- POPUPS 1 and 2 -->
+		    <div id="popup1" class="overlay">
+		      <div class="popup">
+		        <div class="grid-row">
+		          <div class="grid-col-4of8">
+		            <img src="img/swatch-glitter-pink-blue.jpg" class="popup-image" alt="a glitter swatch with mixed colours">
+		            <!-- Image retrieved from http://media.gettyimages.com/photos/nail-polish-pour-with-sparkles-picture-id138699385 -->
+		          </div>
+		          <div class="grid-col-4of8">
+		            <h2 class="product-name">Galaxy Glitter</h2>
+		            <h3 class="product-subhead">Glitter Finish</h3>
+		            <a class="close" href="#">&times;</a>
+		            <div class="content">
+		              <p class="price">$18.95</p>
+		              <p class="paragraph-primary">A beautiful mix of three glitter polishes that swirl together to perfection. The combination of colour and glitter create a new dimension on your nails. Created by <a href="#">@sandys12</a>.</p>
+		              <a href="edit-mix.html" class="intext-links link-margin">Edit Polish Mix</a>
+		              <div class="grid-col-6of8 remove-gutter">
+		                <a class="button-primary" href="product-listing-1cart-item.html">+ Add to Cart</a>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div> <!-- end of div popup1 -->
+
+		    <div id="popup2" class="overlay">
+		      <div class="popup">
+		        <div class="grid-row">
+		          <div class="grid-col-4of8">
+		            <img src="img/swatch-metallic-pink-orange.jpg" class="popup-image" alt="a metallic pink orange nailpolish">
+		            <!-- Image retrieved from http://styletips101.com/wp-content/uploads/2010/03/nail-polish-thumb.jpg -->
+		          </div>
+		          <div class="grid-col-4of8">
+		            <h2 class="product-name">Orange Sunset</h2>
+		            <h3 class="product-subhead">Satin Finish</h3>
+		            <a class="close" href="#">&times;</a>
+		            <div class="content">
+		              <p class="price">$12.95</p>
+		              <p class="paragraph-primary">A beautiful mix of pink and orange satin polishes that swirl together to create magic on your fingertips. Created by <a href="#">@sandys12</a>.</p>
+		              <a href="edit-mix.html" class="intext-links link-margin">Edit Polish Mix</a>
+		              <div class="grid-col-6of8 remove-gutter">
+		                <a class="button-primary" href="product-listing-1cart-item.html">+ Add to Cart</a>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div> <!-- end of div popup2 -->	
 		  <h2>Product Listing</h2>
 
 			<h3>CSS selectors:</h3>
@@ -518,33 +569,46 @@
 			</code>
 
 			<h3>Example:</h3>
-			<!-- First product row, 4 products listed -->
-	    <div class="grid-row grid-row-spacing">
-	      <a href="product-detail.html"><div class="grid-col-2of8">
-	        <img src="img/swatch-glitter-pink-blue.jpg" class="product-list-view" alt="a glitter swatch with mixed colours">
-	        <!-- Image retrieved from http://media.gettyimages.com/photos/nail-polish-pour-with-sparkles-picture-id138699385 -->
-	        <p>Glitter Galaxy</p>
-	        <p class="price">$18.95</p>
-	      </div></a>
-	      <a href="product-detail-2.html"><div class="grid-col-2of8">
-	        <img src="img/swatch-metallic-pink-orange.jpg" class="product-list-view" alt="a creamy nailpolish swatch with mixed orange and pink">
-	        <!-- Image retrieved from http://styletips101.com/wp-content/uploads/2010/03/nail-polish-thumb.jpg -->
-	        <p>Orange Sunset</p>
-	        <p class="price">$12.95</p>
-	      </div></a>
-	      <a href="product-detail.html"><div class="grid-col-2of8">
-	        <img src="img/swatch-cream-red.jpg" class="product-list-view" alt="a bold red cream based nail polish swatch">
-	        <!-- Image retrieved from http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=21331662 -->
-	        <p>Siren</p>
-	        <p class="price">$8.95</p>
-	      </div></a>
-	      <a href="product-detail-2.html"><div class="grid-col-2of8">
-	        <img src="img/swatch-glitter-pink-purple.jpg" class="product-list-view" alt="a glitter swatch with mixed colours">
-	        <!-- Image retrieved from http://media.gettyimages.com/photos/nail-polish-pour-with-sparkles-picture-id138699385 -->
-	        <p>Sparkle Sparkle</p>
-	        <p class="price">$14.90</p>
-	      </div></a>
-	    </div>
+		    <!-- First product row, 4 products listed -->
+		    <div class="content-container"> <!-- *** maybe delete this div, figure out how to contain the 4 list items --> 
+			    <div class="grid-row grid-row-spacing">
+			      <a href="#popup1">
+			        <div class="grid-col-2of8">
+			        <img src="img/swatch-glitter-pink-blue.jpg" class="product-list-view" alt="a glitter swatch with mixed colours">
+			        <!-- Image retrieved from http://media.gettyimages.com/photos/nail-polish-pour-with-sparkles-picture-id138699385 -->
+			        <p>Glitter Galaxy</p>
+			        <p class="price">$18.95</p>
+			        </div>
+			      </a>
+
+			      <a href="#popup2">
+			        <div class="grid-col-2of8">
+			          <img src="img/swatch-metallic-pink-orange.jpg" class="product-list-view" alt="a creamy nailpolish swatch with mixed orange and pink">
+			          <!-- Image retrieved from http://styletips101.com/wp-content/uploads/2010/03/nail-polish-thumb.jpg -->
+			          <p>Orange Sunset</p>
+			          <p class="price">$12.95</p>
+			        </div>
+			      </a>
+
+			      <a href="#popup1">
+			        <div class="grid-col-2of8">
+			          <img src="img/swatch-cream-red.jpg" class="product-list-view" alt="a bold red cream based nail polish swatch">
+			          <!-- Image retrieved from http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=21331662 -->
+			          <p>Siren</p>
+			          <p class="price">$8.95</p>
+			        </div>
+			      </a>
+
+			      <a href="#popup2">
+			        <div class="grid-col-2of8">
+			          <img src="img/swatch-glitter-pink-purple.jpg" class="product-list-view" alt="a glitter swatch with mixed colours">
+			          <!-- Image retrieved from http://media.gettyimages.com/photos/nail-polish-pour-with-sparkles-picture-id138699385 -->
+			          <p>Sparkle Sparkle</p>
+			          <p class="price">$14.90</p>
+			        </div>
+			      </a>
+			    </div>
+			</div>
 		</section>
 
 		<!-- Footer -->
@@ -879,7 +943,7 @@
 				</div>
 			</div>
 			<!-- Grid code example referenced from Week 3 Lab -->
-			</section>
+		</section>
 
 	</section>
 	<!-- // COMBINED ELEMENTS SECTION -->

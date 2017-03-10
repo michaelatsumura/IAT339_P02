@@ -711,13 +711,13 @@ header {
 }
 
 
-.center-buttons {
+/*.center-buttons {
   display:block;
-  /*max-width: 25em;*/
+  max-width: 25em;
   margin: 0 auto;
   padding-top: 1em;
   width: 100%;
-}
+}*/
 
 
 /*
@@ -859,6 +859,12 @@ GENERAL STYLING
 
 /*End of modified hamburger menu code retrieved from http://johnm.io/project/hamburgler/*/
 
+
+/*
+======================================================
+  #. POPUP STYLING
+======================================================
+*/
 
 /* How to make a pop-up. Retrieved from https://codepen.io/imprakash/pen/GgNMXO*/
 
