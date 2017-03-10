@@ -575,7 +575,7 @@ label {
 .content-container, .form-container, .checkout-container {
   background: white;
   position: relative;
-  margin-bottom: 15rem;
+  margin-bottom: 10rem;
   z-index: 10;
 }
 
