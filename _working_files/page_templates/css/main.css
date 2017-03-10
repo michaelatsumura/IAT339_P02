@@ -21,6 +21,7 @@
   1. DEFAULT STYLING
     Default styling for styleguide and website
 ======================================================
+*/
 
 /* Takes away any built-in browser spacing */
 html {
@@ -49,7 +50,7 @@ section:not([id]) {
 /* Adds spacing to styleguide code*/
 section code {
   display: inline-block;
-  background-color: #EEE;
+  background-color: #EEE; /*Light Grey */
   padding: 2em;
   margin-top: 0.5em;
   border-radius: 0.25em;
@@ -57,7 +58,7 @@ section code {
   line-height: 1.4em;
 }
 
-/*Default link styling */
+/* Default link styling */
 a {
   text-decoration: none;
   color: #3D4656; /*Dark Blue*/
@@ -126,17 +127,6 @@ label {
   text-align: left;
 }
 
-/*Other: Need to add to styleguide*/
-/*Buy Step 1 checkbox*/
-.checkbox {
-  margin-right: 0.5em;
-  margin-bottom: 1em;
-}
-
-/*Same as shipping address*/
-.checkbox-description {
-  margin: 0 auto;
-}
 
 /*
 ======================================================
@@ -354,6 +344,17 @@ label {
   margin-bottom: 1em;
 }
 
+/* Buy Step 1 checkbox */
+.checkbox {
+  margin-right: 0.5em;
+  margin-bottom: 1em;
+}
+
+/* Checkbox description */
+.checkbox-description {
+  margin: 0 auto;
+}
+
 /* CCV Tooltip Hover */
 /* Source: https://www.w3schools.com/css/css_tooltip.asp */
 .tooltip {
@@ -375,13 +376,14 @@ label {
   position: absolute;
   z-index: 1;
   top: -5px;
-  left: 105%;
+  left: 105%; /*Appears on the right*/
 }
 
 .tooltip:hover .tooltiptext, .tooltip:focus .tooltiptext {
-    visibility: visible;
+  visibility: visible;
 }
 
+/* Arrow on tooltip */
 .tooltip .tooltiptext::after {
     content: " ";
     position: absolute;
@@ -578,7 +580,7 @@ label {
 }
 
 /* --------- FOOTER -----------*/
-
+/* Not fixed positioning footer for front page only */
 .footer-frontpage {
   background-color: rgba(173, 124, 131, 0.4); /*Light Pink 40%*/
   padding: 1.5em 1em;
@@ -586,6 +588,7 @@ label {
   height: auto;
 }
 
+/* Fixed footer, used for remainder of pages */
 .footer{
 	background-color: rgba(173, 124, 131, 0.4); /*Light Pink 40%*/
 	padding: 1.5em 1em; /*T R B L*/
@@ -624,6 +627,8 @@ label {
 	border-bottom: solid lightgrey 1px;
 }
 
+/* End of styling COMBINED ELEMENTS + COMPONENTS */
+
 /*
 ======================================================
   5. FRONT PAGE STYLING
@@ -659,6 +664,7 @@ header {
   height: 100vh; /* 100% viewport height */
 }
 
+/* End of styling FRONT PAGE */
 
 /*
 ======================================================
