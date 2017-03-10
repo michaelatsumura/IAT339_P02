@@ -219,15 +219,6 @@ label {
 }
 
 /* --------- FORM FIELDS -----------*/
-/* Searchfield */
-.searchfield {
-  padding: 0.6em 0.8em;
-  border-radius: 0.25em;
-  border: solid lightgrey 1px;
-  width: 100%;
-  font-family: "Muli", Arial, sans-serif;
-  font-size: 0.9rem;
-}
 
 /* Form field for sign in/up and checkout pages */
 .formfield {
@@ -239,6 +230,30 @@ label {
   font-size: 0.9rem;
   margin-bottom: 1.5em;
   width: 100%;
+}
+
+/* Price field for sell-polish page */
+.pricefield {
+  width: 30%;
+  margin-bottom: 0.5em;
+  padding: 0.6em 0.8em;
+  border-radius: 0.25em;
+  border: solid lightgrey 1px;
+  font-size: 0.9rem;
+  font-family: "Muli", Arial, sans-serif;
+}
+
+/* Custom Product Description The User Inputs */
+.product-description {
+  margin-bottom: 0.5em;
+  padding: 0.6em 0.8em;
+  border-radius: 0.25em;
+  border: solid lightgrey 1px;
+  width: 100%;
+  font-size: 0.9rem;
+  font-family: "Muli", Arial, sans-serif;
+  line-height: 1.3em;
+  height: 7em;
 }
 
 /* Dropdown for multiple add-in's and custom options */
@@ -595,89 +610,6 @@ label {
 }
 
 /*
-======================================================
-  #. FRONT PAGE STYLING
-    Styling for index.html
-======================================================
-*/
-
-/* Background image for header */
-header {
-  background: url("http://www.sfu.ca/~mtsumura/landingpg-bg.jpg") no-repeat center center fixed;
-  /*Images collaged from:
-  Top Left:
-  Polish Brush: https://thumbs.dreamstime.com/z/pink-nail-polish-brush-white-background-56773613.jpg
-  Pink Polish Splosh: https://s-media-cache-ak0.pinimg.com/236x/9f/b3/f2/9fb3f2fe46e3511c416f268ba7b5ebf7.jpg
-  Pink Polish Splosh 2: http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=101284877
-
-  Top Right:
-  Gold Glitter Pile: http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=3522079
-  Gold Powder Pile: https://paintpearls.com/wp-content/uploads/2015/04/Aztec-Gold-Pile.png
-
-  Bottom Left:
-  Blue Polish Spots: https://thumbs.dreamstime.com/x/blots-blue-nail-polish-isolated-white-background-40947032.jpg
-  Multi-Coloured Glitter Pile: http://www.vampyvarnish.com/wp-content/uploads/2014/03/Urban-Decay-Heavy-Metal-Loose-Glitter-4.jpg
-
-  Bottom Right:
-  Gold Polish: http://images.freeimages.com/images/premium/previews/5119/51193638-splash-of-nail-polish.jpg
-  */
-
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100vh; /* 120% viewport height */
-}
-
-
-/*
-======================================================
-  #. PROFILE PAGE STYLING
-======================================================
-*/
-
-/* Rounded corners for profile image */
-.profile-image {
-  padding-right: 2em;
-}
-
-/*
-======================================================
-  #. SELL MIX PAGE STYLING
-======================================================
-*/
-.price-field {
-  width: 30%;
-  margin-bottom: 0.5em;
-  padding: 0.6em 0.8em;
-  border-radius: 0.25em;
-  border: solid lightgrey 1px;
-  font-size: 0.9rem;
-  font-family: "Muli", Arial, sans-serif;
-}
-
-.text-description-area {
-  margin-bottom: 0.5em;
-  padding: 0.6em 0.8em;
-  border-radius: 0.25em;
-  border: solid lightgrey 1px;
-  width: 100%;
-  font-size: 0.9rem;
-  font-family: "Muli", Arial, sans-serif;
-  line-height: 1.3em;
-}
-
-
-.center-buttons {
-  display:block;
-  /*max-width: 25em;*/
-  margin: 0 auto;
-  padding-top: 1em;
-  width: 100%;
-}
-
-
-/*
 GENERAL STYLING
 */
 .button-margin-top {
@@ -709,6 +641,40 @@ GENERAL STYLING
   margin-top: 2em;
 }
 
+/*
+======================================================
+  #. FRONT PAGE STYLING
+    Styling for index.html
+======================================================
+*/
+
+/* Background image for header */
+header {
+  background: url("http://www.sfu.ca/~mtsumura/landingpg-bg.jpg") no-repeat center center fixed;
+  /*Images collaged from:
+  Top Left:
+  Polish Brush: https://thumbs.dreamstime.com/z/pink-nail-polish-brush-white-background-56773613.jpg
+  Pink Polish Splosh: https://s-media-cache-ak0.pinimg.com/236x/9f/b3/f2/9fb3f2fe46e3511c416f268ba7b5ebf7.jpg
+  Pink Polish Splosh 2: http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=101284877
+
+  Top Right:
+  Gold Glitter Pile: http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=3522079
+  Gold Powder Pile: https://paintpearls.com/wp-content/uploads/2015/04/Aztec-Gold-Pile.png
+
+  Bottom Left:
+  Blue Polish Spots: https://thumbs.dreamstime.com/x/blots-blue-nail-polish-isolated-white-background-40947032.jpg
+  Multi-Coloured Glitter Pile: http://www.vampyvarnish.com/wp-content/uploads/2014/03/Urban-Decay-Heavy-Metal-Loose-Glitter-4.jpg
+
+  Bottom Right:
+  Gold Polish: http://images.freeimages.com/images/premium/previews/5119/51193638-splash-of-nail-polish.jpg
+  */
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh; /* 100% viewport height */
+}
 
 
 /*
