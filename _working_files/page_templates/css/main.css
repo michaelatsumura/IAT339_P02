@@ -7,21 +7,18 @@
 ======================================================
     TABLE OF CONTENTS
 ======================================================
-	#. DEFAULT STYLING
-  #. MAIN NAVIGATION
-  #. INTERACTIVE ELEMENTS
-  #. TEXT ELEMENTS
-  #. COMBINED ELEMENTS + COMPONENTS
-  #. FRONT PAGE STYLING
-  #. MIX PAGE STYLING
-  #. CART PAGE STYLING
-  #. PROFILE PAGE STYLING
-  #. SELL MIX PAGE STYLING
+	1. DEFAULT STYLING
+  2. INTERACTIVE ELEMENTS
+  3. TEXT ELEMENTS
+  4. COMBINED ELEMENTS + COMPONENTS
+  5. FRONT PAGE STYLING
+  6. HAMBURGER NAVIGATION HEADER STYLING
+  7. POP-UPS STYLING
 */
 
 /*
 ======================================================
-  #. DEFAULT STYLING
+  1. DEFAULT STYLING
     Default styling for styleguide and website
 ======================================================
 
@@ -107,9 +104,43 @@ label {
   padding-right: 0.5em;
 }
 
+/* --------- GENERAL ALIGNMENT -----------*/
+/* --------- Alignment that can be added anywhere -----------*/
+.float-right {
+	float: right;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.center-align{
+  text-align: center;
+}
+
+.right-align{
+  margin-left: auto;
+}
+
+.left-align{
+  text-align: left;
+}
+
+/*Other: Need to add to styleguide*/
+/*Buy Step 1 checkbox*/
+.checkbox {
+  margin-right: 0.5em;
+  margin-bottom: 1em;
+}
+
+/*Same as shipping address*/
+.checkbox-description {
+  margin: 0 auto;
+}
+
 /*
 ======================================================
-  #. INTERACTIVE ELEMENTS
+  2. INTERACTIVE ELEMENTS
     Styleguide interactive elements
 ======================================================
 */
@@ -363,7 +394,7 @@ label {
 
 /*
 ======================================================
-  #. TEXT ELEMENTS
+  3. TEXT ELEMENTS
     Styleguide text elements
 ======================================================
 */
@@ -458,7 +489,7 @@ label {
 
 /*
 ======================================================
-  #. COMBINED ELEMENTS + COMPONENTS
+  4. COMBINED ELEMENTS + COMPONENTS
     Styleguide Combined Elements
 ======================================================
 */
@@ -593,46 +624,7 @@ label {
 
 /*
 ======================================================
-  #. GENERAL ALIGNMENT STYLING
-    Alignment that can be added anywhere
-======================================================
-*/
-.float-right {
-	float: right;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.center-align{
-  text-align: center;
-}
-
-.right-align{
-  margin-left: auto;
-}
-
-.left-align{
-  text-align: left;
-}
-
-/*Other: Need to add to styleguide*/
-
-/*Buy Step 1 checkbox*/
-.checkbox {
-  margin-right: 0.5em;
-  margin-bottom: 1em;
-}
-
-/*Same as shipping address*/
-.checkbox-description {
-  margin: 0 auto;
-}
-
-/*
-======================================================
-  #. FRONT PAGE STYLING
+  5. FRONT PAGE STYLING
     Styling for index.html
 ======================================================
 */
@@ -668,7 +660,7 @@ header {
 
 /*
 ======================================================
-  #. HAMBURGER NAVIGATION HEADER STYLING
+  6. HAMBURGER NAVIGATION HEADER STYLING
 ======================================================
 */
 
@@ -773,7 +765,11 @@ header {
 
 /*End of modified hamburger menu code retrieved from http://johnm.io/project/hamburgler/*/
 
-
+/*
+======================================================
+  7. POP-UPS STYLING
+======================================================
+*/
 /* How to make a pop-up. Retrieved from https://codepen.io/imprakash/pen/GgNMXO*/
 
 .overlay {
