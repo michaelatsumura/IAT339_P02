@@ -300,7 +300,7 @@ label {
   border-radius: 0.25em;
   padding: 0.5em;
 
-  /* Position the tooltip text - see examples below! */
+  /* Position where the tooltip appears */
   position: absolute;
   z-index: 1;
   top: -5px;
