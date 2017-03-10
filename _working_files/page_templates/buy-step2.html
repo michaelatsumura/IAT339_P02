@@ -190,8 +190,8 @@
       <div class="grid-row">
         <div class="grid-col-8of8">
         <form>
-          <label for="name" class="left-align">Cardholder Name</label>
-          <input class="formfield" type="text" name="name" placeholder="Serena Swirl">
+          <label for="card-name" class="left-align">Cardholder Name</label>
+          <input id="card-name" class="formfield" type="text" name="name" placeholder="Serena Swirl">
         </form>
         </div>
       </div>
@@ -199,8 +199,8 @@
       <div class="grid-row">
         <div class="grid-col-8of8">
         <form>
-          <label for="number" class="left-align">Credit Card Number</label>
-          <input class="formfield" type="text" name="number" placeholder="3232 3232 3232 3232">
+          <label for="card-number" class="left-align">Credit Card Number</label>
+          <input id="card-number" class="formfield" type="text" name="number" placeholder="3232 3232 3232 3232">
         </form>
         </div>
       </div>
@@ -208,24 +208,24 @@
       <div class="grid-row">
         <div class="grid-col-3of8">
         <form>
-          <label for="expiry" class="left-align">Expiry Date</label>
-          <input class="formfield" type="text" name="expiry" placeholder="April">
+          <label for="expiry1" class="left-align">Expiry Date</label>
+          <input id="expiry1" class="formfield" type="text" name="expiry" placeholder="April">
         </form>
         </div>
         <div class="grid-col-3of8">
         <form>
-          <label for="expiry" class="left-align"></label>
-          <input class="formfield" type="text" name="expiry" placeholder="2017">
+          <label for="expiry2" class="left-align"></label>
+          <input id="expiry2" class="formfield" type="text" name="expiry" placeholder="2017">
         </form>
         </div>
 
         <div class="grid-col-2of8">
-          <label for="cvv" class="left-align">CCV</label>
+          <form>
+          <label class="left-align">CVV</label>
           <div class="tooltip">?
             <span class="tooltiptext">Security Code</span>
           </div>
-          <form>
-            <input class="formfield" type="text" name="securitycode" label="CVV" placeholder="123">
+            <input id="cvv" class="formfield" type="text" name="securitycode" placeholder="123">
           </form>
         </div>
       </div>
@@ -235,14 +235,14 @@
         <div class="grid-col-3of8">
           <a class="button-secondary" href="buy-step1.html">Back</a>
         </div>
-        <div class="grid-col-4of8">
+        <div class="grid-col-5of8">
           <a class="button-primary" href="receipt.html">Place Order</a>
         </div>
       </div>
     </div> <!-- end of form container -->
 
     <!-- Footer -->
-    <footer class="footer-frontpage">
+    <footer class="footer">
       <div class="grid-row">
         <div class="grid-col-4of8 text-left"><a href="contact-us.html" class="contact-us">Contact Us</a></div>
         <div class="grid-col-4of8 float-right text-right"><p>Swirl Polishes Co. © 2017</p></div>
