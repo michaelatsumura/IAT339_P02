@@ -724,7 +724,7 @@
 					&lt;div class="grid-row"&gt;<br>
 						&lt;h1 class="landing-header"&gt;Swirl the nailpolish of your dreams!&lt;/h1&gt;<br>
 						&lt;p class="bold-header"&gt;Welcome to Swirl Polishes Co.!&lt;/p&gt;<br>
-						&lt;p class="paragraph-primary"&gt;This is the only place where you can mix your very own custom polish blend.  You can choose to purchase your nail polish creations or sell them in your profile store.&lt;/p&gt;<br>
+						&lt;p class="paragraph-primary"&gt;A company that allows you to mix your very own custom polish blend.  You can choose to purchase your nail polish creations or sell them in your profile store.&lt;/p&gt;<br>
 						&lt;div class="grid-col-4of8"&gt;<br>
 							&lt;p class="bold-header mobile-hide"&gt;I have a vision!&lt;/p&gt;<br>
 							&lt;a href="mix.html" class="button-primary"&gt;Create My Mix!&lt;/a&gt;<br>
@@ -743,7 +743,7 @@
 	        <!-- Quick Options -->
 	        <h1 class="landing-header">Swirl the nailpolish of your dreams!</h1>
 	        <p class="bold-header">Welcome to Swirl Polishes Co.!</p>
-	        <p class="paragraph-primary">This is the only place where you can mix your very own custom polish blend.  You can choose to purchase your nail polish creations or sell them in your profile store.</p>
+	        <p class="paragraph-primary">A company that allows you to mix your very own custom polish blend.  You can choose to purchase your nail polish creations or sell them in your profile store.</p>
 	        <div class="grid-col-4of8">
 	          <p class="bold-header mobile-hide">I have a vision!</p>
 	          <a href="mix.html" class="button-primary">Create My Mix</a>
@@ -772,15 +772,28 @@
 
 			<h3>Sample code:</h3>
 			<code>
+				&lt;div class="grid-row"&gt;<br>
+					&lt;div class="grid-col-2of8"&gt;<br>
+						&lt;h1 class="main-heading"&gt;BROWSE&gt;/h1&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;div class="grid-col-4of8"&gt;<br>
+						&lt;p class="paragraph-primary"&gt;&lt;strong&gt;Seeking polish inspiration?&lt;/strong&gt;&lt;br&lt;Browse Mixes created by other Swirl Polish members. You can purchase any polishes as they are, or edit the mix so it's just to your liking!&lt;/p&gt;<br>
+					&lt;div class="grid-col-2of8"&gt;<br>
+						&lt;select class="dropdown-filter float-right"&gt;<br>
+							&lt;option value="pricelh"&gt;Price: Low to High&lt;/option&gt;<br>
+							&lt;option value="pricelh"&gt;Price: Low to High&lt;/option&gt;<br>
+						&lt;/select&gt;<br>
+					&lt;/div&gt;<br>
+				&lt;/div&gt;
 			</code>
 
 			<h3>Example:</h3>
-			<div class = "grid-row">
+			<div class ="grid-row">
         <div class="grid-col-2of8">
           <h1 class="main-heading">BROWSE</h1>
         </div>
         <div class="grid-col-4of8">
-          <p class="paragraph-primary"><strong>Seeking polish inspiration?</strong><br> Browse Mixes created by other Swirl Polish members. You can purchase any polishes as they are, or edit the mix so it's just to your liking!</p>
+          <p class="paragraph-primary"><strong>Seeking polish inspiration?</strong><br>Browse Mixes created by other Swirl Polish members. You can purchase any polishes as they are, or edit the mix so it's just to your liking!</p>
         </div>
         <div class="grid-col-2of8">
           <select class="dropdown-filter float-right">
@@ -897,8 +910,19 @@
 		<section>
 		  <h2>Social Media Links</h2>
 			<h3>CSS selectors:</h3>
+			<ul>
+				<li>.field-header</li>
+				<li>.social-icon</li>
+			</ul>
+
 			<h3>Sample Code:</h3>
-			<code></code>
+			<code>
+				&lt;h3 class="field-header"&gt;Share on Social Media!&lt;/h3&gt;<br>
+				&lt;a href="#popupsocial"&gt;&lt;img src="img/facebook1.png" class="social-icon" alt="facebook social media icon"&gt;&lt;/a&gt;<br>
+				&lt;a href="#popupsocial"&gt;&lt;img src="img/twitter1.png" class="social-icon" alt="twitter social media icon"&gt;&lt;/a&gt;<br>
+				&lt;a href="#popupsocial"&gt;&lt;img src="img/pinterest.png" class="social-icon" alt="pinterest social media icon"&gt;&lt;/a&gt;<br>
+				&lt;a href="#popupsocial"&gt;&lt;img src="img/tumblr.png" class="social-icon" alt="tumblr social media icon"&gt;&lt;/a&gt;<br>
+			</code>
 			<h3>Example</h3>
 			<!-- Social Links -->
 			<!-- Icons sourced from: https://www.vecteezy.com/vector-art/95039-free-social-media-icons -->
@@ -1149,7 +1173,7 @@
 		      <h1 class="main-heading">Cart</h1>
 		    </div>
 		    <div class="grid-row divider">
-		      <div class="grid-col-2of8">
+		      <div class="grid-col-3of8">
 		        <a href="#popup2"><img src="img/swatch-metallic-pink-orange.jpg" alt="metallic orange pink nail polish swatch" class="product-list-view cart-image"></a>
 		        <!-- Image retrieved from http://styletips101.com/wp-content/uploads/2010/03/nail-polish-thumb.jpg -->
 		      </div>
@@ -1162,7 +1186,7 @@
 		      </div>
 		    </div>
 		    <div class="grid-row divider">
-		      <div class="grid-col-2of8">
+		      <div class="grid-col-3of8">
 		        <a href="#popup4"><img src="img/dotters-3.jpg" alt="pack of 4 nail dotting tools" class="product-list-view cart-image"></a>
 		        <!-- Image retrieved from https://images-na.ssl-images-amazon.com/images/I/41IFwjklhVL._SY355_.jpg -->
 		      </div>
@@ -1205,7 +1229,7 @@
 		      <p class="paragraph-primary">An order confirmation has been sent to your e-mail. Please contact us at <a href="#">support@swirlpolishes.co</a> if you have any questions. </p>
 		    </div>
 		    <div class="grid-row divider">
-		      <div class="grid-col-2of8">
+		      <div class="grid-col-3of8">
 		        <img src="img/swatch-metallic-pink-orange.jpg" alt="metallic orange pink nail polish swatch" class="product-list-view cart-image">
 		        <!-- Image retrieved from http://styletips101.com/wp-content/uploads/2010/03/nail-polish-thumb.jpg -->
 		      </div>
@@ -1218,7 +1242,7 @@
 		    </div>
 
 		    <div class="grid-row divider">
-		      <div class="grid-col-2of8">
+		      <div class="grid-col-3of8">
 		        <img src="img/dotters-3.jpg" alt="pack of 4 nail dotting tools" class="product-list-view cart-image">
 		        <!-- Image retrieved from https://images-na.ssl-images-amazon.com/images/I/41IFwjklhVL._SY355_.jpg -->
 		      </div>
