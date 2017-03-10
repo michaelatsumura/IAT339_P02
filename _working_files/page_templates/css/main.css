@@ -171,6 +171,7 @@ label {
 }
 /* Vertical centering from https://css-tricks.com/centering-css-complete-guide/ */
 
+
 /* Secondary Navigation Button */
 .secondary-nav {
   font-size: 0.9em;
@@ -495,6 +496,7 @@ label {
 */
 
 /* --------- MAIN NAVIGATION -----------*/
+
 /* Main Navigation */
 .main-nav {
   display: -webkit-flex; /* For support in a series of Webkit browsers */
@@ -508,7 +510,7 @@ label {
   width: 100%;
   background-color: white;
   box-shadow: 0 1px 8px #f7f7f7;
-  padding: 0.8em 3em;
+  padding: 0.5em 1em;
   list-style: none;
 }
 
