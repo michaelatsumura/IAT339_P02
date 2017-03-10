@@ -933,18 +933,131 @@
 			<a href="#popupsocial"><img src="img/tumblr.png" class="social-icon" alt="tumblr social media icon"></a>
 		</section>
 
-		<!-- Colour Picker -->
+		<!-- Mix Details -->
 		<section>
 			<h2>Mix Details</h2>
 			<h3>CSS selector:</h3>
-			<p></p>
+			<ul>
+				<li>.content-container</li>
+				<li>.grid-row</li>
+				<li>.grid-col-3of8</li>
+				<li>.grid-col-4of8</li>
+				<li>.paragraph-primary</li>
+				<li>.field-header</li>
+				<li>.swatch</li>
+				<li>.dropdown</li>
+				<li>.grid-col-8of8</li>
+				<li>.formfield</li>
+				<li>.button-primary</li>
+			</ul>
 
 			<h3>Sample code:</h3>
 			<code>
+				&lt;div class="content-container"&gt;<br>
+					&lt;div class="grid-row"&gt;<br>
+						&lt;div class="grid-col-3of8"&gt;<br>
+							&lt;img src="img/swatch-metallic-pink-orange.jpg" alt="Metallic pink and orange swirl nailpolish"&gt;<br>
+						&lt;/div&gt;<br>
+
+						&lt;div class="grid-col-4of8"&gt;<br>
+							&lt;h1 class="main-heading"&gt;Mix&lt;/h1&gt;<br>
+							&lt;p class="paragraph-primary"&gt;&lt;strong&gt;Your search for the perfect polish is over!&lt;/strong&gt;<br>Customize and purchase your own personalized polish blend. If you want others to use your creation, just &lt;a href="#popupsignup"&gt;create an account&lt;/a&gt;and post your polish blend in your profile store!&lt;/p&gt;<br>
+							&lt;h3 class="field-header"&gt;Polish Colour:&lt;/h3&gt;<br>
+							&lt;form&gt;<br>
+								&lt;input type="color" class="swatch" name="favcolor" value="#FF3D61"&gt;<br>
+							&lt;/form&gt;<br>
+							&lt;div class="grid-row"&gt;<br>
+								&lt;div class="grid-col-4of8"&gt;<br>
+									&lt;h3 class="field-header"&gt;Finish&lt;/h3&gt;<br>
+									&lt;select class="dropdown"&gt;<br>
+										&lt;option value="cream"&gt;Cream&lt;/option&gt;<br>
+										&lt;option value="glitter"&gt;Glitter&lt;/option&gt;<br>
+										&lt;option value="lustre"&gt;Lustre&lt;/option&gt;<br>
+										&lt;option value="metallic"&gt;Metallic&lt;/option&gt;<br>
+										&lt;option value=matte""&gt;Matte&lt;/option&gt;<br>
+										&lt;option value="translucent"&gt;Translucent&lt;/option&gt;<br>
+									&lt;/select&gt;<br>
+								&lt;/div&gt;<br>
+							&lt;/div&gt;<br>
+							&lt;div class="grid-row"&gt;<br>
+								&lt;div class="grid-col-4of8"&gt;<br>
+									&lt;h3 class="field-header"&gt;Add-In 1&lt;/h3&gt;<br>
+									&lt;select class="dropdown"&gt;<br>
+										&lt;option value="none"&gt;None&lt;/option&gt;<br>
+										&lt;option value="heart"&gt;Heart Glitter&lt;/option&gt;<br>
+										&lt;option value="holographic"&gt;Holographic Glitter&lt;/option&gt;<br>
+										&lt;option value="r-glitter-1"&gt;Round Glitter - Large&lt;/option&gt;<br>
+										&lt;option value="r-glitter-2"&gt;Round Glitter - Small&lt;/option&gt;<br>
+										&lt;option value="s-glitter-1"&gt;Square Glitter - Large&lt;/option&gt;<br>
+										&lt;option value="s-glitter-2"&gt;Square Glitter - Small&lt;/option&gt;<br>
+										&lt;option value="stars"&gt;Star Glitter&lt;/option&gt;<br>
+									&lt;/select&gt;<br>
+									&lt;form&gt;<br>
+										Add-In 1 colour:
+										&lt;input type="color" name="favcolor" value="#ffffff"&gt;<br>
+									&lt;/form<br>
+								&lt;/div&gt;<br>
+							&lt;/div&gt;<br>
+							&lt;div class="grid-row"&gt;<br>
+								&lt;div class="grid-col-4of8"&gt;<br>
+									&lt;h3 class="field-header"&gt;Add-In 2&lt;/h3&gt;<br>
+									&lt;select class="dropdown"&gt;<br>
+										&lt;option value="none"&gt;None&lt;/option&gt;<br>
+										&lt;option value="heart"&gt;Heart Glitter&lt;/option&gt;<br>
+										&lt;option value="holographic"&gt;Holographic Glitter&lt;/option&gt;<br>
+										&lt;option value="r-glitter-1"&gt;Round Glitter - Large&lt;/option&gt;<br>
+										&lt;option value="r-glitter-2"&gt;Round Glitter - Small&lt;/option&gt;<br>
+										&lt;option value="s-glitter-1"&gt;Square Glitter - Large&lt;/option&gt;<br>
+										&lt;option value="s-glitter-2"&gt;Square Glitter - Small&lt;/option&gt;<br>
+										&lt;option value="stars"&gt;Star Glitter&lt;/option&gt;<br>
+									&lt;/select&gt;<br>
+									&lt;form&gt;<br>
+										Add-In 1 colour:
+										&lt;input type="color" name="favcolor" value="#ffffff"&gt;<br>
+									&lt;/form<br>
+								&lt;/div&gt;<br>
+							&lt;/div&gt;<br>
+
+							&lt;div class="grid-row"&gt;<br>
+								&lt;div class="grid-col-4of8"&gt;<br>
+									&lt;h3 class="field-header"&gt;Bottle Shape&lt;/h3&gt;<br>
+									&lt;select class="dropdown"&gt;<br>
+										&lt;option value="diamond"&gt;Diamond&lt;/option&gt;<br>
+										&lt;option value="heart"&gt;Heart&lt;/option&gt;<br>
+										&lt;option value="oval"&gt;Oval&lt;/option&gt;<br>
+										&lt;option value="square"&gt;Square&lt;/option&gt;<br>
+									&lt;/select&gt;<br>
+								&lt;/div&lt;<br>
+
+								&lt;div class="grid-col-4of8"&gt;<br>
+									&lt;h3 class="field-header"&gt;Brush Type&lt;/h3&gt;<br>
+									&lt;select class="dropdown"&gt;<br>
+										&lt;option value="rounded-brush"&gt;Rounded&lt;/option&gt;<br>
+										&lt;option value="square-brush"&gt;Square&lt;/option&gt;<br>
+										&lt;option value="fine-tip-brush"&gt;Fine Tip&lt;/option&gt;<br>
+										&lt;option value="liner-brush"&gt;Liner&lt;/option&gt;<br>
+									&lt;/select&gt;<br>
+								&lt;/div&lt;<br>
+							&lt;/div&gt;<br>
+
+							&lt;div class="grid-col-8of8"&gt;<br>
+								&lt;h3 class="field-header"&gt;Now that you've customized your dream polish mix, give it a name!&lt;/h3&gt;<br>
+								&lt;form&gt;<br>
+									&lt;input class="formfield" type="text" name="customname"	placeholder="Name your polish mix"&gt;<br>
+								&lt;/form&gt;<br>
+							&lt;/div&gt;<br>
+
+							&lt;div class="grid-col-4of8"&gt;<br>
+								&lt;a class="button-primary" href="created-mix.html"&gt;Create My Mix&lt;/a&gt;<br>
+							&lt;/div&gt;<br>
+							&lt;/div&gt;<br>
+						&lt;/div&gt;<br>
+					&lt;/div&gt;<br>
+				&lt;/div&gt;
 			</code>
 
 			<h3>Example:</h3>
-			<div class="content-container">
+			<div class="styleguide-container">
 	      <div class="grid-row">
 	        <div class="grid-col-3of8">
 	          <img src="img/swatch-metallic-pink-orange.jpg" alt="Metallic pink and orange swirl nailpolish">
@@ -981,7 +1094,6 @@
 	              <h3 class="field-header">Add-In 1</h3>
 	              <!-- <input class="slider" type="range" min="0" max="50" value="25" step="5" /> -->
 	              <select class="dropdown">
-	                <option value="holographic">Holographic Glitter</option>
 	                <option value="none">None</option>
 	                <option value="heart">Heart Glitter</option>
 	                <option value="holographic">Holographic Glitter</option>
@@ -1043,14 +1155,14 @@
 	          <div class="grid-col-8of8">
 	            <h3 class="field-header">Now that you've customized your dream polish mix, give it a name!</h3>
 	            <form>
-	              <input class="formfield" type="text" name="search" placeholder="Name your polish mix">
+	              <input class="formfield" type="text" name="customname" placeholder="Name your polish mix">
 	            </form>
 	          </div>
 
 	          <!-- Add to cart and sell buttons -->
-	            <div class="grid-col-4of8">
-	              <a class="button-primary" href="created-mix.html">Create My Mix</a>
-	            </div>
+            <div class="grid-col-4of8">
+              <a class="button-primary" href="created-mix.html">Create My Mix</a>
+            </div>
 	          </div> <!-- end of grid row -->
 	        </div> <!-- end of grid-col-4of8 -->
 	      </div> <!-- end of grid row -->
@@ -1067,7 +1179,7 @@
 			</code>
 
 			<h3>Example:</h3>
-			<div class="content-container">
+			<div class="styleguide-container">
 	      <div class="grid-row">
 	        <div class="grid-col-3of8">
 	          <img src="img/swatch-metallic-pink-orange.jpg" class="popup-image" alt="a metallic pink orange nailpolish">
