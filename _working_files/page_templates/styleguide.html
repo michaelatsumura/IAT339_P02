@@ -1400,6 +1400,105 @@
 	    </div> <!-- End of Content Container -->
 		</section>
 
+		<section>
+			<h2>Sell Polish Details</h2>
+			<h3>CSS selector:</h3>
+			<ul>
+				<li>.content-container</li>
+				<li>.grid-row</li>
+				<li>.grid-col-3of8</li>
+				<li>.grid-col-4of8</li>
+				<li>.fit-product</li>
+				<li>.field-header</li>
+				<li>.product-subhead</li>
+				<li>.bold-header</li>
+				<li>.paragraph-secondary</li>
+				<li>.pricefield</li>
+				<li>.product-description</li>
+				<li>.divider</li>
+				<li>.remove-gutter</li>
+				<li>.button-primary</li>
+				<li>.button-secondary</li>
+			</ul>
+
+			<h3>Sample code:</h3>
+			<code>
+				&lt;div class="content-container"&gt;<br>
+				  &lt;div class="grid-row"&gt;<br>
+				    &lt;div class="grid-col-3of8"&gt;<br>
+				      &lt;img src="img/swatch-metallic-pink-orange.jpg" alt="" class="fit-product"&gt;<br>
+				      &lt;h3 class="field-header"&gt;Share on Social Media!&lt;/h3&gt;<br>
+				      &lt;a href="#popupsocial"&gt;&lt;img src="img/facebook1.png" class="social-icon" alt="facebook social media icon"&gt;&lt;/a&gt;<br>
+				      &lt;a href="#popupsocial"&gt;&lt;img src="img/twitter1.png" class="social-icon" alt="twitter social media icon"&gt;&lt;/a&gt;<br>
+				      &lt;a href="#popupsocial"&gt;&lt;img src="img/pinterest.png" class="social-icon" alt="pinterest social media icon"&gt;&lt;/a&gt;<br>
+				      &lt;a href="#popupsocial"&gt;&lt;img src="img/tumblr.png" class="social-icon" alt="tumblr social media icon"&gt;&lt;/a&gt;<br>
+				    &lt;/div&gt;<br>
+				    &lt;div class="grid-col-4of8"&gt;<br>
+				      &lt;h2 class="bold-header"&gt;Earn store credits with each polish sale. Every 1000 credits you'll receive a free polish of your choice!&lt;/h2&gt;<br>
+				      &lt;p class="paragraph-secondary divider"&gt;Now that your polish has been created specify a price you would like to sell it for (must be higher than the base price). Then write a short description to really sell your polish to the world!&lt;/p&gt;<br>
+				      &lt;h2 class="product-name"&gt;Orange Sunset&lt;/h2&gt;<br>
+				      &lt;h3 class="product-subhead"&gt;Metallic Finish&lt;/h3&gt;<br>
+				      &lt;h3 class="field-header"&gt;Price&lt;/h3&gt;<br>
+				      &lt;form&gt;<br>
+				        &lt;input class="pricefield" type="text" name="price" placeholder="$8.95"&gt;<br>
+				      &lt;/form&gt;<br>
+				      &lt;h3 class="field-header"&gt;Product Description&lt;/h3&gt;<br>
+				      &lt;textarea class="product-description" name="textarea" placeholder="What do you want to say about your polish mix? (optional)"&gt;&lt;/textarea&gt;<br>
+				      &lt;div class="grid-row"&gt;<br>
+				        &lt;div class="grid-col-4of8 remove-gutter"&gt;<br>
+				         &lt;a class="button-secondary" href="created-mix.html"&gt;Back&lt;/a&gt;<br>
+				        &lt;/div&gt;<br>
+				        &lt;div class="grid-col-4of8 remove-gutter"&gt;<br>
+				          &lt;a class="button-primary" href="added-to-store.html"&gt;+ Add to Store&lt;/a&gt;<br>
+				        &lt;/div&gt;<br>
+				      &lt;/div&gt;<br>
+				    &lt;/div&gt;<br>
+				  &lt;/div&gt;<br>
+				&lt;/div&gt;
+			</code>
+
+			<h3>Example</h3>
+			<!-- Beginning of content - Sell Product -->
+	    <div class="styleguide-container">
+	      <div class="grid-row">
+	        <div class="grid-col-3of8">
+	          <img src="img/swatch-metallic-pink-orange.jpg" alt="" class="fit-product">
+	          <!-- Image retrieved from http://styletips101.com/wp-content/uploads/2010/03/nail-polish-thumb.jpg -->
+	          <!-- Social Links -->
+	          <!-- Icons sourced from: https://www.vecteezy.com/vector-art/95039-free-social-media-icons -->
+	          <h3 class="field-header">Share on Social Media!</h3>
+	          <a href="#popupsocial"><img src="img/facebook1.png" class="social-icon" alt="facebook social media icon"></a>
+	          <a href="#popupsocial"><img src="img/twitter1.png" class="social-icon" alt="twitter social media icon"></a>
+	          <a href="#popupsocial"><img src="img/pinterest.png" class="social-icon" alt="pinterest social media icon"></a>
+	          <a href="#popupsocial"><img src="img/tumblr.png" class="social-icon" alt="tumblr social media icon"></a>
+	        </div>
+	        <!-- edit product before selling -->
+	        <div class="grid-col-4of8">
+	          <h2 class="bold-header">Earn store credits with each polish sale. Every 1000 credits you'll receive a free polish of your choice!</h2>
+	          <p class="paragraph-secondary divider">Now that your polish has been created specify a price you would like to sell it for (must be higher than the base price). Then write a short description to really sell your polish to the world!</p>
+	          <h2 class="product-name">Orange Sunset</h2>
+	          <h3 class="product-subhead">Metallic Finish</h3>
+	          <h3 class="field-header">Price</h3>
+	          <form>
+	            <input class="pricefield" type="text" name="price" placeholder="$8.95">
+	          </form>
+	          <h3 class="field-header">Product Description</h3>
+	          <textarea class="product-description" name="textarea" placeholder="What do you want to say about your polish mix? (optional)"></textarea>
+	          <!-- http://stackoverflow.com/questions/6262472/multiple-lines-of-input-in-input-type-text -->
+	          <!-- Buttons -->
+	          <div class="grid-row">
+	            <div class="grid-col-4of8 remove-gutter">
+	             <a class="button-secondary" href="created-mix.html">Back</a>
+	            </div>
+	            <div class="grid-col-4of8 remove-gutter">
+	              <a class="button-primary" href="added-to-store.html">+ Add to Store</a>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+		</section>
+
 		<!-- Confirmation -->
 		<section>
 			<h2>Confirmation Blurb</h2>

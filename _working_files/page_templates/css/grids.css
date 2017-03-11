@@ -41,7 +41,7 @@
 }
 
 .content-container-citations {
-  padding: 0 2rem 2rem 2rem;
+  padding: 2rem;
   max-width: 100%;
 }
 
@@ -337,7 +337,7 @@
 
   .banner {
     background-color: #f7f7f7;
-    padding: 0.5em 2em; 
+    padding: 0.5em 2em;
     color: white;
     height:auto;
     margin-top: 10px;
