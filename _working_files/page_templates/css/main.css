@@ -484,8 +484,9 @@ label {
 .lists {
   list-style: none;
   margin-top: 0.5em;
-  line-height: 1.5rem;
+  line-height: 2rem;
   padding-left: 0;
+  font-size: 0.8em;
 }
 /* end of styling the TEXT ELEMENTS*/
 
