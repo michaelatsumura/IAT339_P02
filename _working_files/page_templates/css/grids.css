@@ -131,6 +131,12 @@
     padding: 8% 15%;
   }
 
+  /*styling containers*/
+  .content-container-short {
+    width: 100%;
+    padding: 1% 15% 10% 15%;
+  }
+
   .nav-container {
     width: 100%;
     text-align: center;
