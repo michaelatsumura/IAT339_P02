@@ -421,6 +421,10 @@
     padding: 6% 15%;
   }
 
+  .mobile {
+    display: block;
+  }
+
 }
 
 

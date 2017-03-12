@@ -334,7 +334,7 @@ label {
 
 /* Logo Icon */
 .logo {
-  max-width: 95px;
+  max-width: 95px !important;
 }
 
 /* Colour Picker */
@@ -509,7 +509,7 @@ label {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 98;
   width: 100%;
   background-color: white;
   box-shadow: 0 1px 8px #f7f7f7;
@@ -675,7 +675,7 @@ header {
 
 /*Modified hamburger menu code retrieved from http://johnm.io/project/hamburgler/*/
 
-.hamburger-icon-wrapper {
+/*.hamburger-icon-wrapper {
   position: absolute;
   top: 1em;
   right: 2em;
@@ -753,7 +753,7 @@ header {
 
 .hamburger-active .hamburger-menu {
   opacity: 1;
-  pointer-events: initial;
+  pointer-events: none;
 }
 
 .hamburger-menu-list {
@@ -770,9 +770,68 @@ header {
 
 .hamburger-active .hamburger-menu-list {
   transform: translate(-50%, -50%) scale(1);
-}
+}*/
 
 /*End of modified hamburger menu code retrieved from http://johnm.io/project/hamburgler/*/
+
+
+.mobile {
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+.mobile div {
+  display: none;
+}
+
+.mobile button {
+  position: absolute;
+  top: 15px;
+  right: 2em;
+  border: 0;
+  text-indent: 200%;
+  overflow: hidden;
+  background: #FFFFFF url("https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/Menu1-128.png") center no-repeat;
+  background-size: 80%;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.mobile button.expanded {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background-color: transparent;
+  border: 0;
+}
+
+.mobile a {
+  display: block;
+  background-color: white;
+}
+
+.hamburger a {
+  display: block;
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+}
+
+.hamburger a:hover,
+.hamburger a:active,
+.hamburger a:focus{
+  color: #C19A97;
+  text-decoration: none !important;
+}
 
 /*
 ======================================================
