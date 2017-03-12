@@ -421,10 +421,6 @@
     padding: 6% 15%;
   }
 
-  .mobile {
-    display: block;
-  }
-
 }
 
 
@@ -506,6 +502,10 @@
 
   .banner {
     margin-top: 15px !important;
+  }
+
+  .mobile {
+    display: block;
   }
 
 }
