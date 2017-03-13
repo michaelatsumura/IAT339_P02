@@ -340,7 +340,7 @@
     padding: 0.5em 2em;
     color: white;
     height:auto;
-    margin-top: 10px;
+    margin-top: -20px;
     margin-bottom: 1em;
   }
 
@@ -520,7 +520,11 @@
     font-size: 0.7em;
   }
 
-  .grid-col-2of8{
+  .grid-col-2of8 {
+    width: 100%;
+  }
+
+  .grid-col-5of8 {
     width: 100%;
   }
 
@@ -532,7 +536,11 @@
   }
 
   .front-page-container {
-    padding: 1% 10%;
+    padding: 5% 10%;
+  }
+
+  .content-container-short {
+    padding: 10% 9%;
   }
 
   /*resize popup image on large mobile screen*/

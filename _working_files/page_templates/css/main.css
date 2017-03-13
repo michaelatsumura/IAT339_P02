@@ -608,7 +608,8 @@ label {
   to bottom.
  */
 
-.content-container, .form-container, .checkout-container {
+.content-container, .form-container, .checkout-container,
+.content-container-short {
   background: white;
   position: relative;
   margin-bottom: 10rem;
