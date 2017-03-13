@@ -609,7 +609,7 @@ label {
  */
 
 .content-container, .form-container, .checkout-container,
-.content-container-short {
+.content-container-short, .front-page-container {
   background: white;
   position: relative;
   margin-bottom: 10rem;
